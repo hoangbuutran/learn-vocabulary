@@ -13,17 +13,18 @@
   cursor: pointer;
   position: relative;
   border-radius: var(--radius-xl);
-  transition: transform var(--transition-fast);
-}
-
-.flashcard:hover {
-  transform: scale(1.01);
 }
 
 .flashcard:focus-visible {
   outline: 3px solid var(--border-focus);
   outline-offset: 4px;
   border-radius: var(--radius-xl);
+}
+
+/* Lift the card on hover via shadow only (scaling a 3D element blurs text). */
+.flashcard:hover .flashcard-front,
+.flashcard:hover .flashcard-back {
+  box-shadow: var(--shadow-xl);
 }
 
 /* --------------------------------------------------------------------------
@@ -49,6 +50,9 @@
   box-shadow: var(--shadow-lg);
   transition: transform 0.6s ease, box-shadow var(--transition-base);
   overflow: hidden;
+  /* Keep text crisp during 3D rotation */
+  -webkit-font-smoothing: subpixel-antialiased;
+  transform-style: preserve-3d;
 }
 
 /* --------------------------------------------------------------------------
