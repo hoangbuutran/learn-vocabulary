@@ -25,7 +25,9 @@ const DEFAULT_SETTINGS = {
   theme: 'light',
   accent: 'en-US',
   dailyWordCount: 10,
-  autoPlayPronunciation: false
+  autoPlayPronunciation: false,
+  // Which vocabulary set to study: 'all' | 'a1-a2' | 'essential-3000'
+  vocabularySet: 'all'
 };
 
 class StorageManager {
@@ -81,6 +83,21 @@ class StorageManager {
   getVocabularyByCategory(category) {
     const items = this.getAllVocabulary();
     return items.filter(item => item.category === category);
+  }
+
+  /**
+   * Get the vocabulary the user has chosen to study, based on the
+   * `vocabularySet` setting ('all' | 'a1-a2' | 'essential-3000').
+   * Falls back to all vocabulary if the chosen set is empty.
+   * @returns {Array} Array of VocabularyItem objects
+   */
+  getActiveVocabulary() {
+    const all = this.getAllVocabulary();
+    const set = this.getSettings().vocabularySet || 'all';
+    if (set === 'all') return all;
+    const filtered = all.filter(item => item.category === set);
+    // Safety net: if the selected set has no items, don't leave the user stuck.
+    return filtered.length > 0 ? filtered : all;
   }
 
   /**

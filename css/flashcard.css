@@ -72,9 +72,9 @@
    -------------------------------------------------------------------------- */
 .flashcard-back {
   transform: rotateY(180deg);
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding-top: var(--space-xl);
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-xl);
   overflow-y: auto;
 }
 
@@ -124,19 +124,26 @@
    -------------------------------------------------------------------------- */
 .meaning-display {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .meaning-text {
-  font-size: var(--font-2xl);
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: var(--space-md);
+  font-size: var(--font-3xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
   line-height: 1.4;
+  text-align: center;
 }
 
 .examples {
   margin-bottom: var(--space-md);
   width: 100%;
+  text-align: center;
 }
 
 .example-label {
@@ -147,8 +154,8 @@
 }
 
 .examples ul {
-  list-style: disc;
-  padding-left: var(--space-lg);
+  list-style: none;
+  padding-left: 0;
 }
 
 .examples li {

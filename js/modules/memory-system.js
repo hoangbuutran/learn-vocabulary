@@ -73,7 +73,7 @@ class MemorySystem {
    * @returns {object} LearningStats { total, studied, remembered, notRemembered, progressPercentage }
    */
   getStats() {
-    const allVocabulary = storageManager.getAllVocabulary();
+    const allVocabulary = storageManager.getActiveVocabulary();
     const allProgress = storageManager.getAllProgress();
 
     const total = allVocabulary.length;
@@ -137,7 +137,7 @@ class MemorySystem {
    * @returns {Array} Array of VocabularyItem objects
    */
   getWordsForStudy(count) {
-    const allVocabulary = storageManager.getAllVocabulary();
+    const allVocabulary = storageManager.getActiveVocabulary();
     const allProgress = storageManager.getAllProgress();
 
     if (allVocabulary.length === 0) return [];
@@ -215,7 +215,7 @@ class MemorySystem {
     }
 
     // Find unassigned words (items not yet assigned to any daily session)
-    const allVocabulary = storageManager.getAllVocabulary();
+    const allVocabulary = storageManager.getActiveVocabulary();
     const allProgress = storageManager.getAllProgress();
     const assignedIds = new Set();
 

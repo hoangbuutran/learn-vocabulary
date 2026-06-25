@@ -243,15 +243,27 @@ async function handleMic(word) {
   const micBtn = container && container.querySelector('#btn-mic');
 
   if (micBtn) micBtn.classList.add('recording');
-  if (resultEl) resultEl.textContent = 'Đang nghe...';
+
+  const setStatus = (status) => {
+    if (!resultEl) return;
+    if (status === 'loading-model') {
+      resultEl.innerHTML = '<span class="result-info">Đang tải mô hình nhận diện (lần đầu, chờ chút)...</span>';
+    } else if (status === 'listening') {
+      resultEl.innerHTML = '<span class="result-info">🎤 Đang nghe... hãy đọc to, rõ.</span>';
+    } else if (status === 'processing') {
+      resultEl.innerHTML = '<span class="result-info">Đang xử lý...</span>';
+    }
+  };
 
   try {
-    const result = await pronunciationValidator.startValidation(word.word);
+    const result = await pronunciationValidator.startValidation(word.word, { onStatus: setStatus });
     memorySystem.recordPronunciationAttempt(word.id, result.passed);
 
     if (resultEl) {
       if (result.passed) {
         resultEl.innerHTML = `<span class="result-pass">✓ PASS - Phát âm chính xác!</span>`;
+      } else if (result.isClose) {
+        resultEl.innerHTML = `<span class="result-fail">✗ GẦN ĐÚNG - Bạn nói: "${result.recognizedText}". Thử lại rõ hơn nhé!</span>`;
       } else {
         resultEl.innerHTML = `<span class="result-fail">✗ THỬ LẠI - Bạn nói: "${result.recognizedText}"</span>`;
       }

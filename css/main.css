@@ -1055,6 +1055,11 @@ em {
   color: var(--color-warning);
 }
 
+.result-info {
+  color: var(--color-text-secondary, #666);
+  font-style: italic;
+}
+
 .memory-actions {
   display: flex;
   gap: var(--space-md);

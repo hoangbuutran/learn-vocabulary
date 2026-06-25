@@ -67,14 +67,14 @@
   --transition-slow: 400ms ease;
 
   /* Font sizes */
-  --font-xs: 0.75rem;
-  --font-sm: 0.875rem;
-  --font-base: 1rem;
-  --font-lg: 1.125rem;
-  --font-xl: 1.25rem;
-  --font-2xl: 1.5rem;
-  --font-3xl: 1.875rem;
-  --font-4xl: 2.25rem;
+  --font-xs: 0.875rem;
+  --font-sm: 1rem;
+  --font-base: 1.125rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 1.75rem;
+  --font-3xl: 2.25rem;
+  --font-4xl: 2.75rem;
 }
 
 /* Dark Theme */

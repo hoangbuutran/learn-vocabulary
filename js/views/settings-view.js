@@ -64,6 +64,25 @@ function renderContent() {
           </div>
         </div>
 
+        <div class="setting-group" role="group" aria-labelledby="vocabset-label">
+          <span id="vocabset-label" class="setting-label">Bộ từ vựng</span>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="vocabset" value="a1-a2" ${settings.vocabularySet === 'a1-a2' ? 'checked' : ''} aria-label="Bộ 1000 từ A1-A2" />
+              <span>1000 từ cơ bản (A1-A2)</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="vocabset" value="essential-3000" ${settings.vocabularySet === 'essential-3000' ? 'checked' : ''} aria-label="Bộ 3000 từ" />
+              <span>3000 từ thông dụng</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="vocabset" value="all" ${(settings.vocabularySet === 'all' || !settings.vocabularySet) ? 'checked' : ''} aria-label="Tất cả các từ" />
+              <span>Tất cả</span>
+            </label>
+          </div>
+          <p class="setting-hint">Chọn bộ từ muốn học. Đổi bộ sẽ làm mới phiên học hiện tại.</p>
+        </div>
+
         <div class="setting-group" role="group" aria-labelledby="daily-count-label">
           <label id="daily-count-label" class="setting-label" for="daily-word-count">Số từ mỗi ngày</label>
           <input type="number" id="daily-word-count" class="setting-input" min="1" max="50" value="${settings.dailyWordCount}" aria-label="Số từ học mỗi ngày" />
@@ -121,6 +140,24 @@ function setupListeners() {
       settings.accent = e.target.value;
       storageManager.saveSettings(settings);
       speechModule.setAccent(settings.accent);
+    });
+  });
+
+  // Vocabulary set radio buttons
+  const vocabSetRadios = container.querySelectorAll('input[name="vocabset"]');
+  vocabSetRadios.forEach(radio => {
+    radio.addEventListener('change', (e) => {
+      const settings = storageManager.getSettings();
+      settings.vocabularySet = e.target.value;
+      storageManager.saveSettings(settings);
+
+      const labels = {
+        'a1-a2': '1000 từ cơ bản (A1-A2)',
+        'essential-3000': '3000 từ thông dụng',
+        'all': 'Tất cả'
+      };
+      const count = storageManager.getActiveVocabulary().length;
+      showSuccess(`Đã chuyển sang "${labels[e.target.value]}" (${count} từ).`);
     });
   });
 
