@@ -1095,3 +1095,11 @@ em {
   margin: var(--space-sm) 0;
   max-width: 420px;
 }
+
+/* Settings hint text */
+.setting-hint {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  margin: var(--space-xs) 0 0;
+  max-width: 320px;
+}

@@ -12,8 +12,13 @@ const KEYS = {
   VOCAB_PROGRESS: 'vocab_progress',
   APP_SETTINGS: 'app_settings',
   DAILY_SESSIONS: 'daily_sessions',
-  DATA_LOADED: 'data_loaded'
+  DATA_LOADED: 'data_loaded',
+  DATA_VERSION: 'data_version'
 };
+
+// Bump this whenever the bundled vocabulary data changes so existing users
+// automatically get the new data on next load.
+const DATA_VERSION = '2';
 
 // Default application settings
 const DEFAULT_SETTINGS = {
@@ -151,11 +156,15 @@ class StorageManager {
   // --- First Run / Pre-Generated Data ---
 
   /**
-   * Check if this is the first time the app is running.
-   * @returns {boolean} true if pre-generated data has NOT been loaded yet
+   * Check if pre-generated data needs to be loaded.
+   * Returns true on first run OR when the bundled data version has changed
+   * (so existing users automatically receive updated vocabulary).
+   * @returns {boolean}
    */
   isFirstRun() {
-    return localStorage.getItem(KEYS.DATA_LOADED) !== 'true';
+    const loaded = localStorage.getItem(KEYS.DATA_LOADED) === 'true';
+    const version = localStorage.getItem(KEYS.DATA_VERSION);
+    return !loaded || version !== DATA_VERSION;
   }
 
   /**
@@ -192,9 +201,21 @@ class StorageManager {
       }
 
       localStorage.setItem(KEYS.DATA_LOADED, 'true');
+      localStorage.setItem(KEYS.DATA_VERSION, DATA_VERSION);
     } catch (error) {
       showWarning('Không thể tải dữ liệu từ vựng ban đầu. Bạn vẫn có thể nhập dữ liệu thủ công.');
     }
+  }
+
+  /**
+   * Force a reload of the bundled vocabulary data, replacing the current
+   * vocabulary. Progress and settings are preserved.
+   * @returns {Promise<void>}
+   */
+  async reloadPreGeneratedData() {
+    localStorage.removeItem(KEYS.DATA_LOADED);
+    localStorage.removeItem(KEYS.DATA_VERSION);
+    await this.loadPreGeneratedData();
   }
 
   // --- Export / Import ---

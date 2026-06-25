@@ -120,9 +120,16 @@ describe('StorageManager', () => {
       expect(storageManager.isFirstRun()).toBe(true);
     });
 
-    it('isFirstRun returns false after data_loaded is set to true', () => {
+    it('isFirstRun returns false after data is loaded with the current version', () => {
       localStorage.setItem(KEYS.DATA_LOADED, 'true');
+      localStorage.setItem(KEYS.DATA_VERSION, '2');
       expect(storageManager.isFirstRun()).toBe(false);
+    });
+
+    it('isFirstRun returns true when the stored data version is outdated', () => {
+      localStorage.setItem(KEYS.DATA_LOADED, 'true');
+      localStorage.setItem(KEYS.DATA_VERSION, '1');
+      expect(storageManager.isFirstRun()).toBe(true);
     });
   });
 

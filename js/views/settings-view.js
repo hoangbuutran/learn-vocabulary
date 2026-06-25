@@ -5,6 +5,8 @@
  */
 import storageManager from '../modules/storage-manager.js';
 import speechModule from '../modules/speech-module.js';
+import eventBus from '../utils/event-bus.js';
+import { showSuccess, showError } from '../utils/helpers.js';
 
 let container = null;
 
@@ -74,6 +76,16 @@ function renderContent() {
             <label for="toggle-autoplay" class="toggle-slider"></label>
           </div>
         </div>
+
+        <div class="setting-group" role="group" aria-labelledby="reload-label">
+          <div>
+            <span id="reload-label" class="setting-label">Dữ liệu từ vựng</span>
+            <p class="setting-hint">Tải lại toàn bộ từ vựng gốc (giữ nguyên tiến độ học).</p>
+          </div>
+          <button class="btn btn-secondary" id="btn-reload-data" aria-label="Tải lại dữ liệu gốc">
+            Tải lại dữ liệu
+          </button>
+        </div>
       </div>
     </section>
   `;
@@ -133,6 +145,26 @@ function setupListeners() {
       const settings = storageManager.getSettings();
       settings.autoPlayPronunciation = e.target.checked;
       storageManager.saveSettings(settings);
+    });
+  }
+
+  // Reload pre-generated data
+  const reloadBtn = container.querySelector('#btn-reload-data');
+  if (reloadBtn) {
+    reloadBtn.addEventListener('click', async () => {
+      reloadBtn.disabled = true;
+      reloadBtn.textContent = 'Đang tải...';
+      try {
+        await storageManager.reloadPreGeneratedData();
+        const count = storageManager.getAllVocabulary().length;
+        eventBus.emit('vocab:imported', { count });
+        showSuccess(`Đã tải lại ${count} từ vựng.`);
+      } catch (err) {
+        showError('Không thể tải lại dữ liệu. Vui lòng thử lại.');
+      } finally {
+        reloadBtn.disabled = false;
+        reloadBtn.textContent = 'Tải lại dữ liệu';
+      }
     });
   }
 }
