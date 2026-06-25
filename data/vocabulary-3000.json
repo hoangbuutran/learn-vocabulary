@@ -1,0 +1,510 @@
+{
+  "metadata": {
+    "source": "3000.pdf",
+    "generatedAt": "2024-01-01",
+    "totalItems": 50,
+    "categories": ["essential-3000"]
+  },
+  "items": [
+    {
+      "id": "essential-3000_0001",
+      "word": "abandon",
+      "meaning": "từ bỏ, bỏ rơi",
+      "examples": ["They abandoned the car in the snow.", "She abandoned her dream of becoming an actress.", "The building was abandoned years ago."],
+      "pronunciation": "/əˈbændən/",
+      "memoryTip": "a-BAN-don: BAN (cấm) + don (làm) → cấm không làm nữa → từ bỏ",
+      "category": "essential-3000",
+      "groupIndex": 1
+    },
+    {
+      "id": "essential-3000_0002",
+      "word": "ability",
+      "meaning": "khả năng, năng lực",
+      "examples": ["She has the ability to learn quickly.", "His ability to solve problems is impressive.", "The test measures your reading ability."],
+      "pronunciation": "/əˈbɪləti/",
+      "memoryTip": "A-bi-li-ty: 'Ả Bi' có 'lý' → có khả năng lý luận giỏi",
+      "category": "essential-3000",
+      "groupIndex": 1
+    },
+    {
+      "id": "essential-3000_0003",
+      "word": "achieve",
+      "meaning": "đạt được, hoàn thành",
+      "examples": ["She achieved her goal of graduating with honors.", "We can achieve anything with hard work.", "The company achieved record profits."],
+      "pronunciation": "/əˈtʃiːv/",
+      "memoryTip": "A-chieve: 'ơ chìa' khóa → dùng chìa khóa mở cửa thành công → đạt được",
+      "category": "essential-3000",
+      "groupIndex": 1
+    },
+    {
+      "id": "essential-3000_0004",
+      "word": "accept",
+      "meaning": "chấp nhận, đồng ý",
+      "examples": ["Please accept my apology.", "She accepted the job offer.", "I accept your terms and conditions."],
+      "pronunciation": "/əkˈsɛpt/",
+      "memoryTip": "Ac-cept: 'ắc xép' → xếp vào chấp nhận",
+      "category": "essential-3000",
+      "groupIndex": 1
+    },
+    {
+      "id": "essential-3000_0005",
+      "word": "account",
+      "meaning": "tài khoản, lý do",
+      "examples": ["I opened a bank account.", "Please take into account all the facts.", "She gave a detailed account of what happened."],
+      "pronunciation": "/əˈkaʊnt/",
+      "memoryTip": "Ac-count: 'ơ cao' → tài khoản cao lên nhờ tiết kiệm",
+      "category": "essential-3000",
+      "groupIndex": 1
+    },
+    {
+      "id": "essential-3000_0006",
+      "word": "advantage",
+      "meaning": "lợi thế, ưu điểm",
+      "examples": ["Being tall is an advantage in basketball.", "We have an advantage over our competitors.", "She took advantage of the opportunity."],
+      "pronunciation": "/ədˈvæntɪdʒ/",
+      "memoryTip": "Ad-van-tage: 'ớt vặn' tay → có lợi thế vì biết 'vặn' tình huống",
+      "category": "essential-3000",
+      "groupIndex": 1
+    },
+    {
+      "id": "essential-3000_0007",
+      "word": "advice",
+      "meaning": "lời khuyên",
+      "examples": ["Can you give me some advice?", "She followed her doctor's advice.", "My advice is to study every day."],
+      "pronunciation": "/ədˈvaɪs/",
+      "memoryTip": "Ad-vice: 'ớt vai' → ai cho lời khuyên thì vỗ vai",
+      "category": "essential-3000",
+      "groupIndex": 1
+    },
+    {
+      "id": "essential-3000_0008",
+      "word": "afford",
+      "meaning": "có đủ khả năng (tài chính)",
+      "examples": ["I can't afford a new car.", "Can you afford to take a vacation?", "We can barely afford rent."],
+      "pronunciation": "/əˈfɔːrd/",
+      "memoryTip": "Af-ford: 'ơ Ford' → không đủ tiền mua xe Ford!",
+      "category": "essential-3000",
+      "groupIndex": 1
+    },
+    {
+      "id": "essential-3000_0009",
+      "word": "agreement",
+      "meaning": "thỏa thuận, sự đồng ý",
+      "examples": ["They signed an agreement.", "We reached an agreement after hours of discussion.", "Both sides are in agreement."],
+      "pronunciation": "/əˈɡriːmənt/",
+      "memoryTip": "A-gree-ment: 'agree' (đồng ý) + ment → sự đồng ý",
+      "category": "essential-3000",
+      "groupIndex": 1
+    },
+    {
+      "id": "essential-3000_0010",
+      "word": "announce",
+      "meaning": "thông báo, công bố",
+      "examples": ["The company announced a new product.", "She announced her resignation.", "They will announce the results tomorrow."],
+      "pronunciation": "/əˈnaʊns/",
+      "memoryTip": "An-nounce: 'ơ nâu' → thông báo bằng giấy nâu dán tường",
+      "category": "essential-3000",
+      "groupIndex": 1
+    },
+    {
+      "id": "essential-3000_0011",
+      "word": "approach",
+      "meaning": "tiếp cận, phương pháp",
+      "examples": ["We need a new approach to this problem.", "The train is approaching the station.", "He approached me with a smile."],
+      "pronunciation": "/əˈproʊtʃ/",
+      "memoryTip": "Ap-proach: 'áp' sát gần → tiếp cận",
+      "category": "essential-3000",
+      "groupIndex": 2
+    },
+    {
+      "id": "essential-3000_0012",
+      "word": "appropriate",
+      "meaning": "phù hợp, thích hợp",
+      "examples": ["Please wear appropriate clothing.", "That behavior is not appropriate here.", "We need to find an appropriate solution."],
+      "pronunciation": "/əˈproʊpriət/",
+      "memoryTip": "Ap-pro-pri-ate: 'áp' dụng 'pro' (chuyên nghiệp) → phù hợp",
+      "category": "essential-3000",
+      "groupIndex": 2
+    },
+    {
+      "id": "essential-3000_0013",
+      "word": "attempt",
+      "meaning": "cố gắng, nỗ lực",
+      "examples": ["He made an attempt to climb the mountain.", "Don't attempt to fix it yourself.", "This is my third attempt at the exam."],
+      "pronunciation": "/əˈtɛmpt/",
+      "memoryTip": "At-tempt: 'ớt' cay quá nhưng vẫn 'cố gắng' ăn",
+      "category": "essential-3000",
+      "groupIndex": 2
+    },
+    {
+      "id": "essential-3000_0014",
+      "word": "attention",
+      "meaning": "sự chú ý, quan tâm",
+      "examples": ["Pay attention to the teacher.", "She attracted a lot of attention.", "Thank you for your attention."],
+      "pronunciation": "/əˈtɛnʃən/",
+      "memoryTip": "At-ten-tion: 'ớt TEN' → chú ý 10 điều quan trọng",
+      "category": "essential-3000",
+      "groupIndex": 2
+    },
+    {
+      "id": "essential-3000_0015",
+      "word": "available",
+      "meaning": "có sẵn, rảnh",
+      "examples": ["Is this room available?", "The doctor is not available today.", "These products are available online."],
+      "pronunciation": "/əˈveɪləbl/",
+      "memoryTip": "A-vail-able: 'ơ về' là có → có sẵn, rảnh rỗi",
+      "category": "essential-3000",
+      "groupIndex": 2
+    },
+    {
+      "id": "essential-3000_0016",
+      "word": "behavior",
+      "meaning": "hành vi, cách cư xử",
+      "examples": ["His behavior in class is unacceptable.", "Good behavior is rewarded.", "She studied animal behavior."],
+      "pronunciation": "/bɪˈheɪvjər/",
+      "memoryTip": "Be-have: 'bị hại' vì hành vi xấu",
+      "category": "essential-3000",
+      "groupIndex": 2
+    },
+    {
+      "id": "essential-3000_0017",
+      "word": "benefit",
+      "meaning": "lợi ích, phúc lợi",
+      "examples": ["Exercise has many health benefits.", "The program benefits low-income families.", "What are the benefits of this job?"],
+      "pronunciation": "/ˈbɛnɪfɪt/",
+      "memoryTip": "Bene-fit: 'bên' nào cũng 'fit' (khỏe) → lợi ích cho mọi bên",
+      "category": "essential-3000",
+      "groupIndex": 2
+    },
+    {
+      "id": "essential-3000_0018",
+      "word": "budget",
+      "meaning": "ngân sách, kinh phí",
+      "examples": ["We need to stay within budget.", "The project has a limited budget.", "She manages the family budget carefully."],
+      "pronunciation": "/ˈbʌdʒɪt/",
+      "memoryTip": "Bud-get: 'bớt' chi tiêu → quản lý ngân sách",
+      "category": "essential-3000",
+      "groupIndex": 2
+    },
+    {
+      "id": "essential-3000_0019",
+      "word": "challenge",
+      "meaning": "thử thách, thách thức",
+      "examples": ["Learning a new language is a challenge.", "She accepted the challenge.", "We face many challenges ahead."],
+      "pronunciation": "/ˈtʃælɪndʒ/",
+      "memoryTip": "Chal-lenge: 'chạy' lên dốc → đó là thử thách",
+      "category": "essential-3000",
+      "groupIndex": 2
+    },
+    {
+      "id": "essential-3000_0020",
+      "word": "character",
+      "meaning": "nhân vật, tính cách",
+      "examples": ["The main character in the movie is a doctor.", "He has a strong character.", "She plays an interesting character in the play."],
+      "pronunciation": "/ˈkærəktər/",
+      "memoryTip": "Cha-rac-ter: 'cha rất tốt' → nhân vật cha tốt tính",
+      "category": "essential-3000",
+      "groupIndex": 2
+    },
+    {
+      "id": "essential-3000_0021",
+      "word": "communicate",
+      "meaning": "giao tiếp, truyền đạt",
+      "examples": ["We need to communicate better.", "She communicates clearly.", "How do you communicate with your team?"],
+      "pronunciation": "/kəˈmjuːnɪkeɪt/",
+      "memoryTip": "Com-muni-cate: 'cộm' đồng → cộng đồng cần giao tiếp",
+      "category": "essential-3000",
+      "groupIndex": 3
+    },
+    {
+      "id": "essential-3000_0022",
+      "word": "community",
+      "meaning": "cộng đồng",
+      "examples": ["We are part of a strong community.", "The community center offers free classes.", "She is active in the local community."],
+      "pronunciation": "/kəˈmjuːnəti/",
+      "memoryTip": "Com-muni-ty: 'cộm' + unity (đoàn kết) → cộng đồng đoàn kết",
+      "category": "essential-3000",
+      "groupIndex": 3
+    },
+    {
+      "id": "essential-3000_0023",
+      "word": "compare",
+      "meaning": "so sánh",
+      "examples": ["Compare these two products.", "You can't compare apples and oranges.", "How does this compare to your old job?"],
+      "pronunciation": "/kəmˈpɛr/",
+      "memoryTip": "Com-pare: 'cặp' → đặt cặp bên nhau để so sánh",
+      "category": "essential-3000",
+      "groupIndex": 3
+    },
+    {
+      "id": "essential-3000_0024",
+      "word": "complain",
+      "meaning": "phàn nàn, than phiền",
+      "examples": ["Stop complaining about the weather.", "She complained about the noise.", "Customers complained about poor service."],
+      "pronunciation": "/kəmˈpleɪn/",
+      "memoryTip": "Com-plain: nói 'plain' (thẳng) ra → phàn nàn thẳng thắn",
+      "category": "essential-3000",
+      "groupIndex": 3
+    },
+    {
+      "id": "essential-3000_0025",
+      "word": "confident",
+      "meaning": "tự tin",
+      "examples": ["She is a confident speaker.", "I'm confident we will succeed.", "He became more confident over time."],
+      "pronunciation": "/ˈkɒnfɪdənt/",
+      "memoryTip": "Con-fi-dent: 'con' tin (confidence) → đứa con tự tin",
+      "category": "essential-3000",
+      "groupIndex": 3
+    },
+    {
+      "id": "essential-3000_0026",
+      "word": "consider",
+      "meaning": "cân nhắc, xem xét",
+      "examples": ["Please consider my proposal.", "Have you considered all the options?", "I consider him a good friend."],
+      "pronunciation": "/kənˈsɪdər/",
+      "memoryTip": "Con-sider: 'cân' + side (bên) → cân nhắc nhiều bên",
+      "category": "essential-3000",
+      "groupIndex": 3
+    },
+    {
+      "id": "essential-3000_0027",
+      "word": "contribute",
+      "meaning": "đóng góp, góp phần",
+      "examples": ["Everyone should contribute to the team.", "She contributed $100 to charity.", "Technology contributes to economic growth."],
+      "pronunciation": "/kənˈtrɪbjuːt/",
+      "memoryTip": "Con-tri-bute: 'con' tri (trí) thức đóng góp cho đời",
+      "category": "essential-3000",
+      "groupIndex": 3
+    },
+    {
+      "id": "essential-3000_0028",
+      "word": "convince",
+      "meaning": "thuyết phục",
+      "examples": ["I tried to convince her to stay.", "He convinced me to buy the car.", "It's hard to convince people to change."],
+      "pronunciation": "/kənˈvɪns/",
+      "memoryTip": "Con-vince: 'con' win (thắng) → thắng bằng lời → thuyết phục",
+      "category": "essential-3000",
+      "groupIndex": 3
+    },
+    {
+      "id": "essential-3000_0029",
+      "word": "create",
+      "meaning": "tạo ra, sáng tạo",
+      "examples": ["She created a beautiful painting.", "We need to create new opportunities.", "The artist creates with passion."],
+      "pronunciation": "/kriˈeɪt/",
+      "memoryTip": "Cre-ate: 'cờ-rây' → kẻ vạch tạo ra hình mới",
+      "category": "essential-3000",
+      "groupIndex": 3
+    },
+    {
+      "id": "essential-3000_0030",
+      "word": "decision",
+      "meaning": "quyết định",
+      "examples": ["It was a difficult decision.", "She made the right decision.", "The final decision rests with the manager."],
+      "pronunciation": "/dɪˈsɪʒən/",
+      "memoryTip": "De-ci-sion: 'đi xi' (đi rồi) → đã quyết định đi rồi!",
+      "category": "essential-3000",
+      "groupIndex": 3
+    },
+    {
+      "id": "essential-3000_0031",
+      "word": "deliver",
+      "meaning": "giao hàng, truyền đạt",
+      "examples": ["The package was delivered yesterday.", "She delivered an excellent speech.", "We deliver to your door."],
+      "pronunciation": "/dɪˈlɪvər/",
+      "memoryTip": "De-liver: 'đi li-vơ' → đi giao hàng delivery",
+      "category": "essential-3000",
+      "groupIndex": 4
+    },
+    {
+      "id": "essential-3000_0032",
+      "word": "demand",
+      "meaning": "yêu cầu, nhu cầu",
+      "examples": ["There is high demand for this product.", "Workers demanded higher wages.", "Supply must meet demand."],
+      "pronunciation": "/dɪˈmænd/",
+      "memoryTip": "De-mand: 'đi mần' (đi làm) → yêu cầu đi làm ngay",
+      "category": "essential-3000",
+      "groupIndex": 4
+    },
+    {
+      "id": "essential-3000_0033",
+      "word": "depend",
+      "meaning": "phụ thuộc, dựa vào",
+      "examples": ["It depends on the weather.", "You can depend on me.", "Children depend on their parents."],
+      "pronunciation": "/dɪˈpɛnd/",
+      "memoryTip": "De-pend: 'đi phen' này → phụ thuộc vào phen này",
+      "category": "essential-3000",
+      "groupIndex": 4
+    },
+    {
+      "id": "essential-3000_0034",
+      "word": "describe",
+      "meaning": "mô tả, miêu tả",
+      "examples": ["Can you describe what happened?", "She described the suspect to the police.", "Words cannot describe my feelings."],
+      "pronunciation": "/dɪˈskraɪb/",
+      "memoryTip": "De-scribe: 'đi xờ-crai' → viết ra (scribe) để mô tả",
+      "category": "essential-3000",
+      "groupIndex": 4
+    },
+    {
+      "id": "essential-3000_0035",
+      "word": "develop",
+      "meaning": "phát triển, xây dựng",
+      "examples": ["We need to develop new skills.", "The city has developed rapidly.", "Scientists are developing a vaccine."],
+      "pronunciation": "/dɪˈvɛləp/",
+      "memoryTip": "De-velop: 'đi vẹo' rồi sẽ phát triển thẳng lại",
+      "category": "essential-3000",
+      "groupIndex": 4
+    },
+    {
+      "id": "essential-3000_0036",
+      "word": "discover",
+      "meaning": "khám phá, phát hiện",
+      "examples": ["Columbus discovered America.", "She discovered a hidden talent.", "Scientists discovered a new species."],
+      "pronunciation": "/dɪˈskʌvər/",
+      "memoryTip": "Dis-cover: bỏ 'cover' (vỏ bọc) ra → khám phá bên trong",
+      "category": "essential-3000",
+      "groupIndex": 4
+    },
+    {
+      "id": "essential-3000_0037",
+      "word": "economy",
+      "meaning": "nền kinh tế",
+      "examples": ["The economy is growing.", "We need to improve the economy.", "The global economy faces challenges."],
+      "pronunciation": "/ɪˈkɒnəmi/",
+      "memoryTip": "E-cono-my: 'economy class' vé máy bay giá rẻ → liên quan kinh tế",
+      "category": "essential-3000",
+      "groupIndex": 4
+    },
+    {
+      "id": "essential-3000_0038",
+      "word": "education",
+      "meaning": "giáo dục",
+      "examples": ["Education is very important.", "She received a good education.", "The education system needs reform."],
+      "pronunciation": "/ˌɛdʒuˈkeɪʃən/",
+      "memoryTip": "Edu-cation: 'edục' → giáo dục (gần giống nhau!)",
+      "category": "essential-3000",
+      "groupIndex": 4
+    },
+    {
+      "id": "essential-3000_0039",
+      "word": "environment",
+      "meaning": "môi trường",
+      "examples": ["We must protect the environment.", "The work environment is friendly.", "Children learn from their environment."],
+      "pronunciation": "/ɪnˈvaɪrənmənt/",
+      "memoryTip": "En-viron-ment: 'in vòng' → trong vòng xung quanh = môi trường",
+      "category": "essential-3000",
+      "groupIndex": 4
+    },
+    {
+      "id": "essential-3000_0040",
+      "word": "establish",
+      "meaning": "thành lập, thiết lập",
+      "examples": ["The company was established in 1990.", "We need to establish clear rules.", "She established herself as an expert."],
+      "pronunciation": "/ɪˈstæblɪʃ/",
+      "memoryTip": "Es-tab-lish: 'ét' + 'stable' (ổn định) → lập nên thứ ổn định",
+      "category": "essential-3000",
+      "groupIndex": 4
+    },
+    {
+      "id": "essential-3000_0041",
+      "word": "experience",
+      "meaning": "kinh nghiệm, trải nghiệm",
+      "examples": ["She has ten years of experience.", "It was a wonderful experience.", "Learn from your experiences."],
+      "pronunciation": "/ɪkˈspɪriəns/",
+      "memoryTip": "Ex-peri-ence: 'ích' + 'experience' → kinh nghiệm rất 'ích' lợi",
+      "category": "essential-3000",
+      "groupIndex": 5
+    },
+    {
+      "id": "essential-3000_0042",
+      "word": "explain",
+      "meaning": "giải thích",
+      "examples": ["Can you explain this to me?", "She explained the rules clearly.", "Let me explain what happened."],
+      "pronunciation": "/ɪkˈspleɪn/",
+      "memoryTip": "Ex-plain: nói 'plain' (rõ ràng) ra → giải thích rõ",
+      "category": "essential-3000",
+      "groupIndex": 5
+    },
+    {
+      "id": "essential-3000_0043",
+      "word": "improve",
+      "meaning": "cải thiện, nâng cao",
+      "examples": ["I want to improve my English.", "The situation is improving.", "We need to improve quality."],
+      "pronunciation": "/ɪmˈpruːv/",
+      "memoryTip": "Im-prove: 'im' + prove (chứng minh) → chứng minh mình tốt hơn → cải thiện",
+      "category": "essential-3000",
+      "groupIndex": 5
+    },
+    {
+      "id": "essential-3000_0044",
+      "word": "include",
+      "meaning": "bao gồm",
+      "examples": ["The price includes breakfast.", "Please include your phone number.", "The team includes five members."],
+      "pronunciation": "/ɪnˈkluːd/",
+      "memoryTip": "In-clude: 'in' (trong) + close (đóng) → đóng vào trong → bao gồm",
+      "category": "essential-3000",
+      "groupIndex": 5
+    },
+    {
+      "id": "essential-3000_0045",
+      "word": "increase",
+      "meaning": "tăng, tăng lên",
+      "examples": ["Prices have increased by 10%.", "We need to increase production.", "The population is increasing rapidly."],
+      "pronunciation": "/ɪnˈkriːs/",
+      "memoryTip": "In-crease: 'in' (vào) + crease (nếp gấp) → thêm nếp gấp → tăng thêm",
+      "category": "essential-3000",
+      "groupIndex": 5
+    },
+    {
+      "id": "essential-3000_0046",
+      "word": "influence",
+      "meaning": "ảnh hưởng, tác động",
+      "examples": ["Parents have a big influence on children.", "Music influences my mood.", "She is a positive influence."],
+      "pronunciation": "/ˈɪnfluəns/",
+      "memoryTip": "In-flu-ence: 'in' dấu vân tay → để lại ảnh hưởng",
+      "category": "essential-3000",
+      "groupIndex": 5
+    },
+    {
+      "id": "essential-3000_0047",
+      "word": "introduce",
+      "meaning": "giới thiệu",
+      "examples": ["Let me introduce myself.", "She introduced me to her parents.", "The company introduced a new product."],
+      "pronunciation": "/ˌɪntrəˈdjuːs/",
+      "memoryTip": "Intro-duce: 'intro' (mở đầu) + dẫn vào → giới thiệu",
+      "category": "essential-3000",
+      "groupIndex": 5
+    },
+    {
+      "id": "essential-3000_0048",
+      "word": "invest",
+      "meaning": "đầu tư",
+      "examples": ["She invested in real estate.", "You should invest in your education.", "The company invested millions in research."],
+      "pronunciation": "/ɪnˈvɛst/",
+      "memoryTip": "In-vest: 'in' + vest (áo vest) → mặc vest đi đầu tư",
+      "category": "essential-3000",
+      "groupIndex": 5
+    },
+    {
+      "id": "essential-3000_0049",
+      "word": "knowledge",
+      "meaning": "kiến thức, sự hiểu biết",
+      "examples": ["Knowledge is power.", "She has a lot of knowledge about history.", "I gained useful knowledge from the course."],
+      "pronunciation": "/ˈnɒlɪdʒ/",
+      "memoryTip": "Know-ledge: 'know' (biết) + ledge (bờ) → đứng trên bờ hiểu biết",
+      "category": "essential-3000",
+      "groupIndex": 5
+    },
+    {
+      "id": "essential-3000_0050",
+      "word": "maintain",
+      "meaning": "duy trì, bảo trì",
+      "examples": ["We need to maintain high standards.", "She maintains a healthy lifestyle.", "The building is well maintained."],
+      "pronunciation": "/meɪnˈteɪn/",
+      "memoryTip": "Main-tain: 'main' (chính) + tain (giữ) → giữ cái chính → duy trì",
+      "category": "essential-3000",
+      "groupIndex": 5
+    }
+  ]
+}

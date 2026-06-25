@@ -1,0 +1,510 @@
+{
+  "metadata": {
+    "source": "Tong-hop-1000-tu-vung-tieng-anh-A1-A2.pdf",
+    "generatedAt": "2024-01-01",
+    "totalItems": 50,
+    "categories": ["a1-a2"]
+  },
+  "items": [
+    {
+      "id": "a1-a2_0001",
+      "word": "hello",
+      "meaning": "xin chào",
+      "examples": ["Hello, how are you?", "She said hello to everyone.", "Hello, my name is John."],
+      "pronunciation": "/həˈloʊ/",
+      "memoryTip": "Nghe giống 'hê-lâu', nhớ: hê, lâu rồi không gặp!",
+      "category": "a1-a2",
+      "groupIndex": 1
+    },
+    {
+      "id": "a1-a2_0002",
+      "word": "goodbye",
+      "meaning": "tạm biệt",
+      "examples": ["Goodbye, see you tomorrow!", "He waved goodbye to his friends.", "It's time to say goodbye."],
+      "pronunciation": "/ɡʊdˈbaɪ/",
+      "memoryTip": "Good (tốt) + bye (đi) → chúc tốt đẹp khi chia tay → tạm biệt",
+      "category": "a1-a2",
+      "groupIndex": 1
+    },
+    {
+      "id": "a1-a2_0003",
+      "word": "thank",
+      "meaning": "cảm ơn",
+      "examples": ["Thank you very much!", "I want to thank my teacher.", "Thanks for your help."],
+      "pronunciation": "/θæŋk/",
+      "memoryTip": "Đọc 'theng-kờ', nhớ: 'thèm' được giúp nên 'cảm ơn'",
+      "category": "a1-a2",
+      "groupIndex": 1
+    },
+    {
+      "id": "a1-a2_0004",
+      "word": "please",
+      "meaning": "làm ơn, xin vui lòng",
+      "examples": ["Please sit down.", "Can I have some water, please?", "Please help me with this."],
+      "pronunciation": "/pliːz/",
+      "memoryTip": "Đọc 'pli-zờ', nhớ: 'play' nhưng lịch sự hơn → xin vui lòng",
+      "category": "a1-a2",
+      "groupIndex": 1
+    },
+    {
+      "id": "a1-a2_0005",
+      "word": "sorry",
+      "meaning": "xin lỗi",
+      "examples": ["I'm sorry for being late.", "Sorry, I didn't hear you.", "She said sorry to him."],
+      "pronunciation": "/ˈsɒri/",
+      "memoryTip": "Đọc 'so-ri', nhớ: 'sờ' phải người ta rồi phải xin lỗi",
+      "category": "a1-a2",
+      "groupIndex": 1
+    },
+    {
+      "id": "a1-a2_0006",
+      "word": "water",
+      "meaning": "nước",
+      "examples": ["Can I have a glass of water?", "The water is very cold.", "Plants need water to grow."],
+      "pronunciation": "/ˈwɔːtər/",
+      "memoryTip": "Đọc 'uo-tờ', nhớ: 'uống tờ' giấy → không, uống nước mới đúng!",
+      "category": "a1-a2",
+      "groupIndex": 1
+    },
+    {
+      "id": "a1-a2_0007",
+      "word": "food",
+      "meaning": "thức ăn, đồ ăn",
+      "examples": ["The food here is delicious.", "We need to buy some food.", "What is your favorite food?"],
+      "pronunciation": "/fuːd/",
+      "memoryTip": "Đọc 'phu-đờ', nhớ: phụ bếp lo 'đồ ăn'",
+      "category": "a1-a2",
+      "groupIndex": 1
+    },
+    {
+      "id": "a1-a2_0008",
+      "word": "house",
+      "meaning": "ngôi nhà",
+      "examples": ["This is my house.", "They live in a big house.", "The house has three bedrooms."],
+      "pronunciation": "/haʊs/",
+      "memoryTip": "Đọc 'hao-sờ', nhớ: 'hao' tiền mua nhà quá!",
+      "category": "a1-a2",
+      "groupIndex": 1
+    },
+    {
+      "id": "a1-a2_0009",
+      "word": "family",
+      "meaning": "gia đình",
+      "examples": ["I love my family.", "Her family is very big.", "Family is the most important thing."],
+      "pronunciation": "/ˈfæməli/",
+      "memoryTip": "Father And Mother I Love You → FAMILY",
+      "category": "a1-a2",
+      "groupIndex": 1
+    },
+    {
+      "id": "a1-a2_0010",
+      "word": "friend",
+      "meaning": "bạn bè",
+      "examples": ["She is my best friend.", "I made a new friend today.", "Friends help each other."],
+      "pronunciation": "/frend/",
+      "memoryTip": "Đọc 'phrend', nhớ: 'phờ-rên' → bạn bè cùng 'rèn' luyện",
+      "category": "a1-a2",
+      "groupIndex": 1
+    },
+    {
+      "id": "a1-a2_0011",
+      "word": "school",
+      "meaning": "trường học",
+      "examples": ["I go to school every day.", "My school is near my house.", "School starts at 7 AM."],
+      "pronunciation": "/skuːl/",
+      "memoryTip": "Đọc 'xku-lờ', nhớ: 'sờ' cái chuông trường → đi học thôi!",
+      "category": "a1-a2",
+      "groupIndex": 2
+    },
+    {
+      "id": "a1-a2_0012",
+      "word": "book",
+      "meaning": "quyển sách",
+      "examples": ["I am reading a book.", "This book is very interesting.", "Please open your book."],
+      "pronunciation": "/bʊk/",
+      "memoryTip": "Đọc 'bụk', nhớ: 'bục' giảng luôn có sách",
+      "category": "a1-a2",
+      "groupIndex": 2
+    },
+    {
+      "id": "a1-a2_0013",
+      "word": "happy",
+      "meaning": "vui vẻ, hạnh phúc",
+      "examples": ["I am very happy today.", "She looks happy.", "Happy birthday to you!"],
+      "pronunciation": "/ˈhæpi/",
+      "memoryTip": "Đọc 'hep-pi', nhớ: 'hấp' dẫn thì vui vẻ",
+      "category": "a1-a2",
+      "groupIndex": 2
+    },
+    {
+      "id": "a1-a2_0014",
+      "word": "sad",
+      "meaning": "buồn",
+      "examples": ["Don't be sad.", "The movie made me sad.", "He looks sad today."],
+      "pronunciation": "/sæd/",
+      "memoryTip": "Đọc 'xed', nhớ: ngắn và buồn như tiếng thở dài",
+      "category": "a1-a2",
+      "groupIndex": 2
+    },
+    {
+      "id": "a1-a2_0015",
+      "word": "big",
+      "meaning": "to, lớn",
+      "examples": ["The elephant is very big.", "We live in a big city.", "That is a big problem."],
+      "pronunciation": "/bɪɡ/",
+      "memoryTip": "Đọc 'big', nhớ: chữ B rất to tròn → big = to",
+      "category": "a1-a2",
+      "groupIndex": 2
+    },
+    {
+      "id": "a1-a2_0016",
+      "word": "small",
+      "meaning": "nhỏ, bé",
+      "examples": ["The mouse is very small.", "I want a small coffee.", "She has small hands."],
+      "pronunciation": "/smɔːl/",
+      "memoryTip": "Đọc 'xmo-lờ', nhớ: 's' nhỏ đứng trước → small = nhỏ",
+      "category": "a1-a2",
+      "groupIndex": 2
+    },
+    {
+      "id": "a1-a2_0017",
+      "word": "eat",
+      "meaning": "ăn",
+      "examples": ["Let's eat lunch together.", "I eat breakfast at 7 AM.", "What do you want to eat?"],
+      "pronunciation": "/iːt/",
+      "memoryTip": "Đọc 'ít', nhớ: ăn 'ít' thôi cho khỏe!",
+      "category": "a1-a2",
+      "groupIndex": 2
+    },
+    {
+      "id": "a1-a2_0018",
+      "word": "drink",
+      "meaning": "uống",
+      "examples": ["I drink water every morning.", "Would you like something to drink?", "Don't drink too much coffee."],
+      "pronunciation": "/drɪŋk/",
+      "memoryTip": "Đọc 'đrinh-kờ', nhớ: 'drink' giống 'dìm' vào nước → uống",
+      "category": "a1-a2",
+      "groupIndex": 2
+    },
+    {
+      "id": "a1-a2_0019",
+      "word": "sleep",
+      "meaning": "ngủ",
+      "examples": ["I sleep at 10 PM.", "The baby is sleeping.", "Did you sleep well last night?"],
+      "pronunciation": "/sliːp/",
+      "memoryTip": "Đọc 'xlip', nhớ: 'slip' trượt vào giấc ngủ",
+      "category": "a1-a2",
+      "groupIndex": 2
+    },
+    {
+      "id": "a1-a2_0020",
+      "word": "work",
+      "meaning": "làm việc, công việc",
+      "examples": ["I work from 9 to 5.", "She works at a hospital.", "Good work everyone!"],
+      "pronunciation": "/wɜːrk/",
+      "memoryTip": "Đọc 'uơ-kờ', nhớ: 'ước' gì không phải đi làm!",
+      "category": "a1-a2",
+      "groupIndex": 2
+    },
+    {
+      "id": "a1-a2_0021",
+      "word": "run",
+      "meaning": "chạy",
+      "examples": ["He can run very fast.", "I run every morning.", "Don't run in the hallway."],
+      "pronunciation": "/rʌn/",
+      "memoryTip": "Đọc 'rân', nhớ: 'rần rần' chạy nhanh",
+      "category": "a1-a2",
+      "groupIndex": 3
+    },
+    {
+      "id": "a1-a2_0022",
+      "word": "walk",
+      "meaning": "đi bộ",
+      "examples": ["Let's walk to the park.", "She walks to school.", "I enjoy walking in the morning."],
+      "pronunciation": "/wɔːk/",
+      "memoryTip": "Đọc 'uok', nhớ: 'walk' nghe như bước chân 'bộp bộp'",
+      "category": "a1-a2",
+      "groupIndex": 3
+    },
+    {
+      "id": "a1-a2_0023",
+      "word": "read",
+      "meaning": "đọc",
+      "examples": ["I like to read books.", "Can you read this for me?", "She reads every night before bed."],
+      "pronunciation": "/riːd/",
+      "memoryTip": "Đọc 'rit', nhớ: 'rít' lên khi đọc sách hay",
+      "category": "a1-a2",
+      "groupIndex": 3
+    },
+    {
+      "id": "a1-a2_0024",
+      "word": "write",
+      "meaning": "viết",
+      "examples": ["Please write your name here.", "She writes in her diary.", "I will write you a letter."],
+      "pronunciation": "/raɪt/",
+      "memoryTip": "Đọc 'rai-tờ', nhớ: 'right' viết bằng tay phải",
+      "category": "a1-a2",
+      "groupIndex": 3
+    },
+    {
+      "id": "a1-a2_0025",
+      "word": "listen",
+      "meaning": "nghe, lắng nghe",
+      "examples": ["Please listen to me.", "I like to listen to music.", "Listen carefully to the teacher."],
+      "pronunciation": "/ˈlɪsən/",
+      "memoryTip": "Đọc 'li-xần', nhớ: lí nhí nên phải lắng nghe",
+      "category": "a1-a2",
+      "groupIndex": 3
+    },
+    {
+      "id": "a1-a2_0026",
+      "word": "speak",
+      "meaning": "nói, phát biểu",
+      "examples": ["Can you speak English?", "Please speak louder.", "He speaks three languages."],
+      "pronunciation": "/spiːk/",
+      "memoryTip": "Đọc 'xpik', nhớ: speaker = loa → nói to",
+      "category": "a1-a2",
+      "groupIndex": 3
+    },
+    {
+      "id": "a1-a2_0027",
+      "word": "morning",
+      "meaning": "buổi sáng",
+      "examples": ["Good morning!", "I wake up early in the morning.", "The morning air is fresh."],
+      "pronunciation": "/ˈmɔːrnɪŋ/",
+      "memoryTip": "Đọc 'mo-ninh', nhớ: mỗi buổi sáng nói 'morning'",
+      "category": "a1-a2",
+      "groupIndex": 3
+    },
+    {
+      "id": "a1-a2_0028",
+      "word": "night",
+      "meaning": "đêm, buổi tối",
+      "examples": ["Good night!", "The stars are beautiful at night.", "I study at night."],
+      "pronunciation": "/naɪt/",
+      "memoryTip": "Đọc 'nai-tờ', nhớ: 'nai' ngủ trong đêm tối",
+      "category": "a1-a2",
+      "groupIndex": 3
+    },
+    {
+      "id": "a1-a2_0029",
+      "word": "today",
+      "meaning": "hôm nay",
+      "examples": ["What day is today?", "I am busy today.", "Today is a beautiful day."],
+      "pronunciation": "/təˈdeɪ/",
+      "memoryTip": "To (đến) + day (ngày) → đến ngày → hôm nay",
+      "category": "a1-a2",
+      "groupIndex": 3
+    },
+    {
+      "id": "a1-a2_0030",
+      "word": "tomorrow",
+      "meaning": "ngày mai",
+      "examples": ["See you tomorrow!", "Tomorrow is Monday.", "I will start tomorrow."],
+      "pronunciation": "/təˈmɒroʊ/",
+      "memoryTip": "Đọc 'tờ-mo-râu', nhớ: 'to morrow' = đến ngày mai",
+      "category": "a1-a2",
+      "groupIndex": 3
+    },
+    {
+      "id": "a1-a2_0031",
+      "word": "beautiful",
+      "meaning": "đẹp, xinh đẹp",
+      "examples": ["What a beautiful flower!", "She is very beautiful.", "The sunset is beautiful."],
+      "pronunciation": "/ˈbjuːtɪfəl/",
+      "memoryTip": "Đọc 'biu-ti-phồ', nhớ: 'beauty' + ful = đầy vẻ đẹp",
+      "category": "a1-a2",
+      "groupIndex": 4
+    },
+    {
+      "id": "a1-a2_0032",
+      "word": "good",
+      "meaning": "tốt, giỏi",
+      "examples": ["You did a good job!", "The food is very good.", "She is a good student."],
+      "pronunciation": "/ɡʊd/",
+      "memoryTip": "Đọc 'gút', nhớ: 'gút' lại vấn đề tốt đẹp",
+      "category": "a1-a2",
+      "groupIndex": 4
+    },
+    {
+      "id": "a1-a2_0033",
+      "word": "bad",
+      "meaning": "xấu, tệ",
+      "examples": ["That's too bad.", "He is not a bad person.", "I had a bad day."],
+      "pronunciation": "/bæd/",
+      "memoryTip": "Đọc 'bed', nhớ: đối lập với 'good' → xấu, tệ",
+      "category": "a1-a2",
+      "groupIndex": 4
+    },
+    {
+      "id": "a1-a2_0034",
+      "word": "hot",
+      "meaning": "nóng",
+      "examples": ["The weather is very hot today.", "Be careful, the soup is hot.", "I like hot coffee."],
+      "pronunciation": "/hɒt/",
+      "memoryTip": "Đọc 'hot', nhớ: 'hốt hoảng' vì nóng quá!",
+      "category": "a1-a2",
+      "groupIndex": 4
+    },
+    {
+      "id": "a1-a2_0035",
+      "word": "cold",
+      "meaning": "lạnh",
+      "examples": ["It's very cold outside.", "I need a cold drink.", "She caught a cold."],
+      "pronunciation": "/koʊld/",
+      "memoryTip": "Đọc 'côn-đờ', nhớ: 'cô đơn' lạnh lẽo",
+      "category": "a1-a2",
+      "groupIndex": 4
+    },
+    {
+      "id": "a1-a2_0036",
+      "word": "new",
+      "meaning": "mới",
+      "examples": ["I bought a new phone.", "Happy New Year!", "Is this your new car?"],
+      "pronunciation": "/njuː/",
+      "memoryTip": "Đọc 'niu', nhớ: 'news' = tin mới → new = mới",
+      "category": "a1-a2",
+      "groupIndex": 4
+    },
+    {
+      "id": "a1-a2_0037",
+      "word": "old",
+      "meaning": "cũ, già",
+      "examples": ["This is an old building.", "How old are you?", "My grandfather is very old."],
+      "pronunciation": "/oʊld/",
+      "memoryTip": "Đọc 'ôn-đờ', nhớ: 'ông' già → old = già",
+      "category": "a1-a2",
+      "groupIndex": 4
+    },
+    {
+      "id": "a1-a2_0038",
+      "word": "fast",
+      "meaning": "nhanh",
+      "examples": ["The car is very fast.", "Don't drive too fast.", "She is a fast runner."],
+      "pronunciation": "/fæst/",
+      "memoryTip": "Đọc 'phast', nhớ: 'phát' một cái là chạy nhanh",
+      "category": "a1-a2",
+      "groupIndex": 4
+    },
+    {
+      "id": "a1-a2_0039",
+      "word": "slow",
+      "meaning": "chậm",
+      "examples": ["The turtle is very slow.", "Please speak more slowly.", "Traffic is slow today."],
+      "pronunciation": "/sloʊ/",
+      "memoryTip": "Đọc 'xlâu', nhớ: 'lâu' mới tới → chậm",
+      "category": "a1-a2",
+      "groupIndex": 4
+    },
+    {
+      "id": "a1-a2_0040",
+      "word": "money",
+      "meaning": "tiền",
+      "examples": ["I don't have enough money.", "Time is money.", "She saves money every month."],
+      "pronunciation": "/ˈmʌni/",
+      "memoryTip": "Đọc 'mâ-ni', nhớ: 'mắn' là sẽ có nhiều tiền",
+      "category": "a1-a2",
+      "groupIndex": 4
+    },
+    {
+      "id": "a1-a2_0041",
+      "word": "time",
+      "meaning": "thời gian, lần",
+      "examples": ["What time is it?", "I don't have time.", "This is the first time I'm here."],
+      "pronunciation": "/taɪm/",
+      "memoryTip": "Đọc 'tai-mờ', nhớ: 'time' giống đồng hồ kêu 'tích tắc'",
+      "category": "a1-a2",
+      "groupIndex": 5
+    },
+    {
+      "id": "a1-a2_0042",
+      "word": "love",
+      "meaning": "yêu, tình yêu",
+      "examples": ["I love you.", "She loves her children.", "Love is beautiful."],
+      "pronunciation": "/lʌv/",
+      "memoryTip": "Đọc 'lâv', nhớ: ai cũng biết chữ LOVE = yêu",
+      "category": "a1-a2",
+      "groupIndex": 5
+    },
+    {
+      "id": "a1-a2_0043",
+      "word": "like",
+      "meaning": "thích, giống",
+      "examples": ["I like chocolate.", "Do you like music?", "She looks like her mother."],
+      "pronunciation": "/laɪk/",
+      "memoryTip": "Đọc 'lai-kờ', nhớ: bấm 'like' trên Facebook = thích",
+      "category": "a1-a2",
+      "groupIndex": 5
+    },
+    {
+      "id": "a1-a2_0044",
+      "word": "want",
+      "meaning": "muốn",
+      "examples": ["I want to go home.", "What do you want?", "She wants a new dress."],
+      "pronunciation": "/wɒnt/",
+      "memoryTip": "Đọc 'uon-tờ', nhớ: 'want' giống 'muốn' khi nói nhanh",
+      "category": "a1-a2",
+      "groupIndex": 5
+    },
+    {
+      "id": "a1-a2_0045",
+      "word": "need",
+      "meaning": "cần",
+      "examples": ["I need your help.", "We need more time.", "Do you need anything?"],
+      "pronunciation": "/niːd/",
+      "memoryTip": "Đọc 'ni-đờ', nhớ: 'nít' con cần mẹ",
+      "category": "a1-a2",
+      "groupIndex": 5
+    },
+    {
+      "id": "a1-a2_0046",
+      "word": "know",
+      "meaning": "biết, hiểu",
+      "examples": ["I know the answer.", "Do you know her?", "I don't know what to do."],
+      "pronunciation": "/noʊ/",
+      "memoryTip": "Đọc 'nâu', nhớ: 'no' âm giống 'know' nhưng nghĩa khác → cần biết!",
+      "category": "a1-a2",
+      "groupIndex": 5
+    },
+    {
+      "id": "a1-a2_0047",
+      "word": "think",
+      "meaning": "nghĩ, suy nghĩ",
+      "examples": ["I think you are right.", "Let me think about it.", "What do you think?"],
+      "pronunciation": "/θɪŋk/",
+      "memoryTip": "Đọc 'thinh-kờ', nhớ: 'thinh' lặng để suy nghĩ",
+      "category": "a1-a2",
+      "groupIndex": 5
+    },
+    {
+      "id": "a1-a2_0048",
+      "word": "come",
+      "meaning": "đến, tới",
+      "examples": ["Come here, please.", "She comes from Vietnam.", "When will you come back?"],
+      "pronunciation": "/kʌm/",
+      "memoryTip": "Đọc 'câm', nhớ: 'cầm' tay kéo đến → come = đến",
+      "category": "a1-a2",
+      "groupIndex": 5
+    },
+    {
+      "id": "a1-a2_0049",
+      "word": "go",
+      "meaning": "đi",
+      "examples": ["Let's go to the park.", "I go to work by bus.", "Where do you want to go?"],
+      "pronunciation": "/ɡoʊ/",
+      "memoryTip": "Đọc 'gâu', nhớ: 'go' ngắn gọn như hành động đi",
+      "category": "a1-a2",
+      "groupIndex": 5
+    },
+    {
+      "id": "a1-a2_0050",
+      "word": "see",
+      "meaning": "nhìn thấy, gặp",
+      "examples": ["I can see the mountain.", "Nice to see you!", "Did you see that movie?"],
+      "pronunciation": "/siː/",
+      "memoryTip": "Đọc 'xi', nhớ: 'see' ngắn như liếc mắt nhìn",
+      "category": "a1-a2",
+      "groupIndex": 5
+    }
+  ]
+}

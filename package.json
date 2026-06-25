@@ -1,0 +1,23 @@
+{
+  "name": "english-vocabulary-app",
+  "version": "1.0.0",
+  "description": "Browser-based English vocabulary learning app with flashcards, quizzes, and spaced repetition",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "fast-check": "^3.22.0",
+    "jsdom": "^25.0.1",
+    "vitest": "^2.1.8"
+  },
+  "keywords": [
+    "vocabulary",
+    "english",
+    "learning",
+    "flashcards",
+    "spaced-repetition"
+  ],
+  "license": "MIT"
+}

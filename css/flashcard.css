@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Flashcard - 3D Flip Animation & Card Styling
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Card Container with Perspective
+   -------------------------------------------------------------------------- */
+.flashcard {
+  width: 100%;
+  max-width: 420px;
+  height: 320px;
+  perspective: 1200px;
+  cursor: pointer;
+  position: relative;
+  border-radius: var(--radius-xl);
+  transition: transform var(--transition-fast);
+}
+
+.flashcard:hover {
+  transform: scale(1.01);
+}
+
+.flashcard:focus-visible {
+  outline: 3px solid var(--border-focus);
+  outline-offset: 4px;
+  border-radius: var(--radius-xl);
+}
+
+/* --------------------------------------------------------------------------
+   Inner Card (handles the 3D rotation)
+   -------------------------------------------------------------------------- */
+.flashcard-front,
+.flashcard-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-xl);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.6s ease, box-shadow var(--transition-base);
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Front Face
+   -------------------------------------------------------------------------- */
+.flashcard-front {
+  transform: rotateY(0deg);
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-surface) 100%);
+}
+
+.flashcard.flipped .flashcard-front {
+  transform: rotateY(180deg);
+}
+
+/* --------------------------------------------------------------------------
+   Back Face
+   -------------------------------------------------------------------------- */
+.flashcard-back {
+  transform: rotateY(180deg);
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: var(--space-xl);
+  overflow-y: auto;
+}
+
+.flashcard.flipped .flashcard-back {
+  transform: rotateY(0deg);
+}
+
+/* --------------------------------------------------------------------------
+   Card Content - Front
+   -------------------------------------------------------------------------- */
+.word-display {
+  text-align: center;
+  margin-bottom: var(--space-md);
+}
+
+.word-text {
+  font-size: var(--font-4xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+.pronunciation-ipa {
+  display: inline-block;
+  font-size: var(--font-lg);
+  color: var(--text-muted);
+  font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+  margin-top: var(--space-xs);
+}
+
+.flip-hint {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  margin-top: var(--space-md);
+  opacity: 0.7;
+  animation: hintPulse 2s ease-in-out infinite;
+}
+
+@keyframes hintPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* --------------------------------------------------------------------------
+   Card Content - Back
+   -------------------------------------------------------------------------- */
+.meaning-display {
+  width: 100%;
+}
+
+.meaning-text {
+  font-size: var(--font-2xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+  line-height: 1.4;
+}
+
+.examples {
+  margin-bottom: var(--space-md);
+  width: 100%;
+}
+
+.example-label {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.examples ul {
+  list-style: disc;
+  padding-left: var(--space-lg);
+}
+
+.examples li {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xs);
+  line-height: 1.5;
+}
+
+.memory-tip {
+  font-size: var(--font-sm);
+  color: var(--color-primary);
+  font-style: italic;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-primary-light);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-primary);
+  margin-top: var(--space-sm);
+  width: 100%;
+}
