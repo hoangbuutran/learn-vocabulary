@@ -468,6 +468,63 @@ em {
   margin-bottom: 0;
 }
 
+/* Listening question card */
+.question-card-listen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.btn-replay-audio {
+  font-size: var(--font-xl);
+  font-weight: 600;
+  padding: var(--space-md) var(--space-xl);
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-replay-audio:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.listen-hint {
+  font-size: var(--font-base);
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Typed answer (listen & type) */
+.type-answer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+
+.type-input {
+  width: 100%;
+  max-width: 360px;
+  padding: var(--space-md);
+  font-size: var(--font-xl);
+  text-align: center;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.type-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
 .options-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

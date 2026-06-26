@@ -1,9 +1,11 @@
 /**
  * QuizView - Multiple choice quiz interface with type selection,
  * question display, scoring, and final results.
+ * Includes listening modes (hear the word, choose or type it).
  * Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.6
  */
 import quizEngine from '../modules/quiz-engine.js';
+import speechModule from '../modules/speech-module.js';
 
 let container = null;
 
@@ -53,15 +55,23 @@ function renderTypeSelection() {
         <p class="quiz-instruction">Chọn loại trắc nghiệm:</p>
         <div class="quiz-type-buttons">
           <button class="btn btn-primary btn-quiz-type" id="btn-word-to-meaning" aria-label="Chọn nghĩa đúng">
-            Chọn nghĩa đúng
+            📖 Chọn nghĩa đúng
           </button>
           <button class="btn btn-primary btn-quiz-type" id="btn-meaning-to-word" aria-label="Chọn từ đúng">
-            Chọn từ đúng
+            🔤 Chọn từ đúng
+          </button>
+          <button class="btn btn-primary btn-quiz-type" id="btn-listen-choose" aria-label="Nghe và chọn từ">
+            🔊 Nghe và chọn từ
+          </button>
+          <button class="btn btn-primary btn-quiz-type" id="btn-listen-type" aria-label="Nghe và gõ từ">
+            ⌨️ Nghe và gõ từ
           </button>
         </div>
         <p class="quiz-description">
           <strong>Chọn nghĩa đúng:</strong> Xem từ tiếng Anh, chọn nghĩa tiếng Việt đúng.<br>
-          <strong>Chọn từ đúng:</strong> Xem nghĩa tiếng Việt, chọn từ tiếng Anh đúng.
+          <strong>Chọn từ đúng:</strong> Xem nghĩa tiếng Việt, chọn từ tiếng Anh đúng.<br>
+          <strong>Nghe và chọn từ:</strong> Nghe phát âm, chọn từ đúng trong các lựa chọn.<br>
+          <strong>Nghe và gõ từ:</strong> Nghe phát âm, gõ lại từ bạn nghe được.
         </p>
       </div>
     </section>
@@ -69,12 +79,20 @@ function renderTypeSelection() {
 
   const wordToMeaningBtn = container.querySelector('#btn-word-to-meaning');
   const meaningToWordBtn = container.querySelector('#btn-meaning-to-word');
+  const listenChooseBtn = container.querySelector('#btn-listen-choose');
+  const listenTypeBtn = container.querySelector('#btn-listen-type');
 
   if (wordToMeaningBtn) {
     wordToMeaningBtn.addEventListener('click', () => startQuiz('word_to_meaning'));
   }
   if (meaningToWordBtn) {
     meaningToWordBtn.addEventListener('click', () => startQuiz('meaning_to_word'));
+  }
+  if (listenChooseBtn) {
+    listenChooseBtn.addEventListener('click', () => startQuiz('listen_choose'));
+  }
+  if (listenTypeBtn) {
+    listenTypeBtn.addEventListener('click', () => startQuiz('listen_type'));
   }
 }
 
@@ -94,6 +112,19 @@ function startQuiz(type) {
   selectedAnswer = null;
   currentQuestion = session.questions[0];
   renderQuestion();
+  maybeAutoPlay();
+}
+
+/**
+ * Auto-play the word audio for listening questions.
+ */
+function maybeAutoPlay() {
+  if (currentQuestion && currentQuestion.audioWord && !answered) {
+    // Small delay so the view is painted before audio starts.
+    setTimeout(() => {
+      speechModule.speak(currentQuestion.audioWord).catch(() => {});
+    }, 250);
+  }
 }
 
 /**
@@ -123,6 +154,51 @@ function renderQuestion() {
   const totalQuestions = session.questions.length;
   const correctSoFar = session.answers.filter(a => a.correct).length;
 
+  const isListening = !!currentQuestion.audioWord;
+  const isTyping = currentQuestion.type === 'listen_type';
+
+  // Question card: for listening modes, show a big replay button instead of text.
+  const questionCardHtml = isListening
+    ? `<div class="question-card question-card-listen" aria-label="Câu hỏi nghe">
+         <button class="btn btn-replay-audio" id="btn-replay-audio" aria-label="Nghe lại">
+           🔊 Nghe lại
+         </button>
+         <p class="listen-hint">${currentQuestion.prompt}</p>
+       </div>`
+    : `<div class="question-card" aria-label="Câu hỏi">
+         <p class="question-prompt">${currentQuestion.prompt}</p>
+       </div>`;
+
+  // Answer area: typed input for listen_type, otherwise option buttons.
+  let answerAreaHtml;
+  if (isTyping) {
+    answerAreaHtml = `
+      <div class="type-answer">
+        <input type="text" id="type-input" class="type-input" placeholder="Gõ từ bạn nghe được..."
+          autocomplete="off" autocapitalize="off" spellcheck="false"
+          aria-label="Gõ từ bạn nghe được" ${answered ? 'disabled' : ''}
+          value="${answered && selectedAnswer ? selectedAnswer.replace(/"/g, '&quot;') : ''}" />
+        ${!answered ? '<button class="btn btn-primary" id="btn-submit-typed" aria-label="Kiểm tra">Kiểm tra</button>' : ''}
+      </div>`;
+  } else {
+    answerAreaHtml = `
+      <div class="options-grid" role="group" aria-label="Các lựa chọn">
+        ${currentQuestion.options.map((option, idx) => {
+          let optionClass = 'btn-option';
+          if (answered) {
+            if (option === currentQuestion.correctAnswer) {
+              optionClass += ' correct';
+            } else if (option === selectedAnswer && option !== currentQuestion.correctAnswer) {
+              optionClass += ' incorrect';
+            }
+          }
+          return `<button class="btn ${optionClass}" data-option="${idx}" aria-label="Lựa chọn ${idx + 1}: ${option}" ${answered ? 'disabled' : ''}>
+            ${option}
+          </button>`;
+        }).join('')}
+      </div>`;
+  }
+
   container.innerHTML = `
     <section class="view quiz-view" aria-label="Trắc nghiệm">
       <h2>Trắc nghiệm</h2>
@@ -133,29 +209,14 @@ function renderQuestion() {
       </div>
 
       <div class="quiz-container">
-        <div class="question-card" aria-label="Câu hỏi">
-          <p class="question-prompt">${currentQuestion.prompt}</p>
-        </div>
+        ${questionCardHtml}
 
-        <div class="options-grid" role="group" aria-label="Các lựa chọn">
-          ${currentQuestion.options.map((option, idx) => {
-            let optionClass = 'btn-option';
-            if (answered) {
-              if (option === currentQuestion.correctAnswer) {
-                optionClass += ' correct';
-              } else if (option === selectedAnswer && option !== currentQuestion.correctAnswer) {
-                optionClass += ' incorrect';
-              }
-            }
-            return `<button class="btn ${optionClass}" data-option="${idx}" aria-label="Lựa chọn ${idx + 1}: ${option}" ${answered ? 'disabled' : ''}>
-              ${option}
-            </button>`;
-          }).join('')}
-        </div>
+        ${answerAreaHtml}
 
         ${answered ? `
           <div class="quiz-feedback" aria-live="polite">
             ${selectedAnswer === currentQuestion.correctAnswer
+              || (isTyping && (selectedAnswer || '').trim().toLowerCase() === currentQuestion.correctAnswer.toLowerCase())
               ? '<p class="feedback-correct">✓ Chính xác!</p>'
               : `<p class="feedback-incorrect">✗ Sai. Đáp án đúng: <strong>${currentQuestion.correctAnswer}</strong></p>`
             }
@@ -177,6 +238,16 @@ function renderQuestion() {
 function setupQuestionListeners() {
   if (!container) return;
 
+  // Replay audio button (listening questions)
+  const replayBtn = container.querySelector('#btn-replay-audio');
+  if (replayBtn) {
+    replayBtn.addEventListener('click', () => {
+      if (currentQuestion && currentQuestion.audioWord) {
+        speechModule.speak(currentQuestion.audioWord).catch(() => {});
+      }
+    });
+  }
+
   // Option buttons
   if (!answered) {
     const optionBtns = container.querySelectorAll('.btn-option');
@@ -186,6 +257,29 @@ function setupQuestionListeners() {
         handleAnswer(currentQuestion.options[idx]);
       });
     });
+  }
+
+  // Typed answer (listen_type)
+  if (!answered) {
+    const typeInput = container.querySelector('#type-input');
+    const submitBtn = container.querySelector('#btn-submit-typed');
+    const submitTyped = () => {
+      const value = typeInput ? typeInput.value.trim() : '';
+      if (!value) return;
+      handleAnswer(value);
+    };
+    if (submitBtn) {
+      submitBtn.addEventListener('click', submitTyped);
+    }
+    if (typeInput) {
+      typeInput.focus();
+      typeInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          submitTyped();
+        }
+      });
+    }
   }
 
   // Next question button
@@ -228,6 +322,7 @@ function handleNextQuestion() {
   answered = false;
   selectedAnswer = null;
   renderQuestion();
+  maybeAutoPlay();
 }
 
 /**

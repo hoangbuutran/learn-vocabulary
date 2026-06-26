@@ -1,13 +1,17 @@
 /**
  * QuizEngine - Generates quizzes and manages quiz sessions.
- * Supports 'meaning_to_word' and 'word_to_meaning' quiz types.
+ * Supports multiple quiz types:
+ *  - 'meaning_to_word': show meaning, pick the English word
+ *  - 'word_to_meaning': show word, pick the Vietnamese meaning
+ *  - 'listen_choose':   hear the word, pick it from options
+ *  - 'listen_type':     hear the word, type it
  * All user-facing messages are in Vietnamese.
  */
 import storageManager from './storage-manager.js';
 import { generateId } from '../utils/helpers.js';
 
 /**
- * @typedef {'meaning_to_word' | 'word_to_meaning'} QuizType
+ * @typedef {'meaning_to_word' | 'word_to_meaning' | 'listen_choose' | 'listen_type'} QuizType
  */
 
 /**
@@ -15,6 +19,7 @@ import { generateId } from '../utils/helpers.js';
  * @property {string} id
  * @property {QuizType} type
  * @property {string} prompt
+ * @property {string} [audioWord] - word to speak aloud (listening questions)
  * @property {string} correctAnswer
  * @property {string[]} options
  * @property {string} targetItemId
@@ -67,12 +72,12 @@ class QuizEngine {
 
   /**
    * Generate quiz questions from the vocabulary list.
-   * @param {QuizType} type - 'meaning_to_word' or 'word_to_meaning'
+   * @param {QuizType} type
    * @param {number} count - Number of questions to generate
    * @returns {QuizQuestion[]} Array of quiz questions, empty if fewer than 4 vocab items
    */
   generateQuiz(type, count) {
-    const vocabulary = storageManager.getAllVocabulary();
+    const vocabulary = storageManager.getActiveVocabulary();
 
     // Need at least 4 items to generate distractors
     if (vocabulary.length < 4) {
@@ -86,12 +91,41 @@ class QuizEngine {
     const selectedItems = this._shuffle(vocabulary).slice(0, count);
 
     return selectedItems.map(item => {
+      const correctAnswer =
+        type === 'word_to_meaning' ? item.meaning : item.word;
+
+      // Listening - type the word: no options, just hear and type.
+      if (type === 'listen_type') {
+        return {
+          id: generateId(),
+          type,
+          prompt: 'Nghe và gõ lại từ bạn nghe được',
+          audioWord: item.word,
+          correctAnswer: item.word,
+          options: [],
+          targetItemId: item.id
+        };
+      }
+
+      // Listening - choose the word: hear it, pick from English words.
+      if (type === 'listen_choose') {
+        const distractors = this.generateDistractors(item, 3);
+        const options = this._shuffle([item.word, ...distractors]);
+        return {
+          id: generateId(),
+          type,
+          prompt: 'Nghe và chọn từ đúng',
+          audioWord: item.word,
+          correctAnswer: item.word,
+          options,
+          targetItemId: item.id
+        };
+      }
+
+      // Text-based multiple choice (original behaviour).
       const distractors = this.generateDistractors(item, 3);
-      const correctAnswer = type === 'word_to_meaning' ? item.meaning : item.word;
       const options = this._shuffle([correctAnswer, ...distractors]);
-      const prompt = type === 'word_to_meaning'
-        ? item.word
-        : item.meaning;
+      const prompt = type === 'word_to_meaning' ? item.word : item.meaning;
 
       return {
         id: generateId(),
@@ -115,12 +149,13 @@ class QuizEngine {
    * @returns {string[]} Array of distractor strings
    */
   generateDistractors(correctItem, count) {
-    const vocabulary = storageManager.getAllVocabulary();
+    const vocabulary = storageManager.getActiveVocabulary();
     const others = vocabulary.filter(item => item.id !== correctItem.id);
     const shuffled = this._shuffle(others);
     const selected = shuffled.slice(0, count);
 
-    if (this._currentType === 'meaning_to_word') {
+    // These types need English-word distractors; word_to_meaning needs meanings.
+    if (this._currentType === 'meaning_to_word' || this._currentType === 'listen_choose') {
       return selected.map(item => item.word);
     }
     return selected.map(item => item.meaning);
@@ -164,7 +199,14 @@ class QuizEngine {
       throw new Error('Không tìm thấy câu hỏi.');
     }
 
-    const correct = answer === question.correctAnswer;
+    // Typed answers: compare case-insensitively, ignoring surrounding spaces.
+    let correct;
+    if (question.type === 'listen_type') {
+      const norm = (s) => (s || '').trim().toLowerCase();
+      correct = norm(answer) === norm(question.correctAnswer);
+    } else {
+      correct = answer === question.correctAnswer;
+    }
 
     this.currentSession.answers.push({
       questionId,
