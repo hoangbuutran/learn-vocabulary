@@ -588,6 +588,12 @@ em {
   margin-bottom: var(--space-md);
 }
 
+.feedback-meaning {
+  font-size: var(--font-lg);
+  color: var(--text-primary);
+  margin-bottom: var(--space-md);
+}
+
 .quiz-type-selection {
   max-width: 500px;
   margin: 0 auto;
@@ -1164,4 +1170,283 @@ em {
   color: var(--text-muted);
   margin: var(--space-xs) 0 0;
   max-width: 320px;
+}
+
+/* --------------------------------------------------------------------------
+   Match game ("Nối từ")
+   -------------------------------------------------------------------------- */
+.match-start {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.match-intro {
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-lg);
+  line-height: 1.6;
+}
+
+.btn-lg {
+  font-size: var(--font-lg);
+  padding: var(--space-md) var(--space-xl);
+}
+
+/* Top bar: title + stat chips */
+.match-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.match-stats {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.match-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px;
+  padding: var(--space-xs) var(--space-md);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.match-stat-label {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.match-stat-value {
+  font-size: var(--font-lg);
+  font-weight: 700;
+}
+
+.match-stat-value small {
+  font-size: var(--font-xs);
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.match-stat-score .match-stat-value { color: var(--color-primary); }
+.match-stat-miss .match-stat-value { color: var(--color-danger); }
+
+/* Two-zone layout: play board (left) + history (right) */
+.match-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+/* Shared panel styling so each zone reads as its own card */
+.match-panel {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+.match-panel-board {
+  min-width: 0;
+}
+
+.match-instruction {
+  text-align: center;
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.match-board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.match-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.match-column-head {
+  text-align: center;
+  font-weight: 700;
+  font-size: var(--font-sm);
+  padding: var(--space-xs) 0;
+  margin-bottom: var(--space-xs);
+  border-radius: var(--radius-sm);
+}
+
+.match-column-head-en {
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.match-column-head-vi {
+  color: var(--color-success);
+  background-color: var(--color-success-light);
+}
+
+.match-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60px;
+  padding: var(--space-md);
+  font-size: var(--font-base);
+  font-weight: 500;
+  background-color: var(--bg-card);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  word-break: break-word;
+}
+
+.match-card:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  transform: translateY(-1px);
+}
+
+.match-card.selected {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+.match-card.matched {
+  background-color: var(--color-success-light);
+  border-color: var(--color-success);
+  color: var(--color-success);
+  opacity: 0.65;
+  cursor: default;
+}
+
+.match-card.wrong {
+  background-color: var(--color-danger-light);
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+  animation: matchShake 0.4s ease;
+}
+
+@keyframes matchShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.match-footer {
+  text-align: center;
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-color);
+}
+
+/* History zone */
+.match-history {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.match-history-title {
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-md);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.match-history-count {
+  font-size: var(--font-sm);
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 999px;
+  padding: 1px 10px;
+}
+
+.match-history-empty {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.match-history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.match-history-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  font-size: var(--font-sm);
+}
+
+.match-history-audio {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-base);
+  padding: 2px 4px;
+  border-radius: var(--radius-sm);
+}
+
+.match-history-audio:hover {
+  background-color: var(--color-primary-light);
+}
+
+.match-history-word {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.match-history-sep {
+  color: var(--text-muted);
+}
+
+.match-history-meaning {
+  color: var(--text-secondary);
+}
+
+.match-complete {
+  text-align: center;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.match-complete h3 {
+  font-size: var(--font-2xl);
+  margin-bottom: var(--space-md);
+}
+
+.match-complete-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-top: var(--space-lg);
+  flex-wrap: wrap;
 }

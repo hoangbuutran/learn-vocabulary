@@ -18,7 +18,7 @@ const KEYS = {
 
 // Bump this whenever the bundled vocabulary data changes so existing users
 // automatically get the new data on next load.
-const DATA_VERSION = '2';
+const DATA_VERSION = '3';
 
 // Default application settings
 const DEFAULT_SETTINGS = {

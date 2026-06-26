@@ -101,6 +101,7 @@ class QuizEngine {
           type,
           prompt: 'Nghe và gõ lại từ bạn nghe được',
           audioWord: item.word,
+          meaning: item.meaning,
           correctAnswer: item.word,
           options: [],
           targetItemId: item.id
@@ -116,6 +117,7 @@ class QuizEngine {
           type,
           prompt: 'Nghe và chọn từ đúng',
           audioWord: item.word,
+          meaning: item.meaning,
           correctAnswer: item.word,
           options,
           targetItemId: item.id

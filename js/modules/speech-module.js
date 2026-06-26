@@ -104,12 +104,18 @@ class SpeechModule {
       return null;
     }
 
-    // 2. Online lookup (word not in the local bundle).
+    // 2. Online lookup (word not in the local bundle). Use a short timeout so
+    // a slow/unreachable API falls back to the browser voice quickly instead
+    // of making the button feel unresponsive.
     let url = null;
     try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 2500);
       const res = await fetch(
-        `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(key)}`
+        `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(key)}`,
+        { signal: controller.signal }
       );
+      clearTimeout(timer);
       if (res.ok) {
         const data = await res.json();
         const phonetics = [];

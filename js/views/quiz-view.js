@@ -220,6 +220,10 @@ function renderQuestion() {
               ? '<p class="feedback-correct">✓ Chính xác!</p>'
               : `<p class="feedback-incorrect">✗ Sai. Đáp án đúng: <strong>${currentQuestion.correctAnswer}</strong></p>`
             }
+            ${isListening && currentQuestion.meaning
+              ? `<p class="feedback-meaning"><strong>${currentQuestion.correctAnswer}</strong>: ${currentQuestion.meaning}</p>`
+              : ''
+            }
             <button class="btn btn-primary btn-next-question" id="btn-next-question" aria-label="Câu tiếp theo">
               ${questionNumber >= totalQuestions ? 'Xem kết quả' : 'Câu tiếp theo →'}
             </button>

@@ -17,6 +17,52 @@ let isFlipped = false;
 let isRecording = false;
 let lastResultHtml = '';
 
+/** LocalStorage key that keeps the current 10-word batch fixed across visits. */
+const SESSION_KEY = 'flashcard_session';
+
+/** Load a saved session { ids: string[], index: number } or null. */
+function loadSession() {
+  try {
+    const raw = localStorage.getItem(SESSION_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+/** Persist the current batch's word ids and position. */
+function saveSession() {
+  try {
+    localStorage.setItem(SESSION_KEY, JSON.stringify({
+      ids: words.map(w => w.id),
+      index: currentIndex
+    }));
+  } catch {
+    /* ignore quota errors */
+  }
+}
+
+/** Forget the current batch so a fresh one is generated next time. */
+function clearSession() {
+  try {
+    localStorage.removeItem(SESSION_KEY);
+  } catch {
+    /* ignore */
+  }
+}
+
+/**
+ * Start a fresh batch of words and persist it.
+ */
+function startNewBatch() {
+  const count = storageManager.getSettings().dailyWordCount || 10;
+  words = memorySystem.getWordsForStudy(count);
+  currentIndex = 0;
+  isFlipped = false;
+  lastResultHtml = '';
+  saveSession();
+}
+
 /**
  * Build a full default progress record so partial updates never wipe SM-2 fields.
  * @param {string} itemId
@@ -50,11 +96,27 @@ function newProgress(itemId) {
  */
 export function render(el) {
   container = el;
-  words = memorySystem.getWordsForStudy(storageManager.getSettings().dailyWordCount || 10);
-  currentIndex = 0;
-  isFlipped = false;
   isRecording = false;
   lastResultHtml = '';
+
+  // Restore the saved 10-word batch so the user keeps studying the same set
+  // until they finish it, instead of getting new words on every visit.
+  const saved = loadSession();
+  if (saved && Array.isArray(saved.ids) && saved.ids.length > 0) {
+    const all = storageManager.getAllVocabulary();
+    const byId = new Map(all.map(item => [item.id, item]));
+    words = saved.ids.map(id => byId.get(id)).filter(Boolean);
+    currentIndex = Math.min(saved.index || 0, Math.max(words.length - 1, 0));
+  } else {
+    words = [];
+  }
+
+  // No valid saved batch -> create a fresh one.
+  if (words.length === 0) {
+    startNewBatch();
+  }
+
+  isFlipped = false;
 
   if (words.length === 0) {
     renderEmpty();
@@ -306,9 +368,11 @@ function handleFlip(word) {
  * @param {object} word - Current vocabulary item
  */
 async function handleSpeak(word) {
+  // Start playback immediately so the button feels responsive.
+  speechModule.speak(word.word).catch(() => {});
+
+  // Mark as listened and refresh the card (does not block the audio above).
   try {
-    // Mark as listened immediately when the user clicks (don't depend on
-    // the speech engine resolving, which can be flaky or silent).
     let progress = storageManager.getProgress(word.id);
     if (!progress) {
       progress = newProgress(word.id);
@@ -316,10 +380,7 @@ async function handleSpeak(word) {
     progress.pronunciationListened = true;
     progress.updatedAt = new Date().toISOString();
     storageManager.saveProgress(word.id, progress);
-
-    // Re-render to update button states, then play audio
     renderCard();
-    await speechModule.speak(word.word);
   } catch (err) {
     // Graceful degradation - do nothing on error
   }

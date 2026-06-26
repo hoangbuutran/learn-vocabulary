@@ -11,6 +11,7 @@ import eventBus from './utils/event-bus.js';
 import * as dashboardView from './views/dashboard-view.js';
 import * as flashcardView from './views/flashcard-view.js';
 import * as quizView from './views/quiz-view.js';
+import * as matchView from './views/match-view.js';
 import * as importView from './views/import-view.js';
 import * as reviewView from './views/review-view.js';
 import * as settingsView from './views/settings-view.js';
@@ -21,6 +22,7 @@ const routes = {
   '#dashboard': dashboardView,
   '#flashcard': flashcardView,
   '#quiz': quizView,
+  '#match': matchView,
   '#review': reviewView,
   '#import': importView,
   '#settings': settingsView

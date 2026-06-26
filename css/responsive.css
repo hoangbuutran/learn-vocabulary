@@ -114,6 +114,43 @@
     align-items: stretch;
   }
 
+  /* Match game: history moves below the board on small screens */
+  .match-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .match-history {
+    max-height: none;
+  }
+
+  .match-topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .match-stats {
+    justify-content: space-between;
+  }
+
+  .match-stat {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .match-panel {
+    padding: var(--space-md);
+  }
+
+  .match-board {
+    gap: var(--space-sm);
+  }
+
+  .match-card {
+    min-height: 52px;
+    padding: var(--space-sm);
+    font-size: var(--font-sm);
+  }
+
   /* Settings */
   .setting-group {
     flex-direction: column;
