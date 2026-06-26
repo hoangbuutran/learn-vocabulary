@@ -9,6 +9,7 @@ import memorySystem from '../modules/memory-system.js';
 import speechModule from '../modules/speech-module.js';
 import pronunciationValidator from '../modules/pronunciation-validator.js';
 import storageManager from '../modules/storage-manager.js';
+import { renderExamples } from '../utils/helpers.js';
 
 let container = null;
 
@@ -102,12 +103,7 @@ function renderReviewCard() {
           <div class="flashcard-back">
             <div class="meaning-display">
               <h3 class="meaning-text">${word.meaning}</h3>
-              ${word.examples && word.examples.length > 0
-                ? `<div class="examples">
-                    <p class="example-label">Ví dụ:</p>
-                    <ul>${word.examples.map(ex => `<li>${ex}</li>`).join('')}</ul>
-                  </div>`
-                : ''}
+              ${renderExamples(word.examples)}
             </div>
           </div>
         </div>

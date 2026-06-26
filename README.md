@@ -1,258 +1,254 @@
-# 📚 English Vocabulary Learning App
+# 📚 Ứng dụng học từ vựng tiếng Anh (VocabLearn)
 
-Ứng dụng học từ vựng tiếng Anh với flashcard, trắc nghiệm và hệ thống lặp lại ngắt quãng (spaced repetition).
+Ứng dụng web học từ vựng tiếng Anh chạy hoàn toàn trên trình duyệt: flashcard, trắc nghiệm, nối từ, luyện nghe/nói/viết, lặp lại ngắt quãng (spaced repetition) và tra cứu phát âm IPA. Không cần backend, hoạt động offline, cài được lên điện thoại như một app (PWA).
 
-## ✨ Tính năng
-
-- **📝 Flashcard**: Học từ vựng với thẻ ghi nhớ tương tác
-- **✍️ Trắc nghiệm**: Kiểm tra kiến thức với các bài quiz đa dạng
-- **🔄 Ôn tập thông minh**: Hệ thống spaced repetition tự động
-- **🔊 Phát âm**: Giọng người bản xứ thật (Free Dictionary API), tự động dùng giọng máy khi không có
-- **📊 Theo dõi tiến độ**: Dashboard hiển thị thống kê học tập
-- **📥 Import/Export**: Nhập và xuất dữ liệu từ vựng
-- **🎨 Giao diện thân thiện**: Responsive design, hỗ trợ mobile
-- **💾 Lưu trữ offline**: Dữ liệu được lưu trong Local Storage
-- **📱 Cài như app (PWA)**: Thêm vào màn hình chính điện thoại, chạy offline
-
-## 📦 Dữ liệu từ vựng có sẵn
-
-- **Essential 3000**: 3,338 từ vựng cơ bản tiếng Anh
-- **A1-A2 Level**: 998 từ vựng trình độ sơ cấp với phiên âm IPA
-
-## 🚀 Cách chạy ứng dụng
-
-### Phương pháp 1: Chạy trực tiếp (Đơn giản nhất)
-
-1. **Mở file HTML**:
-   ```bash
-   # Mở index.html bằng trình duyệt
-   # Hoặc double-click vào file index.html
-   ```
-
-2. **Sử dụng Live Server** (Khuyến nghị):
-   - Cài đặt Live Server extension trong VS Code
-   - Click phải vào `index.html` → "Open with Live Server"
-   - Ứng dụng sẽ mở tại `http://localhost:5500`
-
-### Phương pháp 2: Sử dụng HTTP Server
-
-```bash
-# Python 3
-python -m http.server 8000
-
-# Node.js (npx)
-npx http-server -p 8000
-
-# Truy cập: http://localhost:8000
-```
-
-## 🛠️ Development
-
-### Cài đặt dependencies (chỉ cho testing)
-
-```bash
-npm install
-```
-
-### Chạy tests
-
-```bash
-# Chạy test một lần
-npm test
-
-# Chạy test ở chế độ watch
-npm run test:watch
-```
-
-### Cấu trúc thư mục
-
-```
-├── index.html              # Entry point
-├── css/                    # Styles
-│   ├── main.css           # CSS chính
-│   ├── themes.css         # Theme và variables
-│   ├── flashcard.css      # Styles cho flashcard
-│   └── responsive.css     # Mobile responsive
-├── js/                     # JavaScript modules
-│   ├── app.js             # Router và entry point
-│   ├── modules/           # Core modules
-│   ├── views/             # UI views
-│   └── utils/             # Utilities
-├── data/                   # Vocabulary data
-│   ├── vocabulary-3000.json
-│   └── vocabulary-a1-a2.json
-├── scripts/               # Build scripts
-└── tests/                 # Test suites
-```
-
-## 📋 Hướng dẫn sử dụng
-
-### 1. Trang chủ (Dashboard)
-- Xem thống kê học tập
-- Theo dõi tiến độ hàng ngày
-- Truy cập nhanh các tính năng
-
-### 2. Flashcard
-- Học từ vựng với thẻ ghi nhớ
-- Chế độ tự động lật thẻ
-- Đánh dấu mức độ nhớ từ (Dễ/Trung bình/Khó)
-
-### 3. Trắc nghiệm
-- Nhiều dạng câu hỏi đa dạng
-- Kết quả chi tiết sau mỗi bài test
-- Lưu lịch sử điểm số
-
-### 4. Ôn tập
-- Hệ thống spaced repetition thông minh
-- Ưu tiên từ cần ôn tập
-- Tùy chỉnh số lượng từ mỗi session
-
-### 5. Import/Export
-- Import từ file JSON/CSV
-- Export dữ liệu học tập
-- Backup và khôi phục tiến độ
-
-### 6. Cài đặt
-- Tùy chỉnh giao diện
-- Cài đặt âm thanh
-- Quản lý dữ liệu
-
-## 🔧 Tính năng kỹ thuật
-
-### Kiến trúc
-- **Vanilla JavaScript ES6+**: Không sử dụng framework
-- **Module System**: ES6 modules với dynamic imports
-- **Event-Driven**: Event Bus pattern cho communication
-- **MVC Architecture**: Tách biệt logic và presentation
-
-### Lưu trữ dữ liệu
-- **Local Storage**: Lưu tiến độ học tập
-- **JSON Data**: Vocabulary được lưu dưới dạng JSON
-- **Offline First**: Hoạt động không cần internet (mô hình nhận diện chỉ cần mạng lần tải đầu)
-
-### Performance
-- **Lazy Loading**: Views được load khi cần
-- **Memory Management**: Proper cleanup và garbage collection
-- **Responsive Design**: Tối ưu cho mọi thiết bị
-
-### Phát âm (Text-to-Speech)
-- **Giọng người bản xứ thật**: Audio do người bản xứ thu, nguồn [Free Dictionary API](https://dictionaryapi.dev/) (miễn phí, không cần API key)
-- **Chạy offline**: Tải sẵn audio về `assets/audio/` bằng `scripts/fetch-audio.mjs`, app phát từ file local không cần mạng
-- **Thứ tự ưu tiên**: file local (offline) → API online → giọng máy của trình duyệt
-- **Hỗ trợ giọng Anh-Mỹ & Anh-Anh**: Tự chọn audio `-us`/`-uk` theo cài đặt
-- **Cache thông minh**: Ghi nhớ URL/file audio để không tải lại
-
-### Nhận diện giọng nói (Whisper on-device)
-- **Whisper qua Transformers.js**: Chạy mô hình AI ngay trong trình duyệt (WebAssembly/WebGPU), audio không rời khỏi máy
-- **Chính xác cao với từ đơn**: Tốt hơn hẳn Web Speech API cho việc luyện phát âm từng từ
-- **Hoạt động offline**: Sau khi tải mô hình lần đầu (~40MB, model `whisper-tiny.en`) thì dùng được không cần mạng
-- **Tự dừng khi im lặng**: Phát hiện giọng nói (VAD), tự kết thúc khi bạn đọc xong
-- **Fuzzy matching**: So khớp độ tương đồng cho mọi từ, chấp nhận sai số nhỏ khi phát âm
-- **Riêng tư & miễn phí**: Không cần backend, không gửi dữ liệu lên server bên thứ ba
-
-## 📚 API Reference
-
-### Storage Manager
-```javascript
-// Lưu tiến độ học tập
-storageManager.saveProgress(wordId, difficulty, timestamp);
-
-// Lấy thống kê
-const stats = storageManager.getStats();
-```
-
-### Event Bus
-```javascript
-// Đăng ký event
-eventBus.on('word-learned', (data) => {
-  console.log('Học xong từ:', data.word);
-});
-
-// Phát event
-eventBus.emit('word-learned', { word: 'hello', difficulty: 'easy' });
-```
-
-## 🤝 Đóng góp
-
-1. Fork repository
-2. Tạo feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push branch: `git push origin feature/amazing-feature`
-5. Tạo Pull Request
-
-## 📝 Script tiện ích
-
-### Tạo dữ liệu từ PDF
-```bash
-node scripts/parse-pdf.mjs
-```
-Script này sẽ parse các file PDF trong thư mục gốc và tạo file JSON trong `data/`.
-
-### Tạo vocabulary set tùy chỉnh
-```bash
-node scripts/generate-vocabulary.js
-```
-
-### Tải audio phát âm người thật về máy (offline)
-```bash
-node scripts/fetch-audio.mjs            # giọng Anh-Mỹ (mặc định)
-node scripts/fetch-audio.mjs --accent uk # giọng Anh-Anh
-```
-Script tải audio người bản xứ (Free Dictionary API) cho toàn bộ từ vựng, lưu vào `assets/audio/` kèm `manifest.json`. Nhờ vậy app phát âm được **offline**, không phụ thuộc mạng.
-- **Resumable**: dừng giữa chừng (Ctrl+C) rồi chạy lại sẽ tiếp tục từ chỗ dở.
-- Mất khoảng 25-30 phút cho toàn bộ (~4000 từ) do giới hạn tốc độ API.
-- Từ nào không có audio người thật sẽ được đánh dấu `null` trong manifest; lúc chạy app sẽ tự fallback sang giọng máy.
-
-## 🔍 Troubleshooting
-
-### Lỗi CORS khi mở file HTML trực tiếp
-**Giải pháp**: Sử dụng HTTP server hoặc Live Server thay vì mở file trực tiếp.
-
-### Nhận diện giọng nói không hoạt động
-**Các lỗi thường gặp và giải pháp:**
-
-#### Lần đầu bấm micro chờ hơi lâu
-- **Nguyên nhân**: App đang tải mô hình Whisper (~40MB) từ CDN về máy
-- **Giải pháp**: Chờ tải xong một lần. Các lần sau trình duyệt đã cache nên rất nhanh và dùng được cả khi offline
-
-#### "Không tải được mô hình nhận diện"
-- **Nguyên nhân**: Mất mạng khi đang tải mô hình lần đầu
-- **Giải pháp**: Kiểm tra internet rồi bấm micro thử lại
-
-#### "Quyền micro bị chặn"
-- **Nguyên nhân**: Trình duyệt chưa được cấp quyền microphone
-- **Giải pháp**: Click vào icon 🔒 trên thanh địa chỉ → cho phép Microphone
-
-#### "Không tìm thấy micro"
-- **Nguyên nhân**: Chưa cắm/bật microphone
-- **Giải pháp**: Kiểm tra thiết bị thu âm
-
-#### "Cần chạy trên https hoặc localhost"
-- **Nguyên nhân**: Mở `index.html` trực tiếp bằng `file://`
-- **Giải pháp**: Mở web bằng Live Server hoặc HTTP server
-
-#### "Không nghe được gì"
-- **Giải pháp**: Đọc to, rõ ngay sau khi bấm micro; micro gần miệng (5-10cm); môi trường yên tĩnh
-
-### Không có âm thanh phát âm
-**Giải pháp**: 
-- Phát âm ưu tiên giọng người thật từ Free Dictionary API (cần internet). Một số từ hiếm có thể không có audio người thật → app tự dùng giọng máy.
-- Nếu cả hai đều im, kiểm tra trình duyệt có hỗ trợ Web Speech API (SpeechSynthesis) và máy đã cài giọng tiếng Anh chưa.
-
-### Dữ liệu bị mất
-**Giải pháp**: Sử dụng tính năng Export để backup dữ liệu thường xuyên.
-
-## 📄 License
-
-MIT License - Xem [LICENSE](LICENSE) để biết thêm chi tiết.
-
-## 🙏 Credits
-
-- Vocabulary data từ Essential 3000 và A1-A2 collections
-- Icons từ Unicode Emoji
-- Spaced Repetition algorithm dựa trên nghiên cứu của Hermann Ebbinghaus
-- Nhận diện giọng nói bằng [Transformers.js](https://github.com/huggingface/transformers.js) (HuggingFace) chạy mô hình [Whisper](https://github.com/openai/whisper) của OpenAI ngay trên trình duyệt
+> Tài liệu này mô tả các chức năng **đang có** để bạn review và đề xuất bổ sung.
 
 ---
 
-**Happy Learning! 📖✨**
+## 🎯 Tổng quan
+
+- **Không cần server, không cần đăng nhập** — toàn bộ chạy client-side, dữ liệu lưu trong trình duyệt (LocalStorage).
+- **Hoạt động offline** — sau lần mở đầu tiên, app và âm thanh được cache lại nhờ Service Worker.
+- **Hai bộ từ vựng dựng sẵn** (~4.300 từ), kèm phiên âm IPA và file âm thanh phát âm.
+- **Giao diện tiếng Việt**, responsive cho cả máy tính lẫn điện thoại, có chế độ tối.
+
+---
+
+## 📦 Dữ liệu từ vựng
+
+| Bộ từ | Số lượng | Mô tả |
+|-------|----------|-------|
+| **A1–A2** | 995 từ | Từ vựng cơ bản, có loại từ + phiên âm IPA |
+| **Essential 3000** | 3.393 từ | Từ thông dụng nhất, có loại từ + phiên âm IPA |
+
+- Mỗi từ gồm: từ tiếng Anh, nghĩa tiếng Việt, loại từ (n/v/adj…), phiên âm IPA, ví dụ (nếu có).
+- Dữ liệu được trích xuất từ file Word gốc bằng script (xem mục Scripts), lưu dưới dạng JSON tĩnh.
+- Người dùng có thể **chọn học bộ nào** trong phần Cài đặt: chỉ A1–A2, chỉ 3000, hoặc tất cả.
+
+---
+
+## ✨ Các chức năng chính
+
+### 🏠 Trang chủ (Dashboard)
+- Thống kê: tổng số từ, số từ đã học, đã nhớ, chưa nhớ, phần trăm tiến độ.
+- Tiến độ học trong ngày.
+- Số từ đến hạn ôn tập hôm nay.
+- Thống kê tính theo **bộ từ đang chọn** (giúp thấy đích rõ ràng, ví dụ "đã nhớ 50/995").
+
+### 🃏 Flashcard (học từ mới)
+- Học theo **cụm cố định** (mặc định 10 từ/cụm — đổi được trong Cài đặt).
+- Cụm được **giữ nguyên** khi rời đi rồi quay lại, tắt/mở app, hay về trang chủ — chỉ đổi khi người dùng chủ động bấm "Học từ mới".
+- Lật thẻ để xem nghĩa, ví dụ, phiên âm.
+- Mỗi thẻ có các nút:
+  - **🔊 Nghe** phát âm (giọng người bản xứ / giọng máy).
+  - **🎤 Ghi âm** — kiểm tra phát âm bằng nhận diện giọng nói (tùy chọn, không bắt buộc).
+  - **✍️ Viết** — popup tập viết: gõ lại từ cho đúng; gõ sai phải sửa cho đúng; có nút nghe và gợi ý (hiện nửa từ).
+- Điều hướng **← Trước / Tiếp theo →**, nút **🔀 Đổi cụm khác** để bỏ qua cụm hiện tại lấy 10 từ mới.
+- Nút **"Đã nhớ" / "Chưa nhớ"** đưa từ vào lịch trình lặp lại ngắt quãng.
+- Sau khi hết cụm: tùy chọn **Học 10 từ mới**, **Lặp lại 10 từ này**, hoặc **🔗 Ôn bằng Nối từ** (chuyển đúng 10 từ vừa học sang game Nối từ).
+
+### ✍️ Trắc nghiệm (Quiz)
+Bốn chế độ:
+1. **Chọn nghĩa đúng** — xem từ tiếng Anh, chọn nghĩa tiếng Việt.
+2. **Chọn từ đúng** — xem nghĩa tiếng Việt, chọn từ tiếng Anh.
+3. **Nghe và chọn từ** — nghe phát âm rồi chọn từ đúng (có nút nghe lại, hiện nghĩa sau khi trả lời).
+4. **Nghe và gõ từ** — nghe phát âm rồi gõ lại từ (so khớp không phân biệt hoa/thường).
+
+Mỗi phiên 10 câu, có chấm điểm, phản hồi đúng/sai và tổng kết phần trăm.
+
+### 🔗 Nối từ (Matching game)
+- Nối từ tiếng Anh với nghĩa tiếng Việt đúng.
+- **Chơi liên tục**: nối đúng cặp nào thì cặp đó biến mất, một từ mới xuất hiện ngay (luôn giữ 5 cặp).
+- **Chống học vẹt vị trí**: hai cột xáo trộn độc lập sau mỗi lần nối đúng/sai.
+- Theo dõi: số cặp đã nối, chuỗi đúng liên tiếp + kỷ lục, số lần sai.
+- **Bảng lịch sử "Đã học"** bên cạnh: liệt kê các cặp đã nối, mỗi cặp có nút 🔊 nghe lại.
+- **Chế độ ôn tập**: khi mở từ Flashcard, chơi đúng tập 10 từ vừa học rồi kết thúc.
+
+### 🗣️ Học phát âm (IPA)
+- **Bảng ký hiệu IPA** chia nhóm: nguyên âm ngắn / dài / nguyên âm đôi / phụ âm.
+- Mỗi ký hiệu có: gợi ý cách đọc bằng tiếng Việt, từ ví dụ, nút nghe **âm thuần** (ghi âm chuyên gia) và nút nghe **từ ví dụ**.
+- **Bộ giải mã phiên âm**: dán một phiên âm (ví dụ `/ɪnˈrəʊl/`), app tách từng ký hiệu và giải thích cách đọc, kèm dấu nhấn trọng âm; có nút phát từng âm hoặc phát lần lượt.
+
+### 🔄 Ôn tập (Spaced Repetition)
+- Dùng thuật toán **SM-2**: lịch ôn tập tự điều chỉnh theo việc bạn nhớ hay quên.
+- "Đã nhớ" → giãn khoảng ôn; "Chưa nhớ" → đặt lại để ôn sớm.
+- Màn Ôn tập hiển thị các từ đến hạn, có nghe phát âm và đánh dấu nhớ/chưa nhớ.
+
+### 📥 Nhập / Xuất dữ liệu
+- **Nhập** từ vựng từ file **CSV, JSON, TXT** (kéo-thả hoặc chọn file), có kiểm tra hợp lệ và báo lỗi từng dòng.
+- **Xuất** toàn bộ dữ liệu (từ vựng + tiến độ + cài đặt) để sao lưu.
+
+### ⚙️ Cài đặt
+- Chế độ tối (dark mode).
+- Giọng phát âm: Anh-Mỹ / Anh-Anh.
+- **Bộ từ vựng**: A1–A2 / 3000 / tất cả.
+- Số từ mỗi cụm học (1–50).
+- Tự động phát âm.
+- **Tải lại dữ liệu gốc** (giữ tiến độ).
+- **Xóa toàn bộ dữ liệu** (đưa app về như mới cài).
+
+---
+
+## 🔊 Phát âm — cách hoạt động
+
+Thứ tự ưu tiên khi phát âm một từ:
+1. **File âm thanh tải sẵn** trong `assets/audio/` → phát tức thì, dùng offline.
+   - Giọng người bản xứ thật (nguồn [Free Dictionary API](https://dictionaryapi.dev/)) cho các từ có sẵn.
+   - Các từ/cụm còn lại dùng Google Translate TTS để đảm bảo **phủ 100%**.
+2. API online (chỉ khi từ chưa có file).
+3. Giọng máy của trình duyệt (SpeechSynthesis) — phương án cuối.
+
+Âm IPA thuần (trang Học phát âm) lấy từ Wikimedia Commons, lưu trong `assets/audio/ipa/`.
+
+## 🎤 Nhận diện giọng nói
+
+- Dùng **Whisper** chạy hoàn toàn trên máy qua [Transformers.js](https://github.com/huggingface/transformers.js) (WebAssembly/WebGPU) — audio không rời khỏi thiết bị.
+- Tải mô hình một lần (~40MB, `whisper-tiny.en`), sau đó dùng offline.
+- So khớp linh hoạt (fuzzy matching) để chấp nhận sai số nhỏ.
+- Lưu ý: đây là tính năng phụ trợ; không bắt buộc để học.
+
+---
+
+## 📱 PWA — cài lên điện thoại
+
+App là một Progressive Web App đầy đủ:
+- Có `manifest.webmanifest`, icon, và Service Worker (`sw.js`) cache để chạy offline.
+- **Android (Chrome)**: menu ⋮ → "Cài đặt ứng dụng / Thêm vào màn hình chính".
+- **iPhone (Safari)**: nút Chia sẻ → "Thêm vào màn hình chính".
+- Yêu cầu chạy qua **HTTPS** (hoặc localhost) — không mở file trực tiếp.
+
+---
+
+## 🚀 Cách chạy
+
+Vì dùng ES modules, Service Worker và microphone, app cần chạy qua HTTP(S), **không** mở `index.html` trực tiếp bằng `file://`.
+
+### Cách nhanh nhất — Live Server (VS Code)
+1. Cài extension "Live Server".
+2. Chuột phải `index.html` → "Open with Live Server".
+
+### Hoặc dùng HTTP server
+```bash
+# Python
+python -m http.server 8000
+
+# Node.js
+npx http-server -p 8000
+```
+Mở `http://localhost:8000`.
+
+---
+
+## 🛠️ Công nghệ
+
+**Frontend (thuần, không framework):**
+- Vanilla JavaScript (ES6 modules), HTML5, CSS3 (responsive + dark mode).
+- Hash-based routing, kiến trúc MVC, Event Bus, pattern singleton.
+- LocalStorage cho dữ liệu; Service Worker + Web App Manifest cho PWA.
+- Web Speech API (phát âm), Whisper qua Transformers.js (nhận diện giọng nói).
+
+**Dev tools:**
+- Node.js cho các script xử lý dữ liệu/âm thanh.
+- (Tùy chọn) Vitest cho test.
+
+---
+
+## 📁 Cấu trúc thư mục
+
+```
+├── index.html                  # Entry point + nav + đăng ký service worker
+├── manifest.webmanifest        # Khai báo PWA
+├── sw.js                       # Service Worker (cache offline)
+├── css/
+│   ├── themes.css              # Biến màu, font, dark mode
+│   ├── main.css                # Style chính
+│   ├── flashcard.css           # Style thẻ
+│   └── responsive.css          # Responsive + print
+├── js/
+│   ├── app.js                  # Router & khởi tạo
+│   ├── modules/
+│   │   ├── storage-manager.js      # LocalStorage, settings, bộ từ, nạp dữ liệu
+│   │   ├── memory-system.js        # Tiến độ, chọn từ học, thống kê
+│   │   ├── spaced-repetition.js    # Thuật toán SM-2
+│   │   ├── quiz-engine.js          # Sinh & chấm trắc nghiệm (4 chế độ)
+│   │   ├── speech-module.js        # Phát âm (TTS) + nhận diện (Whisper)
+│   │   ├── pronunciation-validator.js  # So khớp phát âm (fuzzy)
+│   │   └── data-importer.js        # Nhập CSV/JSON/TXT
+│   ├── views/
+│   │   ├── dashboard-view.js
+│   │   ├── flashcard-view.js
+│   │   ├── quiz-view.js
+│   │   ├── match-view.js           # Nối từ
+│   │   ├── ipa-view.js             # Học phát âm IPA
+│   │   ├── review-view.js          # Ôn tập
+│   │   ├── import-view.js
+│   │   └── settings-view.js
+│   └── utils/
+│       ├── event-bus.js
+│       └── helpers.js
+├── data/
+│   ├── vocabulary-a1-a2.json
+│   └── vocabulary-3000.json
+├── assets/
+│   ├── icons/                  # Icon PWA
+│   └── audio/                  # File phát âm (.mp3) + manifest.json
+│       └── ipa/                # Âm IPA thuần (.ogg) + manifest.json
+└── scripts/                    # Script xử lý dữ liệu (dev-time)
+```
+
+---
+
+## 📝 Scripts (chỉ dùng khi phát triển)
+
+| Script | Công dụng |
+|--------|-----------|
+| `parse-docx-a1a2.mjs` | Trích xuất bộ A1–A2 từ file Word sang JSON |
+| `parse-docx-3000.mjs` | Trích xuất bộ 3000 từ file Word sang JSON |
+| `fetch-audio.mjs` | Tải âm thanh giọng người bản xứ (Free Dictionary API) |
+| `fetch-audio-tts.mjs` | Lấp các từ còn thiếu âm bằng Google TTS (phủ 100%) |
+| `fetch-ipa-sounds.mjs` | Tải âm IPA thuần từ Wikimedia Commons |
+| `make-icons.mjs` | Sinh icon PWA |
+| `generate-vocabulary.js`, `parse-pdf.mjs` | Script trích xuất từ PDF (phiên bản cũ) |
+
+Ví dụ:
+```bash
+node scripts/parse-docx-a1a2.mjs
+node scripts/fetch-audio.mjs           # tải audio giọng người thật
+node scripts/fetch-audio-tts.mjs       # lấp phần còn thiếu
+```
+
+---
+
+## 🔍 Khắc phục sự cố
+
+- **Phát âm không kêu / chậm**: mở qua Live Server (không phải `file://`); lần đầu tải audio cần mạng.
+- **Nhận diện giọng nói không chạy**: cần Chrome/Edge, cho phép quyền microphone, và lần đầu cần mạng để tải mô hình.
+- **Thay đổi không hiển thị sau khi cập nhật**: do Service Worker cache — vào DevTools → Application → Service Workers → Unregister, hoặc Clear site data, rồi tải lại.
+- **Mất dữ liệu học**: dùng tính năng Xuất để sao lưu định kỳ.
+
+---
+
+## 💡 Gợi ý hướng phát triển (để review)
+
+Một số ý tưởng có thể bổ sung để học tốt hơn:
+- Câu ví dụ thực tế cho mỗi từ (hiện đa số chưa có).
+- Thống kê/biểu đồ tiến độ theo thời gian, streak hằng ngày.
+- Nhắc nhở ôn tập (notification).
+- Đồng bộ dữ liệu giữa thiết bị (cần backend — hiện chưa có).
+- Phân loại từ theo chủ đề, mức độ khó.
+- Chấm điểm phát âm chi tiết theo từng âm tiết.
+
+---
+
+## 📄 License
+
+MIT License.
+
+## 🙏 Credits
+
+- Bộ từ A1–A2 và Essential 3000 (nguồn tổng hợp).
+- Phát âm giọng người: [Free Dictionary API](https://dictionaryapi.dev/); bổ sung bằng Google Translate TTS.
+- Âm IPA: [Wikimedia Commons](https://commons.wikimedia.org/) (CC).
+- Nhận diện giọng nói: [Whisper](https://github.com/openai/whisper) qua [Transformers.js](https://github.com/huggingface/transformers.js).
+- Thuật toán lặp lại ngắt quãng: SM-2.

@@ -96,3 +96,48 @@ function showToast(message, type, duration) {
     toast.remove();
   }, duration);
 }
+
+/**
+ * Escape HTML special characters to prevent broken markup / injection.
+ * @param {string} s
+ * @returns {string}
+ */
+export function escapeHtml(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+/**
+ * Render a vocabulary item's examples as HTML.
+ * Supports both the new format ({ en, vi }) and the legacy plain-string format.
+ * Returns '' when there are no examples.
+ * @param {Array} examples
+ * @returns {string} HTML string
+ */
+export function renderExamples(examples) {
+  if (!Array.isArray(examples) || examples.length === 0) return '';
+
+  const rows = examples.map(ex => {
+    if (ex && typeof ex === 'object') {
+      const en = escapeHtml(ex.en || '');
+      const vi = escapeHtml(ex.vi || '');
+      if (!en) return '';
+      return `<li class="example-item">
+        <span class="example-en">${en}</span>
+        ${vi ? `<span class="example-vi">${vi}</span>` : ''}
+      </li>`;
+    }
+    // legacy: plain string
+    return `<li class="example-item"><span class="example-en">${escapeHtml(ex)}</span></li>`;
+  }).filter(Boolean).join('');
+
+  if (!rows) return '';
+  return `<div class="examples">
+    <p class="example-label">Ví dụ:</p>
+    <ul>${rows}</ul>
+  </div>`;
+}

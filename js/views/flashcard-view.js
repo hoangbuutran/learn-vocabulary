@@ -7,8 +7,22 @@ import memorySystem from '../modules/memory-system.js';
 import speechModule from '../modules/speech-module.js';
 import pronunciationValidator from '../modules/pronunciation-validator.js';
 import storageManager from '../modules/storage-manager.js';
+import { renderExamples } from '../utils/helpers.js';
 
 let container = null;
+
+/** Word extras (collocations, synonyms...) loaded once from data/word-extras.json. */
+let wordExtras = null;
+async function loadWordExtras() {
+  if (wordExtras) return wordExtras;
+  try {
+    const res = await fetch('data/word-extras.json');
+    wordExtras = res.ok ? await res.json() : {};
+  } catch {
+    wordExtras = {};
+  }
+  return wordExtras;
+}
 
 /** Session state */
 let words = [];
@@ -118,6 +132,11 @@ export function render(el) {
   isRecording = false;
   lastResultHtml = '';
 
+  // Load word extras in the background; re-render once available.
+  loadWordExtras().then(() => {
+    if (container && words[currentIndex]) renderCard();
+  });
+
   // Restore the saved 10-word batch so the user keeps studying the same set
   // until they finish it, instead of getting new words on every visit.
   const saved = loadSession();
@@ -162,6 +181,49 @@ export function destroy() {
   currentIndex = 0;
   isFlipped = false;
   isRecording = false;
+}
+
+/**
+ * Render extra word info (collocations, synonyms, antonyms) from word-extras.
+ * Returns '' when there's nothing useful.
+ * @param {string} word
+ * @returns {string} HTML
+ */
+function renderWordExtras(word) {
+  if (!wordExtras) return '';
+  const ex = wordExtras[(word || '').trim().toLowerCase()];
+  if (!ex) return '';
+
+  const chips = (arr) => arr.map(x => `<span class="chip">${x}</span>`).join('');
+  const blocks = [];
+
+  if (ex.phrases && ex.phrases.length) {
+    blocks.push(`<div class="extra-block">
+      <span class="extra-label">🔗 Cụm thường dùng</span>
+      <div class="chip-row">${chips(ex.phrases)}</div>
+    </div>`);
+  }
+  if (ex.synonyms && ex.synonyms.length) {
+    blocks.push(`<div class="extra-block">
+      <span class="extra-label">≈ Đồng nghĩa</span>
+      <div class="chip-row">${chips(ex.synonyms)}</div>
+    </div>`);
+  }
+  if (ex.antonyms && ex.antonyms.length) {
+    blocks.push(`<div class="extra-block">
+      <span class="extra-label">↔ Trái nghĩa</span>
+      <div class="chip-row">${chips(ex.antonyms)}</div>
+    </div>`);
+  }
+  if (ex.topic && ex.topic.length) {
+    blocks.push(`<div class="extra-block">
+      <span class="extra-label">🏷️ Cùng chủ đề</span>
+      <div class="chip-row">${chips(ex.topic)}</div>
+    </div>`);
+  }
+
+  if (!blocks.length) return '';
+  return `<div class="word-extras">${blocks.join('')}</div>`;
 }
 
 /**
@@ -224,12 +286,8 @@ function renderCard() {
           <div class="flashcard-back">
             <div class="meaning-display">
               <h3 class="meaning-text">${word.meaning}</h3>
-              ${word.examples && word.examples.length > 0
-                ? `<div class="examples">
-                    <p class="example-label">Ví dụ:</p>
-                    <ul>${word.examples.map(ex => `<li>${ex}</li>`).join('')}</ul>
-                  </div>`
-                : ''}
+              ${renderExamples(word.examples)}
+              ${renderWordExtras(word.word)}
               ${word.memoryTip ? `<p class="memory-tip"><em>Mẹo: ${word.memoryTip}</em></p>` : ''}
             </div>
           </div>
