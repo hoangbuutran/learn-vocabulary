@@ -75,10 +75,10 @@
     font-size: var(--font-2xl);
   }
 
-  /* Flashcard: full width on mobile */
+  /* Flashcard: full width on mobile, taller so meanings fit */
   .flashcard {
     max-width: 100%;
-    height: 280px;
+    height: 380px;
   }
 
   .word-text {
@@ -92,6 +92,11 @@
   .flashcard-front,
   .flashcard-back {
     padding: var(--space-md);
+  }
+
+  /* Back face scrolls from the top so the meaning is never hidden above */
+  .flashcard-back {
+    justify-content: flex-start;
   }
 
   /* Quiz options: single column on mobile */

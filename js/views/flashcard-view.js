@@ -30,6 +30,10 @@ let currentIndex = 0;
 let isFlipped = false;
 let isRecording = false;
 let lastResultHtml = '';
+/** When a swipe just navigated, ignore the click that follows. */
+let suppressNextFlip = false;
+/** Pixel offset the next rendered card should slide in from (0 = no animation). */
+let slideInFrom = 0;
 
 /** LocalStorage key that keeps the current 10-word batch fixed across visits. */
 const SESSION_KEY = 'flashcard_session';
@@ -420,6 +424,20 @@ function setupCardListeners(word) {
 
   // Flip card on click
   if (flashcard) {
+    // Animate the new card sliding in from the side after a swipe navigation.
+    if (slideInFrom !== 0) {
+      const from = slideInFrom;
+      slideInFrom = 0;
+      flashcard.style.transition = 'none';
+      flashcard.style.transform = `translateX(${from}px)`;
+      flashcard.style.opacity = '0';
+      requestAnimationFrame(() => {
+        flashcard.style.transition = 'transform 0.25s ease, opacity 0.25s ease';
+        flashcard.style.transform = 'translateX(0)';
+        flashcard.style.opacity = '1';
+      });
+    }
+
     flashcard.addEventListener('click', () => {
       handleFlip(word);
     });
@@ -429,6 +447,68 @@ function setupCardListeners(word) {
         handleFlip(word);
       }
     });
+
+    // Drag-to-swipe: the card follows the finger, then slides away and the
+    // next/previous card slides in from the opposite side.
+    let startX = 0, startY = 0;
+    let dragging = false;
+    let horizontal = null;   // null = undecided, true = horizontal, false = vertical
+    let curDx = 0;
+    const SWIPE_THRESHOLD = 80;
+
+    flashcard.addEventListener('touchstart', (e) => {
+      const t = e.changedTouches[0];
+      startX = t.clientX;
+      startY = t.clientY;
+      dragging = true;
+      horizontal = null;
+      curDx = 0;
+      flashcard.style.transition = 'none';
+    }, { passive: true });
+
+    flashcard.addEventListener('touchmove', (e) => {
+      if (!dragging) return;
+      const t = e.changedTouches[0];
+      const dx = t.clientX - startX;
+      const dy = t.clientY - startY;
+
+      // Decide gesture direction once the finger has moved a bit.
+      if (horizontal === null && (Math.abs(dx) > 10 || Math.abs(dy) > 10)) {
+        horizontal = Math.abs(dx) > Math.abs(dy);
+      }
+      if (!horizontal) return; // let vertical scroll happen normally
+
+      e.preventDefault(); // block scroll while dragging horizontally
+      curDx = dx;
+      const rot = dx * 0.04;
+      flashcard.style.transform = `translateX(${dx}px) rotate(${rot}deg)`;
+      flashcard.style.opacity = String(1 - Math.min(Math.abs(dx) / 500, 0.6));
+    }, { passive: false });
+
+    flashcard.addEventListener('touchend', () => {
+      if (!dragging) return;
+      dragging = false;
+      flashcard.style.transition = 'transform 0.2s ease, opacity 0.2s ease';
+
+      if (horizontal && Math.abs(curDx) > SWIPE_THRESHOLD) {
+        suppressNextFlip = true;
+        const goNext = curDx < 0;
+        const offscreen = goNext ? -window.innerWidth : window.innerWidth;
+        // Slide the current card fully off-screen, then swap.
+        flashcard.style.transform = `translateX(${offscreen}px) rotate(${curDx * 0.04}deg)`;
+        flashcard.style.opacity = '0';
+        setTimeout(() => {
+          // New card should enter from the opposite edge.
+          slideInFrom = goNext ? window.innerWidth : -window.innerWidth;
+          if (goNext) moveToNext();
+          else moveToPrev();
+        }, 180);
+      } else {
+        // Not far enough — snap back.
+        flashcard.style.transform = '';
+        flashcard.style.opacity = '1';
+      }
+    }, { passive: true });
   }
 
   // Speaker button
@@ -483,6 +563,11 @@ function setupCardListeners(word) {
  * @param {object} word - Current vocabulary item
  */
 function handleFlip(word) {
+  // A swipe just navigated — swallow the synthetic click so it doesn't flip.
+  if (suppressNextFlip) {
+    suppressNextFlip = false;
+    return;
+  }
   isFlipped = !isFlipped;
 
   if (isFlipped) {
@@ -496,7 +581,20 @@ function handleFlip(word) {
     storageManager.saveProgress(word.id, progress);
   }
 
-  renderCard();
+  // Animate the flip by toggling the class on the existing card (CSS handles
+  // the 3D rotation) instead of re-rendering, which would skip the animation.
+  const card = container.querySelector('#flashcard');
+  if (card) {
+    card.classList.toggle('flipped', isFlipped);
+    card.setAttribute('aria-label', isFlipped ? 'Mặt sau thẻ' : 'Nhấn để lật thẻ');
+    // Show/hide the remember actions in sync with the flip.
+    const memoryActions = container.querySelector('.memory-actions');
+    if (memoryActions) {
+      memoryActions.style.display = isFlipped ? '' : 'none';
+    }
+  } else {
+    renderCard();
+  }
 }
 
 /**

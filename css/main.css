@@ -1189,6 +1189,7 @@ em {
   justify-content: center;
   align-items: center;
   margin-bottom: var(--space-lg);
+  overflow: hidden;
 }
 
 /* --------------------------------------------------------------------------

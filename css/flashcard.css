@@ -72,10 +72,11 @@
    -------------------------------------------------------------------------- */
 .flashcard-back {
   transform: rotateY(180deg);
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: var(--space-xl);
+  padding: var(--space-lg);
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .flashcard.flipped .flashcard-back {
