@@ -6,6 +6,15 @@
   <meta name="description" content="Ứng dụng học từ vựng tiếng Anh - Flashcard, Trắc nghiệm, Spaced Repetition">
   <title>Học Từ Vựng Tiếng Anh</title>
 
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Học Từ Vựng">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+
   <!-- CSS -->
   <link rel="stylesheet" href="css/themes.css">
   <link rel="stylesheet" href="css/main.css">
@@ -80,5 +89,16 @@
 
   <!-- App Entry Point (ES Module) -->
   <script type="module" src="js/app.js"></script>
+
+  <!-- PWA: register service worker for offline support & install-to-home-screen -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch((err) => {
+          console.warn('Service worker registration failed:', err);
+        });
+      });
+    }
+  </script>
 </body>
 </html>

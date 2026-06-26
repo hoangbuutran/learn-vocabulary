@@ -12,6 +12,7 @@
 - **📥 Import/Export**: Nhập và xuất dữ liệu từ vựng
 - **🎨 Giao diện thân thiện**: Responsive design, hỗ trợ mobile
 - **💾 Lưu trữ offline**: Dữ liệu được lưu trong Local Storage
+- **📱 Cài như app (PWA)**: Thêm vào màn hình chính điện thoại, chạy offline
 
 ## 📦 Dữ liệu từ vựng có sẵn
 
