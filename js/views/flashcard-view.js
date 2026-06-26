@@ -125,7 +125,10 @@ export function render(el) {
     const all = storageManager.getAllVocabulary();
     const byId = new Map(all.map(item => [item.id, item]));
     words = saved.ids.map(id => byId.get(id)).filter(Boolean);
-    currentIndex = Math.min(saved.index || 0, Math.max(words.length - 1, 0));
+    // Keep the saved position, including the "completed" state (index === length)
+    // so returning to the view shows the completion screen, not word 10 again.
+    const savedIndex = typeof saved.index === 'number' ? saved.index : 0;
+    currentIndex = Math.min(Math.max(savedIndex, 0), words.length);
   } else {
     words = [];
   }
@@ -149,6 +152,8 @@ export function render(el) {
  */
 export function destroy() {
   speechModule.stopRecognition();
+  const modal = document.getElementById('write-modal');
+  if (modal) modal.remove();
   if (container) {
     container.innerHTML = '';
   }
@@ -187,22 +192,9 @@ function renderCard() {
     return;
   }
 
-  const progress = storageManager.getProgress(word.id) || {};
-  const recognitionSupported = speechModule.isRecognitionSupported();
-  // Pronunciation via mic is only required when the browser supports it.
-  const canComplete = recognitionSupported
-    ? memorySystem.canMarkAsCompleted(word.id)
-    : (progress.meaningViewed === true && progress.pronunciationListened === true);
+  // "Đã nhớ" is always available now — pronunciation check via mic was too
+  // unreliable, so we let the user decide when they've learned the word.
   const progressPercent = ((currentIndex) / words.length) * 100;
-
-  // Build a hint listing the remaining steps before "Đã nhớ" unlocks.
-  const remainingSteps = [];
-  if (!progress.meaningViewed) remainingSteps.push('xem nghĩa (lật thẻ)');
-  if (!progress.pronunciationListened) remainingSteps.push('nghe phát âm (🔊)');
-  if (recognitionSupported && !progress.pronunciationPassed) remainingSteps.push('phát âm đúng (🎤)');
-  const completeHint = canComplete
-    ? ''
-    : `<p class="complete-hint">Để bật nút "Đã nhớ", hãy: ${remainingSteps.join(', ')}.</p>`;
 
   container.innerHTML = `
     <section class="view flashcard-view" aria-label="Thẻ từ vựng">
@@ -252,11 +244,13 @@ function renderCard() {
           <button class="btn btn-icon btn-mic ${isRecording ? 'recording' : ''}" id="btn-mic" aria-label="Ghi âm phát âm" title="Ghi âm phát âm của bạn">
             🎤
           </button>
+          <button class="btn btn-icon btn-write" id="btn-write" aria-label="Tập viết từ" title="Tập viết từ">
+            ✍️
+          </button>
         </div>
         <div class="pronunciation-result" id="pronunciation-result" aria-live="polite">${lastResultHtml}</div>
-        ${completeHint}
         <div class="memory-actions" ${!isFlipped ? 'style="display:none"' : ''}>
-          <button class="btn btn-success btn-remembered" id="btn-remembered" ${!canComplete ? 'disabled' : ''} aria-label="Đã nhớ">
+          <button class="btn btn-success btn-remembered" id="btn-remembered" aria-label="Đã nhớ">
             Đã nhớ
           </button>
           <button class="btn btn-danger btn-not-remembered" id="btn-not-remembered" aria-label="Chưa nhớ">
@@ -283,8 +277,10 @@ function renderCard() {
  */
 function renderSessionComplete() {
   if (!container) return;
-  // The current batch is done — clear it so the next batch is a fresh 10 words.
-  clearSession();
+  // Keep the batch saved (with currentIndex === words.length so this screen
+  // re-appears on return). The batch only changes when the user explicitly
+  // chooses "Học 10 từ mới".
+  saveSession();
   container.innerHTML = `
     <section class="view flashcard-view" aria-label="Hoàn thành phiên học">
       <h2>Thẻ từ vựng</h2>
@@ -344,6 +340,15 @@ function setupCardListeners(word) {
   const nextBtn = container.querySelector('#btn-next');
   const prevBtn = container.querySelector('#btn-prev');
   const changeBatchBtn = container.querySelector('#btn-change-batch');
+  const writeBtn = container.querySelector('#btn-write');
+
+  // Write practice button
+  if (writeBtn) {
+    writeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openWritePopup(word);
+    });
+  }
 
   // Swap the whole 10-word batch for a new one (avoid repeating current words).
   if (changeBatchBtn) {
@@ -514,6 +519,108 @@ function moveToNext() {
   lastResultHtml = '';
   saveSession();
   renderCard();
+}
+
+/**
+ * Open a popup to practise writing the current word.
+ * The user must type it correctly (case-insensitive) before they can close it
+ * with a "pass". Wrong attempts show feedback and must be corrected.
+ * @param {object} word
+ */
+function openWritePopup(word) {
+  // Remove any existing popup.
+  const existing = document.getElementById('write-modal');
+  if (existing) existing.remove();
+
+  const target = (word.word || '').trim();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'write-modal-overlay';
+  overlay.id = 'write-modal';
+  overlay.innerHTML = `
+    <div class="write-modal" role="dialog" aria-modal="true" aria-label="Tập viết từ">
+      <button class="write-close" id="write-close" aria-label="Đóng">✕</button>
+      <h3 class="write-title">Tập viết từ</h3>
+      <p class="write-meaning">Nghĩa: <strong>${word.meaning || ''}</strong></p>
+      ${word.pronunciation ? `<p class="write-ipa">${word.pronunciation}</p>` : ''}
+      <div class="write-actions-top">
+        <button class="btn btn-icon" id="write-hear" aria-label="Nghe phát âm" title="Nghe">🔊</button>
+        <button class="btn btn-text" id="write-hint" aria-label="Gợi ý">💡 Gợi ý</button>
+      </div>
+      <input type="text" id="write-input" class="write-input" autocomplete="off"
+        autocapitalize="off" spellcheck="false" placeholder="Gõ từ tiếng Anh..."
+        aria-label="Ô nhập từ" />
+      <div class="write-feedback" id="write-feedback" aria-live="polite"></div>
+      <div class="write-buttons">
+        <button class="btn btn-primary" id="write-check" aria-label="Kiểm tra">Kiểm tra</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+
+  const input = overlay.querySelector('#write-input');
+  const feedback = overlay.querySelector('#write-feedback');
+  const checkBtn = overlay.querySelector('#write-check');
+  const closeBtn = overlay.querySelector('#write-close');
+  const hearBtn = overlay.querySelector('#write-hear');
+  const hintBtn = overlay.querySelector('#write-hint');
+
+  let passed = false;
+
+  const close = () => overlay.remove();
+
+  const check = () => {
+    if (passed) { close(); return; }
+    const value = (input.value || '').trim();
+    if (!value) return;
+
+    if (value.toLowerCase() === target.toLowerCase()) {
+      passed = true;
+      feedback.innerHTML = `<span class="write-pass">✓ Chính xác! "${target}"</span>`;
+      input.classList.remove('write-wrong');
+      input.classList.add('write-correct');
+      input.disabled = true;
+      checkBtn.textContent = 'Xong';
+      // Speak the word as positive reinforcement.
+      speechModule.speak(target).catch(() => {});
+    } else {
+      // Show how far off they are and keep them trying.
+      feedback.innerHTML = `<span class="write-fail">✗ Chưa đúng. Bạn viết: "${value}". Hãy thử lại cho đúng.</span>`;
+      input.classList.add('write-wrong');
+      input.focus();
+      input.select();
+    }
+  };
+
+  checkBtn.addEventListener('click', check);
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); check(); }
+    if (input.classList.contains('write-wrong')) {
+      input.classList.remove('write-wrong');
+    }
+  });
+
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) close();
+  });
+  document.addEventListener('keydown', function escClose(e) {
+    if (e.key === 'Escape') { close(); document.removeEventListener('keydown', escClose); }
+  });
+
+  if (hearBtn) {
+    hearBtn.addEventListener('click', () => speechModule.speak(target).catch(() => {}));
+  }
+  if (hintBtn) {
+    hintBtn.addEventListener('click', () => {
+      // Reveal the first half of the word as a hint.
+      const reveal = Math.ceil(target.length / 2);
+      const masked = target.slice(0, reveal) + '•'.repeat(Math.max(target.length - reveal, 0));
+      feedback.innerHTML = `<span class="write-hint-text">Gợi ý: ${masked} (${target.length} chữ cái)</span>`;
+    });
+  }
+
+  setTimeout(() => input.focus(), 50);
 }
 
 /**

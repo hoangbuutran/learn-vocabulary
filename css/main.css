@@ -1727,3 +1727,121 @@ em {
   font-size: var(--font-xs);
   color: var(--text-secondary);
 }
+
+/* --------------------------------------------------------------------------
+   Write practice popup (flashcard)
+   -------------------------------------------------------------------------- */
+.write-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--space-md);
+}
+
+.write-modal {
+  position: relative;
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  width: 100%;
+  max-width: 440px;
+  box-shadow: var(--shadow-xl);
+  text-align: center;
+}
+
+.write-close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: none;
+  border: none;
+  font-size: var(--font-lg);
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: var(--space-xs);
+  line-height: 1;
+}
+
+.write-title {
+  font-size: var(--font-xl);
+  margin-bottom: var(--space-md);
+  color: var(--color-primary);
+}
+
+.write-meaning {
+  font-size: var(--font-lg);
+  margin-bottom: var(--space-xs);
+}
+
+.write-ipa {
+  font-size: var(--font-base);
+  color: var(--text-muted);
+  font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+  margin-bottom: var(--space-sm);
+}
+
+.write-actions-top {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.write-input {
+  width: 100%;
+  padding: var(--space-md);
+  font-size: var(--font-xl);
+  text-align: center;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.write-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.write-input.write-wrong {
+  border-color: var(--color-danger);
+  background-color: var(--color-danger-light);
+  animation: matchShake 0.4s ease;
+}
+
+.write-input.write-correct {
+  border-color: var(--color-success);
+  background-color: var(--color-success-light);
+}
+
+.write-feedback {
+  min-height: 24px;
+  font-size: var(--font-sm);
+  margin-bottom: var(--space-md);
+}
+
+.write-pass {
+  color: var(--color-success);
+  font-weight: 600;
+}
+
+.write-fail {
+  color: var(--color-danger);
+  font-weight: 600;
+}
+
+.write-hint-text {
+  color: var(--color-primary);
+  letter-spacing: 0.1em;
+}
+
+.write-buttons {
+  display: flex;
+  justify-content: center;
+}
