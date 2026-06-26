@@ -10,7 +10,7 @@
  *
  * Bump CACHE_VERSION whenever the shell changes to force a refresh.
  */
-const CACHE_VERSION = 'v1';
+const CACHE_VERSION = 'v2';
 const SHELL_CACHE = `vocab-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `vocab-runtime-${CACHE_VERSION}`;
 
@@ -37,6 +37,7 @@ const SHELL_ASSETS = [
   './js/views/flashcard-view.js',
   './js/views/quiz-view.js',
   './js/views/match-view.js',
+  './js/views/ipa-view.js',
   './js/views/review-view.js',
   './js/views/import-view.js',
   './js/views/settings-view.js',

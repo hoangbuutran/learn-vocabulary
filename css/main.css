@@ -1492,3 +1492,224 @@ em {
   margin-top: var(--space-lg);
   flex-wrap: wrap;
 }
+
+/* --------------------------------------------------------------------------
+   IPA pronunciation guide ("Học phát âm")
+   -------------------------------------------------------------------------- */
+.ipa-decoder {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.ipa-decoder-label {
+  font-size: var(--font-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.ipa-decoder-label code {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+}
+
+.ipa-decoder-row {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.ipa-input {
+  flex: 1;
+  padding: var(--space-md);
+  font-size: var(--font-lg);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.ipa-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.ipa-decoder-result {
+  margin-top: var(--space-md);
+}
+
+.ipa-decode-caption {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.ipa-decode-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-sm);
+}
+
+.btn-sm {
+  font-size: var(--font-sm);
+  padding: var(--space-xs) var(--space-md);
+}
+
+.ipa-decode-playable {
+  cursor: pointer;
+}
+
+.ipa-decode-playable:hover {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.ipa-decode-note {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+  margin-top: var(--space-sm);
+}
+
+.ipa-decode-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.ipa-decode-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 90px;
+  padding: var(--space-sm);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.ipa-decode-mark {
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary);
+}
+
+.ipa-decode-unknown {
+  background-color: var(--color-danger-light);
+  border-color: var(--color-danger);
+}
+
+.ipa-decode-sym {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.ipa-decode-read {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ipa-decode-hint {
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.ipa-empty {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+}
+
+.ipa-tip {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.ipa-section {
+  margin-bottom: var(--space-xl);
+}
+
+.ipa-section-title {
+  font-size: var(--font-lg);
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.ipa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--space-md);
+}
+
+.ipa-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: var(--space-md);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  text-align: center;
+}
+
+.ipa-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.ipa-card-actions {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--space-xs);
+}
+
+.ipa-btn {
+  font-size: var(--font-xs);
+  padding: 4px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-surface);
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.ipa-btn:hover {
+  background-color: var(--color-primary-light);
+}
+
+.ipa-btn-sound {
+  font-weight: 700;
+  background-color: var(--color-primary-light);
+}
+
+.ipa-symbol {
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+}
+
+.ipa-read {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.ipa-hint {
+  font-size: var(--font-xs);
+  color: var(--text-secondary);
+}
