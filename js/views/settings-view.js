@@ -105,6 +105,16 @@ function renderContent() {
             Tải lại dữ liệu
           </button>
         </div>
+
+        <div class="setting-group setting-group-danger" role="group" aria-labelledby="clear-label">
+          <div>
+            <span id="clear-label" class="setting-label">Xóa toàn bộ dữ liệu</span>
+            <p class="setting-hint">Xóa sạch tiến độ, cài đặt và phiên học — như mở app lần đầu. Không thể hoàn tác!</p>
+          </div>
+          <button class="btn btn-danger" id="btn-clear-data" aria-label="Xóa toàn bộ dữ liệu">
+            Xóa hết & tải lại
+          </button>
+        </div>
       </div>
     </section>
   `;
@@ -150,6 +160,9 @@ function setupListeners() {
       const settings = storageManager.getSettings();
       settings.vocabularySet = e.target.value;
       storageManager.saveSettings(settings);
+
+      // Reset the fixed flashcard batch so it pulls from the newly chosen set.
+      try { localStorage.removeItem('flashcard_session'); } catch (_) { /* ignore */ }
 
       const labels = {
         'a1-a2': '1000 từ cơ bản (A1-A2)',
@@ -202,6 +215,22 @@ function setupListeners() {
         reloadBtn.disabled = false;
         reloadBtn.textContent = 'Tải lại dữ liệu';
       }
+    });
+  }
+
+  // Clear ALL data and reload from scratch (like a first-time visit).
+  const clearBtn = container.querySelector('#btn-clear-data');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      const ok = window.confirm(
+        'Xóa toàn bộ dữ liệu? Mọi tiến độ học, cài đặt và phiên học sẽ bị xóa. Hành động này không thể hoàn tác.'
+      );
+      if (!ok) return;
+      try {
+        localStorage.clear();
+      } catch (_) { /* ignore */ }
+      // Reload the page so the app re-initializes from a clean state.
+      window.location.reload();
     });
   }
 }

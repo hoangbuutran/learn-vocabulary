@@ -838,6 +838,14 @@ em {
   font-size: var(--font-base);
 }
 
+.setting-group-danger {
+  border-color: var(--color-danger);
+}
+
+.setting-group-danger .setting-label {
+  color: var(--color-danger);
+}
+
 .setting-input {
   width: 80px;
   padding: var(--space-sm) var(--space-md);
@@ -1018,10 +1026,33 @@ em {
   margin-bottom: var(--space-lg);
 }
 
+.progress-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
 .progress-text {
   font-size: var(--font-sm);
   color: var(--text-secondary);
-  text-align: center;
+}
+
+.btn-change-batch {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: var(--font-sm);
+  font-weight: 600;
+  cursor: pointer;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.btn-change-batch:hover {
+  background-color: var(--color-primary-light);
 }
 
 /* --------------------------------------------------------------------------
@@ -1126,6 +1157,17 @@ em {
 .memory-actions {
   display: flex;
   gap: var(--space-md);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+}
+
+.btn-prev:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 /* --------------------------------------------------------------------------

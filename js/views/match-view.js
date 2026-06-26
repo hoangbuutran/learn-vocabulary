@@ -33,11 +33,44 @@ let history = [];        // matched pairs, newest first [{word, meaning}]
 
 const LIVE_PAIRS = 5;
 const HISTORY_MAX = 50;  // keep the most recent matches
+const PRESET_KEY = 'match_preset'; // ids handed over from another view (e.g. flashcards)
+
+/** True when this game is running a fixed preset list (review mode). */
+let presetMode = false;
+let presetTotal = 0;     // total distinct words to clear in preset mode
 
 export function render(el) {
   container = el;
   resetGame();
+
+  // If another view (flashcards) handed us a specific word list, start a
+  // focused review game with exactly those words.
+  const presetItems = consumePreset();
+  if (presetItems && presetItems.length >= 2) {
+    startGame(presetItems);
+    return;
+  }
+
   renderStart();
+}
+
+/**
+ * Read and clear a preset word list (array of vocabulary items) that another
+ * view stored for review. Returns null if none.
+ */
+function consumePreset() {
+  try {
+    const raw = localStorage.getItem(PRESET_KEY);
+    if (!raw) return null;
+    localStorage.removeItem(PRESET_KEY);
+    const ids = JSON.parse(raw);
+    if (!Array.isArray(ids) || ids.length === 0) return null;
+    const all = storageManager.getAllVocabulary();
+    const byId = new Map(all.map(it => [it.id, it]));
+    return ids.map(id => byId.get(id)).filter(it => it && it.word && it.meaning);
+  } catch {
+    return null;
+  }
 }
 
 export function destroy() {
@@ -61,6 +94,8 @@ function resetGame() {
   streak = 0;
   bestStreak = 0;
   history = [];
+  presetMode = false;
+  presetTotal = 0;
 }
 
 function shuffle(arr) {
@@ -119,8 +154,12 @@ function renderStart() {
   if (startBtn) startBtn.addEventListener('click', startGame);
 }
 
-function startGame() {
-  const vocab = storageManager.getActiveVocabulary().filter(it => it.word && it.meaning);
+function startGame(presetItems) {
+  const vocab = (presetItems && presetItems.length)
+    ? presetItems.filter(it => it.word && it.meaning)
+    : storageManager.getActiveVocabulary().filter(it => it.word && it.meaning);
+  presetMode = !!(presetItems && presetItems.length);
+  presetTotal = presetMode ? vocab.length : 0;
   pool = shuffle(vocab);
   poolIndex = 0;
   live = [];
@@ -133,8 +172,11 @@ function startGame() {
   selectedRight = null;
   locked = false;
 
+  // Board size adapts to small preset lists.
+  const boardSize = Math.min(LIVE_PAIRS, vocab.length);
+
   // Fill the board.
-  for (let i = 0; i < LIVE_PAIRS; i++) {
+  for (let i = 0; i < boardSize; i++) {
     live.push(takeFromPool());
   }
   reshuffleColumns();
@@ -280,18 +322,37 @@ function evaluateMatch() {
     markMatched(matchedId);
     locked = true;
     setTimeout(() => {
-      // Replace matched pair with a new one from the pool.
       const idx = live.findIndex(p => p.id === matchedId);
-      if (idx !== -1) {
-        let next = takeFromPool();
-        // Avoid showing a word that's already live.
-        let guard = 0;
-        while (live.some(p => p.id === next.id) && guard < 10) {
-          next = takeFromPool();
-          guard++;
+
+      if (presetMode) {
+        // Review mode: clear the matched word. Pull a replacement only while
+        // there are still unseen preset words left; otherwise shrink the board.
+        if (idx !== -1) {
+          if (poolIndex < pool.length) {
+            live[idx] = pool[poolIndex++];
+          } else {
+            live.splice(idx, 1);
+          }
         }
-        live[idx] = next;
+        // Finished reviewing all preset words?
+        if (live.length === 0) {
+          locked = false;
+          renderReviewComplete();
+          return;
+        }
+      } else {
+        // Endless mode: always refill so the board stays full.
+        if (idx !== -1) {
+          let next = takeFromPool();
+          let guard = 0;
+          while (live.some(p => p.id === next.id) && guard < 10) {
+            next = takeFromPool();
+            guard++;
+          }
+          live[idx] = next;
+        }
       }
+
       // Re-shuffle BOTH columns so nothing stays in place.
       reshuffleColumns();
       locked = false;
@@ -339,4 +400,31 @@ function stopGame() {
   showSuccess(`Tốt lắm! Bạn đã nối đúng ${matchedCount} cặp, chuỗi đúng dài nhất ${bestStreak}.`);
   resetGame();
   renderStart();
+}
+
+/** Shown when a preset (review) game clears all its words. */
+function renderReviewComplete() {
+  if (!container) return;
+  const total = presetTotal || matchedCount;
+  container.innerHTML = `
+    <section class="view match-view" aria-label="Hoàn thành ôn tập">
+      <h2>Nối từ</h2>
+      <div class="match-complete">
+        <h3>🎉 Hoàn thành ôn tập!</h3>
+        <p>Bạn đã nối đúng toàn bộ <strong>${total}</strong> từ · Số lần sai: <strong>${mistakes}</strong></p>
+        <div class="match-complete-actions">
+          <a href="#flashcard" class="btn btn-primary" role="button">Về Flashcard</a>
+          <button class="btn btn-secondary" id="btn-free-play" aria-label="Chơi tự do">Chơi tự do</button>
+          <a href="#dashboard" class="btn btn-secondary" role="button">Về trang chủ</a>
+        </div>
+      </div>
+    </section>
+  `;
+  const freeBtn = container.querySelector('#btn-free-play');
+  if (freeBtn) {
+    freeBtn.addEventListener('click', () => {
+      resetGame();
+      renderStart();
+    });
+  }
 }

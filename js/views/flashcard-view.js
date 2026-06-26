@@ -53,10 +53,29 @@ function clearSession() {
 
 /**
  * Start a fresh batch of words and persist it.
+ * @param {string[]} [excludeIds] - ids to avoid (e.g. the batch being replaced)
  */
-function startNewBatch() {
+function startNewBatch(excludeIds = []) {
   const count = storageManager.getSettings().dailyWordCount || 10;
-  words = memorySystem.getWordsForStudy(count);
+  const exclude = new Set(excludeIds);
+
+  if (exclude.size > 0) {
+    // Pull a larger pool then filter out the words we want to avoid.
+    const pool = memorySystem.getWordsForStudy(count * 4)
+      .filter(w => !exclude.has(w.id));
+    words = pool.slice(0, count);
+    // If filtering left us short, top up with a normal draw.
+    if (words.length < count) {
+      const have = new Set(words.map(w => w.id));
+      for (const w of memorySystem.getWordsForStudy(count * 4)) {
+        if (words.length >= count) break;
+        if (!have.has(w.id)) { words.push(w); have.add(w.id); }
+      }
+    }
+  } else {
+    words = memorySystem.getWordsForStudy(count);
+  }
+
   currentIndex = 0;
   isFlipped = false;
   lastResultHtml = '';
@@ -193,7 +212,12 @@ function renderCard() {
         <div class="progress-bar">
           <div class="progress-fill" style="width: ${progressPercent}%"></div>
         </div>
-        <span class="progress-text">Từ ${currentIndex + 1} / ${words.length}</span>
+        <div class="progress-row">
+          <span class="progress-text">Từ ${currentIndex + 1} / ${words.length}</span>
+          <button class="btn btn-text btn-change-batch" id="btn-change-batch" aria-label="Đổi cụm từ khác" title="Đổi sang 10 từ khác">
+            🔀 Đổi cụm khác
+          </button>
+        </div>
       </div>
 
       <div class="flashcard-container">
@@ -239,9 +263,14 @@ function renderCard() {
             Chưa nhớ
           </button>
         </div>
-        <button class="btn btn-secondary btn-next" id="btn-next" aria-label="Từ tiếp theo">
-          Tiếp theo →
-        </button>
+        <div class="nav-buttons">
+          <button class="btn btn-secondary btn-prev" id="btn-prev" aria-label="Từ trước" ${currentIndex === 0 ? 'disabled' : ''}>
+            ← Trước
+          </button>
+          <button class="btn btn-secondary btn-next" id="btn-next" aria-label="Từ tiếp theo">
+            Tiếp theo →
+          </button>
+        </div>
       </div>
     </section>
   `;
@@ -254,24 +283,49 @@ function renderCard() {
  */
 function renderSessionComplete() {
   if (!container) return;
+  // The current batch is done — clear it so the next batch is a fresh 10 words.
+  clearSession();
   container.innerHTML = `
     <section class="view flashcard-view" aria-label="Hoàn thành phiên học">
       <h2>Thẻ từ vựng</h2>
       <div class="session-complete">
         <h3>🎉 Hoàn thành!</h3>
-        <p>Bạn đã hoàn thành phiên học hôm nay.</p>
-        <button class="btn btn-primary" id="btn-restart" aria-label="Học lại">Học lại</button>
+        <p>Bạn đã đi hết ${words.length} từ trong phiên này.</p>
+        <button class="btn btn-primary" id="btn-match-review" aria-label="Ôn 10 từ này bằng Nối từ">🔗 Ôn bằng Nối từ</button>
+        <button class="btn btn-primary" id="btn-restart" aria-label="Học 10 từ mới">Học 10 từ mới</button>
+        <button class="btn btn-secondary" id="btn-review-again" aria-label="Lặp lại 10 từ này">Lặp lại 10 từ này</button>
         <a href="#dashboard" class="btn btn-secondary" role="button">Về trang chủ</a>
       </div>
     </section>
   `;
 
+  // Hand the just-finished words to the matching game for reinforcement.
+  const matchBtn = container.querySelector('#btn-match-review');
+  if (matchBtn) {
+    matchBtn.addEventListener('click', () => {
+      try {
+        localStorage.setItem('match_preset', JSON.stringify(words.map(w => w.id)));
+      } catch (_) { /* ignore */ }
+      window.location.hash = '#match';
+    });
+  }
+
   const restartBtn = container.querySelector('#btn-restart');
   if (restartBtn) {
     restartBtn.addEventListener('click', () => {
-      words = memorySystem.getWordsForStudy(storageManager.getSettings().dailyWordCount || 10);
+      startNewBatch();
+      renderCard();
+    });
+  }
+
+  // Repeat the same 10 words again (keep the batch, restart from the top).
+  const reviewBtn = container.querySelector('#btn-review-again');
+  if (reviewBtn) {
+    reviewBtn.addEventListener('click', () => {
       currentIndex = 0;
       isFlipped = false;
+      lastResultHtml = '';
+      saveSession();
       renderCard();
     });
   }
@@ -288,6 +342,18 @@ function setupCardListeners(word) {
   const rememberedBtn = container.querySelector('#btn-remembered');
   const notRememberedBtn = container.querySelector('#btn-not-remembered');
   const nextBtn = container.querySelector('#btn-next');
+  const prevBtn = container.querySelector('#btn-prev');
+  const changeBatchBtn = container.querySelector('#btn-change-batch');
+
+  // Swap the whole 10-word batch for a new one (avoid repeating current words).
+  if (changeBatchBtn) {
+    changeBatchBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const currentIds = words.map(w => w.id);
+      startNewBatch(currentIds);
+      renderCard();
+    });
+  }
 
   // Flip card on click
   if (flashcard) {
@@ -338,6 +404,13 @@ function setupCardListeners(word) {
   if (nextBtn) {
     nextBtn.addEventListener('click', () => {
       moveToNext();
+    });
+  }
+
+  // Previous button
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      moveToPrev();
     });
   }
 }
@@ -439,5 +512,19 @@ function moveToNext() {
   isFlipped = false;
   isRecording = false;
   lastResultHtml = '';
+  saveSession();
+  renderCard();
+}
+
+/**
+ * Move to the previous word in the session.
+ */
+function moveToPrev() {
+  if (currentIndex === 0) return;
+  currentIndex--;
+  isFlipped = false;
+  isRecording = false;
+  lastResultHtml = '';
+  saveSession();
   renderCard();
 }
