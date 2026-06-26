@@ -43550,7 +43550,12 @@
       "id": "essential-3000_3061",
       "word": "tomato",
       "meaning": "cà chua",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Lookit the legs on that hot tomato!",
+          "vi": "Hãy nhìn đôi chân của quả cà chua nóng hổi đó!"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 307,
       "wordType": "n",
@@ -43560,7 +43565,12 @@
       "id": "essential-3000_3062",
       "word": "tomorrow",
       "meaning": "vào ngày mai; ngày mai",
-      "examples": [],
+      "examples": [
+        {
+          "en": "If you don't get your life on track today, you're going to be very sorry tomorrow.",
+          "vi": "Nếu hôm nay bạn không điều chỉnh cuộc sống của mình đi đúng hướng, ngày mai bạn sẽ rất hối tiếc."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 307,
       "wordType": "adv, n",
@@ -43570,7 +43580,12 @@
       "id": "essential-3000_3063",
       "word": "ton",
       "meaning": "tấn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I've got tons of work to do.",
+          "vi": "Tôi có rất nhiều việc phải làm."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 307,
       "wordType": "n",
@@ -43580,7 +43595,12 @@
       "id": "essential-3000_3064",
       "word": "tone",
       "meaning": "tiếng, giọng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "This picture has tone.",
+          "vi": "Bức ảnh này có tông màu."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 307,
       "wordType": "n",
@@ -43590,7 +43610,12 @@
       "id": "essential-3000_3065",
       "word": "tongue",
       "meaning": "lưỡi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "cold tongue with mustard",
+          "vi": "lưỡi lạnh với mù tạt"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 307,
       "wordType": "n",
@@ -43600,7 +43625,12 @@
       "id": "essential-3000_3066",
       "word": "tonight",
       "meaning": "vào đêm nay, vào tối nay; đêm nay, tối nay",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I have high hopes for tonight.",
+          "vi": "Tôi có nhiều hy vọng cho tối nay."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 307,
       "wordType": "adv, n",
@@ -43614,13 +43644,19 @@
       "category": "essential-3000",
       "groupIndex": 307,
       "wordType": "n",
-      "pronunciation": "tʌn"
+      "pronunciation": "tʌn",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3068",
       "word": "too",
       "meaning": "cũng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "\"You're not old enough yet.\"  \"I am, too!\"",
+          "vi": "“Cậu vẫn chưa đủ tuổi đâu.”  \"Tôi cũng vậy!\""
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 307,
       "wordType": "adv",
@@ -43630,7 +43666,12 @@
       "id": "essential-3000_3069",
       "word": "tool",
       "meaning": "dụng cụ, đồ dùng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "These are the tools of the trade.",
+          "vi": "Đây là những công cụ của thương mại."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 307,
       "wordType": "n",
@@ -43640,7 +43681,12 @@
       "id": "essential-3000_3070",
       "word": "tooth",
       "meaning": "răng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to tooth a saw",
+          "vi": "để răng cưa"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 307,
       "wordType": "n",
@@ -43650,7 +43696,12 @@
       "id": "essential-3000_3071",
       "word": "top",
       "meaning": "chóp, đỉnh; đứng đầu, trên hết",
-      "examples": [],
+      "examples": [
+        {
+          "en": "topping passions",
+          "vi": "đỉnh cao đam mê"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 308,
       "wordType": "n, adj",
@@ -43660,7 +43711,12 @@
       "id": "essential-3000_3072",
       "word": "topic",
       "meaning": "đề tài, chủ đề",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A society where a topic cannot be discussed, does not have free speech.",
+          "vi": "Một xã hội mà một chủ đề không thể được thảo luận thì không có tự do ngôn luận."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 308,
       "wordType": "n",
@@ -43670,7 +43726,12 @@
       "id": "essential-3000_3073",
       "word": "total",
       "meaning": "tổng cộng, toàn bộ; tổng số, toàn bộ số lượng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He is a total failure.",
+          "vi": "Anh ấy là một kẻ thất bại hoàn toàn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 308,
       "wordType": "adj, n",
@@ -43680,7 +43741,12 @@
       "id": "essential-3000_3074",
       "word": "totally",
       "meaning": "hoàn toàn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "That was totally wicked!",
+          "vi": "Điều đó hoàn toàn xấu xa!"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 308,
       "wordType": "adv",
@@ -43694,13 +43760,19 @@
       "category": "essential-3000",
       "groupIndex": 308,
       "wordType": "v, n",
-      "pronunciation": "tʌtʃ"
+      "pronunciation": "tʌtʃ",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3076",
       "word": "tough",
       "meaning": "chắc, bền, dai",
-      "examples": [],
+      "examples": [
+        {
+          "en": "This is a tough crowd.",
+          "vi": "Đây là một đám đông khó khăn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 308,
       "wordType": "adj",
@@ -43710,7 +43782,12 @@
       "id": "essential-3000_3077",
       "word": "tour",
       "meaning": "cuộc đo du lịch, cuộc đi dạo, chuyến du lịch; đi du lịch",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Metallica's tour of Europe",
+          "vi": "Chuyến lưu diễn châu Âu của Metallica"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 308,
       "wordType": "n, v",
@@ -43724,13 +43801,19 @@
       "category": "essential-3000",
       "groupIndex": 308,
       "wordType": "n",
-      "pronunciation": "tuərist"
+      "pronunciation": "tuərist",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3079",
       "word": "towards",
       "meaning": "theo hướng, về hướng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She moved toward the door.",
+          "vi": "Cô tiến về phía cửa."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 308,
       "wordType": "prep",
@@ -43740,7 +43823,12 @@
       "id": "essential-3000_3080",
       "word": "towel",
       "meaning": "khăn tắm, khăn lấu",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He got out of the shower and toweled himself dry.",
+          "vi": "Anh bước ra khỏi phòng tắm và lau khô người."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 308,
       "wordType": "n",
@@ -43750,7 +43838,12 @@
       "id": "essential-3000_3081",
       "word": "tower",
       "meaning": "tháp",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The office block towered into the sky.",
+          "vi": "Khối văn phòng cao chót vót trên bầu trời."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 309,
       "wordType": "n",
@@ -43760,7 +43853,12 @@
       "id": "essential-3000_3082",
       "word": "town",
       "meaning": "thị trấn, thị xã, thành phố nhỏ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Call me when you get to town.",
+          "vi": "Hãy gọi cho tôi khi bạn tới thị trấn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 309,
       "wordType": "n",
@@ -43770,7 +43868,12 @@
       "id": "essential-3000_3083",
       "word": "toy",
       "meaning": "đồ chơi, đồ trang trí; thể loại đồ chơi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Figo is toying with the English defence.",
+          "vi": "Figo đang đùa giỡn với hàng thủ Anh."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 309,
       "wordType": "n, adj",
@@ -43780,7 +43883,12 @@
       "id": "essential-3000_3084",
       "word": "trace",
       "meaning": "phát hiện, tìm thấy, vạch, chỉ ra, phác họa; dấu, vết, một chút",
-      "examples": [],
+      "examples": [
+        {
+          "en": "There are traces of chocolate around your lips.",
+          "vi": "Có vết sô cô la quanh môi bạn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 309,
       "wordType": "v, n",
@@ -43790,7 +43898,12 @@
       "id": "essential-3000_3085",
       "word": "track",
       "meaning": "phần của đĩa; đường mòn, đường đua",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The athletes ran round the track.",
+          "vi": "Các vận động viên chạy vòng quanh đường đua."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 309,
       "wordType": "n",
@@ -43800,7 +43913,12 @@
       "id": "essential-3000_3086",
       "word": "trade",
       "meaning": "thương mại, buôn bán; buôn bán, trao đổi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "They rode the trades going west.",
+          "vi": "Họ đi buôn về phía tây."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 309,
       "wordType": "n, v",
@@ -43810,7 +43928,12 @@
       "id": "essential-3000_3087",
       "word": "trading",
       "meaning": "sự kinh doanh, việc mua bán",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a trading company",
+          "vi": "một công ty thương mại"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 309,
       "wordType": "n",
@@ -43824,13 +43947,19 @@
       "category": "essential-3000",
       "groupIndex": 309,
       "wordType": "n",
-      "pronunciation": "trə´diʃən"
+      "pronunciation": "trə´diʃən",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3089",
       "word": "traditional",
       "meaning": "theo truyền thống, theo lối cổ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "traditional expositions of the Scriptures.",
+          "vi": "sự giải thích truyền thống của Kinh thánh."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 309,
       "wordType": "adj",
@@ -43844,13 +43973,19 @@
       "category": "essential-3000",
       "groupIndex": 309,
       "wordType": "adv",
-      "pronunciation": "trə´diʃənəlli"
+      "pronunciation": "trə´diʃənəlli",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3091",
       "word": "traffic",
       "meaning": "sự đi lại, sự giao thông, sự chuyển động",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The traffic is slow during rush hour.",
+          "vi": "Giao thông chậm trong giờ cao điểm."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 310,
       "wordType": "n",
@@ -43860,7 +43995,12 @@
       "id": "essential-3000_3092",
       "word": "train",
       "meaning": "xe lửa, tàu hỏa; dạy, rèn luyện, đào tạo",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I trained with weights all winter.",
+          "vi": "Tôi đã tập tạ suốt mùa đông."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 310,
       "wordType": "n, v",
@@ -43870,7 +44010,12 @@
       "id": "essential-3000_3093",
       "word": "training",
       "meaning": "sự dạy dỗ, sự huấn luyện, sự đào tạo",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I trained with weights all winter.",
+          "vi": "Tôi đã tập tạ suốt mùa đông."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 310,
       "wordType": "n",
@@ -43880,7 +44025,12 @@
       "id": "essential-3000_3094",
       "word": "transfer",
       "meaning": "dời, di chuyển; sự di chuyển, sự dời chỗ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The title to land is transferred by deed.",
+          "vi": "Quyền sử dụng đất được chuyển nhượng bằng văn bản."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 310,
       "wordType": "v, n",
@@ -43890,7 +44040,12 @@
       "id": "essential-3000_3095",
       "word": "transform",
       "meaning": "thay đổi, biến đổi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The alchemists sought to transform lead into gold.",
+          "vi": "Các nhà giả kim tìm cách biến chì thành vàng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 310,
       "wordType": "v",
@@ -43900,7 +44055,12 @@
       "id": "essential-3000_3096",
       "word": "translate",
       "meaning": "dịch, biên dịch, phiên dịch",
-      "examples": [],
+      "examples": [
+        {
+          "en": "William was translated by the blow to the head he received, being unable to speak for the next few minutes.",
+          "vi": "William đã bị dịch bởi cú đánh vào đầu, anh không thể nói được trong vài phút tiếp theo."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 310,
       "wordType": "v",
@@ -43914,13 +44074,19 @@
       "category": "essential-3000",
       "groupIndex": 310,
       "wordType": "n",
-      "pronunciation": "træns'leiʃn"
+      "pronunciation": "træns'leiʃn",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3098",
       "word": "transparent",
       "meaning": "trong suốt; dễ hiểu, sáng sủa",
-      "examples": [],
+      "examples": [
+        {
+          "en": "His reasons for the decision were transparent.",
+          "vi": "Lý do đưa ra quyết định của ông rất minh bạch."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 310,
       "wordType": "adj",
@@ -43930,7 +44096,12 @@
       "id": "essential-3000_3099",
       "word": "transport",
       "meaning": "sự vận chuyển, sự vận tải; phương tiện đi lại",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Music transports the soul.",
+          "vi": "Âm nhạc vận chuyển tâm hồn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 310,
       "wordType": "n",
@@ -43940,7 +44111,12 @@
       "id": "essential-3000_3100",
       "word": "trap",
       "meaning": "đồ đạc, hành lý; bẫy, cạm bãy; bẫy, giữ, chặn lại",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to trap foxes",
+          "vi": "để bẫy cáo"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 310,
       "wordType": "n, v",
@@ -43950,7 +44126,12 @@
       "id": "essential-3000_3101",
       "word": "travel",
       "meaning": "đi lại, đi du lịch, di chuyển; sự đi, những chuyến đi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "space travel",
+          "vi": "du hành vũ trụ"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 311,
       "wordType": "v, n",
@@ -43964,13 +44145,19 @@
       "category": "essential-3000",
       "groupIndex": 311,
       "wordType": "n",
-      "pronunciation": "trævlə"
+      "pronunciation": "trævlə",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3103",
       "word": "treat",
       "meaning": "đối xử, đối đãi, cư xử",
-      "examples": [],
+      "examples": [
+        {
+          "en": "They treated me for malaria.",
+          "vi": "Họ đã điều trị bệnh sốt rét cho tôi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 311,
       "wordType": "v",
@@ -43980,7 +44167,12 @@
       "id": "essential-3000_3104",
       "word": "treatment",
       "meaning": "sự đối xử, sự cư xử",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A treatment or cure is applied after a medical problem has already started.",
+          "vi": "Một phương pháp điều trị hoặc chữa trị được áp dụng sau khi một vấn đề y tế đã bắt đầu."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 311,
       "wordType": "n",
@@ -43990,7 +44182,12 @@
       "id": "essential-3000_3105",
       "word": "tree",
       "meaning": "cây",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to tree a boot",
+          "vi": "để cây một chiếc ủng"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 311,
       "wordType": "n",
@@ -44000,7 +44197,12 @@
       "id": "essential-3000_3106",
       "word": "trend",
       "meaning": "phương hướng, xu hướng, chiều hướng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the trend of a coastline",
+          "vi": "xu hướng đường bờ biển"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 311,
       "wordType": "n",
@@ -44010,7 +44212,12 @@
       "id": "essential-3000_3107",
       "word": "trial",
       "meaning": "sự thử nghiệm, cuộc thử nghiệm",
-      "examples": [],
+      "examples": [
+        {
+          "en": "soccer trials",
+          "vi": "thử nghiệm bóng đá"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 311,
       "wordType": "n",
@@ -44024,13 +44231,19 @@
       "category": "essential-3000",
       "groupIndex": 311,
       "wordType": "n",
-      "pronunciation": "´trai¸æηgl"
+      "pronunciation": "´trai¸æηgl",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3109",
       "word": "trick",
       "meaning": "mưu mẹo, thủ đoạn, trò lừa gạt, lừa gạt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A trick pony",
+          "vi": "Một con ngựa lừa"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 311,
       "wordType": "n, v",
@@ -44040,7 +44253,12 @@
       "id": "essential-3000_3110",
       "word": "trip",
       "meaning": "cuộc dạo chơi, cuộc du ngoạn; đi dạo, du ngoạn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "trip the light fantastic W",
+          "vi": "chuyến đi ánh sáng tuyệt vời W"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 311,
       "wordType": "n, v",
@@ -44050,7 +44268,12 @@
       "id": "essential-3000_3111",
       "word": "tropical",
       "meaning": "nhiệt đới",
-      "examples": [],
+      "examples": [
+        {
+          "en": "tropical fruit",
+          "vi": "trái cây nhiệt đới"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 312,
       "wordType": "adj",
@@ -44060,7 +44283,12 @@
       "id": "essential-3000_3112",
       "word": "trouble",
       "meaning": "điều lo lắng, điều muộn phiền",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the troubles in Northern Ireland",
+          "vi": "những rắc rối ở Bắc Ireland"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 312,
       "wordType": "n",
@@ -44070,7 +44298,12 @@
       "id": "essential-3000_3113",
       "word": "trousers",
       "meaning": "quần tây",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The trousers need to be shortened.",
+          "vi": "Quần cần được cắt ngắn lại."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 312,
       "wordType": "n",
@@ -44080,7 +44313,12 @@
       "id": "essential-3000_3114",
       "word": "truck",
       "meaning": "sự trao đổi, sự đổi chác",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Keep on trucking!",
+          "vi": "Tiếp tục vận tải!"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 312,
       "wordType": "n",
@@ -44090,7 +44328,12 @@
       "id": "essential-3000_3115",
       "word": "TRUE",
       "meaning": "đúng, thật",
-      "examples": [],
+      "examples": [
+        {
+          "en": "this gun shoots true",
+          "vi": "khẩu súng này bắn thật"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 312,
       "wordType": "adj",
@@ -44100,7 +44343,12 @@
       "id": "essential-3000_3116",
       "word": "truly",
       "meaning": "đúng sự thật, đích thực, thực sự",
-      "examples": [],
+      "examples": [
+        {
+          "en": "You are truly silly.",
+          "vi": "Bạn thực sự ngu ngốc."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 312,
       "wordType": "adv",
@@ -44110,7 +44358,12 @@
       "id": "essential-3000_3117",
       "word": "trust",
       "meaning": "niềm tin, sự phó thác; tin, tin cậy, phó thác",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I trust you have cleaned your room?",
+          "vi": "Tôi tin rằng bạn đã dọn phòng của bạn?"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 312,
       "wordType": "n, v",
@@ -44120,7 +44373,12 @@
       "id": "essential-3000_3118",
       "word": "truth",
       "meaning": "sự thật",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Alcoholism and redemption led me finally to truth.",
+          "vi": "Chứng nghiện rượu và sự chuộc lỗi cuối cùng đã dẫn tôi đến sự thật."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 312,
       "wordType": "n",
@@ -44130,7 +44388,12 @@
       "id": "essential-3000_3119",
       "word": "try",
       "meaning": "thử, cố gắng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Today I scored my first try.",
+          "vi": "Hôm nay tôi đã ghi điểm trong lần thử đầu tiên."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 312,
       "wordType": "v",
@@ -44140,7 +44403,12 @@
       "id": "essential-3000_3120",
       "word": "tube",
       "meaning": "ống, tuýp",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A tube of toothpaste.",
+          "vi": "Một tuýp kem đánh răng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 312,
       "wordType": "n",
@@ -44154,13 +44422,19 @@
       "category": "essential-3000",
       "groupIndex": 313,
       "wordType": "n",
-      "pronunciation": "´tju:zdi"
+      "pronunciation": "´tju:zdi",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3122",
       "word": "tune",
       "meaning": "điệu, giai điệu; lên dây, so dây (đàn)",
-      "examples": [],
+      "examples": [
+        {
+          "en": "This piano is not in tune.",
+          "vi": "Cây đàn piano này không đúng giai điệu."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 313,
       "wordType": "n, v",
@@ -44174,13 +44448,19 @@
       "category": "essential-3000",
       "groupIndex": 313,
       "wordType": "n",
-      "pronunciation": "tʌnl"
+      "pronunciation": "tʌnl",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3124",
       "word": "turn",
       "meaning": "quay, xoay, vặn; sự quay, vòng quay",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Ivory turns well.",
+          "vi": "Ngà quay tốt."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 313,
       "wordType": "v, n",
@@ -44192,7 +44472,8 @@
       "meaning": "vô tuyến truyền hình",
       "examples": [],
       "category": "essential-3000",
-      "groupIndex": 313
+      "groupIndex": 313,
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3126",
@@ -44202,13 +44483,19 @@
       "category": "essential-3000",
       "groupIndex": 313,
       "wordType": "adv",
-      "pronunciation": "twaɪs"
+      "pronunciation": "twaɪs",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3127",
       "word": "twin",
       "meaning": "sinh đôi, tạo thành cặp; cặp song sinh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the twin boys",
+          "vi": "hai cậu bé sinh đôi"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 313,
       "wordType": "n, adj",
@@ -44218,7 +44505,12 @@
       "id": "essential-3000_3128",
       "word": "twist",
       "meaning": "xoắn, cuộn, quắn; sự xoắn, vòng xoắn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Damascus twist",
+          "vi": "Vòng xoắn Damascus"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 313,
       "wordType": "v, n",
@@ -44228,7 +44520,12 @@
       "id": "essential-3000_3129",
       "word": "twisted",
       "meaning": "được xoắn, được cuộn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The murders were committed by a twisted sociopath.",
+          "vi": "Các vụ giết người được thực hiện bởi một kẻ xã hội xoắn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 313,
       "wordType": "adj",
@@ -44238,7 +44535,12 @@
       "id": "essential-3000_3130",
       "word": "type",
       "meaning": "loại, kiểu, mẫu; phân loại, xếp loại",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He was exactly her type.",
+          "vi": "Anh ấy chính xác là mẫu người của cô ấy."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 313,
       "wordType": "n, v",
@@ -44248,7 +44550,12 @@
       "id": "essential-3000_3131",
       "word": "typical",
       "meaning": "tiêu biểu, điển hình, đặc trưng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Among the moths, typicals were more common than melanics.",
+          "vi": "Trong số các loài bướm đêm, loài điển hình phổ biến hơn loài melanics."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 314,
       "wordType": "adj",
@@ -44262,7 +44569,8 @@
       "category": "essential-3000",
       "groupIndex": 314,
       "wordType": "adv",
-      "pronunciation": "´tipikəlli"
+      "pronunciation": "´tipikəlli",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3133",
@@ -44272,13 +44580,19 @@
       "category": "essential-3000",
       "groupIndex": 314,
       "wordType": "n",
-      "pronunciation": "taiз"
+      "pronunciation": "taiз",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3134",
       "word": "ugly",
       "meaning": "xấu xí, xấu xa",
-      "examples": [],
+      "examples": [
+        {
+          "en": "an ugly temper; to feel ugly",
+          "vi": "tính khí xấu xí; cảm thấy xấu xí"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 314,
       "wordType": "adj",
@@ -44288,7 +44602,12 @@
       "id": "essential-3000_3135",
       "word": "ultimate",
       "meaning": "cuối cùng, sau cùng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the ultimate disappointment",
+          "vi": "sự thất vọng tột cùng"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 314,
       "wordType": "adj",
@@ -44298,7 +44617,12 @@
       "id": "essential-3000_3136",
       "word": "ultimately",
       "meaning": "cuối cùng, sau cùng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Firstly,… Secondly,… Ultimately,…",
+          "vi": "Thứ nhất,… Thứ hai,… Cuối cùng,…"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 314,
       "wordType": "adv",
@@ -44308,7 +44632,12 @@
       "id": "essential-3000_3137",
       "word": "umbrella",
       "meaning": "ô, dù",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Quick, grab that umbrella before you get rained on!",
+          "vi": "Nhanh lên, lấy chiếc ô đó trước khi trời mưa!"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 314,
       "wordType": "n",
@@ -44318,7 +44647,12 @@
       "id": "essential-3000_3138",
       "word": "unable",
       "meaning": "không có năng lực, không có tài, không thể, không có khẳ năng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Are you unable to mind your own business or something?",
+          "vi": "Bạn không thể bận tâm đến việc kinh doanh của riêng bạn hay gì đó?"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 314,
       "wordType": "adj",
@@ -44332,7 +44666,8 @@
       "category": "essential-3000",
       "groupIndex": 314,
       "wordType": "adj",
-      "pronunciation": "ʌnək'septəbl"
+      "pronunciation": "ʌnək'septəbl",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3140",
@@ -44341,13 +44676,19 @@
       "examples": [],
       "category": "essential-3000",
       "groupIndex": 314,
-      "pronunciation": "¸ʌnək´septəbl"
+      "pronunciation": "¸ʌnək´septəbl",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3141",
       "word": "uncertain",
       "meaning": "thiếu chính xác, không chắc chắn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Tomorrow's weather is uncertain.",
+          "vi": "Ngày mai thời tiết không chắc chắn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 315,
       "wordType": "adj",
@@ -44360,7 +44701,8 @@
       "examples": [],
       "category": "essential-3000",
       "groupIndex": 315,
-      "pronunciation": "ʌn'sə:tn"
+      "pronunciation": "ʌn'sə:tn",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3143",
@@ -44370,13 +44712,19 @@
       "category": "essential-3000",
       "groupIndex": 315,
       "wordType": "n",
-      "pronunciation": "ʌηkl"
+      "pronunciation": "ʌηkl",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3144",
       "word": "uncomfortable",
       "meaning": "bất tiện, khó chịu, không thoải má",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Sharing a house with them made me uncomfortable.",
+          "vi": "Ở chung nhà với họ khiến tôi không thoải mái."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 315,
       "wordType": "adj",
@@ -44389,13 +44737,19 @@
       "examples": [],
       "category": "essential-3000",
       "groupIndex": 315,
-      "pronunciation": "ʌη´kʌmfətəbl"
+      "pronunciation": "ʌη´kʌmfətəbl",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3146",
       "word": "unconscious",
       "meaning": "bất tỉnh, không có ý thức, không biết rõ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "My sudden fright was an unconscious response.",
+          "vi": "Nỗi sợ hãi đột ngột của tôi là một phản ứng vô thức."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 315,
       "wordType": "adj",
@@ -44408,7 +44762,8 @@
       "examples": [],
       "category": "essential-3000",
       "groupIndex": 315,
-      "pronunciation": "ʌn'kɔnʃəs"
+      "pronunciation": "ʌn'kɔnʃəs",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3148",
@@ -44418,7 +44773,8 @@
       "category": "essential-3000",
       "groupIndex": 315,
       "wordType": "adj",
-      "pronunciation": "ʌnkən'trould"
+      "pronunciation": "ʌnkən'trould",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3149",
@@ -44427,13 +44783,19 @@
       "examples": [],
       "category": "essential-3000",
       "groupIndex": 315,
-      "pronunciation": "ʌnkən'trould"
+      "pronunciation": "ʌnkən'trould",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3150",
       "word": "under",
       "meaning": "dưới, ở dưới; ở phía dưới, về phía dưới",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Ensure the patient is sufficiently under.",
+          "vi": "Đảm bảo bệnh nhân ở dưới đủ."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 315,
       "wordType": "adv, prep",
@@ -44443,7 +44805,12 @@
       "id": "essential-3000_3151",
       "word": "underground",
       "meaning": "dưới mặt đất, ngầm dưới đất; ngầm",
-      "examples": [],
+      "examples": [
+        {
+          "en": "underground music",
+          "vi": "nhạc ngầm"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 316,
       "wordType": "adj, adv",
@@ -44453,7 +44820,12 @@
       "id": "essential-3000_3152",
       "word": "underneath",
       "meaning": "dưới, bên dưới",
-      "examples": [],
+      "examples": [
+        {
+          "en": "You can have the underneath bunk.",
+          "vi": "Bạn có thể có giường tầng bên dưới."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 316,
       "wordType": "prep, adv",
@@ -44463,7 +44835,12 @@
       "id": "essential-3000_3153",
       "word": "understand",
       "meaning": "hiểu, nhận thức",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I'm sorry. I don't understand.",
+          "vi": "Tôi xin lỗi. Tôi không hiểu."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 316,
       "wordType": "v",
@@ -44473,7 +44850,12 @@
       "id": "essential-3000_3154",
       "word": "understanding",
       "meaning": "trí tuệ, sự hiểu biết",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He showed much understanding for my problems when he heard about my past.",
+          "vi": "Anh ấy tỏ ra rất thông cảm với những vấn đề của tôi khi nghe về quá khứ của tôi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 316,
       "wordType": "n",
@@ -44483,7 +44865,12 @@
       "id": "essential-3000_3155",
       "word": "underwater",
       "meaning": "ở dưới mặt nước, dưới mặt nước",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Care must be taken not to underwater houseplants in the summer.",
+          "vi": "Phải cẩn thận không trồng cây trong nhà dưới nước vào mùa hè."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 316,
       "wordType": "adj, adv",
@@ -44497,13 +44884,19 @@
       "category": "essential-3000",
       "groupIndex": 316,
       "wordType": "n",
-      "pronunciation": "ʌndəweə"
+      "pronunciation": "ʌndəweə",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3157",
       "word": "undo",
       "meaning": "tháo, gỡ; xóa bỏ, hủy bỏ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Could you undo my buckle for me?",
+          "vi": "Bạn có thể cởi khóa giúp tôi được không?"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 316,
       "wordType": "v",
@@ -44513,7 +44906,12 @@
       "id": "essential-3000_3158",
       "word": "unemployed",
       "meaning": "thất nghiệp; không dùng, không sử dụng được",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The unemployed are a growing portion of the population.",
+          "vi": "Người thất nghiệp chiếm tỷ lệ ngày càng tăng trong dân số."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 316,
       "wordType": "adj",
@@ -44523,7 +44921,12 @@
       "id": "essential-3000_3159",
       "word": "unemployment",
       "meaning": "sự thất nghiệp, nạn thất nghiệp",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Unemployment made Jack depressed.",
+          "vi": "Thất nghiệp khiến Jack chán nản."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 316,
       "wordType": "n",
@@ -44537,7 +44940,8 @@
       "category": "essential-3000",
       "groupIndex": 316,
       "wordType": "adj",
-      "pronunciation": "¸ʌniks´pektid"
+      "pronunciation": "¸ʌniks´pektid",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3161",
@@ -44547,13 +44951,19 @@
       "category": "essential-3000",
       "groupIndex": 317,
       "wordType": "adv",
-      "pronunciation": "Δniks'pektid"
+      "pronunciation": "Δniks'pektid",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3162",
       "word": "unfair",
       "meaning": "gian lận, không công bằng; bất lợi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "It was unfair for the boss to give larger bonuses to his friends.",
+          "vi": "Thật không công bằng khi ông chủ thưởng nhiều hơn cho bạn bè của mình."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 317,
       "wordType": "adj",
@@ -44566,13 +44976,19 @@
       "examples": [],
       "category": "essential-3000",
       "groupIndex": 317,
-      "pronunciation": "ʌn´fɛə"
+      "pronunciation": "ʌn´fɛə",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3164",
       "word": "unfairly",
       "meaning": "gian lận, không công bằng; bất lợi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The carnival games were unfairly difficult, and hardly anybody won a prize.",
+          "vi": "Các trò chơi trong lễ hội thường khó một cách bất công và hiếm có ai giành được giải thưởng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 317,
       "wordType": "adv",
@@ -44586,7 +45002,8 @@
       "category": "essential-3000",
       "groupIndex": 317,
       "wordType": "adj",
-      "pronunciation": "Λnfo:'t∫əneit"
+      "pronunciation": "Λnfo:'t∫əneit",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3166",
@@ -44596,7 +45013,8 @@
       "category": "essential-3000",
       "groupIndex": 317,
       "wordType": "adv",
-      "pronunciation": "ʌn´fɔ:tʃənətli"
+      "pronunciation": "ʌn´fɔ:tʃənətli",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3167",
@@ -44606,7 +45024,8 @@
       "category": "essential-3000",
       "groupIndex": 317,
       "wordType": "adj",
-      "pronunciation": "ʌn´frendli"
+      "pronunciation": "ʌn´frendli",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3168",
@@ -44616,13 +45035,19 @@
       "category": "essential-3000",
       "groupIndex": 317,
       "wordType": "n",
-      "pronunciation": "ʌn´hæpinis"
+      "pronunciation": "ʌn´hæpinis",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3169",
       "word": "unhappy",
       "meaning": "buồn rầu, khốn khổ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "An unhappy customer is unlikely to return to your shop.",
+          "vi": "Một khách hàng không hài lòng khó có thể quay lại cửa hàng của bạn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 317,
       "wordType": "adj",
@@ -44636,7 +45061,8 @@
       "category": "essential-3000",
       "groupIndex": 317,
       "wordType": "n, adj",
-      "pronunciation": "ˈjunəˌfɔrm"
+      "pronunciation": "ˈjunəˌfɔrm",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3171",
@@ -44646,7 +45072,8 @@
       "category": "essential-3000",
       "groupIndex": 318,
       "wordType": "adj",
-      "pronunciation": "¸ʌnim´pɔ:tənt"
+      "pronunciation": "¸ʌnim´pɔ:tənt",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3172",
@@ -44656,13 +45083,19 @@
       "category": "essential-3000",
       "groupIndex": 318,
       "wordType": "n",
-      "pronunciation": "ju:njən"
+      "pronunciation": "ju:njən",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3173",
       "word": "unique",
       "meaning": "độc nhất vô nhị",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Every person has a unique life, therefore every person has a unique journey. ― Gary Cook",
+          "vi": "Mỗi người đều có một cuộc sống riêng, do đó mỗi người đều có một hành trình riêng. - Gary Cook"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 318,
       "wordType": "adj",
@@ -44672,7 +45105,12 @@
       "id": "essential-3000_3174",
       "word": "unit",
       "meaning": "đơn vị",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The centimetre is a unit of length.",
+          "vi": "Centimét là đơn vị đo chiều dài."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 318,
       "wordType": "n",
@@ -44682,7 +45120,12 @@
       "id": "essential-3000_3175",
       "word": "unite",
       "meaning": "liên kết, hợp nhất, hợp lại, kết thâ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "If we want to win, we will need to unite.",
+          "vi": "Muốn thắng thì phải đoàn kết."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 318,
       "wordType": "v",
@@ -44692,7 +45135,12 @@
       "id": "essential-3000_3176",
       "word": "united",
       "meaning": "liên minh, đoàn kết, chung, thống nhất",
-      "examples": [],
+      "examples": [
+        {
+          "en": "If we want to win, we will need to unite.",
+          "vi": "Muốn thắng thì phải đoàn kết."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 318,
       "wordType": "adj",
@@ -44702,7 +45150,12 @@
       "id": "essential-3000_3177",
       "word": "universe",
       "meaning": "vũ trụ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "That didn’t just rock my world, it rocked my universe.",
+          "vi": "Điều đó không chỉ làm rung chuyển thế giới của tôi mà còn làm rung chuyển vũ trụ của tôi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 318,
       "wordType": "n",
@@ -44712,7 +45165,12 @@
       "id": "essential-3000_3178",
       "word": "university",
       "meaning": "trường đại học",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The only reason why I haven't gone to university is because I can't afford it.",
+          "vi": "Lý do duy nhất khiến tôi không học đại học là vì tôi không đủ khả năng chi trả."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 318,
       "wordType": "n",
@@ -44726,7 +45184,8 @@
       "category": "essential-3000",
       "groupIndex": 318,
       "wordType": "adj",
-      "pronunciation": "ʌn´kaind"
+      "pronunciation": "ʌn´kaind",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3180",
@@ -44736,13 +45195,19 @@
       "category": "essential-3000",
       "groupIndex": 318,
       "wordType": "adj",
-      "pronunciation": "ʌn'noun"
+      "pronunciation": "ʌn'noun",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3181",
       "word": "unless",
       "meaning": "trừ phi, trừ khi, nếu không",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I’m leaving unless I get a pay rise (AmE: raise).",
+          "vi": "Tôi sẽ rời đi trừ khi được tăng lương (AmE: tăng lương)."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 319,
       "wordType": "conj",
@@ -44752,7 +45217,12 @@
       "id": "essential-3000_3182",
       "word": "unlike",
       "meaning": "khác, không giống",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Being late is unlike him.",
+          "vi": "Đến muộn không giống anh ấy chút nào."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 319,
       "wordType": "prep, adj",
@@ -44762,7 +45232,12 @@
       "id": "essential-3000_3183",
       "word": "unlikely",
       "meaning": "không thể xảy ra, không chắc xảy ra",
-      "examples": [],
+      "examples": [
+        {
+          "en": "unlikely means",
+          "vi": "phương tiện không chắc chắn"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 319,
       "wordType": "adj",
@@ -44772,7 +45247,12 @@
       "id": "essential-3000_3184",
       "word": "unload",
       "meaning": "cất gánh nặng, dỡ hàng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to unload a gun",
+          "vi": "dỡ súng"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 319,
       "wordType": "v",
@@ -44786,13 +45266,19 @@
       "category": "essential-3000",
       "groupIndex": 319,
       "wordType": "adj",
-      "pronunciation": "ʌn´lʌki"
+      "pronunciation": "ʌn´lʌki",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3186",
       "word": "unnecessary",
       "meaning": "không cần thiết, không mong muốn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The automatic child-frightener made clowns unnecessary.",
+          "vi": "Công cụ dọa trẻ em tự động khiến những chú hề trở nên không cần thiết."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 319,
       "wordType": "adj",
@@ -44806,7 +45292,8 @@
       "category": "essential-3000",
       "groupIndex": 319,
       "wordType": "adj",
-      "pronunciation": "ʌn'plezənt"
+      "pronunciation": "ʌn'plezənt",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3188",
@@ -44816,13 +45303,19 @@
       "category": "essential-3000",
       "groupIndex": 319,
       "wordType": "adj",
-      "pronunciation": "ʌnˈrizənəbəl"
+      "pronunciation": "ʌnˈrizənəbəl",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3189",
       "word": "unsteady",
       "meaning": "không chắc, không ổn định",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A slightly unsteady item of furniture.",
+          "vi": "Một món đồ nội thất hơi không ổn định."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 319,
       "wordType": "adj",
@@ -44832,7 +45325,12 @@
       "id": "essential-3000_3190",
       "word": "unsuccessful",
       "meaning": "không thành công, thất bại",
-      "examples": [],
+      "examples": [
+        {
+          "en": "His unsuccessful attempt earned him sympathy, condolences, and an occasional good-natured ribbing.",
+          "vi": "Nỗ lực không thành công của anh ấy đã mang lại cho anh ấy sự thông cảm, chia buồn và đôi khi là một lời chỉ trích tốt bụng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 319,
       "wordType": "adj",
@@ -44842,7 +45340,12 @@
       "id": "essential-3000_3191",
       "word": "untidy",
       "meaning": "không gọn gàng, không ngăn nắp lộn xộn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I have never seen such an untidy bedroom!",
+          "vi": "Tôi chưa bao giờ thấy một phòng ngủ bừa bộn như vậy!"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 320,
       "wordType": "adj",
@@ -44856,13 +45359,19 @@
       "category": "essential-3000",
       "groupIndex": 320,
       "wordType": "conj, prep",
-      "pronunciation": "ʌn´til"
+      "pronunciation": "ʌn´til",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3193",
       "word": "Unusual",
       "meaning": "hiếm, khác thường",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Every once in a while, though, Idol comes across an unusual talent who just blows everyone away.",
+          "vi": "Tuy nhiên, thỉnh thoảng Idol lại tình cờ gặp một tài năng khác thường khiến mọi người phải kinh ngạc."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 320,
       "pronunciation": "ʌn´ju:ʒuəl"
@@ -44875,13 +45384,19 @@
       "category": "essential-3000",
       "groupIndex": 320,
       "wordType": "adv",
-      "pronunciation": "ʌn´ju:ʒuəlli"
+      "pronunciation": "ʌn´ju:ʒuəlli",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3195",
       "word": "Unwilling",
       "meaning": "không muốn, không có ý định",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We are unwilling to restore his previous privileges after his betrayal of our trust.",
+          "vi": "Chúng tôi không sẵn lòng khôi phục những đặc quyền trước đây của anh ấy sau khi anh ấy phản bội lòng tin của chúng tôi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 320,
       "pronunciation": "ʌn´wiliη"
@@ -44894,13 +45409,19 @@
       "category": "essential-3000",
       "groupIndex": 320,
       "wordType": "adv",
-      "pronunciation": "ʌn´wiliηgli"
+      "pronunciation": "ʌn´wiliηgli",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3197",
       "word": "up",
       "meaning": "ở trên, lên trên, lên",
-      "examples": [],
+      "examples": [
+        {
+          "en": "AAKK = aces up",
+          "vi": "AAKK = át chủ bài"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 320,
       "wordType": "adv, prep",
@@ -44910,7 +45431,12 @@
       "id": "essential-3000_3198",
       "word": "upon",
       "meaning": "trên, ở trên",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She balanced upon one foot.",
+          "vi": "Cô giữ thăng bằng trên một chân."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 320,
       "wordType": "prep",
@@ -44924,13 +45450,19 @@
       "category": "essential-3000",
       "groupIndex": 320,
       "wordType": "adj",
-      "pronunciation": "´ʌpə"
+      "pronunciation": "´ʌpə",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3200",
       "word": "upset",
       "meaning": "làm đổ, đánh đổ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The carriage upset when the horse bolted.",
+          "vi": "Cỗ xe bị đảo lộn khi con ngựa phóng đi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 320,
       "wordType": "v, adj",
@@ -44940,7 +45472,12 @@
       "id": "essential-3000_3201",
       "word": "upsetting",
       "meaning": "tính đánh đổ, làm đổ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He found taking his cat to the vet to be put down very upsetting.",
+          "vi": "Anh ấy thấy việc đưa con mèo của mình đến bác sĩ thú y rất khó chịu."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 321,
       "wordType": "adj",
@@ -44950,7 +45487,12 @@
       "id": "essential-3000_3202",
       "word": "upside down",
       "meaning": "lộn ngược",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He's upside down on his mortgage.",
+          "vi": "Anh ta đang đảo lộn với khoản thế chấp của mình."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 321,
       "wordType": "adv",
@@ -44960,7 +45502,12 @@
       "id": "essential-3000_3203",
       "word": "upstairs",
       "meaning": "ở tên gác, cư ngụ ở tầng gác; tần trên, gác",
-      "examples": [],
+      "examples": [
+        {
+          "en": "That fastball was upstairs for a ball.",
+          "vi": "Quả bóng nhanh đó ở trên lầu để chơi bóng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 321,
       "wordType": "adv, adj, n",
@@ -44970,7 +45517,12 @@
       "id": "essential-3000_3204",
       "word": "upward",
       "meaning": "lên, hướng lên, đi lên",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We ran upward",
+          "vi": "Chúng tôi chạy lên trên"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 321,
       "wordType": "adj",
@@ -44983,7 +45535,8 @@
       "examples": [],
       "category": "essential-3000",
       "groupIndex": 321,
-      "wordType": "adv"
+      "wordType": "adv",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3206",
@@ -44993,13 +45546,19 @@
       "category": "essential-3000",
       "groupIndex": 321,
       "wordType": "adj",
-      "pronunciation": "ˈɜrbən"
+      "pronunciation": "ˈɜrbən",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3207",
       "word": "urge",
       "meaning": "thúc, giục, giục giã; sự thúc đẩy, sự thôi thúc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to urge an ore with intense heat",
+          "vi": "để thúc giục một quặng với sức nóng dữ dội"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 321,
       "wordType": "v, n",
@@ -45009,7 +45568,12 @@
       "id": "essential-3000_3208",
       "word": "urgent",
       "meaning": "gấp, khẩn cấp",
-      "examples": [],
+      "examples": [
+        {
+          "en": "An urgent appeal was sent out for assistance.",
+          "vi": "Một lời kêu gọi khẩn cấp đã được gửi đi để được hỗ trợ."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 321,
       "wordType": "adj",
@@ -45019,7 +45583,12 @@
       "id": "essential-3000_3209",
       "word": "us",
       "meaning": "chúng tôi, chúng ta; tôi và anh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Could you do that for us?",
+          "vi": "Bạn có thể làm điều đó cho chúng tôi được không?"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 321,
       "wordType": "n, pro",
@@ -45029,7 +45598,12 @@
       "id": "essential-3000_3210",
       "word": "use",
       "meaning": "sử dụng, dùng; sự dùng, sự sử dụng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "This tool has many uses.",
+          "vi": "Công cụ này có nhiều công dụng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 321,
       "wordType": "v, n",
@@ -45039,7 +45613,12 @@
       "id": "essential-3000_3211",
       "word": "used",
       "meaning": "đã dùng, đã sử dụng. used to sth/to doing sth: sử dụng cái gì, s dụng đểlàm cái gì",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He bought a used car.",
+          "vi": "Anh ấy đã mua một chiếc xe đã qua sử dụng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 322,
       "wordType": "adj",
@@ -45052,7 +45631,8 @@
       "examples": [],
       "category": "essential-3000",
       "groupIndex": 322,
-      "wordType": "modal, v"
+      "wordType": "modal, v",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3213",
@@ -45062,13 +45642,19 @@
       "category": "essential-3000",
       "groupIndex": 322,
       "wordType": "adj",
-      "pronunciation": "´ju:sful"
+      "pronunciation": "´ju:sful",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3214",
       "word": "useless",
       "meaning": "vô ích, vô dụng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "This fork has prongs that are bent. It's useless now.",
+          "vi": "Cái nĩa này có các ngạnh bị uốn cong. Giờ nó vô dụng rồi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 322,
       "wordType": "adj",
@@ -45082,13 +45668,19 @@
       "category": "essential-3000",
       "groupIndex": 322,
       "wordType": "n",
-      "pronunciation": "´ju:zə"
+      "pronunciation": "´ju:zə",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3216",
       "word": "usual",
       "meaning": "thông thường, thường dùng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I'll just have the usual.",
+          "vi": "Tôi sẽ chỉ ăn như thường lệ."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 322,
       "wordType": "adj",
@@ -45098,7 +45690,12 @@
       "id": "essential-3000_3217",
       "word": "usually",
       "meaning": "thường thường",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Except for one or two days a year, he usually walks to work.",
+          "vi": "Ngoại trừ một hoặc hai ngày trong năm, anh thường đi bộ đi làm."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 322,
       "wordType": "adv",
@@ -45108,7 +45705,12 @@
       "id": "essential-3000_3218",
       "word": "vacation",
       "meaning": "kỳ nghỉ hè, kỳ nghỉ lễ; ngày nghỉ, ngày lễ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "This year, we’re vacationing in Mexico.",
+          "vi": "Năm nay chúng tôi đi nghỉ ở Mexico."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 322,
       "wordType": "n",
@@ -45118,7 +45720,12 @@
       "id": "essential-3000_3219",
       "word": "valid",
       "meaning": "chắc chắn, hiệu quả, hợp lý",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A valid format for the date is MM/DD/YY.",
+          "vi": "Định dạng hợp lệ cho ngày là MM/DD/YY."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 322,
       "wordType": "adj",
@@ -45132,13 +45739,19 @@
       "category": "essential-3000",
       "groupIndex": 322,
       "wordType": "n",
-      "pronunciation": "væli"
+      "pronunciation": "væli",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3221",
       "word": "valuable",
       "meaning": "có giá trị lớn, đáng giá",
-      "examples": [],
+      "examples": [
+        {
+          "en": "valuable gemstones",
+          "vi": "đá quý có giá trị"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 323,
       "wordType": "adj",
@@ -45148,7 +45761,12 @@
       "id": "essential-3000_3222",
       "word": "value",
       "meaning": "giá trị, ước tính, định giá",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The vein carries good values.",
+          "vi": "Tĩnh mạch mang những giá trị tốt đẹp."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 323,
       "wordType": "n, v",
@@ -45158,7 +45776,12 @@
       "id": "essential-3000_3223",
       "word": "van",
       "meaning": "tiền đội, quân tiên phong; xe tải",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The van sped down the road.",
+          "vi": "Chiếc xe tăng tốc trên đường."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 323,
       "wordType": "n",
@@ -45168,7 +45791,12 @@
       "id": "essential-3000_3224",
       "word": "variation",
       "meaning": "sự biến đổi, sự thay đổi mức độ, sự khác nhau",
-      "examples": [],
+      "examples": [
+        {
+          "en": "All of his soups are variations on a single recipe.",
+          "vi": "Tất cả các món súp của anh ấy đều là những biến thể của một công thức duy nhất."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 323,
       "wordType": "n",
@@ -45178,7 +45806,12 @@
       "id": "essential-3000_3225",
       "word": "varied",
       "meaning": "thuộc nhiều loại khác nhau, những vẻ đa dạng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "His mood varies by the hour.",
+          "vi": "Tâm trạng của anh ấy thay đổi theo từng giờ."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 323,
       "wordType": "adj",
@@ -45188,7 +45821,12 @@
       "id": "essential-3000_3226",
       "word": "variety",
       "meaning": "sự đa dạng, trạng thái khác nhau",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Variety is the spice of life.",
+          "vi": "Sự đa dạng là gia vị của cuộc sống."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 323,
       "wordType": "n",
@@ -45198,7 +45836,12 @@
       "id": "essential-3000_3227",
       "word": "various",
       "meaning": "khác nhau, thuộc về nhiều loại",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The reasons are various.",
+          "vi": "Những lý do rất đa dạng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 323,
       "wordType": "adj",
@@ -45208,7 +45851,12 @@
       "id": "essential-3000_3228",
       "word": "vary",
       "meaning": "thay đổi, làm cho khác nhau, biến đổi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "You should vary your diet. Eating just bread will do you harm in the end.",
+          "vi": "Bạn nên thay đổi chế độ ăn uống của mình. Cuối cùng, chỉ ăn bánh mì sẽ gây hại cho bạn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 323,
       "wordType": "v",
@@ -45218,7 +45866,12 @@
       "id": "essential-3000_3229",
       "word": "vast",
       "meaning": "rộng lớn, mênh mông",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The Sahara desert is vast.",
+          "vi": "Sa mạc Sahara rộng lớn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 323,
       "wordType": "adj",
@@ -45232,7 +45885,8 @@
       "category": "essential-3000",
       "groupIndex": 323,
       "wordType": "n",
-      "pronunciation": "ˈvɛdʒtəbəl , ˈvɛdʒɪtəbəl"
+      "pronunciation": "ˈvɛdʒtəbəl , ˈvɛdʒɪtəbəl",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3231",
@@ -45242,13 +45896,19 @@
       "category": "essential-3000",
       "groupIndex": 324,
       "wordType": "n",
-      "pronunciation": "vi:hikl"
+      "pronunciation": "vi:hikl",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3232",
       "word": "venture",
       "meaning": "dự án kinh doanh, công việc kinh doanh; liều, mạo hiểm, cả gan",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Nothing ventured, nothing gained.",
+          "vi": "Không có gì mạo hiểm, không có gì đạt được."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 324,
       "wordType": "n, v",
@@ -45258,7 +45918,12 @@
       "id": "essential-3000_3233",
       "word": "version",
       "meaning": "bản dịch sang một ngôn ngữ khác",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He gave another version of the affair.",
+          "vi": "Anh ta đưa ra một phiên bản khác của vụ việc."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 324,
       "wordType": "n",
@@ -45268,7 +45933,12 @@
       "id": "essential-3000_3234",
       "word": "vertical",
       "meaning": "thẳng đứng, đứng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We offer specialised accounting software targeting various verticals.",
+          "vi": "Chúng tôi cung cấp phần mềm kế toán chuyên biệt nhắm vào nhiều ngành dọc khác nhau."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 324,
       "wordType": "adj",
@@ -45278,7 +45948,12 @@
       "id": "essential-3000_3235",
       "word": "very",
       "meaning": "rất, lắm",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He tried his very best.",
+          "vi": "Anh ấy đã cố gắng hết sức mình."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 324,
       "wordType": "adv",
@@ -45288,7 +45963,12 @@
       "id": "essential-3000_3236",
       "word": "via",
       "meaning": "qua, theo đường",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I'll send you the information via e-mail.",
+          "vi": "Tôi sẽ gửi cho bạn thông tin qua e-mail."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 324,
       "wordType": "prep",
@@ -45298,7 +45978,12 @@
       "id": "essential-3000_3237",
       "word": "victim",
       "meaning": "nạn nhân",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the youngest victims of the brutal war",
+          "vi": "những nạn nhân nhỏ tuổi nhất của cuộc chiến tàn khốc"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 324,
       "wordType": "n",
@@ -45308,7 +45993,12 @@
       "id": "essential-3000_3238",
       "word": "victory",
       "meaning": "chiến thắng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "It was a great victory on the battlefield.",
+          "vi": "Đó là một chiến thắng vĩ đại trên chiến trường."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 324,
       "wordType": "n",
@@ -45322,13 +46012,19 @@
       "category": "essential-3000",
       "groupIndex": 324,
       "wordType": "n",
-      "pronunciation": "vidiou"
+      "pronunciation": "vidiou",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3240",
       "word": "view",
       "meaning": "sự nhìn, tầm nhìn; nhìn thấy, xem quan sát",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a fine view of Lake George",
+          "vi": "một khung cảnh đẹp của hồ George"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 324,
       "wordType": "n, v",
@@ -45338,7 +46034,12 @@
       "id": "essential-3000_3241",
       "word": "village",
       "meaning": "làng, xã",
-      "examples": [],
+      "examples": [
+        {
+          "en": "There are 2 churches and 3 shops in our village.",
+          "vi": "Có 2 nhà thờ và 3 cửa hàng trong làng của chúng tôi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 325,
       "wordType": "n",
@@ -45348,7 +46049,12 @@
       "id": "essential-3000_3242",
       "word": "violence",
       "meaning": "sự ác liệt, sự dữ dội; bạo lực",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We try to avoid violence in resolving conflicts.",
+          "vi": "Chúng tôi cố gắng tránh bạo lực trong việc giải quyết xung đột."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 325,
       "wordType": "n",
@@ -45358,7 +46064,12 @@
       "id": "essential-3000_3243",
       "word": "violent",
       "meaning": "mãnh liệt, mạnh mẽ, hung dữ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A violent wind ripped the branch from the tree.",
+          "vi": "Một cơn gió dữ dội xé toạc cành cây."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 325,
       "wordType": "adj",
@@ -45368,7 +46079,12 @@
       "id": "essential-3000_3244",
       "word": "violently",
       "meaning": "mãnh liệt, dữ dội",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I found myself violently disagreeing with him.",
+          "vi": "Tôi thấy mình không đồng tình với anh ấy một cách dữ dội."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 325,
       "wordType": "adv",
@@ -45378,7 +46094,12 @@
       "id": "essential-3000_3245",
       "word": "virtually",
       "meaning": "thực sự, hầu như, gần như",
-      "examples": [],
+      "examples": [
+        {
+          "en": "virtually Haken",
+          "vi": "hầu như Haken"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 325,
       "wordType": "adv",
@@ -45388,7 +46109,12 @@
       "id": "essential-3000_3246",
       "word": "virus",
       "meaning": "vi rút",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He caught a virus and had to stay home from school.",
+          "vi": "Anh ta bị nhiễm virus và phải nghỉ học ở nhà."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 325,
       "wordType": "n",
@@ -45398,7 +46124,12 @@
       "id": "essential-3000_3247",
       "word": "visible",
       "meaning": "hữu hình, thấy được",
-      "examples": [],
+      "examples": [
+        {
+          "en": "When the sun rises, the world becomes visible.",
+          "vi": "Khi mặt trời mọc, thế giới trở nên hữu hình."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 325,
       "wordType": "adj",
@@ -45408,7 +46139,12 @@
       "id": "essential-3000_3248",
       "word": "vision",
       "meaning": "sự nhìn, thị lực",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He had a vision of the Virgin Mary.",
+          "vi": "Ông đã nhìn thấy Đức Trinh Nữ Maria."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 325,
       "wordType": "n",
@@ -45422,7 +46158,8 @@
       "category": "essential-3000",
       "groupIndex": 325,
       "wordType": "v, n",
-      "pronunciation": "vizun"
+      "pronunciation": "vizun",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3250",
@@ -45432,13 +46169,19 @@
       "category": "essential-3000",
       "groupIndex": 325,
       "wordType": "n",
-      "pronunciation": "vizitə"
+      "pronunciation": "vizitə",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3251",
       "word": "vital",
       "meaning": "(thuộc) sự sống, cần cho sự sống",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The brain is a vital organ.",
+          "vi": "Bộ não là một cơ quan quan trọng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 326,
       "wordType": "adj",
@@ -45448,7 +46191,12 @@
       "id": "essential-3000_3252",
       "word": "vocabulary",
       "meaning": "từ vựng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "My Russian vocabulary is very limited.",
+          "vi": "Vốn từ vựng tiếng Nga của tôi rất hạn chế."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 326,
       "wordType": "n",
@@ -45458,7 +46206,12 @@
       "id": "essential-3000_3253",
       "word": "voice",
       "meaning": "tiếng, giọng nói",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to cultivate the voice",
+          "vi": "trau dồi giọng nói"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 326,
       "wordType": "n",
@@ -45468,7 +46221,12 @@
       "id": "essential-3000_3254",
       "word": "volume",
       "meaning": "thế tích, quyển, tập",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The letter \"G\" was found in volume 4.",
+          "vi": "Chữ \"G\" được tìm thấy trong tập 4."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 326,
       "wordType": "n",
@@ -45478,7 +46236,12 @@
       "id": "essential-3000_3255",
       "word": "vote",
       "meaning": "sự bỏ phiếu, sự bầu cử; bỏ phiếu, bầu cử",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Did you vote last month?",
+          "vi": "Bạn đã bỏ phiếu vào tháng trước?"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 326,
       "wordType": "n, v",
@@ -45488,7 +46251,12 @@
       "id": "essential-3000_3256",
       "word": "wage",
       "meaning": "tiền lương, tiền công",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Before her promotion, her wages were 20% less.",
+          "vi": "Trước khi được thăng chức, lương của cô thấp hơn 20%."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 326,
       "wordType": "n",
@@ -45502,13 +46270,19 @@
       "category": "essential-3000",
       "groupIndex": 326,
       "wordType": "n",
-      "pronunciation": "weist"
+      "pronunciation": "weist",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3258",
       "word": "wait",
       "meaning": "chờ đợi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to wait dinner",
+          "vi": "chờ bữa tối"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 326,
       "wordType": "v",
@@ -45522,7 +46296,8 @@
       "category": "essential-3000",
       "groupIndex": 326,
       "wordType": "n",
-      "pronunciation": "weitə"
+      "pronunciation": "weitə",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3260",
@@ -45532,13 +46307,19 @@
       "category": "essential-3000",
       "groupIndex": 326,
       "wordType": "v",
-      "pronunciation": "weik"
+      "pronunciation": "weik",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3261",
       "word": "walk",
       "meaning": "đi, đi bộ; sự đi bộ, sự đi dạo",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I take a walk every morning",
+          "vi": "Tôi đi dạo vào mỗi buổi sáng"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 327,
       "wordType": "v, n",
@@ -45548,7 +46329,12 @@
       "id": "essential-3000_3262",
       "word": "walking",
       "meaning": "sự đi, sự đi bộ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a walking tour",
+          "vi": "một chuyến đi bộ"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 327,
       "wordType": "n",
@@ -45558,7 +46344,12 @@
       "id": "essential-3000_3263",
       "word": "wall",
       "meaning": "tường, vách",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a seawall;  a firewall",
+          "vi": "đê biển;  tường lửa"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 327,
       "wordType": "n",
@@ -45568,7 +46359,12 @@
       "id": "essential-3000_3264",
       "word": "wallet",
       "meaning": "cái ví",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He fell down and landed on his wallet.",
+          "vi": "Anh ta ngã xuống và rơi trúng ví của mình."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 327,
       "wordType": "n",
@@ -45578,7 +46374,12 @@
       "id": "essential-3000_3265",
       "word": "wander",
       "meaning": "đi lang thang; sự đi lang thang",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to wander over the fields",
+          "vi": "lang thang trên cánh đồng"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 327,
       "wordType": "v, n",
@@ -45588,7 +46389,12 @@
       "id": "essential-3000_3266",
       "word": "want",
       "meaning": "muốn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "That chair wants fixing.",
+          "vi": "Cái ghế đó muốn sửa."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 327,
       "wordType": "v",
@@ -45598,7 +46404,12 @@
       "id": "essential-3000_3267",
       "word": "war",
       "meaning": "chiến tranh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "You look like you've been through the wars.",
+          "vi": "Trông bạn như đã trải qua chiến tranh."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 327,
       "wordType": "n",
@@ -45608,7 +46419,12 @@
       "id": "essential-3000_3268",
       "word": "warm",
       "meaning": "ấm, ấm áp; làm cho nóng, hâm nóng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a warm piano sound",
+          "vi": "một âm thanh piano ấm áp"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 327,
       "wordType": "adj, v",
@@ -45622,13 +46438,19 @@
       "category": "essential-3000",
       "groupIndex": 327,
       "wordType": "n",
-      "pronunciation": "wɔ:mθ"
+      "pronunciation": "wɔ:mθ",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3270",
       "word": "warn",
       "meaning": "báo cho biết, cảnh báo",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A sign warns trespassers off/away from the site.",
+          "vi": "Một biển báo cảnh báo những người xâm phạm rời khỏi khu vực này."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 327,
       "wordType": "v",
@@ -45638,7 +46460,12 @@
       "id": "essential-3000_3271",
       "word": "warning",
       "meaning": "sự báo trước, lời cảnh báo",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The boss gave him a warning that he would be fired if he did not desist from his behaviour.",
+          "vi": "Ông chủ đã cảnh báo anh ta rằng anh ta sẽ bị sa thải nếu anh ta không từ bỏ hành vi của mình."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 328,
       "wordType": "n",
@@ -45648,7 +46475,12 @@
       "id": "essential-3000_3272",
       "word": "wash",
       "meaning": "rửa, giặt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Waves wash the shore.",
+          "vi": "Sóng xô bờ."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 328,
       "wordType": "v",
@@ -45658,7 +46490,12 @@
       "id": "essential-3000_3273",
       "word": "washing",
       "meaning": "sự tắm rửa, sự giặt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a washing of silver",
+          "vi": "rửa bạc"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 328,
       "wordType": "n",
@@ -45668,7 +46505,12 @@
       "id": "essential-3000_3274",
       "word": "waste",
       "meaning": "lãng phí, uổng phí; vùng hoang vu sa mạc; bỏ hoang",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Her life seemed a waste",
+          "vi": "Cuộc sống của cô ấy dường như là một sự lãng phí"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 328,
       "wordType": "v, n, adj",
@@ -45678,7 +46520,12 @@
       "id": "essential-3000_3275",
       "word": "watch",
       "meaning": "nhìn, theo dõi, quan sát; sự canh gác, sự canh phòng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Watch what you say.",
+          "vi": "Xem những gì bạn nói."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 328,
       "wordType": "v, n",
@@ -45688,7 +46535,12 @@
       "id": "essential-3000_3276",
       "word": "water",
       "meaning": "nước",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to water silk",
+          "vi": "để tưới lụa"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 328,
       "wordType": "n",
@@ -45698,7 +46550,12 @@
       "id": "essential-3000_3277",
       "word": "wave",
       "meaning": "sóng, gợn nước; gợn sóng, uốn thành sóng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Jones waves at strike one.",
+          "vi": "Jones vẫy tay khi tấn công một."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 328,
       "wordType": "n, v",
@@ -45708,7 +46565,12 @@
       "id": "essential-3000_3278",
       "word": "way",
       "meaning": "đường, đường đi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I'm way tired",
+          "vi": "Tôi mệt quá"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 328,
       "wordType": "n",
@@ -45718,7 +46580,12 @@
       "id": "essential-3000_3279",
       "word": "we",
       "meaning": "chúng tôi, chúng ta",
-      "examples": [],
+      "examples": [
+        {
+          "en": "How are we all tonight?",
+          "vi": "Tối nay tất cả chúng ta thế nào?"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 328,
       "wordType": "pron",
@@ -45728,7 +46595,12 @@
       "id": "essential-3000_3280",
       "word": "weak",
       "meaning": "yếu, yếu ớt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a weak negative",
+          "vi": "tiêu cực yếu"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 328,
       "wordType": "adj",
@@ -45738,7 +46610,12 @@
       "id": "essential-3000_3281",
       "word": "weakness",
       "meaning": "tình trạng yếu đuối, yếu ớt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She is an athlete who has a weakness for chocolate.",
+          "vi": "Cô ấy là một vận động viên có điểm yếu là sô cô la."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 329,
       "wordType": "n",
@@ -45748,7 +46625,12 @@
       "id": "essential-3000_3282",
       "word": "wealth",
       "meaning": "sự giàu có, sự giàu sang",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She brings a wealth of knowledge to the project.",
+          "vi": "Cô ấy mang lại rất nhiều kiến ​​thức cho dự án."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 329,
       "wordType": "n",
@@ -45758,7 +46640,12 @@
       "id": "essential-3000_3283",
       "word": "weapon",
       "meaning": "vũ khí",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Choose your weapon.",
+          "vi": "Chọn vũ khí của bạn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 329,
       "wordType": "n",
@@ -45768,7 +46655,12 @@
       "id": "essential-3000_3284",
       "word": "wear",
       "meaning": "mặc, mang, đeo",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to wear the wolf from the sheep",
+          "vi": "mặc con sói từ con cừu"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 329,
       "wordType": "v",
@@ -45778,7 +46670,12 @@
       "id": "essential-3000_3285",
       "word": "weather",
       "meaning": "thời tiết",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to weather a cape; to weather another ship",
+          "vi": "để vượt qua một chiếc áo choàng; để vượt qua một con tàu khác"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 329,
       "wordType": "n",
@@ -45788,7 +46685,12 @@
       "id": "essential-3000_3286",
       "word": "web",
       "meaning": "mạng, lưới",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He caught the ball in the web.",
+          "vi": "Anh ấy đã bắt được quả bóng trên lưới."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 329,
       "wordType": "n",
@@ -45801,13 +46703,19 @@
       "examples": [],
       "category": "essential-3000",
       "groupIndex": 329,
-      "wordType": "n"
+      "wordType": "n",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3288",
       "word": "wedding",
       "meaning": "lễ cưới, hôn lễ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The wedding of our three companies took place last week.",
+          "vi": "Đám cưới của ba công ty chúng tôi đã diễn ra vào tuần trước."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 329,
       "wordType": "n",
@@ -45821,13 +46729,19 @@
       "category": "essential-3000",
       "groupIndex": 329,
       "wordType": "n",
-      "pronunciation": "´wensdei"
+      "pronunciation": "´wensdei",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3290",
       "word": "week",
       "meaning": "tuần, tuần lễ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I'll see you Thursday week.",
+          "vi": "Tôi sẽ gặp bạn vào thứ năm tuần."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 329,
       "wordType": "n",
@@ -45837,7 +46751,12 @@
       "id": "essential-3000_3291",
       "word": "weekend",
       "meaning": "cuối tuần",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a weekend break",
+          "vi": "nghỉ cuối tuần"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 330,
       "wordType": "n",
@@ -45847,7 +46766,12 @@
       "id": "essential-3000_3292",
       "word": "weekly",
       "meaning": "mỗi tuần một lần, hàng tuần",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She visits her mother weekly.",
+          "vi": "Cô đến thăm mẹ hàng tuần."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 330,
       "wordType": "adj",
@@ -45857,7 +46781,12 @@
       "id": "essential-3000_3293",
       "word": "weigh",
       "meaning": "cân, cân nặng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I weigh ten and a half stone.",
+          "vi": "Tôi nặng mười hòn rưỡi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 330,
       "wordType": "v",
@@ -45867,7 +46796,12 @@
       "id": "essential-3000_3294",
       "word": "weight",
       "meaning": "trọng lượng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He was pushing weight.",
+          "vi": "Anh ấy đang đẩy tạ."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 330,
       "wordType": "n",
@@ -45877,7 +46811,12 @@
       "id": "essential-3000_3295",
       "word": "welcome",
       "meaning": "chào mừng, hoan nghênh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Refugees welcome in London!",
+          "vi": "Người tị nạn được chào đón ở London!"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 330,
       "wordType": "v, adj, n, exclamation",
@@ -45887,7 +46826,12 @@
       "id": "essential-3000_3296",
       "word": "well",
       "meaning": "tốt, giỏi; ôi, may quá!",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We’re well beat now.",
+          "vi": "Bây giờ chúng tôi đã đánh bại tốt."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 330,
       "wordType": "adv, adj, exclamation",
@@ -45901,7 +46845,8 @@
       "category": "essential-3000",
       "groupIndex": 330,
       "wordType": "adj",
-      "pronunciation": "´wel´noun"
+      "pronunciation": "´wel´noun",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3298",
@@ -45911,13 +46856,19 @@
       "category": "essential-3000",
       "groupIndex": 330,
       "wordType": "n, adj, adv",
-      "pronunciation": "west"
+      "pronunciation": "west",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3299",
       "word": "western",
       "meaning": "về phía tây, của phía tây",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the western approaches",
+          "vi": "phương Tây tiếp cận"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 330,
       "wordType": "adj",
@@ -45927,7 +46878,12 @@
       "id": "essential-3000_3300",
       "word": "wet",
       "meaning": "ướt, ẩm ướt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Water is wet.",
+          "vi": "Nước ướt."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 330,
       "wordType": "adj",
@@ -45937,7 +46893,12 @@
       "id": "essential-3000_3301",
       "word": "what",
       "meaning": "gì, thế nào",
-      "examples": [],
+      "examples": [
+        {
+          "en": "What? I'm busy.",
+          "vi": "Cái gì? Tôi đang bận."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 331,
       "wordType": "n, det, pro",
@@ -45947,7 +46908,12 @@
       "id": "essential-3000_3302",
       "word": "whatever",
       "meaning": "bất cứ thứ gì, bất kể thứ gì",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I’ll do whatever I can.",
+          "vi": "Tôi sẽ làm bất cứ điều gì tôi có thể."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 331,
       "wordType": "n, det, pro",
@@ -45957,7 +46923,12 @@
       "id": "essential-3000_3303",
       "word": "wheel",
       "meaning": "bánh xe",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the wheel of life",
+          "vi": "bánh xe cuộc sống"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 331,
       "wordType": "n",
@@ -45967,7 +46938,12 @@
       "id": "essential-3000_3304",
       "word": "when",
       "meaning": "khi, lúc, vào lúc nào",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Do you know when they arrived?",
+          "vi": "Bạn có biết khi nào họ đến?"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 331,
       "wordType": "adv, pron, conj",
@@ -45977,7 +46953,12 @@
       "id": "essential-3000_3305",
       "word": "whenever",
       "meaning": "bất cứ lúc nào, lúc nào",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Visit whenever you want to.",
+          "vi": "Hãy ghé thăm bất cứ khi nào bạn muốn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 331,
       "wordType": "conj",
@@ -45987,7 +46968,12 @@
       "id": "essential-3000_3306",
       "word": "where",
       "meaning": "đâu, ở đâu; nơi mà",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He asked where I grew up.",
+          "vi": "Anh ấy hỏi tôi lớn lên ở đâu."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 331,
       "wordType": "adv, conj",
@@ -45997,7 +46983,12 @@
       "id": "essential-3000_3307",
       "word": "whereas",
       "meaning": "nhưng trái lại, trong khi mà",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He came first in the race, whereas his brother came last.",
+          "vi": "Anh ấy về nhất trong cuộc đua, trong khi anh trai anh ấy về cuối."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 331,
       "wordType": "conj",
@@ -46007,7 +46998,12 @@
       "id": "essential-3000_3308",
       "word": "wherever",
       "meaning": "ở bất cứ nơi nào, ở bất cứ nơi đâ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "You can sit wherever you like.",
+          "vi": "Bạn có thể ngồi bất cứ nơi nào bạn thích."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 331,
       "wordType": "conj",
@@ -46017,7 +47013,12 @@
       "id": "essential-3000_3309",
       "word": "whether",
       "meaning": "có..không; có... chăng; không biết có.. không",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Do you know whether he's coming?",
+          "vi": "Bạn có biết liệu anh ấy có đến không?"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 331,
       "wordType": "conj",
@@ -46027,7 +47028,12 @@
       "id": "essential-3000_3310",
       "word": "which",
       "meaning": "nào, bất cứ.. nào; ấy, đó",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Please take which you please.",
+          "vi": "Hãy lấy cái nào bạn muốn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 331,
       "wordType": "n, det, pro",
@@ -46037,7 +47043,12 @@
       "id": "essential-3000_3311",
       "word": "while",
       "meaning": "trong lúc, trong khi; lúc, chốc, lát",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He lectured for quite a long while.",
+          "vi": "Ông giảng bài khá lâu."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 332,
       "wordType": "n, conj",
@@ -46047,7 +47058,12 @@
       "id": "essential-3000_3312",
       "word": "whilst",
       "meaning": "trong lúc, trong khi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Drivers must switch off engines whilst on stand.",
+          "vi": "Người lái xe phải tắt động cơ khi đứng yên."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 332,
       "wordType": "conj",
@@ -46057,7 +47073,12 @@
       "id": "essential-3000_3313",
       "word": "whisper",
       "meaning": "nói thì thầm, xì xào; tiếng nói thì thầm, tiếng xì xào",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The soup had just a whisper of basil.",
+          "vi": "Món súp chỉ có chút húng quế."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 332,
       "wordType": "v, n",
@@ -46067,7 +47088,12 @@
       "id": "essential-3000_3314",
       "word": "whistle",
       "meaning": "sự huýt sáo, sự thổi còi; huýt sáo, thổi còi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A bullet whistled past.",
+          "vi": "Một viên đạn rít qua."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 332,
       "wordType": "n, v",
@@ -46077,7 +47103,12 @@
       "id": "essential-3000_3315",
       "word": "white",
       "meaning": "trắng; màu trắng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a white Christmas",
+          "vi": "một Giáng sinh trắng"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 332,
       "wordType": "adj, n",
@@ -46087,7 +47118,12 @@
       "id": "essential-3000_3316",
       "word": "who",
       "meaning": "ai, người nào, kẻ nào, người như thế nào",
-      "examples": [],
+      "examples": [
+        {
+          "en": "It was a nice man who helped us.",
+          "vi": "Đó là một người đàn ông tốt bụng đã giúp đỡ chúng tôi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 332,
       "wordType": "n, pro",
@@ -46097,7 +47133,12 @@
       "id": "essential-3000_3317",
       "word": "whoever",
       "meaning": "ai, người nào, bất cứ ai, bất cứ người nào, dù ai",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Whoever thought up that stupid idea?",
+          "vi": "Ai đã nghĩ ra cái ý tưởng ngu ngốc đó thế?"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 332,
       "wordType": "n, pro",
@@ -46107,7 +47148,12 @@
       "id": "essential-3000_3318",
       "word": "whole",
       "meaning": "bình an vô sự, không suy suyển, không hư hỏng; toàn bộ, tất cả, toàn thể",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I ate a whole fish.",
+          "vi": "Tôi đã ăn cả một con cá."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 332,
       "wordType": "adj, n",
@@ -46117,7 +47163,12 @@
       "id": "essential-3000_3319",
       "word": "whom",
       "meaning": "ai, người nào; người mà",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He's a person with whom I work. (defining)",
+          "vi": "Anh ấy là người cùng làm việc với tôi. (xác định)"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 332,
       "wordType": "n, pro",
@@ -46127,7 +47178,12 @@
       "id": "essential-3000_3320",
       "word": "whose",
       "meaning": "của ai",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Several people have lost their suitcases. Whose have you found?",
+          "vi": "Một số người đã bị mất vali. Bạn đã tìm thấy của ai?"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 332,
       "wordType": "n, det, pro",
@@ -46137,7 +47193,12 @@
       "id": "essential-3000_3321",
       "word": "why",
       "meaning": "tại sao, vì sao",
-      "examples": [],
+      "examples": [
+        {
+          "en": "That's the reason why I did that.",
+          "vi": "Đó là lý do tại sao tôi làm điều đó."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 333,
       "wordType": "adv",
@@ -46147,7 +47208,12 @@
       "id": "essential-3000_3322",
       "word": "wide",
       "meaning": "rộng, rộng lớn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He was wide awake.",
+          "vi": "Anh ấy hoàn toàn tỉnh táo."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 333,
       "wordType": "adj",
@@ -46161,13 +47227,19 @@
       "category": "essential-3000",
       "groupIndex": 333,
       "wordType": "adv",
-      "pronunciation": "´waidli"
+      "pronunciation": "´waidli",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3324",
       "word": "width",
       "meaning": "tính chất rộng, bề rộng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Manchester United like to play with width.",
+          "vi": "Manchester United thích chơi theo chiều rộng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 333,
       "wordType": "n",
@@ -46177,7 +47249,12 @@
       "id": "essential-3000_3325",
       "word": "wife",
       "meaning": "vợ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A new wife for the gander is introduced into the pen.",
+          "vi": "Một người vợ mới của giang hồ được đưa vào chuồng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 333,
       "wordType": "n",
@@ -46187,7 +47264,12 @@
       "id": "essential-3000_3326",
       "word": "wild",
       "meaning": "dại, hoang",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a wild roadstead",
+          "vi": "một con đường hoang dã"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 333,
       "wordType": "adj",
@@ -46197,7 +47279,12 @@
       "id": "essential-3000_3327",
       "word": "wildly",
       "meaning": "dại, hoang",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He swung wildly at the guy's head, but ended up on the floor.",
+          "vi": "Anh ta vung mạnh vào đầu anh chàng, nhưng cuối cùng lại nằm trên sàn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 333,
       "wordType": "adv",
@@ -46207,7 +47294,12 @@
       "id": "essential-3000_3328",
       "word": "will",
       "meaning": "sẽ; ý chí, ý định",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Do what you will.",
+          "vi": "Hãy làm những gì bạn muốn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 333,
       "wordType": "v, n, modal",
@@ -46217,7 +47309,12 @@
       "id": "essential-3000_3329",
       "word": "willing",
       "meaning": "bằng lòng, vui lòng, muốn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "All the fans were willing their team to win the game.",
+          "vi": "Tất cả người hâm mộ đều mong muốn đội của họ giành chiến thắng trong trận đấu."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 333,
       "wordType": "adj",
@@ -46231,13 +47328,19 @@
       "category": "essential-3000",
       "groupIndex": 333,
       "wordType": "adv",
-      "pronunciation": "wiliηli"
+      "pronunciation": "wiliηli",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3331",
       "word": "willingness",
       "meaning": "sự bằng lòng, sự vui lòng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "All it takes is a willingness to learn.",
+          "vi": "Tất cả những gì cần là sự sẵn lòng học hỏi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 334,
       "wordType": "n",
@@ -46247,7 +47350,12 @@
       "id": "essential-3000_3332",
       "word": "win",
       "meaning": "chiếm, đọat, thu được",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Our first win of the season put us in high spirits.",
+          "vi": "Chiến thắng đầu tiên trong mùa giải đã giúp chúng tôi có tinh thần phấn chấn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 334,
       "wordType": "v",
@@ -46257,7 +47365,12 @@
       "id": "essential-3000_3333",
       "word": "wind",
       "meaning": "quấn lại, cuộn lại. wind sth up: lên dây, quấn, giải quyết",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to wind a rope with twine",
+          "vi": "quấn một sợi dây bằng dây bện"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 334,
       "wordType": "v",
@@ -46267,7 +47380,12 @@
       "id": "essential-3000_3334",
       "word": "window",
       "meaning": "cửa sổ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "launch window;  window of opportunity;  You have a two-hour window of clear weather to finish working on the lawn.",
+          "vi": "cửa sổ khởi chạy;  cửa sổ cơ hội;  Bạn có khoảng thời gian hai giờ trời quang đãng để hoàn thành công việc trên bãi cỏ."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 334,
       "wordType": "n",
@@ -46277,7 +47395,12 @@
       "id": "essential-3000_3335",
       "word": "wine",
       "meaning": "rượu, đồ uống",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She ordered some wine for the meal.",
+          "vi": "Cô gọi một ít rượu cho bữa ăn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 334,
       "wordType": "n",
@@ -46287,7 +47410,12 @@
       "id": "essential-3000_3336",
       "word": "wing",
       "meaning": "cánh, sự bay, sự cất cánh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to take wing",
+          "vi": "cất cánh"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 334,
       "wordType": "n",
@@ -46301,13 +47429,19 @@
       "category": "essential-3000",
       "groupIndex": 334,
       "wordType": "n",
-      "pronunciation": "winər"
+      "pronunciation": "winər",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3338",
       "word": "winning",
       "meaning": "đang dành thắng lợi, thắng cuộc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a winning smile",
+          "vi": "nụ cười chiến thắng"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 334,
       "wordType": "adj",
@@ -46317,7 +47451,12 @@
       "id": "essential-3000_3339",
       "word": "winter",
       "meaning": "mùa đông",
-      "examples": [],
+      "examples": [
+        {
+          "en": "When they retired, they hoped to winter in Florida.",
+          "vi": "Khi nghỉ hưu, họ hy vọng được nghỉ đông ở Florida."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 334,
       "wordType": "n",
@@ -46327,7 +47466,12 @@
       "id": "essential-3000_3340",
       "word": "wire",
       "meaning": "dây (kim loại)",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to pull the wires for office",
+          "vi": "kéo dây cho văn phòng"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 334,
       "wordType": "n",
@@ -46337,7 +47481,12 @@
       "id": "essential-3000_3341",
       "word": "wise",
       "meaning": "khôn ngoan, sáng suốt, thông thái",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Don't get wise with me!",
+          "vi": "Đừng khôn ngoan với tôi!"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 335,
       "wordType": "adj",
@@ -46347,7 +47496,12 @@
       "id": "essential-3000_3342",
       "word": "wish",
       "meaning": "ước, mong muốn; sự mong ước, lòng mong muốn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We wish you a Merry Christmas.",
+          "vi": "Chúng tôi chúc bạn một Giáng sinh vui vẻ."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 335,
       "wordType": "v, n",
@@ -46357,7 +47511,12 @@
       "id": "essential-3000_3343",
       "word": "with",
       "meaning": "với, cùng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "slain with robbers",
+          "vi": "bị sát hại cùng tên cướp"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 335,
       "wordType": "prep",
@@ -46367,7 +47526,12 @@
       "id": "essential-3000_3344",
       "word": "withdraw",
       "meaning": "rút, rút khỏi, rút lui",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to withdraw false charges",
+          "vi": "rút lại những cáo buộc sai trái"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 335,
       "wordType": "v",
@@ -46377,7 +47541,12 @@
       "id": "essential-3000_3345",
       "word": "within",
       "meaning": "trong vong thời gian, trong khoảng thời gian",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the within appeal",
+          "vi": "kháng cáo bên trong"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 335,
       "wordType": "prep",
@@ -46387,7 +47556,12 @@
       "id": "essential-3000_3346",
       "word": "without",
       "meaning": "không, không có",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He likes to eat everything without sharing.",
+          "vi": "Anh ấy thích ăn mọi thứ mà không chia sẻ."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 335,
       "wordType": "prep",
@@ -46397,7 +47571,12 @@
       "id": "essential-3000_3347",
       "word": "witness",
       "meaning": "sự làm chứng, bằng chứng; chứng kiến, làm chứng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He witnessed the accident.",
+          "vi": "Anh ấy đã chứng kiến ​​vụ tai nạn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 335,
       "wordType": "n, v",
@@ -46411,13 +47590,19 @@
       "category": "essential-3000",
       "groupIndex": 335,
       "wordType": "n",
-      "pronunciation": "wʊmən"
+      "pronunciation": "wʊmən",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3349",
       "word": "wonder",
       "meaning": "ngạc nhiên, lấy làm lạ, kinh ngạc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He's a wonder at cooking.",
+          "vi": "Anh ấy là một người tuyệt vời trong việc nấu ăn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 335,
       "wordType": "v",
@@ -46427,7 +47612,12 @@
       "id": "essential-3000_3350",
       "word": "wonderful",
       "meaning": "phi thường, khác thường, kỳ diệu, tuyệt vời",
-      "examples": [],
+      "examples": [
+        {
+          "en": "They served a wonderful six-course meal.",
+          "vi": "Họ phục vụ một bữa ăn sáu món tuyệt vời."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 335,
       "wordType": "adj",
@@ -46437,7 +47627,12 @@
       "id": "essential-3000_3351",
       "word": "wood",
       "meaning": "gỗ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We need more wood for the fire.",
+          "vi": "Chúng ta cần thêm củi để đốt lửa."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 336,
       "wordType": "n",
@@ -46447,7 +47642,12 @@
       "id": "essential-3000_3352",
       "word": "wooden",
       "meaning": "làm bằng gỗ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "wooden acting",
+          "vi": "diễn xuất bằng gỗ"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 336,
       "wordType": "adj",
@@ -46461,13 +47661,19 @@
       "category": "essential-3000",
       "groupIndex": 336,
       "wordType": "n",
-      "pronunciation": "wul"
+      "pronunciation": "wul",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3354",
       "word": "work",
       "meaning": "làm việc, sự làm việc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He worked the levers.",
+          "vi": "Anh ấy đã làm việc với đòn bẩy."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 336,
       "wordType": "v, n",
@@ -46477,7 +47683,12 @@
       "id": "essential-3000_3355",
       "word": "worker",
       "meaning": "người lao động",
-      "examples": [],
+      "examples": [
+        {
+          "en": "This FTP client spawns a separate worker for each file to be uploaded.",
+          "vi": "Máy khách FTP này sinh ra một nhân viên riêng biệt cho mỗi tệp được tải lên."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 336,
       "wordType": "n",
@@ -46487,7 +47698,12 @@
       "id": "essential-3000_3356",
       "word": "working",
       "meaning": "sự làm, sự làm việc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "working mothers",
+          "vi": "bà mẹ đi làm"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 336,
       "wordType": "adj",
@@ -46497,7 +47713,12 @@
       "id": "essential-3000_3357",
       "word": "world",
       "meaning": "thế giới",
-      "examples": [],
+      "examples": [
+        {
+          "en": "There will always be lovers, till the world’s end.",
+          "vi": "Sẽ luôn có những người yêu nhau, cho đến ngày tận thế."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 336,
       "wordType": "n",
@@ -46507,7 +47728,12 @@
       "id": "essential-3000_3358",
       "word": "worried",
       "meaning": "bồn chồn, lo nghĩ, tỏ ra lo lắng.",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The President was worried into military action by persistent advisors.",
+          "vi": "Tổng thống lo lắng về hành động quân sự bởi các cố vấn kiên trì."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 336,
       "wordType": "adj",
@@ -46517,7 +47743,12 @@
       "id": "essential-3000_3359",
       "word": "worry",
       "meaning": "lo lắng, suy nghĩ; sự lo lắng, suy nghĩ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Your dog’s been worrying sheep again.",
+          "vi": "Con chó của bạn lại làm lũ cừu lo lắng nữa rồi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 336,
       "wordType": "v, n",
@@ -46527,7 +47758,12 @@
       "id": "essential-3000_3360",
       "word": "worrying",
       "meaning": "gây lo lắng, gây lo nghĩ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Your dog’s been worrying sheep again.",
+          "vi": "Con chó của bạn lại làm lũ cừu lo lắng nữa rồi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 336,
       "wordType": "adj",
@@ -46540,13 +47776,19 @@
       "examples": [],
       "category": "essential-3000",
       "groupIndex": 337,
-      "pronunciation": "bad"
+      "pronunciation": "bad",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3362",
       "word": "worship",
       "meaning": "sự tôn thờ, sự tôn sùng; thờ, thờ phụng, tôn thờ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We worship at the church down the road.",
+          "vi": "Chúng tôi thờ phượng tại nhà thờ ở cuối đường."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 337,
       "wordType": "n, v",
@@ -46556,7 +47798,12 @@
       "id": "essential-3000_3363",
       "word": "worth",
       "meaning": "đáng giá, có giá trị",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A painting worth thousands.",
+          "vi": "Một bức tranh trị giá hàng ngàn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 337,
       "wordType": "adj",
@@ -46570,13 +47817,19 @@
       "category": "essential-3000",
       "groupIndex": 337,
       "wordType": "v, modal",
-      "pronunciation": "wud"
+      "pronunciation": "wud",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3365",
       "word": "wound",
       "meaning": "vết thương, thương tích; làm bị thường, gây thương tích",
-      "examples": [],
+      "examples": [
+        {
+          "en": "It took a long time to get over the wound of that insult.",
+          "vi": "Phải mất một thời gian dài để vượt qua vết thương của sự xúc phạm đó."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 337,
       "wordType": "n, v",
@@ -46586,7 +47839,12 @@
       "id": "essential-3000_3366",
       "word": "wounded",
       "meaning": "bị thương",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a wounded nucleon",
+          "vi": "một nucleon bị thương"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 337,
       "wordType": "adj",
@@ -46596,7 +47854,12 @@
       "id": "essential-3000_3367",
       "word": "wrap",
       "meaning": "gói, bọc, quấn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A snake wraps itself around its prey.",
+          "vi": "Một con rắn quấn quanh con mồi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 337,
       "wordType": "v",
@@ -46606,7 +47869,12 @@
       "id": "essential-3000_3368",
       "word": "wrapping",
       "meaning": "vật bao bọc, vật quấn quanh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A snake wraps itself around its prey.",
+          "vi": "Một con rắn quấn quanh con mồi."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 337,
       "wordType": "n",
@@ -46620,13 +47888,19 @@
       "category": "essential-3000",
       "groupIndex": 337,
       "wordType": "n",
-      "pronunciation": "rist"
+      "pronunciation": "rist",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3370",
       "word": "write",
       "meaning": "viết",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I write for a living.",
+          "vi": "Tôi viết để kiếm sống."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 337,
       "wordType": "v",
@@ -46636,7 +47910,12 @@
       "id": "essential-3000_3371",
       "word": "writer",
       "meaning": "người viết",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Has your girlfriend written you another letter already? She’s quite a writer!",
+          "vi": "Bạn gái của bạn đã viết cho bạn một lá thư khác chưa? Cô ấy là một nhà văn khá!"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 338,
       "wordType": "n",
@@ -46646,7 +47925,12 @@
       "id": "essential-3000_3372",
       "word": "writing",
       "meaning": "sự viết",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a writing table",
+          "vi": "một bàn viết"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 338,
       "wordType": "n",
@@ -46656,7 +47940,12 @@
       "id": "essential-3000_3373",
       "word": "written",
       "meaning": "viết ra, được thảo ra",
-      "examples": [],
+      "examples": [
+        {
+          "en": "truth written on the heart",
+          "vi": "sự thật viết trong trái tim"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 338,
       "wordType": "adj",
@@ -46666,7 +47955,12 @@
       "id": "essential-3000_3374",
       "word": "wrong",
       "meaning": "sai. go wrong mắc lỗi, sai lầm",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a wrong nose",
+          "vi": "mũi sai"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 338,
       "wordType": "adj, adv",
@@ -46676,7 +47970,12 @@
       "id": "essential-3000_3375",
       "word": "wrongly",
       "meaning": "một cách bất công, không đúng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I wrongly assumed that it would be an easy job.",
+          "vi": "Tôi đã lầm tưởng rằng đó sẽ là một công việc dễ dàng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 338,
       "wordType": "adv",
@@ -46686,7 +47985,12 @@
       "id": "essential-3000_3376",
       "word": "yard",
       "meaning": "sân, thước Anh (bằng 0, 914 mét)",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I need to hedge a yard of yen.",
+          "vi": "Tôi cần phòng ngừa một thước yên."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 338,
       "wordType": "n",
@@ -46696,7 +48000,12 @@
       "id": "essential-3000_3377",
       "word": "yawn",
       "meaning": "há miệng; cử chỉ ngáp",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to yawn for fat livings",
+          "vi": "ngáp để sống béo bở"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 338,
       "wordType": "v, n",
@@ -46706,7 +48015,12 @@
       "id": "essential-3000_3378",
       "word": "yeah",
       "meaning": "vâng, ư",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Yeah! We did it!",
+          "vi": "Vâng! Chúng tôi đã làm được!"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 338,
       "wordType": "exclamation",
@@ -46716,7 +48030,12 @@
       "id": "essential-3000_3379",
       "word": "year",
       "meaning": "năm",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Every second-year student must select an area of specialization.",
+          "vi": "Mỗi sinh viên năm thứ hai phải chọn một lĩnh vực chuyên môn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 338,
       "wordType": "n",
@@ -46726,7 +48045,12 @@
       "id": "essential-3000_3380",
       "word": "yellow",
       "meaning": "vàng; màu vàng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the black-yellow coalition",
+          "vi": "liên minh vàng đen"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 338,
       "wordType": "adj, n",
@@ -46736,7 +48060,12 @@
       "id": "essential-3000_3381",
       "word": "yes",
       "meaning": "vâng, phải, có chứ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Was that a yes?",
+          "vi": "Đó có phải là có không?"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 339,
       "wordType": "n, exclamation",
@@ -46746,7 +48075,12 @@
       "id": "essential-3000_3382",
       "word": "yesterday",
       "meaning": "hôm qua",
-      "examples": [],
+      "examples": [
+        {
+          "en": "yesterday's technology",
+          "vi": "công nghệ của ngày hôm qua"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 339,
       "wordType": "adv, n",
@@ -46756,7 +48090,12 @@
       "id": "essential-3000_3383",
       "word": "yet",
       "meaning": "còn, hãy cỏn, còn nữa; như mà, xong, tuy thế, tuy nhiên",
-      "examples": [],
+      "examples": [
+        {
+          "en": "K-2 is yet higher than this.",
+          "vi": "K-2 vẫn cao hơn thế này."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 339,
       "wordType": "adv, conj",
@@ -46766,7 +48105,12 @@
       "id": "essential-3000_3384",
       "word": "you",
       "meaning": "anh, chị, ông, bà, ngài, ngươi, mày; các anh, các chị, các ông, các bà, cácngài, các người, chúng mày",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Both of you should get ready now.",
+          "vi": "Cả hai bạn nên chuẩn bị sẵn sàng ngay bây giờ."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 339,
       "wordType": "pron",
@@ -46776,7 +48120,12 @@
       "id": "essential-3000_3385",
       "word": "young",
       "meaning": "trẻ, trẻ tuổi, thanh niên",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The young of today are well-educated.",
+          "vi": "Giới trẻ ngày nay được giáo dục tốt."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 339,
       "wordType": "adj",
@@ -46790,13 +48139,19 @@
       "category": "essential-3000",
       "groupIndex": 339,
       "wordType": "det",
-      "pronunciation": "jo:"
+      "pronunciation": "jo:",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3387",
       "word": "yours",
       "meaning": "cái của anh, cái của chị, cái của ngài, cái của mày; cái của các anh, cáicủa các chị, cái của các ngài, cáicủa chúng mày",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Yours sincerely,  Yours faithfully,  Yours,  Sincerely yours,",
+          "vi": "Trân trọng,  Trân trọng,  Trân trọng,  Trân trọng,"
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 339,
       "wordType": "n, pro",
@@ -46808,13 +48163,19 @@
       "meaning": "bạn chân thành của anh, chị.. (viế ở cuối thư)",
       "examples": [],
       "category": "essential-3000",
-      "groupIndex": 339
+      "groupIndex": 339,
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3389",
       "word": "Yours Truly",
       "meaning": "lời kết thúc thư (bạn chân thành của...)",
-      "examples": [],
+      "examples": [
+        {
+          "en": "This one was created by yours truly.",
+          "vi": "Cái này thực sự được tạo ra bởi bạn."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 339
     },
@@ -46822,7 +48183,12 @@
       "id": "essential-3000_3390",
       "word": "yourself",
       "meaning": "tự anh, tự chị, chính anh, chính mày, tự mày, tự mình",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Be careful with that fire or you'll burn yourself.",
+          "vi": "Hãy cẩn thận với ngọn lửa đó nếu không bạn sẽ bị bỏng."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 339,
       "wordType": "pron",
@@ -46832,7 +48198,12 @@
       "id": "essential-3000_3391",
       "word": "youth",
       "meaning": "tuổi trẻ, tuổi xuân, tuổi thanh niên, tuổi niên thiếu",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Her youth and beauty attracted him to her.",
+          "vi": "Tuổi trẻ và vẻ đẹp của cô đã thu hút anh."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 340,
       "wordType": "n",
@@ -46845,13 +48216,19 @@
       "examples": [],
       "category": "essential-3000",
       "groupIndex": 340,
-      "pronunciation": "ziərou"
+      "pronunciation": "ziərou",
+      "examplesChecked": true
     },
     {
       "id": "essential-3000_3393",
       "word": "zone",
       "meaning": "khu vực, miền, vùng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "This area was zoned for industrial use.",
+          "vi": "Khu vực này đã được quy hoạch để sử dụng cho công nghiệp."
+        }
+      ],
       "category": "essential-3000",
       "groupIndex": 340,
       "wordType": "n",

@@ -7640,7 +7640,12 @@
       "id": "a1-a2_0581",
       "word": "bored",
       "meaning": "buồn chán, tẻ nhạt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The piano teacher's bored look indicated he wasn't paying much attention to his pupil's lackluster rendition of Mozart's Requiem",
+          "vi": "Vẻ mặt chán nản của giáo viên piano cho thấy ông không chú ý nhiều đến màn trình diễn mờ nhạt của bản Requiem của Mozart."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 59,
       "wordType": "adj",
@@ -7650,7 +7655,12 @@
       "id": "a1-a2_0582",
       "word": "bothered",
       "meaning": "bực mình, khó chịu",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Why do I even bother to try?",
+          "vi": "Tại sao tôi thậm chí còn bận tâm để thử?"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 59,
       "wordType": "adj",
@@ -7660,7 +7670,12 @@
       "id": "a1-a2_0583",
       "word": "brooding",
       "meaning": "ủ ê, não nề",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A brooding hen can be aggressive.",
+          "vi": "Gà mái ấp có thể hung dữ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 59,
       "wordType": "adj",
@@ -7670,7 +7685,12 @@
       "id": "a1-a2_0584",
       "word": "calm",
       "meaning": "bình tĩnh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to calm a crying baby",
+          "vi": "để dỗ dành một em bé đang khóc"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 59,
       "wordType": "adj",
@@ -7684,13 +7704,19 @@
       "category": "a1-a2",
       "groupIndex": 59,
       "wordType": "adj",
-      "pronunciation": "|ˈkæptɪveɪtɪd|"
+      "pronunciation": "|ˈkæptɪveɪtɪd|",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0586",
       "word": "carefree",
       "meaning": "vô tư lự",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He left his cell phone behind and enjoyed a carefree summer day at the beach.",
+          "vi": "Anh để lại chiếc điện thoại di động và tận hưởng một ngày hè vô tư trên bãi biển."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 59,
       "wordType": "adj",
@@ -7700,7 +7726,12 @@
       "id": "a1-a2_0587",
       "word": "certain",
       "meaning": "quả quyết, chắc chắn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I was certain of my decision.",
+          "vi": "Tôi đã chắc chắn về quyết định của mình."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 59,
       "wordType": "adj",
@@ -7714,13 +7745,19 @@
       "category": "a1-a2",
       "groupIndex": 59,
       "wordType": "adj",
-      "pronunciation": "/ˈkluː.ləs/"
+      "pronunciation": "/ˈkluː.ləs/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0589",
       "word": "cold",
       "meaning": "lạnh lùng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a cold scent",
+          "vi": "một mùi hương lạnh"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 59,
       "wordType": "adj",
@@ -7730,7 +7767,12 @@
       "id": "a1-a2_0590",
       "word": "cranky",
       "meaning": "kỳ quặc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He got home from a long day at work tired and cranky.",
+          "vi": "Anh trở về nhà sau một ngày dài làm việc mệt mỏi và cáu kỉnh."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 59,
       "wordType": "adj",
@@ -7740,7 +7782,12 @@
       "id": "a1-a2_0591",
       "word": "delighted",
       "meaning": "vui mừng, mừng rỡ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A beautiful landscape delights the eye.",
+          "vi": "Một phong cảnh đẹp làm vui mắt."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 60,
       "wordType": "adj",
@@ -7754,13 +7801,19 @@
       "category": "a1-a2",
       "groupIndex": 60,
       "wordType": "adj",
-      "pronunciation": "/dɪˈlɪr.i.əs/"
+      "pronunciation": "/dɪˈlɪr.i.əs/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0593",
       "word": "derisive",
       "meaning": "nhạo báng, giễu cợt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The critic's review of the film was derisive.",
+          "vi": "Đánh giá của nhà phê bình về bộ phim là chế nhạo."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 60,
       "wordType": "adj",
@@ -7770,7 +7823,12 @@
       "id": "a1-a2_0594",
       "word": "desperate",
       "meaning": "tuyệt vọng, chán trường",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a desperate effort",
+          "vi": "một nỗ lực tuyệt vọng"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 60,
       "wordType": "adj",
@@ -7780,7 +7838,12 @@
       "id": "a1-a2_0595",
       "word": "disturbed",
       "meaning": "bối rối, lúng túng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A school of fish disturbed the water.",
+          "vi": "Một đàn cá làm xáo trộn mặt nước."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 60,
       "wordType": "adj",
@@ -7794,7 +7857,8 @@
       "category": "a1-a2",
       "groupIndex": 60,
       "wordType": "adj",
-      "pronunciation": "/ˈdoʊ.pi/"
+      "pronunciation": "/ˈdoʊ.pi/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0597",
@@ -7804,13 +7868,19 @@
       "category": "a1-a2",
       "groupIndex": 60,
       "wordType": "adj",
-      "pronunciation": "/ˈdaʊt.fəl/"
+      "pronunciation": "/ˈdaʊt.fəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0598",
       "word": "down",
       "meaning": "nản lòng, chán nản",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Prices are down.",
+          "vi": "Giá đang giảm."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 60,
       "wordType": "adj",
@@ -7820,7 +7890,12 @@
       "id": "a1-a2_0599",
       "word": "drained",
       "meaning": "kiệt sức",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The clogged sink drained slowly.",
+          "vi": "Bồn rửa bị tắc thoát nước chậm."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 60,
       "wordType": "adj",
@@ -7830,7 +7905,12 @@
       "id": "a1-a2_0600",
       "word": "edgy",
       "meaning": "cáu kỉnh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "an edgy temper",
+          "vi": "tính khí nóng nảy"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 60,
       "wordType": "adj",
@@ -7840,7 +7920,12 @@
       "id": "a1-a2_0601",
       "word": "elated",
       "meaning": "phẩn khởi, hân hoan",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She was elated with her new car.",
+          "vi": "Cô ấy rất phấn khởi với chiếc xe mới của mình."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 61,
       "wordType": "adj",
@@ -7850,7 +7935,12 @@
       "id": "a1-a2_0602",
       "word": "embarrassed",
       "meaning": "xấu hổ, ngại ngùng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The crowd's laughter and jeers embarrassed him.",
+          "vi": "Tiếng cười và sự chế nhạo của đám đông làm anh xấu hổ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 61,
       "wordType": "adj",
@@ -7864,13 +7954,19 @@
       "category": "a1-a2",
       "groupIndex": 61,
       "wordType": "adj",
-      "pronunciation": "/ˌem.pəˈθet̬.ɪk/"
+      "pronunciation": "/ˌem.pəˈθet̬.ɪk/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0604",
       "word": "engrossed",
       "meaning": "bị mê hoặc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She seems to be completely engrossed in that book.",
+          "vi": "Cô ấy dường như hoàn toàn say mê với cuốn sách đó."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 61,
       "wordType": "adj",
@@ -7880,7 +7976,12 @@
       "id": "a1-a2_0605",
       "word": "enlightened",
       "meaning": "được làm sáng tỏ, được thông suốt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "An enlightened mind does not need external authority.",
+          "vi": "Một tâm trí giác ngộ không cần đến quyền lực bên ngoài."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 61,
       "wordType": "adj",
@@ -7890,7 +7991,12 @@
       "id": "a1-a2_0606",
       "word": "envious",
       "meaning": "ghen tị, độ kỵ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "an envious man, disposition, or attack; envious tongues",
+          "vi": "một người đàn ông ghen tị, có tính cách hoặc tấn công; lưỡi ghen tị"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 61,
       "wordType": "adj",
@@ -7900,7 +8006,12 @@
       "id": "a1-a2_0607",
       "word": "excited",
       "meaning": "hưng phấn, sôi nổi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He was very excited about his promotion.",
+          "vi": "Anh ấy rất vui mừng về sự thăng tiến của mình."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 61,
       "wordType": "adj",
@@ -7910,7 +8021,12 @@
       "id": "a1-a2_0608",
       "word": "excluded",
       "meaning": "bị bỏ rơi, cảm giác lạc lõng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Count from 1 to 30, but exclude the prime numbers.",
+          "vi": "Đếm từ 1 đến 30, trừ số nguyên tố."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 61,
       "wordType": "adj",
@@ -7920,7 +8036,12 @@
       "id": "a1-a2_0609",
       "word": "exhausted",
       "meaning": "mệt lử",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The marathon exhausted me.",
+          "vi": "Cuộc chạy marathon làm tôi kiệt sức."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 61,
       "wordType": "adj",
@@ -7930,7 +8051,12 @@
       "id": "a1-a2_0610",
       "word": "flabbergasted",
       "meaning": "sửng sốt, thất kinh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He was flabbergasted at how much weight he had gained.",
+          "vi": "Anh ấy rất ngạc nhiên khi biết mình đã tăng bao nhiêu cân."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 61,
       "wordType": "adj",
@@ -7944,13 +8070,19 @@
       "category": "a1-a2",
       "groupIndex": 62,
       "wordType": "adj",
-      "pronunciation": "/ˈfuː.lɪʃ/"
+      "pronunciation": "/ˈfuː.lɪʃ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0612",
       "word": "frazzled",
       "meaning": "mệt rã rời, kiệt quệ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "After dealing with the children all day, I just can't help feeling frazzled.",
+          "vi": "Sau khi phải đối mặt với bọn trẻ cả ngày, tôi không thể không cảm thấy mệt mỏi."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 62,
       "wordType": "adj",
@@ -7964,13 +8096,19 @@
       "category": "a1-a2",
       "groupIndex": 62,
       "wordType": "adj",
-      "pronunciation": "/ˈfret.fəl/"
+      "pronunciation": "/ˈfret.fəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0614",
       "word": "frustrated",
       "meaning": "nản lòng, nản chí",
-      "examples": [],
+      "examples": [
+        {
+          "en": "My clumsy fingers frustrate my typing efforts.",
+          "vi": "Những ngón tay vụng về của tôi làm nản lòng những nỗ lực đánh máy của tôi."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 62,
       "wordType": "adj",
@@ -7980,7 +8118,12 @@
       "id": "a1-a2_0615",
       "word": "furious",
       "meaning": "giận dữ, điên tiết",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a furious stream; a furious wind or storm",
+          "vi": "một dòng chảy giận dữ; một cơn gió hoặc bão dữ dội"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 62,
       "wordType": "adj",
@@ -7990,7 +8133,12 @@
       "id": "a1-a2_0616",
       "word": "giddy",
       "meaning": "chóng mặt, choáng váng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "They climbed to a giddy height.",
+          "vi": "Họ leo lên một độ cao chóng mặt."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 62,
       "wordType": "adj",
@@ -8000,7 +8148,12 @@
       "id": "a1-a2_0617",
       "word": "glad",
       "meaning": "vui sướng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I'm glad the rain has finally stopped.",
+          "vi": "Tôi mừng vì mưa cuối cùng đã tạnh."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 62,
       "wordType": "adj",
@@ -8014,13 +8167,19 @@
       "category": "a1-a2",
       "groupIndex": 62,
       "wordType": "adj",
-      "pronunciation": "/ˈɡliː.fəl/"
+      "pronunciation": "/ˈɡliː.fəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0619",
       "word": "guarded",
       "meaning": "thận trọng, ý tứ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "guarded prognosis",
+          "vi": "tiên lượng thận trọng"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 62,
       "wordType": "adj",
@@ -8030,7 +8189,12 @@
       "id": "a1-a2_0620",
       "word": "guilty",
       "meaning": "mặc cảm, cảm thấy tội lỗi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I have a guilty secret.",
+          "vi": "Tôi có một bí mật tội lỗi."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 62,
       "wordType": "adj",
@@ -8040,7 +8204,12 @@
       "id": "a1-a2_0621",
       "word": "hankering",
       "meaning": "khao khát, thèm muốn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "If you hanker for chocolate, you'll like this fudge recipe.",
+          "vi": "Nếu bạn khao khát sô cô la, bạn sẽ thích công thức kẹo mềm này."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 63,
       "wordType": "n",
@@ -8050,7 +8219,12 @@
       "id": "a1-a2_0622",
       "word": "hesitant",
       "meaning": "do dự, ngập ngừng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I am hesitant to recommend him as a manager because he has a short temper.",
+          "vi": "Tôi ngần ngại khi giới thiệu anh ấy làm quản lý vì anh ấy có tính khí nóng nảy."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 63,
       "wordType": "adj",
@@ -8060,7 +8234,12 @@
       "id": "a1-a2_0623",
       "word": "hollow",
       "meaning": "trống rỗng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a hollow victory",
+          "vi": "một chiến thắng rỗng tuếch"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 63,
       "wordType": "adj",
@@ -8070,7 +8249,12 @@
       "id": "a1-a2_0624",
       "word": "horrified",
       "meaning": "khiếp sợ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The haunted house was horrifying, from one room to the next I felt more and more like I wasn’t going to survive.",
+          "vi": "Ngôi nhà ma ám thật kinh hoàng, từ phòng này sang phòng khác tôi càng cảm thấy mình sắp không thể sống sót."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 63,
       "wordType": "adj",
@@ -8080,7 +8264,12 @@
       "id": "a1-a2_0625",
       "word": "hostile",
       "meaning": "chống đối, thù địch",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a hostile country",
+          "vi": "một đất nước thù địch"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 63,
       "wordType": "adj",
@@ -8094,7 +8283,8 @@
       "category": "a1-a2",
       "groupIndex": 63,
       "wordType": "adj",
-      "pronunciation": "/hjuːˈmɪl.i.eɪ.tɪ̬d/"
+      "pronunciation": "/hjuːˈmɪl.i.eɪ.tɪ̬d/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0627",
@@ -8104,13 +8294,19 @@
       "category": "a1-a2",
       "groupIndex": 63,
       "wordType": "adj",
-      "pronunciation": "/hɪˈster.ɪ.kəl/"
+      "pronunciation": "/hɪˈster.ɪ.kəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0628",
       "word": "indifferent",
       "meaning": "dửng dưng, lãnh đạm, thờ ơ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I am indifferent between the two plans.",
+          "vi": "Tôi thờ ơ giữa hai kế hoạch."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 63,
       "wordType": "adj",
@@ -8124,13 +8320,19 @@
       "category": "a1-a2",
       "groupIndex": 63,
       "wordType": "adj",
-      "pronunciation": "/ɪnˈdɪɡ.nənt/"
+      "pronunciation": "/ɪnˈdɪɡ.nənt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0630",
       "word": "intense",
       "meaning": "mãnh liệt, nồng nhiệt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "intense study;  intense thought",
+          "vi": "học tập căng thẳng;  suy nghĩ mãnh liệt"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 63,
       "wordType": "adj",
@@ -8140,7 +8342,12 @@
       "id": "a1-a2_0631",
       "word": "interested",
       "meaning": "hứng thú, thích thú",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I'm very interested in going to see that play.",
+          "vi": "Tôi rất muốn đi xem vở kịch đó."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 64,
       "wordType": "adj",
@@ -8154,7 +8361,8 @@
       "category": "a1-a2",
       "groupIndex": 64,
       "wordType": "adj",
-      "pronunciation": "/ɪnˈtɑːk.sɪ.keɪ.tɪ̬d/"
+      "pronunciation": "/ɪnˈtɑːk.sɪ.keɪ.tɪ̬d/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0633",
@@ -8164,13 +8372,19 @@
       "category": "a1-a2",
       "groupIndex": 64,
       "wordType": "adj",
-      "pronunciation": "/ˈɪr.ə.teɪ.tɪ̬d/"
+      "pronunciation": "/ˈɪr.ə.teɪ.tɪ̬d/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0634",
       "word": "jittery",
       "meaning": "bồn chồn, dễ bị kích động",
-      "examples": [],
+      "examples": [
+        {
+          "en": "jittery video playback",
+          "vi": "phát lại video giật gân"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 64,
       "wordType": "adj",
@@ -8180,7 +8394,12 @@
       "id": "a1-a2_0635",
       "word": "jocular",
       "meaning": "hài hước, vui vẻ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "All we had was a short and jocular conversation.",
+          "vi": "Tất cả những gì chúng tôi có là một cuộc trò chuyện ngắn và vui vẻ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 64,
       "wordType": "adj",
@@ -8194,7 +8413,8 @@
       "category": "a1-a2",
       "groupIndex": 64,
       "wordType": "adj",
-      "pronunciation": "/ˈdʒɑː.li/"
+      "pronunciation": "/ˈdʒɑː.li/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0637",
@@ -8204,7 +8424,8 @@
       "category": "a1-a2",
       "groupIndex": 64,
       "wordType": "adj",
-      "pronunciation": "/ˈdʒɔɪ.fəl/"
+      "pronunciation": "/ˈdʒɔɪ.fəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0638",
@@ -8214,13 +8435,19 @@
       "category": "a1-a2",
       "groupIndex": 64,
       "wordType": "adj",
-      "pronunciation": "/ˈdʒɔɪ.fəl/"
+      "pronunciation": "/ˈdʒɔɪ.fəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0639",
       "word": "keen",
       "meaning": "say mê, ham thích",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I’m keen on computers.",
+          "vi": "Tôi rất thích máy tính."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 64,
       "wordType": "adj",
@@ -8234,7 +8461,8 @@
       "category": "a1-a2",
       "groupIndex": 64,
       "wordType": "adj",
-      "pronunciation": "/ləˈθɑːr.dʒɪk/"
+      "pronunciation": "/ləˈθɑːr.dʒɪk/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0641",
@@ -8244,13 +8472,19 @@
       "category": "a1-a2",
       "groupIndex": 65,
       "wordType": "adj",
-      "pronunciation": "/ˈloʊn.li/"
+      "pronunciation": "/ˈloʊn.li/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0642",
       "word": "longing",
       "meaning": "thèm khát, thèm muốn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She longed for him to come back.",
+          "vi": "Cô mong mỏi anh quay trở lại."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 65,
       "wordType": "adj",
@@ -8260,7 +8494,12 @@
       "id": "a1-a2_0643",
       "word": "lost",
       "meaning": "lạc lõng, mất phương hướng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to be lost in thought",
+          "vi": "bị lạc trong suy nghĩ"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 65,
       "wordType": "adj",
@@ -8270,7 +8509,12 @@
       "id": "a1-a2_0644",
       "word": "lucky",
       "meaning": "may mắn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a lucky cast",
+          "vi": "một dàn diễn viên may mắn"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 65,
       "wordType": "adj",
@@ -8284,13 +8528,19 @@
       "category": "a1-a2",
       "groupIndex": 65,
       "wordType": "adj",
-      "pronunciation": "/ˌmel.əŋˈkɑː.lɪk/"
+      "pronunciation": "/ˌmel.əŋˈkɑː.lɪk/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0646",
       "word": "miserable",
       "meaning": "khốn khổ, đáng thương",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a miserable sinner",
+          "vi": "một tội nhân khốn khổ"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 65,
       "wordType": "adj",
@@ -8300,7 +8550,12 @@
       "id": "a1-a2_0647",
       "word": "mortified",
       "meaning": "xấu hổ, ái ngại",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I was so mortified I could have died right there; instead I fainted, but I swore I'd never let that happen to me again.",
+          "vi": "Tôi xấu hổ đến mức có thể chết ngay tại đó; thay vào đó tôi ngất đi, nhưng tôi thề sẽ không bao giờ để điều đó xảy ra với mình nữa."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 65,
       "wordType": "adj",
@@ -8314,13 +8569,19 @@
       "category": "a1-a2",
       "groupIndex": 65,
       "wordType": "adj",
-      "pronunciation": "/ˈmɔːrn.fəl/"
+      "pronunciation": "/ˈmɔːrn.fəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0649",
       "word": "nasty",
       "meaning": "tục tĩu",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Processed foods are full of aspartame and other nasties.",
+          "vi": "Thực phẩm chế biến sẵn chứa đầy aspartame và các chất độc hại khác."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 65,
       "wordType": "adj",
@@ -8330,7 +8591,12 @@
       "id": "a1-a2_0650",
       "word": "needy",
       "meaning": "thiếu thốn (về mặt tình cảm)",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Needy people want to give too, but have few material goods to offer.",
+          "vi": "Những người túng thiếu cũng muốn cho đi nhưng lại có ít của cải vật chất để dâng hiến."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 65,
       "wordType": "adj",
@@ -8344,13 +8610,19 @@
       "category": "a1-a2",
       "groupIndex": 66,
       "wordType": "adj",
-      "pronunciation": "/ˈnɝː.vəs/"
+      "pronunciation": "/ˈnɝː.vəs/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0652",
       "word": "numb",
       "meaning": "lặng người",
-      "examples": [],
+      "examples": [
+        {
+          "en": "fingers numb with cold",
+          "vi": "ngón tay tê cóng vì lạnh"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 66,
       "wordType": "adj",
@@ -8360,7 +8632,12 @@
       "id": "a1-a2_0653",
       "word": "obsessed",
       "meaning": "ám ảnh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Some people are obsessed with sports.",
+          "vi": "Một số người bị ám ảnh bởi thể thao."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 66,
       "wordType": "adj",
@@ -8370,7 +8647,12 @@
       "id": "a1-a2_0654",
       "word": "offended",
       "meaning": "phật ý, cảm thấy bị xúc phạm",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Strong light offends the eye.",
+          "vi": "Ánh sáng mạnh làm tổn thương mắt."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 66,
       "wordType": "adj",
@@ -8380,7 +8662,12 @@
       "id": "a1-a2_0655",
       "word": "optimistic",
       "meaning": "lạc quan, yêu đời",
-      "examples": [],
+      "examples": [
+        {
+          "en": "in an optimistic mood",
+          "vi": "trong tâm trạng lạc quan"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 66,
       "wordType": "adj",
@@ -8390,7 +8677,12 @@
       "id": "a1-a2_0656",
       "word": "overwhelmed",
       "meaning": "choáng ngợp, quá tải",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He was overwhelmed with guilt.",
+          "vi": "Anh tràn ngập cảm giác tội lỗi."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 66,
       "wordType": "adj",
@@ -8400,7 +8692,12 @@
       "id": "a1-a2_0657",
       "word": "paranoid",
       "meaning": "hoang tưởng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Maybe I'm paranoid, but that doesn't mean that they are not out to get me.",
+          "vi": "Có thể tôi bị hoang tưởng, nhưng điều đó không có nghĩa là họ không ra tay cứu tôi."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 66,
       "wordType": "adj",
@@ -8414,13 +8711,19 @@
       "category": "a1-a2",
       "groupIndex": 66,
       "wordType": "adj",
-      "pronunciation": "/ˈpæʃ.ən.ət/"
+      "pronunciation": "/ˈpæʃ.ən.ət/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0659",
       "word": "peaceful",
       "meaning": "thanh thản, bình yên",
-      "examples": [],
+      "examples": [
+        {
+          "en": "peaceful protest",
+          "vi": "biểu tình ôn hòa"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 66,
       "wordType": "adj",
@@ -8430,7 +8733,12 @@
       "id": "a1-a2_0660",
       "word": "perky",
       "meaning": "tươi tỉnh, vênh váo",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She answered with a perky smile and bounced off.",
+          "vi": "Cô ấy trả lời với một nụ cười vui tươi và bật ra."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 66,
       "wordType": "adj",
@@ -8444,13 +8752,19 @@
       "category": "a1-a2",
       "groupIndex": 67,
       "wordType": "adj",
-      "pronunciation": "/pɚˈplekst/"
+      "pronunciation": "/pɚˈplekst/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0662",
       "word": "pessimistic",
       "meaning": "bi quan",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a pessimistic estimate",
+          "vi": "một ước tính bi quan"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 67,
       "wordType": "adj",
@@ -8464,13 +8778,19 @@
       "category": "a1-a2",
       "groupIndex": 67,
       "wordType": "adj",
-      "pronunciation": "/ˈpet.rə.faɪd/"
+      "pronunciation": "/ˈpet.rə.faɪd/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0664",
       "word": "positive",
       "meaning": "tích cực, lạc quan",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He has a positive outlook on life.",
+          "vi": "Anh ấy có cái nhìn tích cực về cuộc sống."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 67,
       "wordType": "adj",
@@ -8480,7 +8800,12 @@
       "id": "a1-a2_0665",
       "word": "powerful",
       "meaning": "quyền thế, quyền lực",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He was the very best runner there.",
+          "vi": "Anh ấy là người chạy giỏi nhất ở đó."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 67,
       "wordType": "adj",
@@ -8490,7 +8815,12 @@
       "id": "a1-a2_0666",
       "word": "proud",
       "meaning": "hãnh diện, tự hào",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I was too proud to apologise.",
+          "vi": "Tôi quá kiêu hãnh để có thể xin lỗi."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 67,
       "wordType": "adj",
@@ -8500,7 +8830,12 @@
       "id": "a1-a2_0667",
       "word": "rattled",
       "meaning": "bồn chồn, lo lắng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She rattled on for an hour.",
+          "vi": "Cô ấy lảng vảng suốt một tiếng đồng hồ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 67,
       "wordType": "adj",
@@ -8510,7 +8845,12 @@
       "id": "a1-a2_0668",
       "word": "reflective",
       "meaning": "trầm ngâm",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Mirrors are reflective.",
+          "vi": "Gương có tính phản chiếu."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 67,
       "wordType": "adj",
@@ -8524,13 +8864,19 @@
       "category": "a1-a2",
       "groupIndex": 67,
       "wordType": "adj",
-      "pronunciation": "/rɪˈɡret.fəl/"
+      "pronunciation": "/rɪˈɡret.fəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0670",
       "word": "relaxed",
       "meaning": "thư giãn, thoải mái",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The relaxed rules were greatly tightened after the lawsuit.",
+          "vi": "Các quy tắc thoải mái đã được thắt chặt rất nhiều sau vụ kiện."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 67,
       "wordType": "adj",
@@ -8540,7 +8886,12 @@
       "id": "a1-a2_0671",
       "word": "relieved",
       "meaning": "nhẹ nhõm",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I was greatly relieved by the jury's verdict.",
+          "vi": "Tôi rất nhẹ nhõm trước phán quyết của bồi thẩm đoàn."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 68,
       "wordType": "adj",
@@ -8550,7 +8901,12 @@
       "id": "a1-a2_0672",
       "word": "remorseful",
       "meaning": "ăn năn, hối hận",
-      "examples": [],
+      "examples": [
+        {
+          "en": "There was a remorseful look on her face.",
+          "vi": "Trên mặt cô hiện lên vẻ hối hận."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 68,
       "wordType": "adj",
@@ -8564,13 +8920,19 @@
       "category": "a1-a2",
       "groupIndex": 68,
       "wordType": "adj",
-      "pronunciation": "/ˈruː.fəl/"
+      "pronunciation": "/ˈruː.fəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0674",
       "word": "satisfied",
       "meaning": "thỏa mãn, hài lòng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I'm not satisfied with the quality of the food here.",
+          "vi": "Tôi không hài lòng với chất lượng đồ ăn ở đây."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 68,
       "wordType": "adj",
@@ -8584,7 +8946,8 @@
       "category": "a1-a2",
       "groupIndex": 68,
       "wordType": "adj",
-      "pronunciation": "/ˌselfˈkɑːn.ʃəs/"
+      "pronunciation": "/ˌselfˈkɑːn.ʃəs/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0676",
@@ -8594,13 +8957,19 @@
       "category": "a1-a2",
       "groupIndex": 68,
       "wordType": "adj",
-      "pronunciation": "/ˈsel.fɪʃ/"
+      "pronunciation": "/ˈsel.fɪʃ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0677",
       "word": "sensitive",
       "meaning": "nhạy cảm, dễ tổn thương",
-      "examples": [],
+      "examples": [
+        {
+          "en": "These are highly sensitive documents.",
+          "vi": "Đây là những tài liệu có độ nhạy cảm cao."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 68,
       "wordType": "adj",
@@ -8614,13 +8983,19 @@
       "category": "a1-a2",
       "groupIndex": 68,
       "wordType": "adj",
-      "pronunciation": "/ˈʃeɪm.fəl/"
+      "pronunciation": "/ˈʃeɪm.fəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0679",
       "word": "shock",
       "meaning": "bất ngờ, sốc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to shock rye",
+          "vi": "sốc lúa mạch đen"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 68,
       "wordType": "adj",
@@ -8630,7 +9005,12 @@
       "id": "a1-a2_0680",
       "word": "smug",
       "meaning": "tự mãn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Kate looked extremely smug this morning.",
+          "vi": "Sáng nay Kate trông cực kỳ tự mãn."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 68,
       "wordType": "adj",
@@ -8640,7 +9020,12 @@
       "id": "a1-a2_0681",
       "word": "snappy",
       "meaning": "dễ gắt gỏng, cáu kỉnh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Make it snappy!",
+          "vi": "Làm cho nó nhanh chóng!"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 69,
       "wordType": "adj",
@@ -8650,7 +9035,12 @@
       "id": "a1-a2_0682",
       "word": "somber",
       "meaning": "u sầu, ủ rũ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a sombre situation",
+          "vi": "một tình huống ảm đạm"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 69,
       "wordType": "adj",
@@ -8660,7 +9050,12 @@
       "id": "a1-a2_0683",
       "word": "speechless",
       "meaning": "câm nín",
-      "examples": [],
+      "examples": [
+        {
+          "en": "When he walked into his surprise birthday party, he was completely speechless.",
+          "vi": "Khi bước vào bữa tiệc sinh nhật bất ngờ của mình, anh ấy hoàn toàn không nói nên lời."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 69,
       "wordType": "adj",
@@ -8670,7 +9065,12 @@
       "id": "a1-a2_0684",
       "word": "stressed",
       "meaning": "căng thẳng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "“Emphasis” is stressed on the first syllable, but “emphatic” is stressed on the second.",
+          "vi": "“Nhấn mạnh” được nhấn mạnh ở âm tiết thứ nhất, nhưng “nhấn mạnh” được nhấn mạnh ở âm tiết thứ hai."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 69,
       "wordType": "adj",
@@ -8680,7 +9080,12 @@
       "id": "a1-a2_0685",
       "word": "stunned",
       "meaning": "sững sờ, bất ngờ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He stood there stunned, looking at the beautiful, breath-taking sunrise.",
+          "vi": "Anh đứng đó sững sờ nhìn cảnh bình minh đẹp đến nghẹt thở."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 69,
       "wordType": "adj",
@@ -8694,13 +9099,19 @@
       "category": "a1-a2",
       "groupIndex": 69,
       "wordType": "adj",
-      "pronunciation": "/səbˈmɪs.ɪv/"
+      "pronunciation": "/səbˈmɪs.ɪv/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0687",
       "word": "suffering",
       "meaning": "đau đớn, đau khổ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I've been suffering your insults for years.",
+          "vi": "Tôi đã phải chịu đựng những lời lăng mạ của bạn trong nhiều năm."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 69,
       "wordType": "adj",
@@ -8710,7 +9121,12 @@
       "id": "a1-a2_0688",
       "word": "surprised",
       "meaning": "bất ngờ, ngạc nhiên",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He doesn’t surprise easily.",
+          "vi": "Anh ấy không dễ dàng bị bất ngờ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 69,
       "wordType": "adj",
@@ -8720,7 +9136,12 @@
       "id": "a1-a2_0689",
       "word": "thankful",
       "meaning": "biết ơn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I'm thankful that you helped me out today. How can I ever repay you?",
+          "vi": "Tôi biết ơn vì bạn đã giúp đỡ tôi ngày hôm nay. Làm thế nào tôi có thể trả ơn bạn?"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 69,
       "wordType": "adj",
@@ -8730,7 +9151,12 @@
       "id": "a1-a2_0690",
       "word": "thoughtful",
       "meaning": "trầm ngâm, suy tư",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Most thoughtful people eventually solve the puzzle.",
+          "vi": "Hầu hết những người chu đáo cuối cùng cũng giải được câu đố."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 69,
       "wordType": "adj",
@@ -8740,7 +9166,12 @@
       "id": "a1-a2_0691",
       "word": "troubled",
       "meaning": "băn khoăn, lo lắng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I will not trouble you to deliver the letter.",
+          "vi": "Tôi sẽ không làm phiền bạn để chuyển bức thư."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 70,
       "wordType": "adj",
@@ -8750,7 +9181,12 @@
       "id": "a1-a2_0692",
       "word": "upbeat",
       "meaning": "vui vẻ, phấn chấn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He sounded upbeat when I talked to him.",
+          "vi": "Anh ấy có vẻ lạc quan khi tôi nói chuyện với anh ấy."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 70,
       "wordType": "adj",
@@ -8760,7 +9196,12 @@
       "id": "a1-a2_0693",
       "word": "uptight",
       "meaning": "căng thẳng, lo lắng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He came from a very uptight religious background, but you wouldn't know that now!",
+          "vi": "Anh ấy xuất thân từ một nền tảng tôn giáo rất kín đáo, nhưng bây giờ bạn sẽ không biết điều đó!"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 70,
       "wordType": "adj",
@@ -8770,7 +9211,12 @@
       "id": "a1-a2_0694",
       "word": "wary",
       "meaning": "thận trọng, đề phòng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He is wary of dogs.",
+          "vi": "Anh ấy cảnh giác với chó."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 70,
       "wordType": "adj",
@@ -8780,7 +9226,12 @@
       "id": "a1-a2_0695",
       "word": "woeful",
       "meaning": "thiểu não, buồn rầu",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a woeful event",
+          "vi": "một sự kiện tồi tệ"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 70,
       "wordType": "adj",
@@ -8790,7 +9241,12 @@
       "id": "a1-a2_0696",
       "word": "wretched",
       "meaning": "bất hạnh, đáng thương",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I felt wretched after my wife died.",
+          "vi": "Tôi cảm thấy đau khổ sau khi vợ tôi qua đời."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 70,
       "wordType": "adj",
@@ -8804,13 +9260,19 @@
       "category": "a1-a2",
       "groupIndex": 70,
       "wordType": "adj",
-      "pronunciation": "/ˈzel.əs/"
+      "pronunciation": "/ˈzel.əs/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0698",
       "word": "bake",
       "meaning": "nướng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The cake baked at 350°F.",
+          "vi": "Bánh nướng ở nhiệt độ 350°F."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 70,
       "wordType": "v",
@@ -8820,7 +9282,12 @@
       "id": "a1-a2_0699",
       "word": "barbecue",
       "meaning": "nướng, quay thịt trên lò",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We cooked our food on the barbecue.",
+          "vi": "Chúng tôi nấu thức ăn của chúng tôi trên thịt nướng."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 70,
       "wordType": "v",
@@ -8834,13 +9301,19 @@
       "category": "a1-a2",
       "groupIndex": 70,
       "wordType": "v",
-      "pronunciation": "/beɪst/"
+      "pronunciation": "/beɪst/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0701",
       "word": "blanch",
       "meaning": "chần thức ăn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to blanch a deer",
+          "vi": "làm trắng một con nai"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 71,
       "wordType": "v",
@@ -8850,7 +9323,12 @@
       "id": "a1-a2_0702",
       "word": "blend",
       "meaning": "trộn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Our department has a good blend of experienced workers and young promise.",
+          "vi": "Bộ phận của chúng tôi có sự kết hợp tốt giữa công nhân giàu kinh nghiệm và lời hứa trẻ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 71,
       "wordType": "v",
@@ -8860,7 +9338,12 @@
       "id": "a1-a2_0703",
       "word": "boil",
       "meaning": "đun sôi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "It’s boiling outside!",
+          "vi": "Bên ngoài đang sôi sùng sục!"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 71,
       "wordType": "v",
@@ -8870,7 +9353,12 @@
       "id": "a1-a2_0704",
       "word": "braise",
       "meaning": "om (thịt...)",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Pot roast is typically a braise, as is osso buco.",
+          "vi": "Món nướng trong nồi thường là món om, cũng như osso buco."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 71,
       "wordType": "v",
@@ -8884,13 +9372,19 @@
       "category": "a1-a2",
       "groupIndex": 71,
       "wordType": "v",
-      "pronunciation": "/bruː/"
+      "pronunciation": "/bruː/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0706",
       "word": "caramelize",
       "meaning": "thắng đường",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Slowly cooking the onions will caramelize them, which brings out the sweetness and gives them a brown color.",
+          "vi": "Nấu từ từ hành tây sẽ tạo thành caramen, mang lại vị ngọt và tạo cho chúng màu nâu."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 71,
       "wordType": "v",
@@ -8904,13 +9398,19 @@
       "category": "a1-a2",
       "groupIndex": 71,
       "wordType": "v",
-      "pronunciation": "/ˈtʃɑːr.brɔɪl/"
+      "pronunciation": "/ˈtʃɑːr.brɔɪl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0708",
       "word": "chill",
       "meaning": "làm tan giá, rã đông",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Chill before serving.",
+          "vi": "Thư giãn trước khi phục vụ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 71,
       "wordType": "v",
@@ -8920,7 +9420,12 @@
       "id": "a1-a2_0709",
       "word": "chop",
       "meaning": "chặt, bổ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a chop of tea",
+          "vi": "một tách trà"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 71,
       "wordType": "v",
@@ -8930,7 +9435,12 @@
       "id": "a1-a2_0710",
       "word": "chunk",
       "meaning": "cắt khúc, khúc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a chunk of granite",
+          "vi": "một khối đá granit"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 71,
       "wordType": "v, n",
@@ -8940,7 +9450,12 @@
       "id": "a1-a2_0711",
       "word": "churn",
       "meaning": "đánh, khuấy sữa",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a butter churn",
+          "vi": "một thùng bơ"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 72,
       "wordType": "v, n",
@@ -8954,13 +9469,19 @@
       "category": "a1-a2",
       "groupIndex": 72,
       "wordType": "v",
-      "pronunciation": "/ˈkɑː.dəl/"
+      "pronunciation": "/ˈkɑː.dəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0713",
       "word": "congeal",
       "meaning": "làm đông, làm cô đặc lại",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We must act before opposition to our plans congeals.",
+          "vi": "Chúng ta phải hành động trước khi sự phản đối kế hoạch của chúng ta đông lại."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 72,
       "wordType": "v",
@@ -8970,7 +9491,12 @@
       "id": "a1-a2_0714",
       "word": "cool",
       "meaning": "để nguội",
-      "examples": [],
+      "examples": [
+        {
+          "en": "in the cool of the morning",
+          "vi": "trong buổi sáng mát mẻ"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 72,
       "wordType": "v",
@@ -8984,7 +9510,8 @@
       "category": "a1-a2",
       "groupIndex": 72,
       "wordType": "v",
-      "pronunciation": "/ˌdiːˈɡleɪz/"
+      "pronunciation": "/ˌdiːˈɡleɪz/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0716",
@@ -8994,13 +9521,19 @@
       "category": "a1-a2",
       "groupIndex": 72,
       "wordType": "v",
-      "pronunciation": "/ˌdiːˈskeɪl/"
+      "pronunciation": "/ˌdiːˈskeɪl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0717",
       "word": "dice",
       "meaning": "thái hạt lựu",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Cut onions, carrots and celery into medium dice.",
+          "vi": "Cắt hành tây, cà rốt và cần tây thành khối vừa."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 72,
       "wordType": "v",
@@ -9010,7 +9543,12 @@
       "id": "a1-a2_0718",
       "word": "dip",
       "meaning": "nhúng, ngâm",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Strata of rock dip.",
+          "vi": "Tầng đá nhúng."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 72,
       "wordType": "v",
@@ -9024,7 +9562,8 @@
       "category": "a1-a2",
       "groupIndex": 72,
       "wordType": "v",
-      "pronunciation": "/fɚˈment/"
+      "pronunciation": "/fɚˈment/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0720",
@@ -9034,13 +9573,19 @@
       "category": "a1-a2",
       "groupIndex": 72,
       "wordType": "v",
-      "pronunciation": "/ˈfɪl.ɪt/"
+      "pronunciation": "/ˈfɪl.ɪt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0721",
       "word": "flambé",
       "meaning": "đốt rượu",
-      "examples": [],
+      "examples": [
+        {
+          "en": "\"Flambé the dessert\", ordered the Chef, \"but take the dish off the heat before adding the brandy or you'll burn your eyebrows off.\"",
+          "vi": "\"Flambé món tráng miệng\", Đầu bếp ra lệnh, \"nhưng hãy tắt bếp trước khi thêm rượu mạnh, nếu không bạn sẽ bị cháy lông mày.\""
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 73,
       "wordType": "v",
@@ -9050,7 +9595,12 @@
       "id": "a1-a2_0722",
       "word": "flavor",
       "meaning": "tẩm gia vị",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the flavor of a rose",
+          "vi": "hương vị của một bông hồng"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 73,
       "wordType": "v",
@@ -9060,7 +9610,12 @@
       "id": "a1-a2_0723",
       "word": "fold",
       "meaning": "quấy, trộn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He folded his arms in defiance.",
+          "vi": "Anh khoanh tay thách thức."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 73,
       "wordType": "v",
@@ -9070,7 +9625,12 @@
       "id": "a1-a2_0724",
       "word": "garnish",
       "meaning": "trang trí, bày biện",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a dish garnished with parsley",
+          "vi": "một món ăn trang trí với rau mùi tây"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 73,
       "wordType": "v",
@@ -9084,13 +9644,19 @@
       "category": "a1-a2",
       "groupIndex": 73,
       "wordType": "v",
-      "pronunciation": "/niːd/"
+      "pronunciation": "/niːd/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0726",
       "word": "layer",
       "meaning": "xếp từng lớp",
-      "examples": [],
+      "examples": [
+        {
+          "en": "mired in layers of deceit",
+          "vi": "sa lầy trong tầng lớp lừa dối"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 73,
       "wordType": "v",
@@ -9104,13 +9670,19 @@
       "category": "a1-a2",
       "groupIndex": 73,
       "wordType": "v",
-      "pronunciation": "/ˈlev.ən/"
+      "pronunciation": "/ˈlev.ən/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0728",
       "word": "marinate",
       "meaning": "ướp thịt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "You'll get a better flavour from the chicken if you marinate it first.",
+          "vi": "Bạn sẽ có được hương vị ngon hơn từ thịt gà nếu ướp trước."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 73,
       "wordType": "v",
@@ -9120,7 +9692,12 @@
       "id": "a1-a2_0729",
       "word": "mash",
       "meaning": "nghiền, làm nát",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to mash on a bicycle pedal",
+          "vi": "đạp vào bàn đạp xe đạp"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 73,
       "wordType": "v",
@@ -9130,7 +9707,12 @@
       "id": "a1-a2_0730",
       "word": "measure",
       "meaning": "cân đếm",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I measure that at 10 centimetres.",
+          "vi": "Tôi đo nó ở mức 10 cm."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 73,
       "wordType": "v",
@@ -9140,7 +9722,12 @@
       "id": "a1-a2_0731",
       "word": "melt",
       "meaning": "làm tan chảy",
-      "examples": [],
+      "examples": [
+        {
+          "en": "His troubles melted away.",
+          "vi": "Những rắc rối của anh tan biến."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 74,
       "wordType": "v",
@@ -9150,7 +9737,12 @@
       "id": "a1-a2_0732",
       "word": "mince",
       "meaning": "băm, xay",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a minced oath",
+          "vi": "một lời thề nhỏ"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 74,
       "wordType": "v",
@@ -9160,7 +9752,12 @@
       "id": "a1-a2_0733",
       "word": "pinch",
       "meaning": "véo",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to be pinched for money",
+          "vi": "bị chèn ép vì tiền"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 74,
       "wordType": "v",
@@ -9174,13 +9771,19 @@
       "category": "a1-a2",
       "groupIndex": 74,
       "wordType": "v",
-      "pronunciation": "/ˌpriːˈkʊk/"
+      "pronunciation": "/ˌpriːˈkʊk/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0735",
       "word": "prepare",
       "meaning": "sơ chế, chuẩn bị",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We prepared for a bumpy ride.",
+          "vi": "Chúng tôi đã chuẩn bị cho một chuyến đi gập ghềnh."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 74,
       "wordType": "v",
@@ -9190,7 +9793,12 @@
       "id": "a1-a2_0736",
       "word": "press",
       "meaning": "ấn, ép",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a flower press",
+          "vi": "một máy ép hoa"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 74,
       "wordType": "v",
@@ -9204,13 +9812,19 @@
       "category": "a1-a2",
       "groupIndex": 74,
       "wordType": "v",
-      "pronunciation": "/pʌlp/"
+      "pronunciation": "/pʌlp/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0738",
       "word": "raw",
       "meaning": "sống",
-      "examples": [],
+      "examples": [
+        {
+          "en": "raw cane sugar",
+          "vi": "đường mía thô"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 74,
       "wordType": "adj",
@@ -9220,7 +9834,12 @@
       "id": "a1-a2_0739",
       "word": "refrigerate",
       "meaning": "ướp lạnh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Please refrigerate your uncooked meats at or below 40° Fahrenheit.",
+          "vi": "Vui lòng làm lạnh thịt chưa nấu chín của bạn ở nhiệt độ bằng hoặc dưới 40° F."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 74,
       "wordType": "v",
@@ -9230,7 +9849,12 @@
       "id": "a1-a2_0740",
       "word": "roast",
       "meaning": "quay, nướng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to roast meat on a spit",
+          "vi": "nướng thịt trên xiên"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 74,
       "wordType": "v",
@@ -9240,7 +9864,12 @@
       "id": "a1-a2_0741",
       "word": "roll",
       "meaning": "cuộn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Make your roll.",
+          "vi": "Hãy cuộn của bạn."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 75,
       "wordType": "v",
@@ -9250,7 +9879,12 @@
       "id": "a1-a2_0742",
       "word": "salt",
       "meaning": "ướp gia vị, rắc muối",
-      "examples": [],
+      "examples": [
+        {
+          "en": "salt beef;  salt tears",
+          "vi": "thịt bò muối;  nước mắt muối"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 75,
       "wordType": "v",
@@ -9264,13 +9898,19 @@
       "category": "a1-a2",
       "groupIndex": 75,
       "wordType": "v",
-      "pronunciation": "/sɔːˈteɪ/"
+      "pronunciation": "/sɔːˈteɪ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0744",
       "word": "scald",
       "meaning": "đun gần sôi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to scald the hand",
+          "vi": "làm bỏng tay"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 75,
       "wordType": "v",
@@ -9280,7 +9920,12 @@
       "id": "a1-a2_0745",
       "word": "scramble",
       "meaning": "trưng (bác) trứng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to scramble up wealth",
+          "vi": "để tranh giành sự giàu có"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 75,
       "wordType": "v",
@@ -9290,7 +9935,12 @@
       "id": "a1-a2_0746",
       "word": "shell",
       "meaning": "bóc vỏ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Nuts shell in falling.",
+          "vi": "Vỏ hạt rơi xuống."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 75,
       "wordType": "v",
@@ -9300,7 +9950,12 @@
       "id": "a1-a2_0747",
       "word": "shred",
       "meaning": "xé nhỏ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "There isn't a shred of evidence to support his claims.",
+          "vi": "Không có một chút bằng chứng nào chứng minh cho tuyên bố của anh ta."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 75,
       "wordType": "v",
@@ -9310,7 +9965,12 @@
       "id": "a1-a2_0748",
       "word": "shuck",
       "meaning": "bóc vỏ, lột vỏ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Shall we shuck walnuts?",
+          "vi": "Chúng ta có nên bóc quả óc chó không?"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 75,
       "wordType": "v",
@@ -9320,7 +9980,12 @@
       "id": "a1-a2_0749",
       "word": "sieve",
       "meaning": "sàng, rây",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Use the sieve to get the pasta from the water.",
+          "vi": "Dùng rây để lấy mì ra khỏi nước."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 75,
       "wordType": "v",
@@ -9334,13 +9999,19 @@
       "category": "a1-a2",
       "groupIndex": 75,
       "wordType": "v",
-      "pronunciation": "/sɪft/"
+      "pronunciation": "/sɪft/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0751",
       "word": "simmer",
       "meaning": "ninh nhỏ lửa",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The soup simmered on the stove.",
+          "vi": "Súp được đun sôi trên bếp."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 76,
       "wordType": "v",
@@ -9350,7 +10021,12 @@
       "id": "a1-a2_0752",
       "word": "skewer",
       "meaning": "xiên thịt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a skew arch",
+          "vi": "một vòm nghiêng"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 76,
       "wordType": "v",
@@ -9360,7 +10036,12 @@
       "id": "a1-a2_0753",
       "word": "skim",
       "meaning": "vớt bọt, vớt váng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to skim cream",
+          "vi": "để đánh kem"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 76,
       "wordType": "v",
@@ -9370,7 +10051,12 @@
       "id": "a1-a2_0754",
       "word": "slice",
       "meaning": "thái",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Slice the cheese thinly.",
+          "vi": "Cắt mỏng phô mai."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 76,
       "wordType": "v",
@@ -9384,13 +10070,19 @@
       "category": "a1-a2",
       "groupIndex": 76,
       "wordType": "v",
-      "pronunciation": "/saʊs/"
+      "pronunciation": "/saʊs/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0756",
       "word": "sprinkle",
       "meaning": "rắc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "It sprinkled outside all day long.",
+          "vi": "Nó rải rác bên ngoài suốt cả ngày."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 76,
       "wordType": "v",
@@ -9400,7 +10092,12 @@
       "id": "a1-a2_0757",
       "word": "steam",
       "meaning": "hấp",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to steam wood or cloth",
+          "vi": "để hấp gỗ hoặc vải"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 76,
       "wordType": "v",
@@ -9410,7 +10107,12 @@
       "id": "a1-a2_0758",
       "word": "steep",
       "meaning": "ngâm vào nước",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The tea is steeping.",
+          "vi": "Trà đang ngâm."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 76,
       "wordType": "v",
@@ -9420,7 +10122,12 @@
       "id": "a1-a2_0759",
       "word": "stew",
       "meaning": "hầm, ninh nhừ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to be in a stew",
+          "vi": "ở trong món hầm"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 76,
       "wordType": "v",
@@ -9430,7 +10137,12 @@
       "id": "a1-a2_0760",
       "word": "stir",
       "meaning": "xào, quấy",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Can you give the soup a little stir?",
+          "vi": "Bạn có thể khuấy súp một chút được không?"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 76,
       "wordType": "v",
@@ -9440,7 +10152,12 @@
       "id": "a1-a2_0761",
       "word": "sweeten",
       "meaning": "làm ngọt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to sweeten tea",
+          "vi": "làm ngọt trà"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 77,
       "wordType": "v",
@@ -9450,7 +10167,12 @@
       "id": "a1-a2_0762",
       "word": "wash",
       "meaning": "rửa",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Waves wash the shore.",
+          "vi": "Sóng xô bờ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 77,
       "wordType": "v",
@@ -9464,7 +10186,8 @@
       "category": "a1-a2",
       "groupIndex": 77,
       "wordType": "n",
-      "pronunciation": "/əˈkaʊn.t̬ənt/"
+      "pronunciation": "/əˈkaʊn.t̬ənt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0764",
@@ -9474,7 +10197,8 @@
       "category": "a1-a2",
       "groupIndex": 77,
       "wordType": "n",
-      "pronunciation": "/ˈæk.tɚ//ˈæk.trəs/"
+      "pronunciation": "/ˈæk.tɚ//ˈæk.trəs/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0765",
@@ -9484,7 +10208,8 @@
       "category": "a1-a2",
       "groupIndex": 77,
       "wordType": "n",
-      "pronunciation": "/ˈɑːr.tɪ̬st/"
+      "pronunciation": "/ˈɑːr.tɪ̬st/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0766",
@@ -9494,7 +10219,8 @@
       "category": "a1-a2",
       "groupIndex": 77,
       "wordType": "n",
-      "pronunciation": "/ˈæs.trə.nɑːt/"
+      "pronunciation": "/ˈæs.trə.nɑːt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0767",
@@ -9504,7 +10230,8 @@
       "category": "a1-a2",
       "groupIndex": 77,
       "wordType": "n",
-      "pronunciation": "/ˈbeɪ.kɚ/"
+      "pronunciation": "/ˈbeɪ.kɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0768",
@@ -9514,7 +10241,8 @@
       "category": "a1-a2",
       "groupIndex": 77,
       "wordType": "n",
-      "pronunciation": "/ˈbel.bɔɪ/"
+      "pronunciation": "/ˈbel.bɔɪ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0769",
@@ -9524,13 +10252,19 @@
       "category": "a1-a2",
       "groupIndex": 77,
       "wordType": "n",
-      "pronunciation": "/ˈbɪʃ.əp/"
+      "pronunciation": "/ˈbɪʃ.əp/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0770",
       "word": "butcher",
       "meaning": "người mổ thịt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The band at that bar really butchered \"Hotel California\".",
+          "vi": "Ban nhạc ở quán bar đó đã thực sự tàn sát \"Hotel California\"."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 77,
       "wordType": "n",
@@ -9544,13 +10278,19 @@
       "category": "a1-a2",
       "groupIndex": 78,
       "wordType": "n",
-      "pronunciation": "/kæʃˈɪr/"
+      "pronunciation": "/kæʃˈɪr/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0772",
       "word": "chef",
       "meaning": "đầu bếp",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Kiss the chef. (slogan on aprons used by home barbecue enthusiasts)",
+          "vi": "Hôn đầu bếp. (khẩu hiệu trên tạp dề được những người đam mê tiệc nướng tại nhà sử dụng)"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 78,
       "wordType": "n",
@@ -9564,7 +10304,8 @@
       "category": "a1-a2",
       "groupIndex": 78,
       "wordType": "n",
-      "pronunciation": "/ˈkʌs·təmzˈɑː.fɪ.sɚ/"
+      "pronunciation": "/ˈkʌs·təmzˈɑː.fɪ.sɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0774",
@@ -9574,7 +10315,8 @@
       "category": "a1-a2",
       "groupIndex": 78,
       "wordType": "n",
-      "pronunciation": "/dɪˈlɪv.ɚ.i.mæn/"
+      "pronunciation": "/dɪˈlɪv.ɚ.i.mæn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0775",
@@ -9584,7 +10326,8 @@
       "category": "a1-a2",
       "groupIndex": 78,
       "wordType": "n",
-      "pronunciation": "/ˌɑːn.trə.prəˈnɝː/"
+      "pronunciation": "/ˌɑːn.trə.prəˈnɝː/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0776",
@@ -9594,7 +10337,8 @@
       "category": "a1-a2",
       "groupIndex": 78,
       "wordType": "n",
-      "pronunciation": "/ˈfæk.tɚ.iˈwɝː.kɚ/"
+      "pronunciation": "/ˈfæk.tɚ.iˈwɝː.kɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0777",
@@ -9604,7 +10348,8 @@
       "category": "a1-a2",
       "groupIndex": 78,
       "wordType": "n",
-      "pronunciation": "/ˈflɔːr.ɪst/"
+      "pronunciation": "/ˈflɔːr.ɪst/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0778",
@@ -9614,13 +10359,19 @@
       "category": "a1-a2",
       "groupIndex": 78,
       "wordType": "n",
-      "pronunciation": "/ˈherˌdres.ɚ/"
+      "pronunciation": "/ˈherˌdres.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0779",
       "word": "judge",
       "meaning": "thẩm phán",
-      "examples": [],
+      "examples": [
+        {
+          "en": "She is a good judge of wine.",
+          "vi": "Cô ấy là một người đánh giá tốt về rượu vang."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 78,
       "wordType": "n",
@@ -9630,7 +10381,12 @@
       "id": "a1-a2_0780",
       "word": "lawyer",
       "meaning": "luật sư",
-      "examples": [],
+      "examples": [
+        {
+          "en": "You've been lawyered!",
+          "vi": "Bạn đã được luật sư!"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 78,
       "wordType": "n",
@@ -9644,7 +10400,8 @@
       "category": "a1-a2",
       "groupIndex": 79,
       "wordType": "n",
-      "pronunciation": "/ˈmaɪ.nɚ/"
+      "pronunciation": "/ˈmaɪ.nɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0782",
@@ -9654,7 +10411,8 @@
       "category": "a1-a2",
       "groupIndex": 79,
       "wordType": "n",
-      "pronunciation": "/mjuːˈzɪʃ.ən/"
+      "pronunciation": "/mjuːˈzɪʃ.ən/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0783",
@@ -9664,7 +10422,8 @@
       "category": "a1-a2",
       "groupIndex": 79,
       "wordType": "n",
-      "pronunciation": "/ɑːpˈtɪʃ.ən/"
+      "pronunciation": "/ɑːpˈtɪʃ.ən/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0784",
@@ -9674,7 +10433,8 @@
       "category": "a1-a2",
       "groupIndex": 79,
       "wordType": "n",
-      "pronunciation": "/ˈfɑːr.mə.sɪst/"
+      "pronunciation": "/ˈfɑːr.mə.sɪst/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0785",
@@ -9684,13 +10444,19 @@
       "category": "a1-a2",
       "groupIndex": 79,
       "wordType": "n",
-      "pronunciation": "/ˈplʌm.ɚ/"
+      "pronunciation": "/ˈplʌm.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0786",
       "word": "politician",
       "meaning": "chính trị gia",
-      "examples": [],
+      "examples": [
+        {
+          "en": "There is a politician in every office.",
+          "vi": "Có một chính trị gia ở mọi văn phòng."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 79,
       "wordType": "n",
@@ -9704,7 +10470,8 @@
       "category": "a1-a2",
       "groupIndex": 79,
       "wordType": "n",
-      "pronunciation": "/ˈproʊ.ɡræm.ɚ/"
+      "pronunciation": "/ˈproʊ.ɡræm.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0788",
@@ -9714,7 +10481,8 @@
       "category": "a1-a2",
       "groupIndex": 79,
       "wordType": "n",
-      "pronunciation": "/ˈriː.əl ɪ.steɪt ˌeɪ.dʒənt/"
+      "pronunciation": "/ˈriː.əl ɪ.steɪt ˌeɪ.dʒənt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0789",
@@ -9724,13 +10492,19 @@
       "category": "a1-a2",
       "groupIndex": 79,
       "wordType": "n",
-      "pronunciation": "/rɪˈsep.ʃən.ɪst/"
+      "pronunciation": "/rɪˈsep.ʃən.ɪst/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0790",
       "word": "speaker",
       "meaning": "diễn giả",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The company hired a motivational speaker to boost morale.",
+          "vi": "Công ty đã thuê một diễn giả truyền động lực để nâng cao tinh thần."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 79,
       "wordType": "n",
@@ -9744,13 +10518,19 @@
       "category": "a1-a2",
       "groupIndex": 80,
       "wordType": "n",
-      "pronunciation": "/striːt ˈven.dɚ/"
+      "pronunciation": "/striːt ˈven.dɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0792",
       "word": "tailor",
       "meaning": "thợ may",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a narrowly tailored law",
+          "vi": "một đạo luật được thiết kế chặt chẽ"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 80,
       "wordType": "n",
@@ -9764,7 +10544,8 @@
       "category": "a1-a2",
       "groupIndex": 80,
       "wordType": "n",
-      "pronunciation": "/ˈtæk.si ˌdraɪ.vɚ/"
+      "pronunciation": "/ˈtæk.si ˌdraɪ.vɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0794",
@@ -9774,7 +10555,8 @@
       "category": "a1-a2",
       "groupIndex": 80,
       "wordType": "n",
-      "pronunciation": "/ˈtiː.tʃɚ/"
+      "pronunciation": "/ˈtiː.tʃɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0795",
@@ -9784,13 +10566,19 @@
       "category": "a1-a2",
       "groupIndex": 80,
       "wordType": "n",
-      "pronunciation": "/ˌvet.ər.ɪˈner.i.ən/"
+      "pronunciation": "/ˌvet.ər.ɪˈner.i.ən/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0796",
       "word": "writer",
       "meaning": "người viết sách",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Has your girlfriend written you another letter already? She’s quite a writer!",
+          "vi": "Bạn gái của bạn đã viết cho bạn một lá thư khác chưa? Cô ấy là một nhà văn khá!"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 80,
       "wordType": "n",
@@ -9800,7 +10588,12 @@
       "id": "a1-a2_0797",
       "word": "yellow",
       "meaning": "màu vàng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the black-yellow coalition",
+          "vi": "liên minh vàng đen"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 80,
       "wordType": "n, adj",
@@ -9810,7 +10603,12 @@
       "id": "a1-a2_0798",
       "word": "white",
       "meaning": "màu trắng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a white Christmas",
+          "vi": "một Giáng sinh trắng"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 80,
       "wordType": "n, adj",
@@ -9824,7 +10622,8 @@
       "category": "a1-a2",
       "groupIndex": 80,
       "wordType": "n, adj",
-      "pronunciation": "/wiːt/"
+      "pronunciation": "/wiːt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0800",
@@ -9834,13 +10633,19 @@
       "category": "a1-a2",
       "groupIndex": 80,
       "wordType": "n, adj",
-      "pronunciation": "/tiːl/"
+      "pronunciation": "/tiːl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0801",
       "word": "silver",
       "meaning": "màu bạc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a silver-voiced young girl",
+          "vi": "một cô gái trẻ có giọng bạc"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 81,
       "wordType": "n, adj",
@@ -9850,7 +10655,12 @@
       "id": "a1-a2_0802",
       "word": "sanguine",
       "meaning": "đỏ thẫm (như máu)",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a sanguine temper",
+          "vi": "tính khí lạc quan"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 81,
       "wordType": "n, adj",
@@ -9860,7 +10670,12 @@
       "id": "a1-a2_0803",
       "word": "red",
       "meaning": "màu đỏ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The girl wore a red skirt.",
+          "vi": "Cô gái mặc váy đỏ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 81,
       "wordType": "n, adj",
@@ -9870,7 +10685,12 @@
       "id": "a1-a2_0804",
       "word": "purple",
       "meaning": "màu tím",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the banded purple",
+          "vi": "dải màu tím"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 81,
       "wordType": "n, adj",
@@ -9884,7 +10704,8 @@
       "category": "a1-a2",
       "groupIndex": 81,
       "wordType": "n, adj",
-      "pronunciation": "/ˈneɪ·vi (ˈblu)/"
+      "pronunciation": "/ˈneɪ·vi (ˈblu)/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0806",
@@ -9894,7 +10715,8 @@
       "category": "a1-a2",
       "groupIndex": 81,
       "wordType": "n, adj",
-      "pronunciation": "/məˈruːn/"
+      "pronunciation": "/məˈruːn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0807",
@@ -9904,7 +10726,8 @@
       "category": "a1-a2",
       "groupIndex": 81,
       "wordType": "n, adj",
-      "pronunciation": "/məˈdʒen.tə/"
+      "pronunciation": "/məˈdʒen.tə/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0808",
@@ -9914,7 +10737,8 @@
       "category": "a1-a2",
       "groupIndex": 81,
       "wordType": "n, adj",
-      "pronunciation": "/ˈaɪ.vɚ.i/"
+      "pronunciation": "/ˈaɪ.vɚ.i/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0809",
@@ -9924,13 +10748,19 @@
       "category": "a1-a2",
       "groupIndex": 81,
       "wordType": "n, adj",
-      "pronunciation": "/ˈɪn.dɪ.ɡoʊ/"
+      "pronunciation": "/ˈɪn.dɪ.ɡoʊ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0810",
       "word": "green",
       "meaning": "xanh dương, xanh lá cây",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He was green with envy.",
+          "vi": "Anh ta xanh mặt vì ghen tị."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 81,
       "wordType": "n, adj",
@@ -9940,7 +10770,12 @@
       "id": "a1-a2_0811",
       "word": "gray",
       "meaning": "màu xám",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the graying of America",
+          "vi": "sự già nua của nước Mỹ"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 82,
       "wordType": "n, adj",
@@ -9954,7 +10789,8 @@
       "category": "a1-a2",
       "groupIndex": 82,
       "wordType": "n, adj",
-      "pronunciation": "/ˈfjuː.ʃə/"
+      "pronunciation": "/ˈfjuː.ʃə/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0813",
@@ -9964,7 +10800,8 @@
       "category": "a1-a2",
       "groupIndex": 82,
       "wordType": "n, adj",
-      "pronunciation": "/ˈsaɪ.ən"
+      "pronunciation": "/ˈsaɪ.ən",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0814",
@@ -9974,7 +10811,8 @@
       "category": "a1-a2",
       "groupIndex": 82,
       "wordType": "n, adj",
-      "pronunciation": "/ˈkrɪm.zən/"
+      "pronunciation": "/ˈkrɪm.zən/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0815",
@@ -9984,7 +10822,8 @@
       "category": "a1-a2",
       "groupIndex": 82,
       "wordType": "n, adj",
-      "pronunciation": "/ˈkɔːr.əl/"
+      "pronunciation": "/ˈkɔːr.əl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0816",
@@ -9994,7 +10833,8 @@
       "category": "a1-a2",
       "groupIndex": 82,
       "wordType": "n, adj",
-      "pronunciation": "/ˈtʃɑːr.koʊl/"
+      "pronunciation": "/ˈtʃɑːr.koʊl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0817",
@@ -10004,13 +10844,19 @@
       "category": "a1-a2",
       "groupIndex": 82,
       "wordType": "n, adj",
-      "pronunciation": "/ˈbɝː.ɡən.di/"
+      "pronunciation": "/ˈbɝː.ɡən.di/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0818",
       "word": "brown",
       "meaning": "màu nâu",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the browning of America",
+          "vi": "sự hóa nâu của nước Mỹ"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 82,
       "wordType": "n, adj",
@@ -10020,7 +10866,12 @@
       "id": "a1-a2_0819",
       "word": "blue",
       "meaning": "màu xanh lam, xanh nước biển",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the deep blue sea",
+          "vi": "biển xanh thẳm"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 82,
       "wordType": "n, adj",
@@ -10030,7 +10881,12 @@
       "id": "a1-a2_0820",
       "word": "blond",
       "meaning": "vàng hoe",
-      "examples": [],
+      "examples": [
+        {
+          "en": "blond ale",
+          "vi": "bia vàng"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 82,
       "wordType": "n, adj",
@@ -10040,7 +10896,12 @@
       "id": "a1-a2_0821",
       "word": "black",
       "meaning": "màu đen",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He shot her a black look.",
+          "vi": "Anh ném cho cô một cái nhìn đen tối."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 83,
       "wordType": "n, adj",
@@ -10054,7 +10915,8 @@
       "category": "a1-a2",
       "groupIndex": 83,
       "wordType": "n, adj",
-      "pronunciation": "/beɪʒ/"
+      "pronunciation": "/beɪʒ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0823",
@@ -10064,7 +10926,8 @@
       "category": "a1-a2",
       "groupIndex": 83,
       "wordType": "n, adj",
-      "pronunciation": "/ˈæʒ.ɚ/"
+      "pronunciation": "/ˈæʒ.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0824",
@@ -10074,13 +10937,19 @@
       "category": "a1-a2",
       "groupIndex": 83,
       "wordType": "n, adj",
-      "pronunciation": "/ˌæk.wə.məˈriːn/"
+      "pronunciation": "/ˌæk.wə.məˈriːn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0825",
       "word": "arrow",
       "meaning": "hình mũi tên",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Arrow left until you reach the start of the text you want to delete.",
+          "vi": "Mũi tên sang trái cho đến khi bạn đến đầu văn bản bạn muốn xóa."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 83,
       "wordType": "n",
@@ -10090,7 +10959,12 @@
       "id": "a1-a2_0826",
       "word": "circle",
       "meaning": "đường tròn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "circle of friends",
+          "vi": "vòng tròn bạn bè"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 83,
       "wordType": "n",
@@ -10100,7 +10974,12 @@
       "id": "a1-a2_0827",
       "word": "cone",
       "meaning": "hình nón",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A cone is an object (the apex) and a natural transformation from a constant functor (whose image is the apex of the cone and its identity morphism) to a diagram functor. Its components are projections from the apex to the objects of the diagram and it has a “naturality triangle” for each morphism in the diagram. (A “naturality triangle” is just a naturality square which is degenerate at its apex side.)",
+          "vi": "Hình nón là một vật thể (đỉnh) và là một sự biến đổi tự nhiên từ một hàm số hằng số (có ảnh là đỉnh của hình nón và hình thái đồng nhất của nó) sang một hàm số sơ đồ. Các thành phần của nó là các hình chiếu từ đỉnh đến các đối tượng của sơ đồ và nó có một “tam giác tự nhiên” cho mỗi hình thái trong sơ đồ. (“Tam giác tự nhiên” chỉ là một hình vuông tự nhiên bị suy biến ở cạnh đỉnh của nó.)"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 83,
       "wordType": "n",
@@ -10114,13 +10993,19 @@
       "category": "a1-a2",
       "groupIndex": 83,
       "wordType": "n",
-      "pronunciation": "/ˈkres.ənt/"
+      "pronunciation": "/ˈkres.ənt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0829",
       "word": "cross",
       "meaning": "hình chữ thập",
-      "examples": [],
+      "examples": [
+        {
+          "en": "cross interrogatories",
+          "vi": "thẩm vấn chéo"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 83,
       "wordType": "n",
@@ -10130,7 +11015,12 @@
       "id": "a1-a2_0830",
       "word": "cube",
       "meaning": "hình lập phương, hình khối",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a stock cube",
+          "vi": "một khối cổ phiếu"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 83,
       "wordType": "n",
@@ -10140,7 +11030,12 @@
       "id": "a1-a2_0831",
       "word": "curve",
       "meaning": "đường cong",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a curve line",
+          "vi": "một đường cong"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 84,
       "wordType": "n",
@@ -10150,7 +11045,12 @@
       "id": "a1-a2_0832",
       "word": "cylinder",
       "meaning": "hình trụ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "When the two-dimensional curve is a circle, the cylinder is called a circular cylinder. When the axis is perpendicular to the plane of the curve, the cylinder is called a right cylinder. In non-mathematical usage, both right and circular are usually implied.",
+          "vi": "Khi đường cong hai chiều là hình tròn thì hình trụ được gọi là hình trụ tròn. Khi trục vuông góc với mặt phẳng đường cong thì hình trụ gọi là hình trụ vuông. Trong cách sử dụng phi toán học, cả bên phải và hình tròn thường được ngụ ý."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 84,
       "wordType": "n",
@@ -10164,13 +11064,19 @@
       "category": "a1-a2",
       "groupIndex": 84,
       "wordType": "n",
-      "pronunciation": "/ˈdek.ə.ɡɑːn/"
+      "pronunciation": "/ˈdek.ə.ɡɑːn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0834",
       "word": "diamond",
       "meaning": "hình kim cương",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He's a diamond geezer.",
+          "vi": "Anh ấy là một chuyên gia kim cương."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 84,
       "wordType": "n",
@@ -10184,7 +11090,8 @@
       "category": "a1-a2",
       "groupIndex": 84,
       "wordType": "n",
-      "pronunciation": "/iˈlɪps/"
+      "pronunciation": "/iˈlɪps/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0836",
@@ -10194,13 +11101,19 @@
       "category": "a1-a2",
       "groupIndex": 84,
       "wordType": "n",
-      "pronunciation": "/ˌi·kwəˈlæt̬·ə·rəlˈtrɑɪˌæŋ·ɡəl/"
+      "pronunciation": "/ˌi·kwəˈlæt̬·ə·rəlˈtrɑɪˌæŋ·ɡəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0837",
       "word": "heart",
       "meaning": "hình trái tim",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a cold heart",
+          "vi": "một trái tim lạnh giá"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 84,
       "wordType": "n",
@@ -10214,7 +11127,8 @@
       "category": "a1-a2",
       "groupIndex": 84,
       "wordType": "n",
-      "pronunciation": "/ˈhep.tə.ɡɑːn/"
+      "pronunciation": "/ˈhep.tə.ɡɑːn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0839",
@@ -10224,7 +11138,8 @@
       "category": "a1-a2",
       "groupIndex": 84,
       "wordType": "n",
-      "pronunciation": "/ˈhek.sə.ɡɑːn/"
+      "pronunciation": "/ˈhek.sə.ɡɑːn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0840",
@@ -10234,7 +11149,8 @@
       "category": "a1-a2",
       "groupIndex": 84,
       "wordType": "n",
-      "pronunciation": "/aɪˌsɑː.səl.iːzˈtraɪ.æŋ. ɡəl/"
+      "pronunciation": "/aɪˌsɑː.səl.iːzˈtraɪ.æŋ. ɡəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0841",
@@ -10244,7 +11160,8 @@
       "category": "a1-a2",
       "groupIndex": 85,
       "wordType": "n",
-      "pronunciation": "/ˈɑːk.tə.ɡɑːn/"
+      "pronunciation": "/ˈɑːk.tə.ɡɑːn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0842",
@@ -10254,7 +11171,8 @@
       "category": "a1-a2",
       "groupIndex": 85,
       "wordType": "n",
-      "pronunciation": "/ˈɑːk.tə.ɡɑːn/"
+      "pronunciation": "/ˈɑːk.tə.ɡɑːn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0843",
@@ -10264,13 +11182,19 @@
       "category": "a1-a2",
       "groupIndex": 85,
       "wordType": "n",
-      "pronunciation": "/ɔːrb/"
+      "pronunciation": "/ɔːrb/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0844",
       "word": "oval",
       "meaning": "hình trái xoan, hình bầu dục",
-      "examples": [],
+      "examples": [
+        {
+          "en": "oval conceptions",
+          "vi": "quan niệm hình bầu dục"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 85,
       "wordType": "n",
@@ -10284,7 +11208,8 @@
       "category": "a1-a2",
       "groupIndex": 85,
       "wordType": "n",
-      "pronunciation": "/ˌper.əˈlel.ə.ɡræm/"
+      "pronunciation": "/ˌper.əˈlel.ə.ɡræm/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0846",
@@ -10294,13 +11219,19 @@
       "category": "a1-a2",
       "groupIndex": 85,
       "wordType": "n",
-      "pronunciation": "/ˈpen.tə.ɡən/"
+      "pronunciation": "/ˈpen.tə.ɡən/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0847",
       "word": "pyramid",
       "meaning": "hình chóp",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Build your pyramid with all cards face down, except the cards in the bottom row.",
+          "vi": "Xây dựng kim tự tháp của bạn với tất cả các thẻ úp xuống, ngoại trừ các thẻ ở hàng dưới cùng."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 85,
       "wordType": "n",
@@ -10314,7 +11245,8 @@
       "category": "a1-a2",
       "groupIndex": 85,
       "wordType": "n",
-      "pronunciation": "/ˈrek.tæŋ.ɡəl/"
+      "pronunciation": "/ˈrek.tæŋ.ɡəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0849",
@@ -10324,7 +11256,8 @@
       "category": "a1-a2",
       "groupIndex": 85,
       "wordType": "n",
-      "pronunciation": "/ˈrɑːm.baɪ/"
+      "pronunciation": "/ˈrɑːm.baɪ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0850",
@@ -10334,7 +11267,8 @@
       "category": "a1-a2",
       "groupIndex": 85,
       "wordType": "n",
-      "pronunciation": "/ˌraɪt.æŋ.ɡəldˈtraɪ.æŋ. ɡəl/"
+      "pronunciation": "/ˌraɪt.æŋ.ɡəldˈtraɪ.æŋ. ɡəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0851",
@@ -10344,7 +11278,8 @@
       "category": "a1-a2",
       "groupIndex": 86,
       "wordType": "n",
-      "pronunciation": "/ˌskeɪ.liːnˈtraɪ.æŋ.ɡəl/"
+      "pronunciation": "/ˌskeɪ.liːnˈtraɪ.æŋ.ɡəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0852",
@@ -10354,7 +11289,8 @@
       "category": "a1-a2",
       "groupIndex": 86,
       "wordType": "n",
-      "pronunciation": "/ˈsem.iˌsɝː.kəl/"
+      "pronunciation": "/ˈsem.iˌsɝː.kəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0853",
@@ -10364,13 +11300,19 @@
       "category": "a1-a2",
       "groupIndex": 86,
       "wordType": "n",
-      "pronunciation": "/sfɪr/"
+      "pronunciation": "/sfɪr/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0854",
       "word": "square",
       "meaning": "hình vuông",
-      "examples": [],
+      "examples": [
+        {
+          "en": "square metre",
+          "vi": "mét vuông"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 86,
       "wordType": "n",
@@ -10380,7 +11322,12 @@
       "id": "a1-a2_0855",
       "word": "star",
       "meaning": "hình ngôi sao",
-      "examples": [],
+      "examples": [
+        {
+          "en": "His teacher tells us he is a star pupil.",
+          "vi": "Giáo viên của anh ấy nói với chúng tôi rằng anh ấy là một học sinh ngôi sao."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 86,
       "wordType": "n",
@@ -10394,7 +11341,8 @@
       "category": "a1-a2",
       "groupIndex": 86,
       "wordType": "n",
-      "pronunciation": "/ˈtræp.ɪ.zɔɪd/"
+      "pronunciation": "/ˈtræp.ɪ.zɔɪd/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0857",
@@ -10404,13 +11352,19 @@
       "category": "a1-a2",
       "groupIndex": 86,
       "wordType": "n",
-      "pronunciation": "/ˈtraɪ.æŋ.ɡəl/"
+      "pronunciation": "/ˈtraɪ.æŋ.ɡəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0858",
       "word": "wedge",
       "meaning": "hình chữ V",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Can you cut me a wedge of cheese?",
+          "vi": "Bạn có thể cắt cho tôi một miếng pho mát được không?"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 86,
       "wordType": "n",
@@ -10420,7 +11374,12 @@
       "id": "a1-a2_0859",
       "word": "aerial",
       "meaning": "trên không",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The seabirds put on an astonishing aerial display.",
+          "vi": "Những con chim biển thể hiện một màn trình diễn trên không đáng kinh ngạc."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 86,
       "wordType": "adj",
@@ -10434,7 +11393,8 @@
       "category": "a1-a2",
       "groupIndex": 86,
       "wordType": "n",
-      "pronunciation": "/ˈer.i.əlˈtræm.weɪ/"
+      "pronunciation": "/ˈer.i.əlˈtræm.weɪ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0861",
@@ -10444,7 +11404,8 @@
       "category": "a1-a2",
       "groupIndex": 87,
       "wordType": "n",
-      "pronunciation": "/ˈer.pleɪn/"
+      "pronunciation": "/ˈer.pleɪn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0862",
@@ -10454,7 +11415,8 @@
       "category": "a1-a2",
       "groupIndex": 87,
       "wordType": "n",
-      "pronunciation": "/ˈæm.bjə.ləns/"
+      "pronunciation": "/ˈæm.bjə.ləns/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0863",
@@ -10464,7 +11426,8 @@
       "category": "a1-a2",
       "groupIndex": 87,
       "wordType": "n",
-      "pronunciation": "/ˈɑː.t̬ə.moʊ.biːl/"
+      "pronunciation": "/ˈɑː.t̬ə.moʊ.biːl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0864",
@@ -10474,7 +11437,8 @@
       "category": "a1-a2",
       "groupIndex": 87,
       "wordType": "n",
-      "pronunciation": "/ˈbeɪ.bi ˌker.ɪdʒ/"
+      "pronunciation": "/ˈbeɪ.bi ˌker.ɪdʒ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0865",
@@ -10484,13 +11448,19 @@
       "category": "a1-a2",
       "groupIndex": 87,
       "wordType": "n",
-      "pronunciation": "/ˈbaɪ.sə.kəl/"
+      "pronunciation": "/ˈbaɪ.sə.kəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0866",
       "word": "boat",
       "meaning": "tàu thuyền",
-      "examples": [],
+      "examples": [
+        {
+          "en": "to boat oars",
+          "vi": "đến mái chèo"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 87,
       "wordType": "n",
@@ -10500,7 +11470,12 @@
       "id": "a1-a2_0867",
       "word": "bus",
       "meaning": "xe buýt",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He’s been bussing for minimum wage.",
+          "vi": "Anh ấy đang làm việc với mức lương tối thiểu."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 87,
       "wordType": "n",
@@ -10510,7 +11485,12 @@
       "id": "a1-a2_0868",
       "word": "carriage",
       "meaning": "xe ngựa",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The carriage ride was very romantic.",
+          "vi": "Chuyến đi xe ngựa rất lãng mạn."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 87,
       "wordType": "n",
@@ -10524,7 +11504,8 @@
       "category": "a1-a2",
       "groupIndex": 87,
       "wordType": "n",
-      "pronunciation": "/sɪˈmentˌmɪk.sɚ/"
+      "pronunciation": "/sɪˈmentˌmɪk.sɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0870",
@@ -10534,7 +11515,8 @@
       "category": "a1-a2",
       "groupIndex": 87,
       "wordType": "n",
-      "pronunciation": "/kreɪn/"
+      "pronunciation": "/kreɪn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0871",
@@ -10544,13 +11526,19 @@
       "category": "a1-a2",
       "groupIndex": 88,
       "wordType": "n",
-      "pronunciation": "/ˈdʌmp ˌtrʌk/"
+      "pronunciation": "/ˈdʌmp ˌtrʌk/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0872",
       "word": "emergency",
       "meaning": "thắng tay khẩn cấp",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Cardiac arrest is an emergency and if you find someone in cardiac arrest you should call 999 immediately.",
+          "vi": "Ngừng tim là một trường hợp khẩn cấp và nếu phát hiện ai đó bị ngừng tim, bạn nên gọi 999 ngay lập tức."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 88,
       "wordType": "n",
@@ -10564,7 +11552,8 @@
       "category": "a1-a2",
       "groupIndex": 88,
       "wordType": "n",
-      "pronunciation": "/ˈfaɪr ˌen.dʒɪn/"
+      "pronunciation": "/ˈfaɪr ˌen.dʒɪn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0874",
@@ -10574,13 +11563,19 @@
       "category": "a1-a2",
       "groupIndex": 88,
       "wordType": "n",
-      "pronunciation": "/ˈfɔrkˌlift/"
+      "pronunciation": "/ˈfɔrkˌlift/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0875",
       "word": "helicopter",
       "meaning": "trực thăng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "We flew over the city in a helicopter.",
+          "vi": "Chúng tôi bay qua thành phố bằng trực thăng."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 88,
       "wordType": "n",
@@ -10594,7 +11589,8 @@
       "category": "a1-a2",
       "groupIndex": 88,
       "wordType": "n",
-      "pronunciation": "/ˈmoʊ.tɚ̬ˌsaɪ.kəl/"
+      "pronunciation": "/ˈmoʊ.tɚ̬ˌsaɪ.kəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0877",
@@ -10604,7 +11600,8 @@
       "category": "a1-a2",
       "groupIndex": 88,
       "wordType": "n",
-      "pronunciation": "/ˈmaʊn.tən ˌbaɪk/"
+      "pronunciation": "/ˈmaʊn.tən ˌbaɪk/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0878",
@@ -10614,7 +11611,8 @@
       "category": "a1-a2",
       "groupIndex": 88,
       "wordType": "n",
-      "pronunciation": "/pəˈliːs ˌkɑːr/"
+      "pronunciation": "/pəˈliːs ˌkɑːr/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0879",
@@ -10624,7 +11622,8 @@
       "category": "a1-a2",
       "groupIndex": 88,
       "wordType": "n",
-      "pronunciation": "/prəˈpel.ɚ/"
+      "pronunciation": "/prəˈpel.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0880",
@@ -10634,7 +11633,8 @@
       "category": "a1-a2",
       "groupIndex": 88,
       "wordType": "n",
-      "pronunciation": "/ˌrɪr.vju ˈmɪr.ɚ/"
+      "pronunciation": "/ˌrɪr.vju ˈmɪr.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0881",
@@ -10644,7 +11644,8 @@
       "category": "a1-a2",
       "groupIndex": 89,
       "wordType": "n",
-      "pronunciation": "/ˈroʊ ˌboʊt/"
+      "pronunciation": "/ˈroʊ ˌboʊt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0882",
@@ -10654,7 +11655,8 @@
       "category": "a1-a2",
       "groupIndex": 89,
       "wordType": "n",
-      "pronunciation": "/ˈskuː.tɚ̬/"
+      "pronunciation": "/ˈskuː.tɚ̬/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0883",
@@ -10664,7 +11666,8 @@
       "category": "a1-a2",
       "groupIndex": 89,
       "wordType": "n",
-      "pronunciation": "/ˈsiːt ˌbelt/"
+      "pronunciation": "/ˈsiːt ˌbelt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0884",
@@ -10674,7 +11677,8 @@
       "category": "a1-a2",
       "groupIndex": 89,
       "wordType": "n",
-      "pronunciation": "/ˈskeɪt.bɔːrd/"
+      "pronunciation": "/ˈskeɪt.bɔːrd/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0885",
@@ -10684,7 +11688,8 @@
       "category": "a1-a2",
       "groupIndex": 89,
       "wordType": "n",
-      "pronunciation": "/ˈstriːt.kɑːr/"
+      "pronunciation": "/ˈstriːt.kɑːr/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0886",
@@ -10694,13 +11699,19 @@
       "category": "a1-a2",
       "groupIndex": 89,
       "wordType": "n",
-      "pronunciation": "/ˈsʌb.weɪ/"
+      "pronunciation": "/ˈsʌb.weɪ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0887",
       "word": "taxi",
       "meaning": "xe taxi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "taxi down the runway",
+          "vi": "taxi xuống đường băng"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 89,
       "wordType": "n",
@@ -10714,13 +11725,19 @@
       "category": "a1-a2",
       "groupIndex": 89,
       "wordType": "n",
-      "pronunciation": "/ˈtræk.tɚ/"
+      "pronunciation": "/ˈtræk.tɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0889",
       "word": "train",
       "meaning": "tàu hỏa",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I trained with weights all winter.",
+          "vi": "Tôi đã tập tạ suốt mùa đông."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 89,
       "wordType": "n",
@@ -10734,13 +11751,19 @@
       "category": "a1-a2",
       "groupIndex": 89,
       "wordType": "n",
-      "pronunciation": "/ˈtræm.weɪ/"
+      "pronunciation": "/ˈtræm.weɪ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0891",
       "word": "van",
       "meaning": "xe tải",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The van sped down the road.",
+          "vi": "Chiếc xe tăng tốc trên đường."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 90,
       "wordType": "n",
@@ -10754,7 +11777,8 @@
       "category": "a1-a2",
       "groupIndex": 90,
       "wordType": "n",
-      "pronunciation": "/ˈviː.ə.kəl/"
+      "pronunciation": "/ˈviː.ə.kəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0893",
@@ -10764,13 +11788,19 @@
       "category": "a1-a2",
       "groupIndex": 90,
       "wordType": "n",
-      "pronunciation": "/ˈwɪnd.skriːnˌwaɪ.pɚ/"
+      "pronunciation": "/ˈwɪnd.skriːnˌwaɪ.pɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0894",
       "word": "airport",
       "meaning": "sân bay",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Because of this, and contrary to popular belief, British airports primarily act as giant wealth extractors, transporting our richest citizens out of the country as often as possible to take their money overseas. ― The Independent, Heathrow expansion to mainly benefit wealthy frequent fliers, research finds, 23 june 2018.",
+          "vi": "Vì điều này, và trái ngược với niềm tin phổ biến, các sân bay ở Anh chủ yếu hoạt động như những kẻ bòn rút tài sản khổng lồ, vận chuyển những công dân giàu nhất của chúng ta ra khỏi đất nước thường xuyên nhất có thể để mang tiền của họ ra nước ngoài. ― The Independent, việc mở rộng Heathrow chủ yếu mang lại lợi ích cho những người giàu có thường xuyên bay, nghiên cứu cho thấy, ngày 23 tháng 6 năm 2018."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 90,
       "wordType": "n",
@@ -10780,7 +11810,12 @@
       "id": "a1-a2_0895",
       "word": "arrive",
       "meaning": "đến nơi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He arrived home for two days.",
+          "vi": "Anh về nhà được hai ngày."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 90,
       "wordType": "v",
@@ -10794,13 +11829,19 @@
       "category": "a1-a2",
       "groupIndex": 90,
       "wordType": "n",
-      "pronunciation": "/tʃek ɪn/"
+      "pronunciation": "/tʃek ɪn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0897",
       "word": "cruise",
       "meaning": "chuyến đi chơi trên biển",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Germany cruised to a World Cup victory over the short-handed Australians.",
+          "vi": "Đức đã giành chiến thắng tại World Cup trước đội Úc tay ngắn."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 90,
       "wordType": "n",
@@ -10810,7 +11851,12 @@
       "id": "a1-a2_0898",
       "word": "depart",
       "meaning": "khởi hành",
-      "examples": [],
+      "examples": [
+        {
+          "en": "His latest statements seemed to depart from party policy somewhat.",
+          "vi": "Những tuyên bố mới nhất của ông dường như có phần khác xa với chính sách của đảng."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 90,
       "wordType": "v",
@@ -10824,13 +11870,19 @@
       "category": "a1-a2",
       "groupIndex": 90,
       "wordType": "n",
-      "pronunciation": "/ˌdes.təˈneɪ.ʃən/"
+      "pronunciation": "/ˌdes.təˈneɪ.ʃən/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0900",
       "word": "expedition",
       "meaning": "cuộc thám hiểm",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a naval expedition",
+          "vi": "một cuộc thám hiểm hải quân"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 90,
       "wordType": "n",
@@ -10840,7 +11892,12 @@
       "id": "a1-a2_0901",
       "word": "journey",
       "meaning": "hành trình",
-      "examples": [],
+      "examples": [
+        {
+          "en": "my journey of dealing with grief",
+          "vi": "hành trình đối mặt với nỗi đau của tôi"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 91,
       "wordType": "n",
@@ -10850,7 +11907,12 @@
       "id": "a1-a2_0902",
       "word": "land",
       "meaning": "hạ cánh",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I'm going to Disneyland.",
+          "vi": "Tôi đang đi đến Disneyland."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 91,
       "wordType": "v",
@@ -10860,7 +11922,12 @@
       "id": "a1-a2_0903",
       "word": "leave",
       "meaning": "rời đi",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Might I beg leave to accompany you?",
+          "vi": "Liệu tôi có thể xin phép đi cùng bạn được không?"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 91,
       "wordType": "v",
@@ -10870,7 +11937,12 @@
       "id": "a1-a2_0904",
       "word": "passenger",
       "meaning": "hành khách",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Somebody in a team who does not do their fair share of the work.",
+          "vi": "Ai đó trong nhóm không thực hiện phần công việc của mình một cách công bằng."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 91,
       "wordType": "n",
@@ -10880,7 +11952,12 @@
       "id": "a1-a2_0905",
       "word": "route",
       "meaning": "lộ trình, hành trình",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Follow Route 49 out of town.",
+          "vi": "Đi theo Đường 49 ra khỏi thị trấn."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 91,
       "wordType": "n",
@@ -10894,13 +11971,19 @@
       "category": "a1-a2",
       "groupIndex": 91,
       "wordType": "n",
-      "pronunciation": "/səˈfɑːr.i/"
+      "pronunciation": "/səˈfɑːr.i/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0907",
       "word": "tour",
       "meaning": "chuyến đi du lịch",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Metallica's tour of Europe",
+          "vi": "Chuyến lưu diễn châu Âu của Metallica"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 91,
       "wordType": "n",
@@ -10910,7 +11993,12 @@
       "id": "a1-a2_0908",
       "word": "travel",
       "meaning": "đi du lịch",
-      "examples": [],
+      "examples": [
+        {
+          "en": "space travel",
+          "vi": "du hành vũ trụ"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 91,
       "wordType": "v",
@@ -10924,7 +12012,8 @@
       "category": "a1-a2",
       "groupIndex": 91,
       "wordType": "v",
-      "pronunciation": "/ˈvɪz.ɪt/"
+      "pronunciation": "/ˈvɪz.ɪt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0910",
@@ -10934,13 +12023,19 @@
       "category": "a1-a2",
       "groupIndex": 91,
       "wordType": "n",
-      "pronunciation": "/ˈvɔɪ.ɪdʒ/"
+      "pronunciation": "/ˈvɔɪ.ɪdʒ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0911",
       "word": "ancestor",
       "meaning": "tổ tiên",
-      "examples": [],
+      "examples": [
+        {
+          "en": "This fossil animal is regarded as the ancestor of the horse.",
+          "vi": "Loài động vật hóa thạch này được coi là tổ tiên của loài ngựa."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 92,
       "wordType": "n",
@@ -10954,7 +12049,8 @@
       "category": "a1-a2",
       "groupIndex": 92,
       "wordType": "n",
-      "pronunciation": "/ænt/"
+      "pronunciation": "/ænt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0913",
@@ -10964,7 +12060,8 @@
       "category": "a1-a2",
       "groupIndex": 92,
       "wordType": "n",
-      "pronunciation": "/ˈbætʃ.əl.ɚ/"
+      "pronunciation": "/ˈbætʃ.əl.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0914",
@@ -10974,7 +12071,8 @@
       "category": "a1-a2",
       "groupIndex": 92,
       "wordType": "n",
-      "pronunciation": "/ˈbɝːθ ˌmʌð.ɚ/"
+      "pronunciation": "/ˈbɝːθ ˌmʌð.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0915",
@@ -10984,7 +12082,8 @@
       "category": "a1-a2",
       "groupIndex": 92,
       "wordType": "n",
-      "pronunciation": "/ˌblʌd ˈrel.ə.tɪv/"
+      "pronunciation": "/ˌblʌd ˈrel.ə.tɪv/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0916",
@@ -10994,7 +12093,8 @@
       "category": "a1-a2",
       "groupIndex": 92,
       "wordType": "n",
-      "pronunciation": "/braɪd/"
+      "pronunciation": "/braɪd/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0917",
@@ -11004,13 +12104,19 @@
       "category": "a1-a2",
       "groupIndex": 92,
       "wordType": "n",
-      "pronunciation": "/ˈbraɪd.ɡruːm/"
+      "pronunciation": "/ˈbraɪd.ɡruːm/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0918",
       "word": "brother",
       "meaning": "anh, em trai",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I would like to thank the brother who just spoke.",
+          "vi": "Tôi xin cảm ơn người anh em vừa nói chuyện."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 92,
       "wordType": "n",
@@ -11024,13 +12130,19 @@
       "category": "a1-a2",
       "groupIndex": 92,
       "wordType": "n",
-      "pronunciation": "/ˈbrʌð.ɚ.ɪn.lɑː/"
+      "pronunciation": "/ˈbrʌð.ɚ.ɪn.lɑː/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0920",
       "word": "brotherhood",
       "meaning": "tình anh em, huynh đệ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the legal brotherhood",
+          "vi": "tình anh em hợp pháp"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 92,
       "wordType": "n",
@@ -11040,7 +12152,12 @@
       "id": "a1-a2_0921",
       "word": "brotherly",
       "meaning": "thân thiết như anh em",
-      "examples": [],
+      "examples": [
+        {
+          "en": "brotherly love",
+          "vi": "tình anh em"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 93,
       "wordType": "adj, adv",
@@ -11054,13 +12171,19 @@
       "category": "a1-a2",
       "groupIndex": 93,
       "wordType": "n",
-      "pronunciation": "/ˈkerˌɡɪv.ɚ/"
+      "pronunciation": "/ˈkerˌɡɪv.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0923",
       "word": "child",
       "meaning": "con",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Go easy on him: he is but a child.",
+          "vi": "Hãy nhẹ nhàng với anh ấy: anh ấy chỉ là một đứa trẻ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 93,
       "wordType": "n",
@@ -11074,13 +12197,19 @@
       "category": "a1-a2",
       "groupIndex": 93,
       "wordType": "n",
-      "pronunciation": "/ˈtʃaɪld.hʊd/"
+      "pronunciation": "/ˈtʃaɪld.hʊd/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0925",
       "word": "children",
       "meaning": "những đứa con",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Go easy on him: he is but a child.",
+          "vi": "Hãy nhẹ nhàng với anh ấy: anh ấy chỉ là một đứa trẻ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 93,
       "wordType": "n",
@@ -11094,13 +12223,19 @@
       "category": "a1-a2",
       "groupIndex": 93,
       "wordType": "n",
-      "pronunciation": "/klæn/"
+      "pronunciation": "/klæn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0927",
       "word": "close-knit",
       "meaning": "gắn bó khăng khít",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I come from a close-knit family, we never keep secrets from one another.",
+          "vi": "Tôi đến từ một gia đình gắn bó, chúng tôi không bao giờ giữ bí mật với nhau."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 93,
       "wordType": "adj",
@@ -11110,7 +12245,12 @@
       "id": "a1-a2_0928",
       "word": "connection",
       "meaning": "mối quan hệ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I have some connections in Lancashire.",
+          "vi": "Tôi có vài mối quan hệ ở Lancashire."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 93,
       "wordType": "n",
@@ -11120,7 +12260,12 @@
       "id": "a1-a2_0929",
       "word": "cousin",
       "meaning": "anh em họ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I think my cousin is a good man.",
+          "vi": "Tôi nghĩ anh họ tôi là một người đàn ông tốt."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 93,
       "wordType": "n",
@@ -11130,7 +12275,12 @@
       "id": "a1-a2_0930",
       "word": "dad",
       "meaning": "bố",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Happy Father's Day, Dad!",
+          "vi": "Chúc mừng Ngày của Cha, bố ơi!"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 93,
       "wordType": "n",
@@ -11140,7 +12290,12 @@
       "id": "a1-a2_0931",
       "word": "daughter",
       "meaning": "con gái (quan hệ với bố mẹ)",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I already have a son, so I would like to have a daughter.",
+          "vi": "Tôi đã có con trai rồi nên tôi muốn có con gái."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 94,
       "wordType": "n",
@@ -11154,13 +12309,19 @@
       "category": "a1-a2",
       "groupIndex": 94,
       "wordType": "n",
-      "pronunciation": "/ˈdɑː.tɚ̬.ɪn.lɑː/"
+      "pronunciation": "/ˈdɑː.tɚ̬.ɪn.lɑː/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0933",
       "word": "descendant",
       "meaning": "con cháu, hậu duệ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Dogs evolved as descendants of early wolves.",
+          "vi": "Chó tiến hóa thành hậu duệ của những con sói đầu tiên."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 94,
       "wordType": "n",
@@ -11170,7 +12331,12 @@
       "id": "a1-a2_0934",
       "word": "divorce",
       "meaning": "li dị",
-      "examples": [],
+      "examples": [
+        {
+          "en": "A ship captain can marry couples, but cannot divorce them.",
+          "vi": "Thuyền trưởng có thể cưới các cặp vợ chồng nhưng không thể ly dị họ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 94,
       "wordType": "n, v",
@@ -11184,13 +12350,19 @@
       "category": "a1-a2",
       "groupIndex": 94,
       "wordType": "adj",
-      "pronunciation": "/ˈel.ə.dʒə.bəl/"
+      "pronunciation": "/ˈel.ə.dʒə.bəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0936",
       "word": "engaged",
       "meaning": "đính ước, hứa hôn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I tried calling, but she (or her phone) was engaged.",
+          "vi": "Tôi đã thử gọi nhưng cô ấy (hoặc điện thoại của cô ấy) đã bận."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 94,
       "wordType": "adj",
@@ -11200,7 +12372,12 @@
       "id": "a1-a2_0937",
       "word": "engagement",
       "meaning": "sự hẹn ước, hứa hôn",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The engagement resulted in many casualties.",
+          "vi": "Cuộc giao tranh dẫn đến nhiều thương vong."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 94,
       "wordType": "n",
@@ -11214,7 +12391,8 @@
       "category": "a1-a2",
       "groupIndex": 94,
       "wordType": "adj",
-      "pronunciation": "/ɪˈstreɪndʒd/"
+      "pronunciation": "/ɪˈstreɪndʒd/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0939",
@@ -11224,7 +12402,8 @@
       "category": "a1-a2",
       "groupIndex": 94,
       "wordType": "n",
-      "pronunciation": "/ˌeksˈhʌz.bənd/"
+      "pronunciation": "/ˌeksˈhʌz.bənd/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0940",
@@ -11234,7 +12413,8 @@
       "category": "a1-a2",
       "groupIndex": 94,
       "wordType": "n",
-      "pronunciation": "/ˌeksˈwaɪf/"
+      "pronunciation": "/ˌeksˈwaɪf/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0941",
@@ -11244,13 +12424,19 @@
       "category": "a1-a2",
       "groupIndex": 95,
       "wordType": "n",
-      "pronunciation": "/ɪkˌsten.dɪdˈfæm.əl.i/"
+      "pronunciation": "/ɪkˌsten.dɪdˈfæm.əl.i/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0942",
       "word": "family",
       "meaning": "gia đình",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Our family lives in town.",
+          "vi": "Gia đình chúng tôi sống ở thị trấn."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 95,
       "wordType": "n",
@@ -11264,13 +12450,19 @@
       "category": "a1-a2",
       "groupIndex": 95,
       "wordType": "n",
-      "pronunciation": "/ˌfæm.əl.i ˈtriː/"
+      "pronunciation": "/ˌfæm.əl.i ˈtriː/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0944",
       "word": "father",
       "meaning": "bố, cha",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Come, father; you can sit here.",
+          "vi": "Hãy đến, thưa cha; bạn có thể ngồi ở đây"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 95,
       "wordType": "n",
@@ -11284,7 +12476,8 @@
       "category": "a1-a2",
       "groupIndex": 95,
       "wordType": "n",
-      "pronunciation": "/ˈfɑː.ðɚ.ɪn.lɑː/"
+      "pronunciation": "/ˈfɑː.ðɚ.ɪn.lɑː/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0946",
@@ -11294,7 +12487,8 @@
       "category": "a1-a2",
       "groupIndex": 95,
       "wordType": "n",
-      "pronunciation": "/ˌfiː.ɑːnˈseɪ/"
+      "pronunciation": "/ˌfiː.ɑːnˈseɪ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0947",
@@ -11304,7 +12498,8 @@
       "category": "a1-a2",
       "groupIndex": 95,
       "wordType": "adj, n",
-      "pronunciation": "/ˈfɝːst.bɔːrn/"
+      "pronunciation": "/ˈfɝːst.bɔːrn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0948",
@@ -11314,13 +12509,19 @@
       "category": "a1-a2",
       "groupIndex": 95,
       "wordType": "n",
-      "pronunciation": "/ˌfɝːst ˈkʌz.ən/"
+      "pronunciation": "/ˌfɝːst ˈkʌz.ən/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0949",
       "word": "flesh and blood",
       "meaning": "người thân, gia đình máu mủ",
-      "examples": [],
+      "examples": [
+        {
+          "en": "How dare you say such a thing to your own flesh and blood?",
+          "vi": "Sao ngươi dám nói như vậy với máu thịt của chính mình?"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 95,
       "wordType": "n",
@@ -11330,7 +12531,12 @@
       "id": "a1-a2_0950",
       "word": "folks",
       "meaning": "người thân thuộc",
-      "examples": [],
+      "examples": [
+        {
+          "en": "My folks visit us at Christmas.",
+          "vi": "Người thân của tôi đến thăm chúng tôi vào dịp Giáng sinh."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 95,
       "wordType": "n",
@@ -11340,7 +12546,12 @@
       "id": "a1-a2_0951",
       "word": "foster",
       "meaning": "nuôi dưỡng, nuôi nấng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "foster parents",
+          "vi": "cha mẹ nuôi"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 96,
       "wordType": "v",
@@ -11354,7 +12565,8 @@
       "category": "a1-a2",
       "groupIndex": 96,
       "wordType": "n",
-      "pronunciation": "/ˈfɑː.stɚ tʃaɪld/"
+      "pronunciation": "/ˈfɑː.stɚ tʃaɪld/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0953",
@@ -11364,7 +12576,8 @@
       "category": "a1-a2",
       "groupIndex": 96,
       "wordType": "n",
-      "pronunciation": "/ˈfɑː.stɚ fɑː.ðɚ/"
+      "pronunciation": "/ˈfɑː.stɚ fɑː.ðɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0954",
@@ -11374,7 +12587,8 @@
       "category": "a1-a2",
       "groupIndex": 96,
       "wordType": "n",
-      "pronunciation": "/ˈfɑː.stɚˈmʌð.ɚ/"
+      "pronunciation": "/ˈfɑː.stɚˈmʌð.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0955",
@@ -11384,13 +12598,19 @@
       "category": "a1-a2",
       "groupIndex": 96,
       "wordType": "adj",
-      "pronunciation": "/frəˈtɝː.nəl/"
+      "pronunciation": "/frəˈtɝː.nəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0956",
       "word": "friend",
       "meaning": "bạn bè",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Wiktionary is your friend.",
+          "vi": "Wiktionary là bạn của bạn."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 96,
       "wordType": "n",
@@ -11404,7 +12624,8 @@
       "category": "a1-a2",
       "groupIndex": 96,
       "wordType": "n",
-      "pronunciation": "/ˌdʒiː.niˈæl.ə.dʒi/"
+      "pronunciation": "/ˌdʒiː.niˈæl.ə.dʒi/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0958",
@@ -11414,7 +12635,8 @@
       "category": "a1-a2",
       "groupIndex": 96,
       "wordType": "n",
-      "pronunciation": "/ˈɡræn.tʃaɪld/"
+      "pronunciation": "/ˈɡræn.tʃaɪld/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0959",
@@ -11424,7 +12646,8 @@
       "category": "a1-a2",
       "groupIndex": 96,
       "wordType": "n",
-      "pronunciation": "/ˈɡræn.fɑː.ðɚ/"
+      "pronunciation": "/ˈɡræn.fɑː.ðɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0960",
@@ -11434,7 +12657,8 @@
       "category": "a1-a2",
       "groupIndex": 96,
       "wordType": "n",
-      "pronunciation": "/ˈɡræn.mʌð.ɚ/"
+      "pronunciation": "/ˈɡræn.mʌð.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0961",
@@ -11444,13 +12668,19 @@
       "category": "a1-a2",
       "groupIndex": 97,
       "wordType": "n",
-      "pronunciation": "/ˈɡræn.per.ənt/"
+      "pronunciation": "/ˈɡræn.per.ənt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0962",
       "word": "granny",
       "meaning": "bà nội (ngoại)",
-      "examples": [],
+      "examples": [
+        {
+          "en": "I'm going to be a granny.",
+          "vi": "Tôi sắp trở thành một bà cụ."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 97,
       "wordType": "n",
@@ -11464,7 +12694,8 @@
       "category": "a1-a2",
       "groupIndex": 97,
       "wordType": "n",
-      "pronunciation": "/ˌɡreɪt ˈænt/"
+      "pronunciation": "/ˌɡreɪt ˈænt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0964",
@@ -11474,7 +12705,8 @@
       "category": "a1-a2",
       "groupIndex": 97,
       "wordType": "n",
-      "pronunciation": "/ˌɡreɪtˈɡræn.dɑː.t̬ ɚ/"
+      "pronunciation": "/ˌɡreɪtˈɡræn.dɑː.t̬ ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0965",
@@ -11484,7 +12716,8 @@
       "category": "a1-a2",
       "groupIndex": 97,
       "wordType": "n",
-      "pronunciation": "/ˌɡreɪtˈɡræn.fɑː.ðɚ/"
+      "pronunciation": "/ˌɡreɪtˈɡræn.fɑː.ðɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0966",
@@ -11494,7 +12727,8 @@
       "category": "a1-a2",
       "groupIndex": 97,
       "wordType": "n",
-      "pronunciation": "/ˌɡreɪtˈɡræm.mʌð.ər/"
+      "pronunciation": "/ˌɡreɪtˈɡræm.mʌð.ər/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0967",
@@ -11504,7 +12738,8 @@
       "category": "a1-a2",
       "groupIndex": 97,
       "wordType": "n",
-      "pronunciation": "/ˌɡreɪtˈɡræn.per.ə nt/"
+      "pronunciation": "/ˌɡreɪtˈɡræn.per.ə nt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0968",
@@ -11514,7 +12749,8 @@
       "category": "a1-a2",
       "groupIndex": 97,
       "wordType": "n",
-      "pronunciation": "/ˌɡreɪtˈɡræn.sʌn/"
+      "pronunciation": "/ˌɡreɪtˈɡræn.sʌn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0969",
@@ -11524,13 +12760,19 @@
       "category": "a1-a2",
       "groupIndex": 97,
       "wordType": "n",
-      "pronunciation": "/ˌɡreɪt ˈʌŋ.kəl/"
+      "pronunciation": "/ˌɡreɪt ˈʌŋ.kəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0970",
       "word": "groom",
       "meaning": "chú rể",
-      "examples": [],
+      "examples": [
+        {
+          "en": "the groom of the chamber; the groom of the stole",
+          "vi": "chú rể của buồng; chú rể ăn trộm"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 97,
       "wordType": "n",
@@ -11544,7 +12786,8 @@
       "category": "a1-a2",
       "groupIndex": 98,
       "wordType": "n, adj",
-      "pronunciation": "/ˌɡroʊn ˈʌp/"
+      "pronunciation": "/ˌɡroʊn ˈʌp/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0972",
@@ -11554,7 +12797,8 @@
       "category": "a1-a2",
       "groupIndex": 98,
       "wordType": "n",
-      "pronunciation": "/ˈhæfˌbrʌð.ɚ/"
+      "pronunciation": "/ˈhæfˌbrʌð.ɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0973",
@@ -11564,7 +12808,8 @@
       "category": "a1-a2",
       "groupIndex": 98,
       "wordType": "n",
-      "pronunciation": "/ˈhæfˌsɪs.tɚ/"
+      "pronunciation": "/ˈhæfˌsɪs.tɚ/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0974",
@@ -11574,7 +12819,8 @@
       "category": "a1-a2",
       "groupIndex": 98,
       "wordType": "n",
-      "pronunciation": "/er/"
+      "pronunciation": "/er/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0975",
@@ -11584,7 +12830,8 @@
       "category": "a1-a2",
       "groupIndex": 98,
       "wordType": "n",
-      "pronunciation": "/ˈer.es/"
+      "pronunciation": "/ˈer.es/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0976",
@@ -11594,13 +12841,19 @@
       "category": "a1-a2",
       "groupIndex": 98,
       "wordType": "n",
-      "pronunciation": "/ˈhelpmeɪt/"
+      "pronunciation": "/ˈhelpmeɪt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0977",
       "word": "hereditary",
       "meaning": "di truyền",
-      "examples": [],
+      "examples": [
+        {
+          "en": "hereditary rulers",
+          "vi": "người cai trị di truyền"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 98,
       "wordType": "adj",
@@ -11610,7 +12863,12 @@
       "id": "a1-a2_0978",
       "word": "heritage",
       "meaning": "tài sản thừa kế, di sản",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The university requires heritage Spanish students to enroll in a specially designed Spanish program not available to non-heritage students.",
+          "vi": "Trường đại học yêu cầu sinh viên Tây Ban Nha di sản phải đăng ký vào một chương trình tiếng Tây Ban Nha được thiết kế đặc biệt không dành cho sinh viên không thuộc di sản."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 98,
       "wordType": "n",
@@ -11620,7 +12878,12 @@
       "id": "a1-a2_0979",
       "word": "history",
       "meaning": "lịch sử gia đình",
-      "examples": [],
+      "examples": [
+        {
+          "en": "He has had a lot of history with the police.",
+          "vi": "Anh ta đã có rất nhiều lịch sử với cảnh sát."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 98,
       "wordType": "n",
@@ -11630,7 +12893,12 @@
       "id": "a1-a2_0980",
       "word": "home",
       "meaning": "nhà, gia đình",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The dog homed.",
+          "vi": "Con chó về nhà."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 98,
       "wordType": "n",
@@ -11640,7 +12908,12 @@
       "id": "a1-a2_0981",
       "word": "household",
       "meaning": "hộ gia đình",
-      "examples": [],
+      "examples": [
+        {
+          "en": "a household word; a household name",
+          "vi": "một từ gia đình; một tên hộ gia đình"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 99,
       "wordType": "n",
@@ -11650,7 +12923,12 @@
       "id": "a1-a2_0982",
       "word": "husband",
       "meaning": "chồng",
-      "examples": [],
+      "examples": [
+        {
+          "en": "You should start dating so you can find a suitable husband.",
+          "vi": "Bạn nên bắt đầu hẹn hò để có thể tìm được một người chồng phù hợp."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 99,
       "wordType": "n",
@@ -11664,7 +12942,8 @@
       "category": "a1-a2",
       "groupIndex": 99,
       "wordType": "n",
-      "pronunciation": "/aɪˌden.t̬ə.kəlˈtwɪn/"
+      "pronunciation": "/aɪˌden.t̬ə.kəlˈtwɪn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0984",
@@ -11674,13 +12953,19 @@
       "category": "a1-a2",
       "groupIndex": 99,
       "wordType": "adj",
-      "pronunciation": "/ˈɪn.lɑː/"
+      "pronunciation": "/ˈɪn.lɑː/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0985",
       "word": "infancy",
       "meaning": "tuổi bế ẵm, tuổi thơ bé",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Space tourism is still in its infancy.",
+          "vi": "Du lịch vũ trụ vẫn còn ở giai đoạn sơ khai."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 99,
       "wordType": "n",
@@ -11694,13 +12979,19 @@
       "category": "a1-a2",
       "groupIndex": 99,
       "wordType": "n, adj",
-      "pronunciation": "/ˈɪn.fənt/"
+      "pronunciation": "/ˈɪn.fənt/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0987",
       "word": "inherit",
       "meaning": "thừa hưởng, thừa kế",
-      "examples": [],
+      "examples": [
+        {
+          "en": "Your descendants will inherit the earth.",
+          "vi": "Con cháu của bạn sẽ thừa hưởng trái đất."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 99,
       "wordType": "v",
@@ -11710,7 +13001,12 @@
       "id": "a1-a2_0988",
       "word": "inheritance",
       "meaning": "sự thừa kế, của thừa kế",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The Indo-European languages share various similarities as a result of their inheritance from a common ancestor.",
+          "vi": "Các ngôn ngữ Ấn-Âu có nhiều điểm tương đồng do chúng được thừa hưởng từ một tổ tiên chung."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 99,
       "wordType": "n",
@@ -11724,13 +13020,19 @@
       "category": "a1-a2",
       "groupIndex": 99,
       "wordType": "n, adj",
-      "pronunciation": "/ˈdʒuː.və.nəl/"
+      "pronunciation": "/ˈdʒuː.və.nəl/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0990",
       "word": "kin",
       "meaning": "dòng họ, gia đình",
-      "examples": [],
+      "examples": [
+        {
+          "en": "The boss canned him for speaking out.",
+          "vi": "Ông chủ đã phạt anh ta vì đã lên tiếng."
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 99,
       "wordType": "n, adj",
@@ -11740,7 +13042,12 @@
       "id": "a1-a2_0991",
       "word": "kindred",
       "meaning": "họ hàng thân thích",
-      "examples": [],
+      "examples": [
+        {
+          "en": "kindred tongues",
+          "vi": "lưỡi giống nhau"
+        }
+      ],
       "category": "a1-a2",
       "groupIndex": 100,
       "wordType": "n, adj",
@@ -11754,7 +13061,8 @@
       "category": "a1-a2",
       "groupIndex": 100,
       "wordType": "n",
-      "pronunciation": "/ˈkɪn.foʊk/"
+      "pronunciation": "/ˈkɪn.foʊk/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0993",
@@ -11764,7 +13072,8 @@
       "category": "a1-a2",
       "groupIndex": 100,
       "wordType": "n",
-      "pronunciation": "/ˈkɪn.ʃɪp/"
+      "pronunciation": "/ˈkɪn.ʃɪp/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0994",
@@ -11774,7 +13083,8 @@
       "category": "a1-a2",
       "groupIndex": 100,
       "wordType": "n",
-      "pronunciation": "/ˌkɪθ ən ˈkɪn/"
+      "pronunciation": "/ˌkɪθ ən ˈkɪn/",
+      "examplesChecked": true
     },
     {
       "id": "a1-a2_0995",
@@ -11784,7 +13094,8 @@
       "category": "a1-a2",
       "groupIndex": 100,
       "wordType": "n",
-      "pronunciation": "/ˈlɪn.i.ɪdʒ/"
+      "pronunciation": "/ˈlɪn.i.ɪdʒ/",
+      "examplesChecked": true
     }
   ]
 }
