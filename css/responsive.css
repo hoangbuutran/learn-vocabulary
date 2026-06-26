@@ -14,8 +14,13 @@
     padding: var(--space-sm) var(--space-md);
   }
 
-  .app-title {
-    font-size: var(--font-lg);
+  .brand-name {
+    font-size: var(--font-base);
+  }
+
+  .brand-logo {
+    width: 30px;
+    height: 30px;
   }
 
   .nav-toggle {

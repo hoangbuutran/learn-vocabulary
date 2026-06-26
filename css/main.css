@@ -129,13 +129,24 @@ em {
 
 .header-brand {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
 }
 
-.app-title {
-  font-size: var(--font-xl);
+.brand-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  display: block;
+}
+
+.brand-name {
+  font-size: var(--font-lg);
   font-weight: 700;
   color: var(--color-primary);
-  margin: 0;
+  letter-spacing: -0.01em;
 }
 
 .app-nav {
