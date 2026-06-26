@@ -208,14 +208,26 @@ function renderBoard() {
 
   const historyHtml = history.length === 0
     ? `<p class="match-history-empty">Các cặp bạn nối đúng sẽ xuất hiện ở đây để xem và nghe lại.</p>`
-    : history.map((h, i) => `
-        <li class="match-history-item">
-          <button class="match-history-audio" data-history="${i}" aria-label="Nghe lại ${h.word}" title="Nghe lại">🔊</button>
-          <span class="match-history-word">${h.word}</span>
-          <span class="match-history-sep">—</span>
-          <span class="match-history-meaning">${h.meaning}</span>
-        </li>
-      `).join('');
+    : `<table class="match-history-table">
+         <thead>
+           <tr>
+             <th class="mh-col-audio" scope="col">Nghe</th>
+             <th class="mh-col-word" scope="col">Từ</th>
+             <th class="mh-col-meaning" scope="col">Nghĩa</th>
+           </tr>
+         </thead>
+         <tbody>
+           ${history.map((h, i) => `
+             <tr class="match-history-row">
+               <td class="mh-col-audio">
+                 <button class="match-history-audio" data-history="${i}" aria-label="Nghe lại ${h.word}" title="Nghe lại">🔊</button>
+               </td>
+               <td class="mh-col-word">${h.word}</td>
+               <td class="mh-col-meaning">${h.meaning}</td>
+             </tr>
+           `).join('')}
+         </tbody>
+       </table>`;
 
   container.innerHTML = `
     <section class="view match-view" aria-label="Nối từ">
@@ -249,9 +261,9 @@ function renderBoard() {
 
         <aside class="match-panel match-history" aria-label="Lịch sử các cặp đã nối">
           <h3 class="match-history-title">📚 Đã học <span class="match-history-count">${history.length}</span></h3>
-          <ul class="match-history-list">
+          <div class="match-history-list">
             ${historyHtml}
-          </ul>
+          </div>
         </aside>
       </div>
     </section>
