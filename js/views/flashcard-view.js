@@ -641,8 +641,17 @@ function setupCardListeners(word) {
       flashcard.style.transition = 'transform 0.2s ease, opacity 0.2s ease';
 
       if (horizontal && Math.abs(curDx) > SWIPE_THRESHOLD) {
-        lastSwipeAt = Date.now();
         const goNext = curDx < 0;
+        // Respect boundaries: no previous before the first card.
+        const atStart = currentIndex === 0;
+        if (!goNext && atStart) {
+          // Nothing to go back to — snap the card back into place.
+          flashcard.style.transform = '';
+          flashcard.style.opacity = '1';
+          return;
+        }
+
+        lastSwipeAt = Date.now();
         const offscreen = goNext ? -window.innerWidth : window.innerWidth;
         // Slide the current card fully off-screen, then swap.
         flashcard.style.transform = `translateX(${offscreen}px) rotate(${curDx * 0.04}deg)`;

@@ -129,6 +129,15 @@
     grid-template-columns: 1fr;
   }
 
+  /* Shadowing: stack video and transcript on small screens */
+  .shadow-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .shadow-lines {
+    max-height: 260px;
+  }
+
   .match-history {
     max-height: none;
   }

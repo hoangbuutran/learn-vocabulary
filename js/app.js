@@ -13,6 +13,7 @@ import * as flashcardView from './views/flashcard-view.js';
 import * as quizView from './views/quiz-view.js';
 import * as matchView from './views/match-view.js';
 import * as ipaView from './views/ipa-view.js';
+import * as shadowingView from './views/shadowing-view.js';
 import * as importView from './views/import-view.js';
 import * as reviewView from './views/review-view.js';
 import * as settingsView from './views/settings-view.js';
@@ -25,6 +26,7 @@ const routes = {
   '#quiz': quizView,
   '#match': matchView,
   '#ipa': ipaView,
+  '#shadowing': shadowingView,
   '#review': reviewView,
   '#import': importView,
   '#settings': settingsView

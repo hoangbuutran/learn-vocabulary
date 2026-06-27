@@ -10,7 +10,7 @@
  *
  * Bump CACHE_VERSION whenever the shell changes to force a refresh.
  */
-const CACHE_VERSION = 'v18';
+const CACHE_VERSION = 'v28';
 const SHELL_CACHE = `vocab-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `vocab-runtime-${CACHE_VERSION}`;
 // Audio is large and rarely changes; keep it in a version-independent cache so
@@ -27,6 +27,7 @@ const SHELL_ASSETS = [
   './css/flashcard.css',
   './css/responsive.css',
   './js/app.js',
+  './js/config.js',
   './js/modules/storage-manager.js',
   './js/modules/memory-system.js',
   './js/modules/spaced-repetition.js',
@@ -41,6 +42,7 @@ const SHELL_ASSETS = [
   './js/views/quiz-view.js',
   './js/views/match-view.js',
   './js/views/ipa-view.js',
+  './js/views/shadowing-view.js',
   './js/views/review-view.js',
   './js/views/import-view.js',
   './js/views/settings-view.js',
@@ -80,8 +82,19 @@ self.addEventListener('fetch', (event) => {
 
   // Navigations: network-first, fall back to cached index.html offline.
   if (request.mode === 'navigate') {
+    // Cache-first for instant launch (no blank screen waiting on the network).
+    // Update the cached shell in the background for next time.
     event.respondWith(
-      fetch(request).catch(() => caches.match('./index.html'))
+      caches.match('./index.html').then((cached) => {
+        const fetchAndUpdate = fetch(request).then((response) => {
+          if (response && response.status === 200) {
+            const copy = response.clone();
+            caches.open(SHELL_CACHE).then((c) => c.put('./index.html', copy));
+          }
+          return response;
+        }).catch(() => cached);
+        return cached || fetchAndUpdate;
+      })
     );
     return;
   }
