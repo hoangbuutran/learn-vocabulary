@@ -30,8 +30,8 @@ let currentIndex = 0;
 let isFlipped = false;
 let isRecording = false;
 let lastResultHtml = '';
-/** When a swipe just navigated, ignore the click that follows. */
-let suppressNextFlip = false;
+/** Timestamp of the last swipe navigation; clicks right after are ignored. */
+let lastSwipeAt = 0;
 /** Pixel offset the next rendered card should slide in from (0 = no animation). */
 let slideInFrom = 0;
 
@@ -491,7 +491,7 @@ function setupCardListeners(word) {
       flashcard.style.transition = 'transform 0.2s ease, opacity 0.2s ease';
 
       if (horizontal && Math.abs(curDx) > SWIPE_THRESHOLD) {
-        suppressNextFlip = true;
+        lastSwipeAt = Date.now();
         const goNext = curDx < 0;
         const offscreen = goNext ? -window.innerWidth : window.innerWidth;
         // Slide the current card fully off-screen, then swap.
@@ -563,9 +563,8 @@ function setupCardListeners(word) {
  * @param {object} word - Current vocabulary item
  */
 function handleFlip(word) {
-  // A swipe just navigated — swallow the synthetic click so it doesn't flip.
-  if (suppressNextFlip) {
-    suppressNextFlip = false;
+  // A swipe just navigated — ignore the synthetic click that follows it.
+  if (Date.now() - lastSwipeAt < 400) {
     return;
   }
   isFlipped = !isFlipped;
@@ -708,6 +707,7 @@ function openWritePopup(word) {
         aria-label="Ô nhập từ" />
       <div class="write-feedback" id="write-feedback" aria-live="polite"></div>
       <div class="write-buttons">
+        <button class="btn btn-secondary" id="write-rewrite" aria-label="Viết lại" style="display:none">↻ Viết lại</button>
         <button class="btn btn-primary" id="write-check" aria-label="Kiểm tra">Kiểm tra</button>
       </div>
     </div>
@@ -717,6 +717,7 @@ function openWritePopup(word) {
   const input = overlay.querySelector('#write-input');
   const feedback = overlay.querySelector('#write-feedback');
   const checkBtn = overlay.querySelector('#write-check');
+  const rewriteBtn = overlay.querySelector('#write-rewrite');
   const closeBtn = overlay.querySelector('#write-close');
   const hearBtn = overlay.querySelector('#write-hear');
   const hintBtn = overlay.querySelector('#write-hint');
@@ -724,6 +725,18 @@ function openWritePopup(word) {
   let passed = false;
 
   const close = () => overlay.remove();
+
+  // Reset the popup so the user can write the word again from scratch.
+  const rewrite = () => {
+    passed = false;
+    input.value = '';
+    input.disabled = false;
+    input.classList.remove('write-correct', 'write-wrong');
+    feedback.innerHTML = '';
+    checkBtn.textContent = 'Kiểm tra';
+    if (rewriteBtn) rewriteBtn.style.display = 'none';
+    input.focus();
+  };
 
   const check = () => {
     if (passed) { close(); return; }
@@ -737,6 +750,7 @@ function openWritePopup(word) {
       input.classList.add('write-correct');
       input.disabled = true;
       checkBtn.textContent = 'Xong';
+      if (rewriteBtn) rewriteBtn.style.display = '';
       // Speak the word as positive reinforcement.
       speechModule.speak(target).catch(() => {});
     } else {
@@ -749,6 +763,7 @@ function openWritePopup(word) {
   };
 
   checkBtn.addEventListener('click', check);
+  if (rewriteBtn) rewriteBtn.addEventListener('click', rewrite);
   input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') { e.preventDefault(); check(); }
     if (input.classList.contains('write-wrong')) {

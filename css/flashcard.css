@@ -92,7 +92,7 @@
 }
 
 .word-text {
-  font-size: var(--font-4xl);
+  font-size: 3.25rem;
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: var(--space-sm);
@@ -133,11 +133,11 @@
 }
 
 .meaning-text {
-  font-size: var(--font-3xl);
+  font-size: 2.75rem;
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: var(--space-lg);
-  line-height: 1.4;
+  line-height: 1.35;
   text-align: center;
 }
 
