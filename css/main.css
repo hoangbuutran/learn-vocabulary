@@ -1109,7 +1109,7 @@ em {
 .session-complete .btn,
 .review-complete .btn,
 .review-empty .btn {
-  margin: var(--space-sm);
+  margin: var(--space-sm) var(--space-md);
 }
 
 /* --------------------------------------------------------------------------
@@ -1862,4 +1862,59 @@ em {
 .write-buttons {
   display: flex;
   justify-content: center;
+  gap: var(--space-md);
+}
+
+/* --------------------------------------------------------------------------
+   Spelling review (whole-batch "tập viết")
+   -------------------------------------------------------------------------- */
+.spell-review {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.spell-progress {
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.spell-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--space-md);
+}
+
+.spell-prompt-label {
+  font-size: var(--font-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-xs);
+}
+
+.spell-meaning {
+  font-size: var(--font-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.spell-ipa {
+  font-size: var(--font-base);
+  color: var(--text-muted);
+  font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+  margin-bottom: var(--space-sm);
+}
+
+.spell-actions-top {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--space-md);
 }

@@ -272,7 +272,7 @@ function renderCard() {
         </div>
         <div class="progress-row">
           <span class="progress-text">Từ ${currentIndex + 1} / ${words.length}</span>
-          <button class="btn btn-text btn-change-batch" id="btn-change-batch" aria-label="Đổi cụm từ khác" title="Đổi sang 10 từ khác">
+          <button class="btn btn-text btn-change-batch" id="btn-change-batch" aria-label="Đổi cụm từ khác" title="Đổi sang ${words.length} từ khác">
             🔀 Đổi cụm khác
           </button>
         </div>
@@ -343,15 +343,17 @@ function renderSessionComplete() {
   // re-appears on return). The batch only changes when the user explicitly
   // chooses "Học 10 từ mới".
   saveSession();
+  const n = words.length;
   container.innerHTML = `
     <section class="view flashcard-view" aria-label="Hoàn thành phiên học">
       <h2>Thẻ từ vựng</h2>
       <div class="session-complete">
         <h3>🎉 Hoàn thành!</h3>
-        <p>Bạn đã đi hết ${words.length} từ trong phiên này.</p>
-        <button class="btn btn-primary" id="btn-match-review" aria-label="Ôn 10 từ này bằng Nối từ">🔗 Ôn bằng Nối từ</button>
-        <button class="btn btn-primary" id="btn-restart" aria-label="Học 10 từ mới">Học 10 từ mới</button>
-        <button class="btn btn-secondary" id="btn-review-again" aria-label="Lặp lại 10 từ này">Lặp lại 10 từ này</button>
+        <p>Bạn đã đi hết ${n} từ trong phiên này.</p>
+        <button class="btn btn-primary" id="btn-match-review" aria-label="Ôn ${n} từ này bằng Nối từ">🔗 Ôn bằng Nối từ</button>
+        <button class="btn btn-primary" id="btn-spell-review" aria-label="Tập viết ${n} từ này">✍️ Tập viết ${n} từ</button>
+        <button class="btn btn-primary" id="btn-restart" aria-label="Học ${n} từ mới">Học ${n} từ mới</button>
+        <button class="btn btn-secondary" id="btn-review-again" aria-label="Lặp lại ${n} từ này">Lặp lại ${n} từ này</button>
         <a href="#dashboard" class="btn btn-secondary" role="button">Về trang chủ</a>
       </div>
     </section>
@@ -365,6 +367,14 @@ function renderSessionComplete() {
         localStorage.setItem('match_preset', JSON.stringify(words.map(w => w.id)));
       } catch (_) { /* ignore */ }
       window.location.hash = '#match';
+    });
+  }
+
+  // Spelling practice for all 10 words (hear + see meaning, type the word).
+  const spellBtn = container.querySelector('#btn-spell-review');
+  if (spellBtn) {
+    spellBtn.addEventListener('click', () => {
+      startSpellingReview(words.slice());
     });
   }
 
@@ -387,6 +397,146 @@ function renderSessionComplete() {
       renderCard();
     });
   }
+}
+
+/**
+ * Spelling review for a whole batch: for each word, show its meaning (and a
+ * listen button), the user types the English word, must get it right to move on.
+ * @param {Array} batchWords
+ */
+function startSpellingReview(batchWords) {
+  if (!container || !batchWords.length) return;
+
+  let i = 0;
+  let correctCount = 0;
+  let revealed = false;
+
+  const renderStep = () => {
+    const word = batchWords[i];
+    const target = (word.word || '').trim();
+
+    container.innerHTML = `
+      <section class="view flashcard-view" aria-label="Tập viết">
+        <h2>Tập viết</h2>
+        <div class="spell-review">
+          <div class="spell-progress">Từ ${i + 1} / ${batchWords.length} · Đúng: ${correctCount}</div>
+
+          <div class="spell-card">
+            <p class="spell-prompt-label">Nghĩa</p>
+            <p class="spell-meaning">${word.meaning || ''}</p>
+            ${word.pronunciation ? `<p class="spell-ipa">${word.pronunciation}</p>` : ''}
+            <div class="spell-actions-top">
+              <button class="btn btn-icon" id="spell-hear" aria-label="Nghe phát âm" title="Nghe">🔊</button>
+              <button class="btn btn-text" id="spell-hint" aria-label="Gợi ý">💡 Gợi ý</button>
+            </div>
+            <input type="text" id="spell-input" class="write-input" autocomplete="off"
+              autocapitalize="off" spellcheck="false" placeholder="Gõ từ tiếng Anh..."
+              aria-label="Ô nhập từ" />
+            <div class="write-feedback" id="spell-feedback" aria-live="polite"></div>
+            <div class="write-buttons">
+              <button class="btn btn-secondary" id="spell-skip" aria-label="Bỏ qua">Bỏ qua</button>
+              <button class="btn btn-primary" id="spell-check" aria-label="Kiểm tra">Kiểm tra</button>
+            </div>
+          </div>
+
+          <button class="btn btn-text" id="spell-quit" aria-label="Thoát">← Thoát</button>
+        </div>
+      </section>
+    `;
+
+    const input = container.querySelector('#spell-input');
+    const feedback = container.querySelector('#spell-feedback');
+    const checkBtn = container.querySelector('#spell-check');
+    const skipBtn = container.querySelector('#spell-skip');
+    const hearBtn = container.querySelector('#spell-hear');
+    const hintBtn = container.querySelector('#spell-hint');
+    const quitBtn = container.querySelector('#spell-quit');
+
+    revealed = false;
+    let passed = false;
+
+    // Auto-play the word so it's also a listening exercise.
+    speechModule.speak(target).catch(() => {});
+
+    const next = () => {
+      i++;
+      if (i >= batchWords.length) {
+        renderSpellComplete(batchWords.length, correctCount);
+      } else {
+        renderStep();
+      }
+    };
+
+    const check = () => {
+      if (passed) { next(); return; }
+      const value = (input.value || '').trim();
+      if (!value) return;
+      if (value.toLowerCase() === target.toLowerCase()) {
+        passed = true;
+        if (!revealed) correctCount++; // only count if not given away by skip
+        feedback.innerHTML = `<span class="write-pass">✓ Chính xác! "${target}"</span>`;
+        input.classList.add('write-correct');
+        input.disabled = true;
+        checkBtn.textContent = i + 1 >= batchWords.length ? 'Xem kết quả' : 'Từ tiếp →';
+        speechModule.speak(target).catch(() => {});
+      } else {
+        feedback.innerHTML = `<span class="write-fail">✗ Chưa đúng. Bạn viết: "${value}". Thử lại nhé.</span>`;
+        input.classList.add('write-wrong');
+        input.focus();
+        input.select();
+      }
+    };
+
+    if (checkBtn) checkBtn.addEventListener('click', check);
+    if (input) {
+      input.focus();
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') { e.preventDefault(); check(); }
+        input.classList.remove('write-wrong');
+      });
+    }
+    if (skipBtn) {
+      skipBtn.addEventListener('click', () => {
+        // Reveal the answer and move on without counting it correct.
+        revealed = true;
+        feedback.innerHTML = `<span class="write-hint-text">Đáp án: ${target}</span>`;
+        setTimeout(next, 1200);
+      });
+    }
+    if (hearBtn) hearBtn.addEventListener('click', () => speechModule.speak(target).catch(() => {}));
+    if (hintBtn) {
+      hintBtn.addEventListener('click', () => {
+        const reveal = Math.ceil(target.length / 2);
+        const masked = target.slice(0, reveal) + '•'.repeat(Math.max(target.length - reveal, 0));
+        feedback.innerHTML = `<span class="write-hint-text">Gợi ý: ${masked} (${target.length} chữ cái)</span>`;
+      });
+    }
+    if (quitBtn) quitBtn.addEventListener('click', () => renderSessionComplete());
+  };
+
+  renderStep();
+}
+
+/**
+ * Spelling review results screen.
+ */
+function renderSpellComplete(total, correct) {
+  if (!container) return;
+  container.innerHTML = `
+    <section class="view flashcard-view" aria-label="Kết quả tập viết">
+      <h2>Tập viết</h2>
+      <div class="session-complete">
+        <h3>🎯 Hoàn thành tập viết!</h3>
+        <p>Viết đúng <strong>${correct}</strong> / ${total} từ.</p>
+        <button class="btn btn-primary" id="spell-again" aria-label="Viết lại">Viết lại</button>
+        <button class="btn btn-secondary" id="spell-back" aria-label="Quay lại">Quay lại</button>
+      </div>
+    </section>
+  `;
+  const againBtn = container.querySelector('#spell-again');
+  const backBtn = container.querySelector('#spell-back');
+  if (againBtn) againBtn.addEventListener('click', () => startSpellingReview(words.slice()));
+  if (backBtn) backBtn.addEventListener('click', () => renderSessionComplete());
 }
 
 /**

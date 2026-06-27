@@ -10,7 +10,7 @@
  *
  * Bump CACHE_VERSION whenever the shell changes to force a refresh.
  */
-const CACHE_VERSION = 'v14';
+const CACHE_VERSION = 'v18';
 const SHELL_CACHE = `vocab-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `vocab-runtime-${CACHE_VERSION}`;
 // Audio is large and rarely changes; keep it in a version-independent cache so

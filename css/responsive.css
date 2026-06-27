@@ -397,9 +397,11 @@
     scroll-behavior: auto !important;
   }
 
+  /* The flashcard flip is core feedback, not decoration — keep a short,
+     gentle animation even when the user prefers reduced motion. */
   .flashcard-front,
   .flashcard-back {
-    transition-duration: 0.01ms !important;
+    transition-duration: 0.45s !important;
   }
 }
 
