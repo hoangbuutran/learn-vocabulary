@@ -96,6 +96,17 @@ function renderContent() {
           </div>
         </div>
 
+        <div class="setting-group" role="group" aria-labelledby="audio-label">
+          <div>
+            <span id="audio-label" class="setting-label">Tải audio để dùng offline</span>
+            <p class="setting-hint">Tải sẵn toàn bộ file phát âm (~70-90MB) để nghe được khi mất mạng. Nên bấm khi đang dùng wifi.</p>
+            <div class="audio-dl-status" id="audio-dl-status"></div>
+          </div>
+          <button class="btn btn-secondary" id="btn-download-audio" aria-label="Tải audio offline">
+            📥 Tải audio
+          </button>
+        </div>
+
         <div class="setting-group" role="group" aria-labelledby="reload-label">
           <div>
             <span id="reload-label" class="setting-label">Dữ liệu từ vựng</span>
@@ -232,6 +243,89 @@ function setupListeners() {
       // Reload the page so the app re-initializes from a clean state.
       window.location.reload();
     });
+  }
+
+  // Download all audio for offline use.
+  const dlBtn = container.querySelector('#btn-download-audio');
+  if (dlBtn) {
+    dlBtn.addEventListener('click', () => downloadAllAudio(dlBtn));
+  }
+}
+
+/**
+ * Fetch every audio file referenced by the manifests so the Service Worker
+ * caches them, enabling fully offline pronunciation. Shows live progress.
+ * @param {HTMLButtonElement} btn
+ */
+async function downloadAllAudio(btn) {
+  const statusEl = container && container.querySelector('#audio-dl-status');
+  const setStatus = (msg) => { if (statusEl) statusEl.textContent = msg; };
+
+  btn.disabled = true;
+  const originalText = btn.textContent;
+  btn.textContent = 'Đang tải...';
+  setStatus('Đang chuẩn bị danh sách...');
+
+  // Build the list of audio URLs from both manifests.
+  const urls = [];
+  try {
+    const wordRes = await fetch('assets/audio/manifest.json');
+    if (wordRes.ok) {
+      const m = await wordRes.json();
+      for (const file of Object.values(m)) {
+        if (file) urls.push('assets/audio/' + file);
+      }
+    }
+  } catch (_) { /* ignore */ }
+  try {
+    const ipaRes = await fetch('assets/audio/ipa/manifest.json');
+    if (ipaRes.ok) {
+      const m = await ipaRes.json();
+      for (const file of Object.values(m)) {
+        if (file) urls.push('assets/audio/ipa/' + file);
+      }
+    }
+  } catch (_) { /* ignore */ }
+
+  if (urls.length === 0) {
+    setStatus('Không tìm thấy file audio nào.');
+    btn.disabled = false;
+    btn.textContent = originalText;
+    return;
+  }
+
+  let done = 0, failed = 0;
+  const total = urls.length;
+  const CONCURRENCY = 6;
+  let idx = 0;
+
+  const worker = async () => {
+    while (idx < urls.length) {
+      const myUrl = urls[idx++];
+      try {
+        // GET so the Service Worker's fetch handler caches it.
+        const r = await fetch(myUrl);
+        if (!r.ok) failed++;
+      } catch (_) {
+        failed++;
+      }
+      done++;
+      if (done % 15 === 0 || done === total) {
+        setStatus(`Đã tải ${done}/${total}${failed ? ` (lỗi ${failed})` : ''}...`);
+      }
+    }
+  };
+
+  try {
+    await Promise.all(Array.from({ length: CONCURRENCY }, worker));
+    setStatus(`✓ Hoàn tất! Đã lưu ${done - failed}/${total} file. Giờ có thể nghe offline.`);
+    showSuccess('Đã tải xong audio. Bạn có thể dùng offline.');
+  } catch (e) {
+    setStatus('Có lỗi khi tải. Vui lòng thử lại khi mạng ổn định.');
+    showError('Tải audio chưa hoàn tất. Thử lại khi có wifi.');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = originalText;
   }
 }
 

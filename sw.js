@@ -10,9 +10,12 @@
  *
  * Bump CACHE_VERSION whenever the shell changes to force a refresh.
  */
-const CACHE_VERSION = 'v13';
+const CACHE_VERSION = 'v14';
 const SHELL_CACHE = `vocab-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `vocab-runtime-${CACHE_VERSION}`;
+// Audio is large and rarely changes; keep it in a version-independent cache so
+// downloaded-for-offline audio survives app updates.
+const AUDIO_CACHE = 'vocab-audio';
 
 // Core files needed for the app to boot offline.
 const SHELL_ASSETS = [
@@ -62,7 +65,7 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) => Promise.all(
       keys
-        .filter((k) => k !== SHELL_CACHE && k !== RUNTIME_CACHE)
+        .filter((k) => k !== SHELL_CACHE && k !== RUNTIME_CACHE && k !== AUDIO_CACHE)
         .map((k) => caches.delete(k))
     )).then(() => self.clients.claim())
   );
@@ -83,16 +86,20 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Same-origin assets (including audio): cache-first, then network.
+  // Same-origin assets: cache-first, then network.
   if (sameOrigin) {
+    // Audio files go into a persistent cache that survives app updates.
+    const isAudio = url.pathname.includes('/assets/audio/') &&
+      /\.(mp3|ogg|wav|m4a)$/i.test(url.pathname);
+    const targetCache = isAudio ? AUDIO_CACHE : RUNTIME_CACHE;
+
     event.respondWith(
       caches.match(request).then((cached) => {
         if (cached) return cached;
         return fetch(request).then((response) => {
-          // Cache successful responses for next time (e.g. audio mp3s).
           if (response && response.status === 200) {
             const copy = response.clone();
-            caches.open(RUNTIME_CACHE).then((cache) => cache.put(request, copy));
+            caches.open(targetCache).then((cache) => cache.put(request, copy));
           }
           return response;
         }).catch(() => cached);
