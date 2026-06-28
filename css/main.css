@@ -2039,21 +2039,40 @@ em {
   margin-bottom: var(--space-xl);
 }
 
-.shadow-add-row {
+.shadow-add-input-row {
   display: flex;
   gap: var(--space-sm);
-  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
 }
 
-.shadow-input-sm {
-  max-width: 160px;
+.shadow-url-input {
+  flex: 1;
+  font-size: var(--font-sm);
+  padding: var(--space-sm) var(--space-md);
 }
 
-.shadow-add-btns {
+.shadow-add-options {
   display: flex;
   gap: var(--space-md);
   flex-wrap: wrap;
-  margin-top: var(--space-sm);
+  align-items: center;
+}
+
+.shadow-select {
+  flex: 1;
+  min-width: 200px;
+  padding: var(--space-sm) var(--space-md);
+  font-size: var(--font-base);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.shadow-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
 }
 
 .shadow-label {
@@ -2255,6 +2274,26 @@ em {
   gap: var(--space-xs);
   max-height: 60vh;
   overflow-y: auto;
+  padding-right: 4px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) transparent;
+}
+
+.shadow-lines::-webkit-scrollbar {
+  width: 8px;
+}
+
+.shadow-lines::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.shadow-lines::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 999px;
+}
+
+.shadow-lines::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-primary);
 }
 
 .shadow-line-item {
@@ -2262,18 +2301,26 @@ em {
   align-items: flex-start;
   gap: var(--space-sm);
   text-align: left;
-  padding: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   cursor: pointer;
   font-size: var(--font-sm);
   color: var(--text-primary);
+  line-height: 1.45;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.shadow-line-item:hover {
+  border-color: var(--color-primary);
 }
 
 .shadow-line-item.active {
   border-color: var(--color-primary);
   background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-weight: 600;
 }
 
 .shadow-line-item-no {
@@ -2281,4 +2328,39 @@ em {
   font-weight: 700;
   color: var(--color-primary);
   min-width: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   Ad slots & Footer
+   -------------------------------------------------------------------------- */
+.ad-slot {
+  text-align: center;
+  padding: var(--space-sm) 0;
+  min-height: 50px;
+}
+
+.ad-slot-bottom {
+  margin-top: var(--space-lg);
+}
+
+.app-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-md) var(--space-lg);
+  font-size: var(--font-xs);
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+  margin-top: var(--space-md);
+}
+
+.app-footer a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
 }

@@ -107,24 +107,24 @@ function renderSetup(saved) {
       </p>
 
       <div class="shadow-add">
-        <label class="shadow-label" for="yt-url">Link YouTube</label>
-        <input type="text" id="yt-url" class="shadow-input" placeholder="https://www.youtube.com/watch?v=..." value="${escapeAttr(url)}" />
-        <label class="shadow-label" for="yt-level">Cấp độ</label>
-        <select id="yt-level" class="shadow-input shadow-input-sm">
-          <option value="">— Chọn cấp độ —</option>
-          <option value="A1">A1 (Mới bắt đầu)</option>
-          <option value="A2">A2 (Sơ cấp)</option>
-          <option value="B1">B1 (Trung cấp)</option>
-          <option value="B2">B2 (Trung cao)</option>
-          <option value="C1">C1 (Cao cấp)</option>
-          <option value="C2">C2 (Thành thạo)</option>
-        </select>
-        <p class="shadow-hint">Nên chọn video có phụ đề tiếng Anh (caption). Bấm "Học ngay" sẽ tự lưu vào thư viện để chia sẻ.</p>
-        <div class="shadow-autofetch-status" id="shadow-status"></div>
-        <div class="shadow-add-btns">
+        <div class="shadow-add-input-row">
+          <input type="url" id="yt-url" class="shadow-input shadow-url-input" placeholder="Dán link YouTube vào đây..." value="${escapeAttr(url)}" />
+          <button class="btn btn-secondary btn-sm" id="shadow-paste" type="button" title="Dán từ clipboard">📋 Dán</button>
+        </div>
+        <div class="shadow-add-options">
+          <select id="yt-level" class="shadow-select">
+            <option value="">— Chọn cấp độ —</option>
+            <option value="A1">A1 – Mới bắt đầu</option>
+            <option value="A2">A2 – Sơ cấp</option>
+            <option value="B1">B1 – Trung cấp</option>
+            <option value="B2">B2 – Trung cao cấp</option>
+            <option value="C1">C1 – Cao cấp</option>
+            <option value="C2">C2 – Thành thạo</option>
+          </select>
           <button class="btn btn-primary" id="shadow-start">Học ngay</button>
         </div>
-        ${!HAS_BACKEND ? '<p class="shadow-hint">⚠️ Chưa cấu hình backend nên không tự lấy được lời thoại.</p>' : ''}
+        <div class="shadow-autofetch-status" id="shadow-status"></div>
+        ${!HAS_BACKEND ? '<p class="shadow-hint">⚠️ Chưa cấu hình backend.</p>' : ''}
       </div>
 
       <div class="shadow-library" id="shadow-library">
@@ -140,6 +140,16 @@ function renderSetup(saved) {
 
   const startBtn = container.querySelector('#shadow-start');
   if (startBtn) startBtn.addEventListener('click', () => startFromUrl());
+  const pasteBtn = container.querySelector('#shadow-paste');
+  if (pasteBtn) {
+    pasteBtn.addEventListener('click', async () => {
+      try {
+        const text = await navigator.clipboard.readText();
+        const urlInput = container.querySelector('#yt-url');
+        if (urlInput && text) urlInput.value = text.trim();
+      } catch (_) { /* clipboard permission denied or not supported */ }
+    });
+  }
 
   loadLibrary();
 }
@@ -227,16 +237,15 @@ async function startFromUrl() {
       return;
     }
 
-    // Auto-save to the shared library (title comes from YouTube on the server).
-    setStatus('Đang lưu vào thư viện...');
-    try {
-      await fetch(`${API_BASE}/api/library`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url: vid, level: levelVal, lines: data.lines })
-      });
-    } catch (_) { /* saving is best-effort */ }
+    // Auto-save to the shared library in the BACKGROUND (don't block playback).
+    // Title comes from YouTube on the server side.
+    fetch(`${API_BASE}/api/library`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: vid, level: levelVal, lines: data.lines })
+    }).catch(() => { /* saving is best-effort */ });
 
+    // Go straight to the player.
     lines = data.lines;
     videoId = vid;
     currentLine = -1;
