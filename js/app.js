@@ -5,6 +5,7 @@
 
 // Core modules
 import storageManager from './modules/storage-manager.js';
+import speechModule from './modules/speech-module.js';
 import eventBus from './utils/event-bus.js';
 
 // View modules
@@ -197,6 +198,12 @@ async function init() {
     window.location.hash = initialRoute;
   } else {
     navigateTo(initialRoute);
+  }
+
+  // Preload Whisper model in the background so it's ready when the user first
+  // taps the mic button (avoids the long wait on first use).
+  if (speechModule.isRecognitionSupported()) {
+    speechModule.loadModel().catch(() => { /* silent – will retry on demand */ });
   }
 }
 

@@ -10,7 +10,7 @@
  *
  * Bump CACHE_VERSION whenever the shell changes to force a refresh.
  */
-const CACHE_VERSION = 'v31';
+const CACHE_VERSION = 'v32';
 const SHELL_CACHE = `vocab-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `vocab-runtime-${CACHE_VERSION}`;
 // Audio is large and rarely changes; keep it in a version-independent cache so
@@ -121,5 +121,27 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Cross-origin (e.g. CDN, dictionary API): just try the network.
+  // Cross-origin: cache-first for known CDN resources (Transformers.js library +
+  // Whisper model weights from HuggingFace). This avoids re-downloading ~40MB+
+  // of model data on every page reload.
+  const isCacheable = url.hostname.includes('jsdelivr.net') ||
+    url.hostname.includes('huggingface.co') ||
+    url.hostname.includes('hf.co');
+  if (isCacheable) {
+    event.respondWith(
+      caches.match(request).then((cached) => {
+        if (cached) return cached;
+        return fetch(request).then((response) => {
+          if (response && response.status === 200 && response.type !== 'opaqueredirect') {
+            const copy = response.clone();
+            caches.open(RUNTIME_CACHE).then((cache) => cache.put(request, copy));
+          }
+          return response;
+        });
+      })
+    );
+    return;
+  }
+
+  // Other cross-origin: just try the network (no cache).
 });
