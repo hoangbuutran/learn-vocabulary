@@ -26,6 +26,7 @@ async function loadWordExtras() {
 
 /** Session state */
 let words = [];
+let originalIds = [];  // keeps the original order so session is stable
 let currentIndex = 0;
 let isFlipped = false;
 let isRecording = false;
@@ -34,6 +35,16 @@ let lastResultHtml = '';
 let lastSwipeAt = 0;
 /** Pixel offset the next rendered card should slide in from (0 = no animation). */
 let slideInFrom = 0;
+
+/** Fisher-Yates shuffle (returns a new shuffled copy). */
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 /** LocalStorage key that keeps the current 10-word batch fixed across visits. */
 const SESSION_KEY = 'flashcard_session';
@@ -52,7 +63,7 @@ function loadSession() {
 function saveSession() {
   try {
     localStorage.setItem(SESSION_KEY, JSON.stringify({
-      ids: words.map(w => w.id),
+      ids: originalIds,
       index: currentIndex
     }));
   } catch {
@@ -97,6 +108,7 @@ function startNewBatch(excludeIds = []) {
   currentIndex = 0;
   isFlipped = false;
   lastResultHtml = '';
+  originalIds = words.map(w => w.id);
   saveSession();
 }
 
@@ -148,12 +160,14 @@ export function render(el) {
     const all = storageManager.getAllVocabulary();
     const byId = new Map(all.map(item => [item.id, item]));
     words = saved.ids.map(id => byId.get(id)).filter(Boolean);
+    originalIds = saved.ids;
     // Keep the saved position, including the "completed" state (index === length)
     // so returning to the view shows the completion screen, not word 10 again.
     const savedIndex = typeof saved.index === 'number' ? saved.index : 0;
     currentIndex = Math.min(Math.max(savedIndex, 0), words.length);
   } else {
     words = [];
+    originalIds = [];
   }
 
   // No valid saved batch -> create a fresh one.
@@ -364,7 +378,8 @@ function renderSessionComplete() {
   if (matchBtn) {
     matchBtn.addEventListener('click', () => {
       try {
-        localStorage.setItem('match_preset', JSON.stringify(words.map(w => w.id)));
+        const shuffled = shuffleArray(words.map(w => w.id));
+        localStorage.setItem('match_preset', JSON.stringify(shuffled));
       } catch (_) { /* ignore */ }
       window.location.hash = '#match';
     });
@@ -374,7 +389,7 @@ function renderSessionComplete() {
   const spellBtn = container.querySelector('#btn-spell-review');
   if (spellBtn) {
     spellBtn.addEventListener('click', () => {
-      startSpellingReview(words.slice());
+      startSpellingReview(shuffleArray(words.slice()));
     });
   }
 
@@ -390,10 +405,10 @@ function renderSessionComplete() {
   const reviewBtn = container.querySelector('#btn-review-again');
   if (reviewBtn) {
     reviewBtn.addEventListener('click', () => {
+      words = shuffleArray(words);
       currentIndex = 0;
       isFlipped = false;
       lastResultHtml = '';
-      saveSession();
       renderCard();
     });
   }
@@ -535,7 +550,7 @@ function renderSpellComplete(total, correct) {
   `;
   const againBtn = container.querySelector('#spell-again');
   const backBtn = container.querySelector('#spell-back');
-  if (againBtn) againBtn.addEventListener('click', () => startSpellingReview(words.slice()));
+  if (againBtn) againBtn.addEventListener('click', () => startSpellingReview(shuffleArray(words.slice())));
   if (backBtn) backBtn.addEventListener('click', () => renderSessionComplete());
 }
 
