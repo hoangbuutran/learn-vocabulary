@@ -25,6 +25,13 @@ let watchTimer = null;
 let videoId = '';
 let lastWordMatch = null;   // { idx, words: [{word, ok}] } highlight for the current line
 
+/** Cache of sentence translations { lineIdx: viText }. */
+const translationCache = new Map();
+/** Cache of IPA for sentences { lineIdx: ipaText }. */
+const ipaCache = new Map();
+/** Map of word -> IPA pronunciation from vocabulary data (loaded once). */
+let wordIpaMap = null;
+
 const SESSION_KEY = 'shadowing_session';
 
 export function render(el) {
@@ -315,6 +322,9 @@ function renderPlayer(vid) {
   renderCurrentLine();
   setupPlayerControls();
 
+  // Load IPA map in background for sentence phonetics.
+  loadIpaMap();
+
   loadYouTubeApi().then(() => {
     player = new window.YT.Player('yt-player', {
       videoId: vid,
@@ -322,7 +332,11 @@ function renderPlayer(vid) {
       events: {
         onReady: () => {
           try { player.setPlaybackRate(playbackRate); } catch (_) {}
-          // Run the watcher continuously; it checks play state itself.
+          // Ensure the iframe allows microphone use alongside the video.
+          const iframe = container && container.querySelector('#yt-player');
+          if (iframe && iframe.tagName === 'IFRAME') {
+            iframe.setAttribute('allow', 'autoplay; microphone');
+          }
           startWatch();
         },
         onStateChange: onPlayerStateChange
@@ -358,10 +372,77 @@ function renderCurrentLine() {
     textHtml = escapeHtml(line.text);
   }
 
+  const vi = translationCache.get(currentLine);
+  const ipa = ipaCache.has(currentLine) ? ipaCache.get(currentLine) : buildIpaForSentence(line.text);
+  if (!ipaCache.has(currentLine) && ipa) ipaCache.set(currentLine, ipa);
+
   el.innerHTML = `
     <span class="shadow-line-no">Câu ${currentLine + 1} / ${lines.length}</span>
     <p class="shadow-line-text">${textHtml}</p>
+    ${ipa ? `<p class="shadow-line-ipa">${escapeHtml(ipa)}</p>` : ''}
+    <p class="shadow-line-vi" id="shadow-vi">${vi ? escapeHtml(vi) : '<em>Đang dịch...</em>'}</p>
   `;
+
+  // Fetch translation if not cached yet.
+  if (!translationCache.has(currentLine)) {
+    translateLine(currentLine, line.text);
+  }
+}
+
+/**
+ * Fetch a Vietnamese translation for a line and update the display.
+ * Uses Google Translate (free, no key). Caches results.
+ */
+async function translateLine(idx, text) {
+  try {
+    const q = encodeURIComponent(text);
+    const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&q=${q}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    const vi = data[0].map(seg => seg[0]).join('').trim();
+    translationCache.set(idx, vi);
+  } catch {
+    translationCache.set(idx, '(không dịch được)');
+  }
+  // Update the display if we're still on this line.
+  if (currentLine === idx) {
+    const viEl = container && container.querySelector('#shadow-vi');
+    if (viEl) viEl.textContent = translationCache.get(idx) || '';
+  }
+}
+
+/** Load the word -> IPA map from vocabulary data (once). */
+async function loadIpaMap() {
+  if (wordIpaMap) return wordIpaMap;
+  wordIpaMap = new Map();
+  try {
+    const files = ['data/vocabulary-a1-a2.json', 'data/vocabulary-3000.json'];
+    for (const f of files) {
+      const res = await fetch(f);
+      if (!res.ok) continue;
+      const json = await res.json();
+      for (const item of (json.items || [])) {
+        if (item.word && item.pronunciation) {
+          wordIpaMap.set(item.word.toLowerCase(), item.pronunciation);
+        }
+      }
+    }
+  } catch { /* ignore */ }
+  return wordIpaMap;
+}
+
+/**
+ * Build IPA string for a sentence by looking up each word.
+ * Words not in our vocab are shown as-is (no IPA).
+ */
+function buildIpaForSentence(text) {
+  if (!wordIpaMap || !text) return '';
+  const words = text.replace(/[.,!?;:""''"()]/g, '').split(/\s+/).filter(Boolean);
+  const parts = words.map(w => {
+    const ipa = wordIpaMap.get(w.toLowerCase());
+    return ipa || w;
+  });
+  return parts.join(' ');
 }
 
 /**
@@ -534,6 +615,11 @@ async function handleShadowRecord() {
   const micBtn = container && container.querySelector('#shadow-mic');
   if (currentLine < 0 || currentLine >= lines.length) return;
   const line = lines[currentLine];
+
+  // IMPORTANT: pause the video so the mic only hears the user, not the speaker.
+  if (player && player.pauseVideo) {
+    try { player.pauseVideo(); } catch (_) {}
+  }
 
   if (micBtn) micBtn.classList.add('recording');
 

@@ -2205,6 +2205,20 @@ em {
   margin-top: var(--space-xs);
 }
 
+.shadow-line-vi {
+  font-size: var(--font-base);
+  color: var(--text-secondary);
+  margin-top: var(--space-xs);
+  font-style: italic;
+}
+
+.shadow-line-ipa {
+  font-size: var(--font-sm);
+  color: var(--text-muted);
+  font-family: 'Lucida Sans Unicode', 'DejaVu Sans', sans-serif;
+  margin-top: 2px;
+}
+
 .shadow-actions {
   display: flex;
   gap: var(--space-sm);
