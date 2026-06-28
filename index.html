@@ -72,12 +72,7 @@
             <span class="nav-label">Ôn tập</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a href="#import" class="nav-link" data-view="import">
-            <span class="nav-icon" aria-hidden="true">📥</span>
-            <span class="nav-label">Nhập/Xuất</span>
-          </a>
-        </li>
+        <!-- Nhập/Xuất ẩn khỏi nav chính, vẫn truy cập được qua #import -->
         <li class="nav-item">
           <a href="#settings" class="nav-link" data-view="settings">
             <span class="nav-icon" aria-hidden="true">⚙️</span>
@@ -87,7 +82,11 @@
       </ul>
     </nav>
     <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false">
-      <span class="nav-toggle-icon">☰</span>
+      <span class="hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </span>
     </button>
   </header>
 
@@ -108,8 +107,8 @@
   <!-- Footer -->
   <footer class="app-footer">
     <span>© 2026 VocabLearn</span>
-    <a href="privacy.html" target="_blank">Bảo mật</a>
-    <a href="terms.html" target="_blank">Điều khoản</a>
+    <a href="privacy.html" onclick="window.open(this.href);return false;">Bảo mật</a>
+    <a href="terms.html" onclick="window.open(this.href);return false;">Điều khoản</a>
   </footer>
 
   <!-- App Entry Point (ES Module) -->

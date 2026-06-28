@@ -206,12 +206,47 @@ em {
   height: 44px;
   border-radius: var(--radius-md);
   color: var(--text-primary);
-  font-size: var(--font-xl);
+  cursor: pointer;
   transition: background-color var(--transition-fast);
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 1001;
 }
 
 .nav-toggle:hover {
   background-color: var(--bg-hover);
+}
+
+/* Hamburger animation (3 lines → X) */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  gap: 5px;
+}
+
+.hamburger-line {
+  display: block;
+  width: 22px;
+  height: 2.5px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+/* When nav is open, animate to X */
+.nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
 }
 
 /* --------------------------------------------------------------------------
@@ -1195,7 +1230,7 @@ em {
   justify-content: center;
   align-items: center;
   margin-bottom: var(--space-lg);
-  overflow: hidden;
+  padding: var(--space-md) 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -1534,6 +1569,7 @@ em {
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   margin-bottom: var(--space-lg);
+  overflow: hidden;
 }
 
 .ipa-decoder-label {
@@ -1679,8 +1715,8 @@ em {
 
 .ipa-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: var(--space-sm);
 }
 
 .ipa-card {

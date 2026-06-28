@@ -10,7 +10,7 @@
 /* Navigation: hidden by default on mobile, shown via .nav-open */
 @media (max-width: 767px) {
   .app-header {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: var(--space-sm) var(--space-md);
   }
 
@@ -27,30 +27,69 @@
     display: flex;
   }
 
+  /* Full-screen overlay menu */
   .app-nav {
     display: none;
+    position: fixed;
+    inset: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    order: 3;
-    padding-top: var(--space-md);
-    border-top: 1px solid var(--border-color);
-    margin-top: var(--space-sm);
+    height: 100dvh;
+    background-color: var(--bg-card);
+    z-index: 1000;
+    padding: 80px var(--space-lg) var(--space-xl);
+    overflow-y: auto;
+    animation: navSlideIn 0.25s ease;
+  }
+
+  @keyframes navSlideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   .app-nav.nav-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .nav-list {
     flex-direction: column;
-    gap: var(--space-xs);
+    gap: var(--space-md);
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .nav-item {
+    width: 100%;
   }
 
   .nav-link {
     width: 100%;
-    padding: 12px var(--space-md);
-    min-height: 44px;
-    border-radius: var(--radius-md);
-    font-size: var(--font-base);
+    padding: var(--space-md) var(--space-lg);
+    min-height: 52px;
+    border-radius: var(--radius-lg);
+    font-size: var(--font-lg);
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--space-md);
+    text-align: left;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary-light);
+  }
+
+  .nav-icon {
+    font-size: var(--font-xl);
   }
 
   /* Content */
@@ -78,7 +117,14 @@
   /* Flashcard: full width on mobile, taller so meanings fit */
   .flashcard {
     max-width: 100%;
-    height: 380px;
+    height: 340px;
+    border-radius: 16px;
+  }
+
+  .flashcard-front,
+  .flashcard-back {
+    border-radius: 16px;
+    padding: var(--space-md);
   }
 
   .word-text {
@@ -87,16 +133,6 @@
 
   .meaning-text {
     font-size: 2rem;
-  }
-
-  .flashcard-front,
-  .flashcard-back {
-    padding: var(--space-md);
-  }
-
-  /* Back face scrolls from the top so the meaning is never hidden above */
-  .flashcard-back {
-    justify-content: flex-start;
   }
 
   /* Quiz options: single column on mobile */
@@ -136,6 +172,41 @@
 
   .shadow-lines {
     max-height: 260px;
+  }
+
+  /* IPA: smaller cards, decoder input full width */
+  .ipa-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: var(--space-xs);
+  }
+
+  .ipa-card {
+    padding: var(--space-sm);
+  }
+
+  .ipa-symbol {
+    font-size: var(--font-lg);
+  }
+
+  .ipa-decoder-row {
+    flex-direction: column;
+  }
+
+  .ipa-decoder-row .ipa-input {
+    width: 100%;
+  }
+
+  .ipa-decoder-row .btn {
+    width: 100%;
+  }
+
+  .ipa-decode-list {
+    gap: var(--space-xs);
+  }
+
+  .ipa-decode-item {
+    min-width: 70px;
+    padding: var(--space-xs);
   }
 
   .match-history {

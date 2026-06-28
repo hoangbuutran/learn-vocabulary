@@ -22,12 +22,12 @@ const DATA_VERSION = '4';
 
 // Default application settings
 const DEFAULT_SETTINGS = {
-  theme: 'light',
+  theme: 'dark',
   accent: 'en-US',
   dailyWordCount: 10,
-  autoPlayPronunciation: false,
+  autoPlayPronunciation: true,
   // Which vocabulary set to study: 'all' | 'a1-a2' | 'essential-3000'
-  vocabularySet: 'all'
+  vocabularySet: 'a1-a2'
 };
 
 class StorageManager {

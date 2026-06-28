@@ -10,7 +10,7 @@
  *
  * Bump CACHE_VERSION whenever the shell changes to force a refresh.
  */
-const CACHE_VERSION = 'v38';
+const CACHE_VERSION = 'v47';
 const SHELL_CACHE = `vocab-shell-${CACHE_VERSION}`;
 const RUNTIME_CACHE = `vocab-runtime-${CACHE_VERSION}`;
 // Audio is large and rarely changes; keep it in a version-independent cache so
@@ -80,22 +80,33 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url);
   const sameOrigin = url.origin === self.location.origin;
 
-  // Navigations: network-first, fall back to cached index.html offline.
+  // Navigations: for the SPA shell (index.html or root), use cache-first for
+  // instant launch. For other HTML pages (privacy.html, terms.html), fetch them
+  // normally so they display their own content.
   if (request.mode === 'navigate') {
-    // Cache-first for instant launch (no blank screen waiting on the network).
-    // Update the cached shell in the background for next time.
-    event.respondWith(
-      caches.match('./index.html').then((cached) => {
-        const fetchAndUpdate = fetch(request).then((response) => {
-          if (response && response.status === 200) {
-            const copy = response.clone();
-            caches.open(SHELL_CACHE).then((c) => c.put('./index.html', copy));
-          }
-          return response;
-        }).catch(() => cached);
-        return cached || fetchAndUpdate;
-      })
-    );
+    const pathname = url.pathname;
+    const isAppShell = pathname.endsWith('/') || pathname.endsWith('/index.html') || pathname === self.registration.scope;
+
+    if (isAppShell) {
+      // Cache-first for the SPA shell — instant load, update in background.
+      event.respondWith(
+        caches.match('./index.html').then((cached) => {
+          const fetchAndUpdate = fetch(request).then((response) => {
+            if (response && response.status === 200) {
+              const copy = response.clone();
+              caches.open(SHELL_CACHE).then((c) => c.put('./index.html', copy));
+            }
+            return response;
+          }).catch(() => cached);
+          return cached || fetchAndUpdate;
+        })
+      );
+    } else {
+      // Other pages (privacy, terms): network-first, fall back to cache.
+      event.respondWith(
+        fetch(request).catch(() => caches.match(request))
+      );
+    }
     return;
   }
 
